@@ -1,0 +1,165 @@
+═══════════════════════════════════════════════════════════════════
+📋 READY-TO-USE EXAMPLE: Marketing Analytics Study Guide
+═══════════════════════════════════════════════════════════════════
+
+INSTRUCTIONS:
+1. Copy EVERYTHING below this line
+2. Replace "Rahul Kumar" with YOUR name
+3. Replace college/background with YOUR details
+4. Paste into Claude Code
+5. Press Enter and wait 2-3 minutes
+
+═══════════════════════════════════════════════════════════════════
+
+You are a senior educator and mentor creating a comprehensive study guide for an MMS student.
+
+I need you to create a complete, professional HTML study guide following this exact specification:
+
+STUDENT INFORMATION:
+- Name: Rahul Kumar
+- Program: MMS Marketing
+- College: SIMSREE, Mumbai
+- Year: 2025-27
+- Background: "2 years experience in digital marketing at Flipkart, worked with Google Analytics, campaign optimization, ROI tracking, and data-driven marketing decisions"
+
+TOPIC DETAILS:
+- Topic: Marketing Analytics & Data-Driven Marketing
+- Target Goal: Summer Internship in Marketing Analytics
+- Target Roles: Marketing Analyst, Digital Marketing Analyst, Growth Analyst
+
+MODULES TO COVER (8 modules):
+
+Module 1: Introduction to Marketing Analytics
+Topics: What is marketing analytics, Role of data in marketing, Marketing metrics overview, Digital vs Traditional analytics, Marketing analytics career paths
+Objectives: Understand marketing analytics fundamentals, Know key metrics and KPIs, Differentiate data sources, Understand career opportunities
+
+Module 2: Customer Analytics
+Topics: Customer segmentation methods, RFM analysis, Customer lifetime value (CLV), Churn prediction and retention, Customer journey mapping
+Objectives: Segment customers effectively, Calculate and interpret CLV, Predict and prevent churn, Map customer journeys
+
+Module 3: Digital Marketing Metrics & KPIs
+Topics: Website analytics (traffic, bounce rate, conversions), Social media metrics, Email marketing metrics, Paid advertising metrics (CPC, CTR, ROAS), Mobile app analytics
+Objectives: Track website performance, Measure social media ROI, Optimize email campaigns, Analyze paid campaign effectiveness
+
+Module 4: Campaign Analytics & Optimization
+Topics: Campaign planning and setup, A/B testing and experimentation, Multi-channel attribution, Marketing mix modeling, Budget allocation optimization
+Objectives: Design effective campaigns, Run A/B tests, Attribute conversions correctly, Optimize marketing budget
+
+Module 5: Marketing Attribution & ROI
+Topics: Attribution models (first-touch, last-touch, linear, time-decay), Multi-touch attribution, Marketing ROI calculation, ROAS optimization, CAC and LTV analysis
+Objectives: Choose right attribution model, Calculate marketing ROI, Optimize customer acquisition cost, Maximize lifetime value
+
+Module 6: Analytics Tools & Platforms
+Topics: Google Analytics deep dive, Facebook/Instagram Insights, Google Ads analytics, Marketing automation tools, Data visualization (Tableau, Power BI)
+Objectives: Master Google Analytics, Analyze social media data, Understand ad platforms, Create marketing dashboards
+
+Module 7: Data-Driven Marketing Strategy
+Topics: Building data-driven marketing plans, Predictive analytics in marketing, Market basket analysis, Recommendation engines, Personalization strategies
+Objectives: Create data-driven strategies, Use predictive models, Implement personalization, Drive business growth
+
+Module 8: Interview Readiness
+- 50+ technical marketing analytics questions
+- Personalized "Tell Me About Yourself" for Rahul
+- Behavioral questions with STAR method
+- How to position digital marketing experience
+- Case study practice
+
+TRUSTED RESOURCES TO USE:
+- Google Analytics Academy
+- HubSpot Marketing Statistics
+- Facebook Blueprint
+- Nielsen Reports
+- Marketing case studies
+
+REAL-WORLD EXAMPLES:
+Use these companies for examples:
+- Flipkart
+- Amazon India
+- Swiggy
+- Zomato
+- Myntra
+- Nykaa
+- Paytm
+
+REQUIREMENTS:
+
+1. OUTPUT FORMAT: Single comprehensive HTML file
+   File path: /mnt/e/AI and Projects/MMS-Prep/generated/Marketing_Analytics_Complete_Guide.html
+
+2. DESIGN: Use professional styling with:
+   - Gradient header (purple/blue theme)
+   - Sticky navigation
+   - Color-coded sections:
+     * Concept boxes (blue)
+     * Example boxes (green)
+     * Interview boxes (orange)
+     * Practice boxes (purple)
+   - Responsive tables
+   - Formula code blocks
+   - Glossary cards
+   - Roadmap timeline
+
+3. STRUCTURE FOR EACH MODULE:
+   - Module header with learning objectives
+   - Multiple detailed sections
+   - Real-world examples from Indian e-commerce/digital marketing
+   - "Interview Speak for Rahul" - Personalized answers connecting his Flipkart experience
+   - Practice exercises with real platforms
+   - Checkpoint quiz
+
+4. CONTENT REQUIREMENTS:
+   - Beginner-friendly but comprehensive
+   - Detailed explanations from first principles
+   - Real company/campaign examples with actual data
+   - Each concept includes:
+     * Clear definition
+     * Why it matters
+     * Real example from Indian companies
+     * How to answer in interviews
+     * Practice task with Google Analytics or similar tools
+   - Verified information from trusted sources (Google, HubSpot, etc.)
+
+5. INTERVIEW PREPARATION:
+   - Module 8 must include 50+ marketing analytics Q&A
+   - Personalized "Tell Me About Yourself" using Rahul's Flipkart background
+   - Connect his digital marketing experience to analytics concepts
+   - Behavioral questions with STAR method examples from his work
+
+6. ADDITIONAL SECTIONS:
+   - Complete Glossary (100+ marketing terms)
+   - Personalized 12-week study roadmap
+   - Week-by-week milestones
+   - Practice assignments using Google Analytics, Facebook Insights
+
+7. TONE & STYLE:
+   - Mentor-like, encouraging, personal
+   - References Rahul's background throughout
+   - Shows how his digital marketing skills are advantages
+   - Action-oriented with clear next steps
+
+8. "INTERVIEW SPEAK" PERSONALIZATION EXAMPLE:
+
+Question: "What is Customer Lifetime Value?"
+
+Answer for Rahul:
+"Customer Lifetime Value is the total revenue a business expects from a customer over their entire relationship. At Flipkart, we tracked CLV to make informed decisions about customer acquisition costs. For instance, if we knew our average customer had a CLV of ₹15,000 over 3 years, we could justify spending up to ₹3,000 to acquire them while maintaining healthy unit economics. We calculated this by multiplying average order value by purchase frequency by customer lifespan. This metric was crucial for our marketing budget allocation - we could invest more aggressively in channels that attracted high-CLV customers."
+
+VALIDATION CHECKLIST:
+✅ All 8 modules complete with detailed content
+✅ Real examples from Flipkart, Amazon India, Swiggy, Zomato, etc.
+✅ Every module has "Interview Speak for Rahul"
+✅ Practice tasks using Google Analytics, Facebook Insights
+✅ 50+ interview Q&A in Module 8
+✅ Complete glossary with 100+ marketing terms
+✅ 12-week personalized roadmap
+✅ Professional HTML styling
+✅ Print-ready formatting
+✅ File size 150KB+ (comprehensive content)
+
+CREATE THE COMPLETE COMPREHENSIVE MARKETING ANALYTICS STUDY GUIDE NOW!
+
+After generation, open the file in browser for review.
+
+═══════════════════════════════════════════════════════════════════
+END OF PROMPT
+═══════════════════════════════════════════════════════════════════
