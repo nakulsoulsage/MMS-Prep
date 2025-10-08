@@ -1,0 +1,270 @@
+{
+  "topic": "Finance Fundamentals for Equity Research & Financial Analysis",
+  "student": {
+    "name": "Nakul Nandanwar",
+    "program": "MMS Finance",
+    "college": "SIMSREE (Sydenham Institute of Management Studies)",
+    "location": "Mumbai",
+    "year": "2025-27",
+    "background": {
+      "strengths": [
+        "AI-powered automation and reporting systems",
+        "ROI tracking and financial evaluation",
+        "Process efficiency and cost optimization",
+        "Strategic planning and leadership",
+        "Data-driven decision making"
+      ],
+      "experience": "Junior Brand Manager at SoulSage (Bteabreak Marketing) - Led AI-powered campaign analytics, automated reporting systems, ROI tracking, and business profitability analysis",
+      "previous_education": "B.Tech - Industrial Engineering from VIT Pune",
+      "technical_skills": ["AI automation", "Excel", "PowerPoint", "Power BI", "Data Interpretation"],
+      "certifications": ["Investment Banking Course (365 Careers)", "AI-Powered Supply Chains (BITS Pilani & NITIE)"]
+    }
+  },
+  "target": {
+    "goal": "Summer Internship 2026",
+    "roles": ["Equity Research Analyst", "Financial Analyst", "Investment Analyst"],
+    "companies_type": ["Investment Banks", "Asset Management Firms", "Research Firms"],
+    "preparation_timeline": "12 weeks"
+  },
+  "modules": [
+    {
+      "number": 1,
+      "title": "Understanding Finance",
+      "topics": [
+        "What is Finance? (Corporate, Investment, Personal)",
+        "Role of Finance in Business",
+        "Accounting vs Finance",
+        "Types of Financial Decisions (Investment, Financing, Dividend)",
+        "Indian Financial System Overview (RBI, SEBI, NSE, BSE)"
+      ],
+      "objectives": [
+        "Understand finance fundamentals",
+        "Differentiate accounting from finance",
+        "Know the three core financial decisions",
+        "Understand Indian financial system structure"
+      ],
+      "depth": "beginner to intermediate"
+    },
+    {
+      "number": 2,
+      "title": "Financial Statements (Core Accounting)",
+      "topics": [
+        "Introduction to Financial Statements",
+        "Income Statement (Profit & Loss)",
+        "Balance Sheet",
+        "Cash Flow Statement",
+        "Accrual vs Cash Basis Accounting",
+        "Linkage Between Three Statements",
+        "Practice: Create Mini Financial Statements"
+      ],
+      "objectives": [
+        "Read and interpret Income Statements",
+        "Analyze Balance Sheets",
+        "Understand Cash Flow Statements",
+        "Know why profit ≠ cash",
+        "Understand statement linkages"
+      ],
+      "depth": "detailed with real company examples"
+    },
+    {
+      "number": 3,
+      "title": "Financial Ratios & Analysis",
+      "topics": [
+        "Introduction to Ratio Analysis",
+        "Profitability Ratios (ROE, ROA, ROCE, Margins)",
+        "Liquidity Ratios (Current, Quick, Cash)",
+        "Efficiency Ratios (Asset Turnover, Cash Conversion Cycle)",
+        "Leverage Ratios (Debt/Equity, Interest Coverage)",
+        "Valuation Ratios (P/E, P/B, EV/EBITDA, PEG)",
+        "Real-World Analysis: HDFC Bank, ITC, TCS"
+      ],
+      "objectives": [
+        "Calculate and interpret all major ratios",
+        "Compare companies using ratios",
+        "Identify red flags",
+        "Use ratios in investment decisions"
+      ],
+      "depth": "comprehensive with company comparisons"
+    },
+    {
+      "number": 4,
+      "title": "Time Value of Money & Valuation",
+      "topics": [
+        "Time Value of Money Fundamentals",
+        "Present Value & Future Value Calculations",
+        "Discount Rate & Opportunity Cost",
+        "DCF (Discounted Cash Flow) Model",
+        "WACC Calculation",
+        "Relative Valuation Methods",
+        "Terminal Value",
+        "Case Study: Valuing Infosys Using DCF"
+      ],
+      "objectives": [
+        "Master TVM concepts",
+        "Build DCF models",
+        "Calculate WACC",
+        "Value companies using multiple methods"
+      ],
+      "depth": "detailed with step-by-step DCF"
+    },
+    {
+      "number": 5,
+      "title": "Equity Markets & Investment Basics",
+      "topics": [
+        "Understanding Stocks, Bonds, Mutual Funds, ETFs",
+        "Primary vs Secondary Markets",
+        "IPO Process (Zomato IPO Case Study)",
+        "Stock Market Indices (Sensex, Nifty)",
+        "Risk, Return, Diversification, Beta",
+        "Role of SEBI and Market Regulation",
+        "Market Participants and Their Roles"
+      ],
+      "objectives": [
+        "Understand different securities",
+        "Know how markets function",
+        "Understand risk-return tradeoff",
+        "Learn about market regulations"
+      ],
+      "depth": "comprehensive with real IPO case study"
+    },
+    {
+      "number": 6,
+      "title": "Equity Research Process",
+      "topics": [
+        "What is Equity Research?",
+        "Buy-Side vs Sell-Side Research",
+        "Industry Analysis Frameworks (Porter's 5 Forces, SWOT)",
+        "Company Analysis Step-by-Step",
+        "Revenue & Margin Forecasting",
+        "Building a Simple Equity Model",
+        "Writing an Equity Research Note",
+        "Research Report Structure"
+      ],
+      "objectives": [
+        "Understand ER process",
+        "Analyze industries systematically",
+        "Forecast company financials",
+        "Write research reports"
+      ],
+      "depth": "practical with frameworks"
+    },
+    {
+      "number": 7,
+      "title": "Corporate Finance Fundamentals",
+      "topics": [
+        "Capital Structure Theory (Debt vs Equity)",
+        "Cost of Capital (WACC, Cost of Equity, Cost of Debt)",
+        "Capital Budgeting (NPV, IRR, Payback Period)",
+        "Dividend Policy",
+        "Working Capital Management",
+        "Mergers & Acquisitions Basics",
+        "Indian Corporate Examples"
+      ],
+      "objectives": [
+        "Understand capital structure decisions",
+        "Calculate cost of capital",
+        "Evaluate investment projects",
+        "Understand dividend policies"
+      ],
+      "depth": "comprehensive with Indian examples"
+    },
+    {
+      "number": 8,
+      "title": "Interview Readiness & Finance Fluency",
+      "topics": [
+        "Common Interview Questions (50+)",
+        "Tell Me About Yourself (Finance Version for Nakul)",
+        "Technical Questions & Model Answers",
+        "Behavioral Questions & STAR Method",
+        "Converting AI/Analytics Background into Finance Strengths",
+        "Quick Revision Sheets",
+        "Mock Interview Practice"
+      ],
+      "objectives": [
+        "Master 50+ technical Q&A",
+        "Craft personalized interview answers",
+        "Handle behavioral questions",
+        "Position background as strength"
+      ],
+      "depth": "highly personalized to Nakul's background"
+    }
+  ],
+  "resources": {
+    "primary_institutions": [
+      "NISM (National Institute of Securities Markets)",
+      "SEBI Investor Education Portal",
+      "RBI Handbook of Statistics",
+      "BSE/NSE Training Modules"
+    ],
+    "companies_for_examples": [
+      "Infosys",
+      "TCS",
+      "HDFC Bank",
+      "ICICI Bank",
+      "ITC Limited",
+      "Reliance Industries",
+      "Asian Paints",
+      "Titan Company",
+      "Maruti Suzuki",
+      "Bharti Airtel",
+      "Zomato"
+    ],
+    "data_sources": [
+      "Company Annual Reports (investor relations pages)",
+      "Screener.in (for financial data)",
+      "MoneyControl (for news and data)",
+      "NSE/BSE websites (for market data)"
+    ],
+    "learning_resources": [
+      "NISM Certifications (Series I-A, V-A, X-A, XV)",
+      "SEBI SCORES (investor complaints and education)",
+      "RBI publications on banking and finance",
+      "Company investor presentations"
+    ]
+  },
+  "style": {
+    "tone": "mentor-like, encouraging, personal",
+    "complexity": "beginner-friendly but comprehensive",
+    "personalization": "high - connect every concept to Nakul's background",
+    "examples": "Indian market context with real companies",
+    "practice_orientation": "hands-on exercises with real data",
+    "interview_focus": "strong - prepare for actual interviews"
+  },
+  "deliverables": {
+    "format": "Single comprehensive HTML file",
+    "size": "150KB+ (comprehensive content)",
+    "sections": [
+      "About section (personalized intro)",
+      "8 detailed modules",
+      "Complete glossary (100+ terms)",
+      "12-week personalized study roadmap",
+      "Footer with next steps"
+    ],
+    "features": [
+      "Professional gradient styling",
+      "Sticky navigation",
+      "Color-coded sections (concept/example/interview/practice boxes)",
+      "Responsive tables",
+      "Formula code blocks",
+      "Print-friendly formatting",
+      "Checkpoint quizzes"
+    ]
+  },
+  "personalization_guidelines": {
+    "interview_speak_format": "Connect Nakul's SoulSage experience (AI automation, ROI tracking, campaign analytics) to finance concepts in every interview answer",
+    "strength_positioning": "Position his technical/analytical background as advantage in modern data-driven finance",
+    "example_integration": "When explaining concepts, reference how similar thinking applied at SoulSage (e.g., CAC analysis = cost analysis, LTV projections = DCF thinking)",
+    "career_narrative": "Frame transition from Industrial Engineering + Marketing Analytics to Finance as natural progression leveraging analytical skills"
+  },
+  "quality_checklist": [
+    "All information verified from NISM/SEBI/RBI/Company sources",
+    "Every module has real Indian company examples",
+    "Every concept has 'Interview Speak for Nakul' section",
+    "Practice tasks use real companies (accessible via Screener.in)",
+    "Glossary includes all technical terms used",
+    "Roadmap is realistic for 12-week timeline",
+    "HTML is properly formatted and print-ready",
+    "File size indicates comprehensive content (150KB+)"
+  ],
+  "output_path": "/mnt/e/AI and Projects/MMS-Prep/generated/Finance_Mastery_Manual.html"
+}

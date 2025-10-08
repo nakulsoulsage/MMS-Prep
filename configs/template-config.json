@@ -1,0 +1,125 @@
+{
+  "topic": "Your Topic Name Here",
+  "student": {
+    "name": "Your Full Name",
+    "program": "MMS/MBA [Specialization]",
+    "college": "Your College Name",
+    "location": "City",
+    "year": "Start Year - End Year",
+    "background": {
+      "strengths": [
+        "Your Key Skill 1",
+        "Your Key Skill 2",
+        "Your Key Skill 3",
+        "Your Key Skill 4"
+      ],
+      "experience": "Brief description of your relevant work experience (company, role, key achievements)",
+      "previous_education": "Your undergraduate degree and college",
+      "technical_skills": ["Skill 1", "Skill 2", "Skill 3"],
+      "certifications": ["Certification 1", "Certification 2"]
+    }
+  },
+  "target": {
+    "goal": "Your Target Goal (e.g., Summer Internship 2026)",
+    "roles": ["Target Role 1", "Target Role 2", "Target Role 3"],
+    "companies_type": ["Type of companies you're targeting"],
+    "preparation_timeline": "Number of weeks (recommended: 8-12)"
+  },
+  "modules": [
+    {
+      "number": 1,
+      "title": "Module 1 Title",
+      "topics": [
+        "Topic 1.1",
+        "Topic 1.2",
+        "Topic 1.3",
+        "Topic 1.4"
+      ],
+      "objectives": [
+        "Learning objective 1",
+        "Learning objective 2",
+        "Learning objective 3"
+      ],
+      "depth": "beginner/intermediate/advanced"
+    },
+    {
+      "number": 2,
+      "title": "Module 2 Title",
+      "topics": [
+        "Topic 2.1",
+        "Topic 2.2",
+        "Topic 2.3"
+      ],
+      "objectives": [
+        "Learning objective 1",
+        "Learning objective 2"
+      ],
+      "depth": "detailed with real company examples"
+    }
+  ],
+  "resources": {
+    "primary_institutions": [
+      "Official Institution 1",
+      "Official Institution 2",
+      "Regulatory Body if applicable"
+    ],
+    "companies_for_examples": [
+      "Well-known Company 1 in your field",
+      "Well-known Company 2",
+      "Well-known Company 3"
+    ],
+    "data_sources": [
+      "Where you can get data (e.g., company websites, reports)",
+      "Public databases or platforms"
+    ],
+    "learning_resources": [
+      "Online courses or certifications",
+      "Books or publications"
+    ]
+  },
+  "style": {
+    "tone": "mentor-like, encouraging, personal",
+    "complexity": "beginner-friendly but comprehensive",
+    "personalization": "high - connect every concept to your background",
+    "examples": "Use local/regional context relevant to your market",
+    "practice_orientation": "hands-on exercises with real data",
+    "interview_focus": "strong - prepare for actual interviews"
+  },
+  "deliverables": {
+    "format": "Single comprehensive HTML file",
+    "size": "150KB+ (comprehensive content)",
+    "sections": [
+      "About section (personalized intro)",
+      "8 detailed modules (or customize number)",
+      "Complete glossary (100+ terms)",
+      "Personalized study roadmap (timeline weeks)",
+      "Footer with next steps"
+    ],
+    "features": [
+      "Professional gradient styling",
+      "Sticky navigation",
+      "Color-coded sections",
+      "Responsive tables",
+      "Formula code blocks",
+      "Print-friendly formatting",
+      "Checkpoint quizzes"
+    ]
+  },
+  "personalization_guidelines": {
+    "interview_speak_format": "Connect your specific experience to concepts in every interview answer",
+    "strength_positioning": "Position your background as advantage in this new field",
+    "example_integration": "Reference how similar thinking from your experience applies",
+    "career_narrative": "Frame your transition as natural progression leveraging your skills"
+  },
+  "quality_checklist": [
+    "All information from verified trusted sources",
+    "Every module has real examples",
+    "Every concept has 'Interview Speak for [Your Name]' section",
+    "Practice tasks use accessible real data",
+    "Glossary includes all technical terms",
+    "Roadmap is realistic for your timeline",
+    "HTML properly formatted and print-ready",
+    "File size indicates comprehensive content"
+  ],
+  "output_path": "/mnt/e/AI and Projects/MMS-Prep/generated/YourTopic_Complete_Guide.html"
+}

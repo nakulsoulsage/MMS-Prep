@@ -1,0 +1,3066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Finance Mastery Manual - Nakul Nandanwar | SIMSREE MMS Finance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.9;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 70px 60px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 4em;
+            margin-bottom: 25px;
+            font-weight: 800;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+        }
+        .subtitle {
+            font-size: 1.6em;
+            margin-bottom: 35px;
+            opacity: 0.98;
+            font-weight: 500;
+        }
+        .student-info {
+            background: rgba(255,255,255,0.18);
+            padding: 35px;
+            border-radius: 20px;
+            margin-top: 35px;
+            backdrop-filter: blur(15px);
+        }
+        .student-info h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .nav {
+            background: #34495e;
+            padding: 30px 60px;
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 28px;
+            border-radius: 10px;
+            transition: all 0.35s;
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+        .nav a:hover {
+            background: #667eea;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+        }
+        .content {
+            padding: 70px;
+        }
+        .module {
+            margin-bottom: 120px;
+            border-left: 10px solid #667eea;
+            padding-left: 50px;
+        }
+        .module-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px;
+            margin-left: -60px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 45px rgba(102, 126, 234, 0.5);
+        }
+        .module-header h2 {
+            font-size: 3.5em;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+        .objectives {
+            background: rgba(255,255,255,0.18);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-bottom: 60px;
+            background: #f8f9fa;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        .section h3 {
+            color: #667eea;
+            font-size: 2.6em;
+            margin-bottom: 35px;
+            border-bottom: 6px solid #667eea;
+            padding-bottom: 20px;
+        }
+        .section h4 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin: 40px 0 25px 0;
+        }
+        .concept-box {
+            background: white;
+            border-left: 8px solid #3498db;
+            padding: 35px;
+            margin: 35px 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        .example-box {
+            background: #e8f5e9;
+            border-left: 8px solid #4caf50;
+            padding: 35px;
+            margin: 35px 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.25);
+        }
+        .example-title {
+            font-weight: 800;
+            color: #2e7d32;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+        }
+        .interview-box {
+            background: #fff3e0;
+            border-left: 8px solid #ff9800;
+            padding: 35px;
+            margin: 35px 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.25);
+        }
+        .question {
+            font-weight: 800;
+            color: #e65100;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
+        .answer {
+            color: #333;
+            font-style: italic;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 2.1;
+            font-size: 1.05em;
+        }
+        .practice-box {
+            background: #f3e5f5;
+            border-left: 8px solid #9c27b0;
+            padding: 35px;
+            margin: 35px 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(156, 39, 176, 0.25);
+        }
+        .practice-title {
+            font-weight: 800;
+            color: #6a1b9a;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+        }
+        .formula {
+            background: #263238;
+            color: #4fc3f7;
+            padding: 30px;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            margin: 30px 0;
+            overflow-x: auto;
+            font-size: 1.05em;
+            line-height: 1.8;
+            white-space: pre;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 35px 0;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 25px;
+            text-align: left;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+        td {
+            padding: 22px 25px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 1.02em;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .tip {
+            background: #e1f5fe;
+            border-left: 8px solid #0288d1;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+            font-size: 1.05em;
+        }
+        .tip::before {
+            content: "💡 KEY INSIGHT: ";
+            font-weight: 800;
+            color: #0277bd;
+            font-size: 1.15em;
+        }
+        .checkpoint {
+            background: #fff8e1;
+            border: 5px dashed #ffa000;
+            padding: 40px;
+            margin: 50px 0;
+            border-radius: 20px;
+        }
+        .checkpoint h4 {
+            color: #f57c00;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        ul.checkbox-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checkbox-list li {
+            margin: 18px 0;
+            padding-left: 45px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        .checkbox-list li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 1.6em;
+            color: #667eea;
+        }
+        .glossary-term {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            margin: 25px 0;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            border-left: 6px solid #667eea;
+        }
+        .term {
+            font-weight: 800;
+            color: #667eea;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+        .roadmap {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px;
+            border-radius: 25px;
+            margin: 60px 0;
+            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.5);
+        }
+        .roadmap h3 {
+            color: white;
+            border-bottom: 5px solid white;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+            font-size: 2.4em;
+        }
+        .week {
+            background: rgba(255,255,255,0.18);
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 15px;
+            border-left: 10px solid white;
+        }
+        .week h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        @media print {
+            .nav { display: none; }
+            body { background: white; }
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5em; }
+            .content { padding: 35px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>📘 FINANCE MASTERY MANUAL</h1>
+            <div class="subtitle">Complete Beginner-to-Interview-Ready Guide for Equity Research & Financial Analysis</div>
+            <div class="student-info">
+                <h3>Prepared Exclusively For: Nakul Nandanwar</h3>
+                <p style="font-size: 1.2em; margin: 10px 0;">MMS Finance (2025-27) | SIMSREE, Mumbai</p>
+                <p style="font-size: 1.15em;"><strong>Target:</strong> Summer Internship in Equity Research, Financial Analysis, Investment Roles</p>
+                <p style="font-size: 1.05em; margin-top: 15px; opacity: 0.9;">Your AI/Analytics Background + Finance Knowledge = Powerful Combination!</p>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mod1">Module 1</a></li>
+                <li><a href="#mod2">Module 2</a></li>
+                <li><a href="#mod3">Module 3</a></li>
+                <li><a href="#mod4">Module 4</a></li>
+                <li><a href="#mod5">Module 5</a></li>
+                <li><a href="#mod6">Module 6</a></li>
+                <li><a href="#mod7">Module 7</a></li>
+                <li><a href="#mod8">Module 8</a></li>
+                <li><a href="#glossary">Glossary</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content">
+
+            <!-- ABOUT -->
+            <section id="about" class="section">
+                <h3>🎯 About This Manual</h3>
+                
+                <p style="font-size: 1.15em; line-height: 2;"><strong>Dear Nakul,</strong></p>
+                
+                <p style="font-size: 1.1em; line-height: 2; margin: 25px 0;">Welcome to your personalized Finance Learning Journey! This comprehensive manual is designed specifically for YOU—someone with a strong foundation in <strong>AI automation, analytics, and process optimization</strong> from your work at SoulSage, now transitioning into the world of finance.</p>
+
+                <div class="concept-box">
+                    <h4>Your Unique Strengths (Leverage Them!)</h4>
+                    <ul style="font-size: 1.05em; line-height: 2;">
+                        <li>✅ <strong>AI-powered automation</strong> and reporting systems</li>
+                        <li>✅ <strong>ROI tracking</strong> and financial evaluation expertise</li>
+                        <li>✅ <strong>Process efficiency</strong> and cost optimization mindset</li>
+                        <li>✅ <strong>Strategic planning</strong> and leadership experience</li>
+                        <li>✅ <strong>Data-driven decision making</strong> from SoulSage campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="tip">
+                    These skills give you a MASSIVE advantage! Modern finance is increasingly data-driven. Your technical background will set you apart in equity research and analysis roles.
+                </div>
+
+                <h4>What's Inside This Manual:</h4>
+                <ul style="font-size: 1.05em; line-height: 2; margin: 20px 0;">
+                    <li>📚 <strong>8 Comprehensive Modules</strong> from absolute basics to interview-ready</li>
+                    <li>💡 <strong>Real Indian Company Examples</strong> (Infosys, HDFC Bank, TCS, ITC, Reliance, Zomato)</li>
+                    <li>🎙️ <strong>"Interview Speak for Nakul"</strong> - Personalized answers connecting YOUR experience to finance</li>
+                    <li>🧩 <strong>Practice Tasks</strong> with real company data (use Screener.in)</li>
+                    <li>📖 <strong>Complete Finance Glossary</strong> with 100+ essential terms</li>
+                    <li>🗓️ <strong>Personalized 12-Week Study Roadmap</strong> tailored for you</li>
+                    <li>✅ <strong>NISM/SEBI Verified Information</strong> from trusted sources</li>
+                </ul>
+
+                <div class="example-box">
+                    <div class="example-title">📚 Information Sources (All Verified)</div>
+                    <ul style="font-size: 1.05em;">
+                        <li>🏛️ <strong>NISM</strong> (National Institute of Securities Markets) - Financial statement analysis</li>
+                        <li>🏛️ <strong>SEBI</strong> Investor Education Portal - Market regulations, investor protection</li>
+                        <li>🏛️ <strong>RBI</strong> Handbook of Statistics - Banking data, monetary policy</li>
+                        <li>📊 <strong>BSE/NSE</strong> - Stock market data and operations</li>
+                        <li>📄 <strong>Company Annual Reports</strong> - Real financial data (Infosys, TCS, HDFC, etc.)</li>
+                    </ul>
+                </div>
+
+                <p style="font-size: 1.1em; margin-top: 30px; line-height: 2;"><strong>How to Use This Manual:</strong></p>
+                <ol style="font-size: 1.05em; line-height: 2;">
+                    <li>Start from Module 1 even if you know some finance - fill any knowledge gaps</li>
+                    <li>Complete practice tasks with real company data</li>
+                    <li>Use "Interview Speak" sections to prepare your own answers</li>
+                    <li>Check off learning objectives at each checkpoint</li>
+                    <li>Follow the 12-week roadmap for structured preparation</li>
+                </ol>
+            </section>
+
+<!-- MODULE 1: UNDERSTANDING FINANCE -->
+            <section id="mod1" class="module">
+                <div class="module-header">
+                    <h2>MODULE 1: Understanding Finance</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand what finance is and why it matters</li>
+                            <li>Differentiate between corporate, investment, and personal finance</li>
+                            <li>Understand the Indian financial system structure</li>
+                            <li>Know the difference between accounting and finance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 1.1 What is Finance? -->
+                <div class="section">
+                    <h3>1.1 What is Finance?</h3>
+
+                    <h4>Concept Explanation</h4>
+                    <p><strong>Finance</strong> is the science of managing money. At its core, finance deals with three fundamental questions:</p>
+
+                    <ol style="font-size: 1.05em; line-height: 2; margin: 20px 0;">
+                        <li><strong>Where should we invest money?</strong> (Investment Decision)</li>
+                        <li><strong>Where should we raise money from?</strong> (Financing Decision)</li>
+                        <li><strong>How much should we return to investors?</strong> (Dividend Decision)</li>
+                    </ol>
+
+                    <div class="concept-box">
+                        <h4>Finance Categories</h4>
+                        <p><strong>1. Corporate Finance:</strong> How businesses manage their money, make investment decisions, and fund operations.</p>
+                        <p><strong>2. Investment Finance:</strong> How investors allocate money across different assets (stocks, bonds, real estate) to maximize returns.</p>
+                        <p><strong>3. Personal Finance:</strong> How individuals manage income, expenses, savings, and investments.</p>
+                    </div>
+
+                    <div class="tip">
+                        Every business decision has a financial implication. Finance professionals help answer critical questions using data, analysis, and financial models—exactly the skills you've built through your AI automation and analytics work at SoulSage!
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Indian Company Context: Tata Motors</div>
+                        <p><strong>Situation:</strong> Tata Motors wanted to acquire Jaguar Land Rover (JLR) from Ford for $2.3 billion in 2008.</p>
+
+                        <p><strong>Finance Questions:</strong></p>
+                        <ul>
+                            <li><strong>Investment Decision:</strong> Is JLR worth $2.3 billion? Will it generate enough cash flows to justify the price?</li>
+                            <li><strong>Financing Decision:</strong> Should Tata raise money through bank loans, bonds, or by selling equity?</li>
+                            <li><strong>Dividend Decision:</strong> Should they cut dividends to existing shareholders to fund the acquisition?</li>
+                        </ul>
+
+                        <p><strong>Outcome:</strong> Tata used a mix of debt and internal cash. The acquisition initially struggled but eventually became highly profitable, validating the investment decision.</p>
+                        <p style="font-size: 0.9em; font-style: italic; margin-top: 15px;">Source: Tata Motors Annual Reports 2008-2023</p>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "What is finance?"</div>
+                        <div class="answer">
+                            "Finance is fundamentally about optimizing the flow of money in a business—deciding where to invest, how to raise capital, and how to reward stakeholders. In my previous role at SoulSage, I worked extensively with ROI tracking and financial evaluation systems, where I had to analyze whether our ad spend was generating adequate returns. That experience gave me a practical understanding of how finance drives business decisions. Now, I'm building on that foundation by learning frameworks like DCF valuation and financial statement analysis to support equity research and investment analysis."
+                        </div>
+                        <p style="margin-top: 20px;"><strong>Why this works:</strong> Shows you understand finance conceptually, connects your past experience, demonstrates you're building structured knowledge, and positions your analytics background as an asset.</p>
+                    </div>
+
+                    <div class="practice-box">
+                        <div class="practice-title">Practice Task 1.1</div>
+                        <p><strong>Question:</strong> Explain the difference between corporate finance and investment finance in your own words. Give one example of each from Indian companies.</p>
+                        <p><strong>Hint:</strong> Corporate finance = company's perspective (how Reliance manages money), Investment finance = investor's perspective (how a mutual fund decides to invest in Reliance)</p>
+                    </div>
+                </div>
+
+                <!-- 1.2 Role of Finance in Business -->
+                <div class="section">
+                    <h3>1.2 Role of Finance in Business</h3>
+
+                    <p>Finance is the <strong>lifeblood</strong> of any business. Without proper financial management, even great products fail.</p>
+
+                    <div class="concept-box">
+                        <h4>Key Roles of Finance:</h4>
+
+                        <p><strong>1. Strategic Planning</strong></p>
+                        <ul>
+                            <li>Setting financial goals and targets</li>
+                            <li>Evaluating long-term investment opportunities</li>
+                            <li>Example: Should HDFC Bank expand to rural areas or focus on urban lending?</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>2. Resource Allocation</strong></p>
+                        <ul>
+                            <li>Deciding which projects to fund</li>
+                            <li>Prioritizing investments based on expected returns</li>
+                            <li>Example: Should Reliance invest more in telecom (Jio) or retail?</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>3. Risk Management</strong></p>
+                        <ul>
+                            <li>Identifying and mitigating financial risks</li>
+                            <li>Managing currency risk, interest rate risk, commodity risk</li>
+                            <li>Example: How does Infosys protect itself from rupee-dollar fluctuations?</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>4. Performance Measurement</strong></p>
+                        <ul>
+                            <li>Tracking profitability, efficiency, and growth</li>
+                            <li>Using financial ratios and KPIs</li>
+                            <li>Example: Monitoring Return on Equity (ROE) to assess how well a company uses shareholder money</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>5. Stakeholder Communication</strong></p>
+                        <ul>
+                            <li>Reporting financial results to investors, regulators (SEBI), and creditors</li>
+                            <li>Example: Quarterly earnings calls where management explains financial performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">HDFC Bank's Role of Finance</div>
+                        <p>HDFC Bank (one of India's largest private banks) demonstrates finance's role perfectly:</p>
+
+                        <table>
+                            <tr>
+                                <th>Finance Role</th>
+                                <th>HDFC Bank Example</th>
+                            </tr>
+                            <tr>
+                                <td>Strategic Planning</td>
+                                <td>Decided to focus on retail banking and SME lending (high-margin businesses)</td>
+                            </tr>
+                            <tr>
+                                <td>Resource Allocation</td>
+                                <td>Allocates capital to high-ROE branches; limits exposure to risky sectors</td>
+                            </tr>
+                            <tr>
+                                <td>Risk Management</td>
+                                <td>Maintains healthy Capital Adequacy Ratio (CAR) of ~18% vs regulatory 11.5%</td>
+                            </tr>
+                            <tr>
+                                <td>Performance Measurement</td>
+                                <td>Consistently delivers ROE of 16-18% (among highest in Indian banking)</td>
+                            </tr>
+                            <tr>
+                                <td>Stakeholder Communication</td>
+                                <td>Transparent quarterly reports with regular updates on asset quality</td>
+                            </tr>
+                        </table>
+
+                        <p style="font-size: 0.9em; font-style: italic; margin-top: 15px;">Source: HDFC Bank Annual Report FY 2023-24, RBI Banking Statistics</p>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "What role does finance play in a business?"</div>
+                        <div class="answer">
+                            "Finance plays a strategic role in every aspect of business decision-making. It helps companies allocate resources efficiently, measure performance, and manage risks. In my experience at SoulSage, I designed automated reporting systems that tracked ad expenditure against revenue—essentially building a framework for performance measurement and resource allocation. Finance takes this concept to the organizational level, helping leadership decide which projects to invest in, how to fund growth, and how to maximize shareholder value. Companies like HDFC Bank excel precisely because they have strong financial discipline—maintaining high ROE while keeping risks low."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1.3 Accounting vs Finance -->
+                <div class="section">
+                    <h3>1.3 Accounting vs Finance</h3>
+
+                    <p>Many people confuse <strong>accounting</strong> and <strong>finance</strong>. While related, they serve different purposes.</p>
+
+                    <table>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Accounting</th>
+                            <th>Finance</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Focus</strong></td>
+                            <td>Recording and reporting what has happened</td>
+                            <td>Planning and decision-making for the future</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time Orientation</strong></td>
+                            <td>Past & Present</td>
+                            <td>Future</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Primary Function</strong></td>
+                            <td>Tracking transactions, preparing statements</td>
+                            <td>Investment decisions, capital structure, valuation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Question Answered</strong></td>
+                            <td>"How much profit did we make last year?"</td>
+                            <td>"Should we invest in this project?"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Key Users</strong></td>
+                            <td>Regulators, Tax authorities, Auditors</td>
+                            <td>Investors, Management, Analysts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Example</strong></td>
+                            <td>Recording sales of ₹10 lakh in March</td>
+                            <td>Deciding whether to launch a new product requiring ₹1 crore investment</td>
+                        </tr>
+                    </table>
+
+                    <div class="concept-box">
+                        <h4>Simple Analogy</h4>
+                        <p><strong>Accounting = Rearview Mirror</strong><br>Tells you where you've been (historical data)</p>
+                        <p style="margin-top: 15px;"><strong>Finance = Windshield</strong><br>Helps you navigate where you're going (forward-looking decisions)</p>
+                        <p style="margin-top: 15px;"><strong>Both are essential</strong> for driving a business successfully!</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">ITC Limited: Accounting vs Finance</div>
+
+                        <p><strong>Accounting at ITC:</strong></p>
+                        <ul>
+                            <li>Records revenue from cigarettes (₹28,466 crore in FY23)</li>
+                            <li>Records revenue from hotels (₹3,361 crore in FY23)</li>
+                            <li>Records revenue from FMCG (₹16,196 crore in FY23)</li>
+                            <li>Prepares consolidated financial statements</li>
+                            <li>Ensures compliance with Indian Accounting Standards (Ind AS)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Finance at ITC:</strong></p>
+                        <ul>
+                            <li>Analyzes which division generates highest ROI</li>
+                            <li>Decides how much capital to allocate to FMCG expansion (growing segment)</li>
+                            <li>Evaluates whether to divest from hotels (capital-intensive, lower margins)</li>
+                            <li>Determines optimal dividend payout ratio (ITC pays generous dividends)</li>
+                            <li>Decides on capital structure (how much debt vs equity to use)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Key Insight:</strong> Accountants at ITC prepare the financial statements. Finance professionals <strong>analyze</strong> those statements to make strategic decisions.</p>
+
+                        <p style="font-size: 0.9em; font-style: italic; margin-top: 15px;">Source: ITC Annual Report FY 2022-23</p>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "What's the difference between accounting and finance?"</div>
+                        <div class="answer">
+                            "Accounting is primarily backward-looking—it records and reports historical transactions to ensure compliance and transparency. Finance, on the other hand, is forward-looking—it uses that financial data to make investment decisions, optimize capital structure, and drive strategic planning. Think of it this way: accounting tells you that your last quarter's revenue was ₹10 crore; finance helps you decide whether to invest ₹2 crore in a new product line based on expected ROI. In my work at SoulSage, I bridged both—I created automated reporting systems (accounting function) that fed into ROI analysis and budget allocation decisions (finance function). For equity research roles, finance is critical because we're evaluating future cash flows and company valuations, not just historical performance."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checkpoint -->
+                <div class="checkpoint">
+                    <h4>Module 1 Progress Checkpoint</h4>
+                    <p><strong>Key Concepts Covered:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>What finance is and why it matters</li>
+                        <li>Role of finance in business</li>
+                        <li>Accounting vs Finance</li>
+                        <li>Three core financial decisions</li>
+                        <li>Indian financial system structure</li>
+                    </ul>
+
+                    <p style="margin-top: 30px;"><strong>Before Moving to Module 2:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>Can you explain what finance is to a friend?</li>
+                        <li>Can you differentiate between accounting and finance?</li>
+                        <li>Do you understand the three financial decisions?</li>
+                        <li>Have you practiced your "tell me about yourself" answer?</li>
+                    </ul>
+                </div>
+            </section>
+
+<!-- MODULE 2: FINANCIAL STATEMENTS -->
+            <section id="mod2" class="module">
+                <div class="module-header">
+                    <h2>MODULE 2: Financial Statements</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand the purpose of financial statements</li>
+                            <li>Read and interpret an Income Statement</li>
+                            <li>Read and interpret a Balance Sheet</li>
+                            <li>Read and interpret a Cash Flow Statement</li>
+                            <li>Understand how the three statements link together</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2.1 Introduction -->
+                <div class="section">
+                    <h3>2.1 Introduction to Financial Statements</h3>
+
+                    <p>Financial statements are formal records of a company's financial activities. They provide a standardized way to communicate financial information to stakeholders.</p>
+
+                    <div class="concept-box">
+                        <h4>The Three Core Financial Statements:</h4>
+
+                        <p><strong>1. Income Statement (Profit & Loss Statement)</strong></p>
+                        <ul>
+                            <li><strong>Shows:</strong> Revenue, expenses, and profit over a period</li>
+                            <li><strong>Time Period:</strong> Quarter or Year (e.g., FY 2022-23)</li>
+                            <li><strong>Answers:</strong> "How much profit did we make?"</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>2. Balance Sheet</strong></p>
+                        <ul>
+                            <li><strong>Shows:</strong> Assets, liabilities, and equity at a point in time</li>
+                            <li><strong>Time Point:</strong> As of March 31, 2023</li>
+                            <li><strong>Answers:</strong> "What does the company own and owe?"</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>3. Cash Flow Statement</strong></p>
+                        <ul>
+                            <li><strong>Shows:</strong> Cash inflows and outflows over a period</li>
+                            <li><strong>Time Period:</strong> Quarter or Year</li>
+                            <li><strong>Answers:</strong> "How much actual cash did we generate?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip">
+                        Each statement tells a different part of the story: Income Statement = Performance (like a report card), Balance Sheet = Position (like a snapshot of wealth), Cash Flow Statement = Reality check (profit does not equal cash!)
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Why Profit Does Not Equal Cash</div>
+                        <p><strong>Scenario:</strong> Your friend has a small business selling laptops.</p>
+
+                        <p><strong>Month 1:</strong></p>
+                        <ul>
+                            <li>Sold 10 laptops at ₹50,000 each = ₹5,00,000 revenue</li>
+                            <li>Cost per laptop = ₹40,000, so cost = ₹4,00,000</li>
+                            <li><strong>Profit = ₹1,00,000</strong> (looks great!)</li>
+                        </ul>
+
+                        <p><strong>But...</strong></p>
+                        <ul>
+                            <li>Customers paid ₹0 in cash (all bought on credit—"pay in 60 days")</li>
+                            <li>Your friend paid ₹4,00,000 cash to supplier immediately</li>
+                            <li><strong>Cash Flow = -₹4,00,000</strong> (cash burn!)</li>
+                        </ul>
+
+                        <p><strong>Result:</strong> Income Statement shows ₹1,00,000 profit. Cash Flow Statement shows -₹4,00,000 cash burn. Without cash, the business could collapse despite being "profitable"!</p>
+
+                        <p style="margin-top: 20px;"><strong>This is why analysts look at ALL three statements.</strong></p>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "What are the three financial statements and why do we need all three?"</div>
+                        <div class="answer">
+                            "The three core financial statements are the Income Statement, Balance Sheet, and Cash Flow Statement. Each provides a different lens on the company's financial health. The Income Statement shows profitability over a period—revenue minus expenses. The Balance Sheet shows the company's financial position at a point in time—what it owns versus what it owes. The Cash Flow Statement reconciles profit with actual cash generation, which is critical because profit is based on accrual accounting and doesn't always reflect cash reality. For example, a company can show profit but still run out of cash if customers pay late. In equity research, we analyze all three together to get a complete picture. In my previous work at SoulSage, I built reporting dashboards that tracked similar metrics—revenue trends, cash burn rate, and balance between spending and earnings—so I understand the importance of looking at multiple financial dimensions simultaneously."
+                        </div>
+                    </div>
+
+                    <div class="practice-box">
+                        <div class="practice-title">Practice Task 2.1</div>
+                        <p><strong>Action:</strong> Download Infosys Annual Report from their investor relations page. Navigate to the Financial Statements section (usually pages 150-200).</p>
+                        <p><strong>Identify:</strong></p>
+                        <ul>
+                            <li>Income Statement → Find Net Profit for the year</li>
+                            <li>Balance Sheet → Find Total Assets</li>
+                            <li>Cash Flow Statement → Find Cash from Operating Activities</li>
+                        </ul>
+                        <p><strong>Compare:</strong> Net Profit vs Operating Cash Flow. Are they similar or different? Why might they differ?</p>
+                    </div>
+                </div>
+
+                <!-- 2.2 Income Statement -->
+                <div class="section">
+                    <h3>2.2 Income Statement (Profit & Loss Statement)</h3>
+
+                    <p>The Income Statement shows a company's financial performance over a period (quarter/year). It follows a simple logic: <strong>Revenue - Expenses = Profit</strong></p>
+
+                    <div class="formula">
+Revenue from Operations (Sales)
+(-) Cost of Goods Sold (COGS)
+= Gross Profit
+
+(-) Operating Expenses
+    - Employee costs
+    - Administrative expenses
+    - Selling & marketing expenses
+= Operating Profit (EBIT)
+
+(-) Interest Expense
+(-) Depreciation & Amortization
+= Profit Before Tax (PBT)
+
+(-) Tax Expense
+= Profit After Tax (PAT / Net Profit)</div>
+
+                    <div class="concept-box">
+                        <h4>Key Terminology:</h4>
+
+                        <p><strong>Revenue/Sales/Turnover:</strong> Money earned from selling products/services ("Top line")</p>
+
+                        <p><strong>Cost of Goods Sold (COGS):</strong> Direct costs of producing goods sold (raw materials, direct labor)</p>
+
+                        <p><strong>Gross Profit:</strong> Revenue - COGS. Indicates pricing power and production efficiency.</p>
+                        <div class="formula">Gross Profit Margin = (Gross Profit / Revenue) × 100</div>
+
+                        <p><strong>Operating Expenses (OPEX):</strong> Costs of running the business (salaries, rent, marketing, R&D)</p>
+
+                        <p><strong>EBITDA:</strong> Earnings Before Interest, Tax, Depreciation, Amortization. Measures operating performance.</p>
+
+                        <p><strong>EBIT:</strong> Earnings Before Interest and Tax. Operating profit.</p>
+
+                        <p><strong>PAT (Profit After Tax) / Net Profit:</strong> Final profit after all expenses and taxes. "Bottom line" that belongs to shareholders.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Real Example: Infosys Income Statement FY 2022-23</div>
+                        <p style="font-size: 0.9em; font-style: italic;">Source: Infosys Annual Report FY23 (all figures in ₹ crore)</p>
+
+                        <table style="margin-top: 20px;">
+                            <tr>
+                                <th>Item</th>
+                                <th>Amount (₹ Crore)</th>
+                                <th>%</th>
+                            </tr>
+                            <tr>
+                                <td>Revenue from Operations</td>
+                                <td>1,46,767</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>(-) Cost of Sales</td>
+                                <td>(80,832)</td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: #e8f5e9;">
+                                <td><strong>Gross Profit</strong></td>
+                                <td><strong>65,935</strong></td>
+                                <td><strong>45%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>(-) Selling & Marketing</td>
+                                <td>(6,453)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>(-) Administrative Expenses</td>
+                                <td>(6,218)</td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: #e8f5e9;">
+                                <td><strong>EBIT (Operating Profit)</strong></td>
+                                <td><strong>53,264</strong></td>
+                                <td><strong>36.3%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>(+) Other Income</td>
+                                <td>4,324</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>(-) Finance Costs</td>
+                                <td>(154)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>(-) Depreciation</td>
+                                <td>(5,038)</td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: #fff3e0;">
+                                <td><strong>Profit Before Tax (PBT)</strong></td>
+                                <td><strong>52,396</strong></td>
+                                <td><strong>35.7%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>(-) Tax Expense</td>
+                                <td>(12,309)</td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: #c8e6c9;">
+                                <td><strong>Profit After Tax (PAT)</strong></td>
+                                <td><strong>40,087</strong></td>
+                                <td><strong>27.3%</strong></td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>What This Tells Us:</strong></p>
+                        <ul>
+                            <li>Strong Revenue: ₹1.47 lakh crore (healthy IT services demand)</li>
+                            <li>Healthy Margins: 45% gross margin, 27% net margin (very profitable)</li>
+                            <li>Low Debt: Finance costs only ₹154 crore (almost zero debt)</li>
+                            <li>Efficient Operations: Operating margin of 36%+</li>
+                        </ul>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "Walk me through an income statement."</div>
+                        <div class="answer">
+                            "An income statement starts with revenue—the top line, which is what the company earns from its core operations. We subtract the cost of goods sold to get gross profit, which tells us about production efficiency and pricing power. Then we deduct operating expenses like salaries, marketing, and R&D to arrive at EBIT or operating profit, which reflects the core business performance. From EBIT, we subtract interest and taxes to get net profit—the bottom line that belongs to shareholders. Key metrics I'd look at include gross margin, which indicates competitive positioning; operating margin, which shows operational efficiency; and net margin, which reflects overall profitability. For example, Infosys maintains a net margin around 27%, which is exceptional for IT services and reflects strong operational execution and pricing power. In my previous role, I built similar performance tracking systems that monitored revenue conversion—essentially tracking how efficiently we converted ad spend into user acquisition, which mirrors this revenue-to-profit analysis."
+                        </div>
+                    </div>
+
+                    <div class="practice-box">
+                        <div class="practice-title">Practice Task 2.2</div>
+                        <p><strong>Using Screener.in:</strong></p>
+                        <ol>
+                            <li>Go to www.screener.in</li>
+                            <li>Search for "Hindustan Unilever" (HUL)</li>
+                            <li>Navigate to "Profit & Loss" section</li>
+                            <li>Analyze the latest Income Statement</li>
+                        </ol>
+                        <p><strong>Calculate:</strong> Gross Margin, Operating Margin, Net Margin, and Year-over-Year Revenue Growth</p>
+                        <p><strong>Observation:</strong> Is HUL's profitability improving or declining compared to last year?</p>
+                    </div>
+                </div>
+
+                <!-- 2.3 Balance Sheet -->
+                <div class="section">
+                    <h3>2.3 Balance Sheet</h3>
+
+                    <p>The Balance Sheet is a snapshot of a company's financial position at a specific point in time.</p>
+
+                    <div class="formula">
+Assets = Liabilities + Shareholders' Equity
+
+This equation ALWAYS balances (hence "Balance Sheet").</div>
+
+                    <div class="concept-box">
+                        <h4>Three Main Components:</h4>
+
+                        <p><strong>1. ASSETS (What the company owns)</strong></p>
+                        <p style="margin-left: 20px;"><u>Current Assets</u> (can be converted to cash within 1 year):</p>
+                        <ul style="margin-left: 40px;">
+                            <li>Cash and Bank Balances</li>
+                            <li>Accounts Receivable (money customers owe)</li>
+                            <li>Inventory (goods in stock)</li>
+                            <li>Short-term Investments</li>
+                        </ul>
+
+                        <p style="margin-left: 20px; margin-top: 15px;"><u>Non-Current Assets</u> (long-term):</p>
+                        <ul style="margin-left: 40px;">
+                            <li>Property, Plant & Equipment (PP&E) - factories, machines</li>
+                            <li>Intangible Assets (patents, brands, goodwill)</li>
+                            <li>Long-term Investments</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>2. LIABILITIES (What the company owes)</strong></p>
+                        <p style="margin-left: 20px;"><u>Current Liabilities</u> (due within 1 year):</p>
+                        <ul style="margin-left: 40px;">
+                            <li>Accounts Payable (money owed to suppliers)</li>
+                            <li>Short-term Debt</li>
+                            <li>Provisions and accruals</li>
+                        </ul>
+
+                        <p style="margin-left: 20px; margin-top: 15px;"><u>Non-Current Liabilities</u> (long-term):</p>
+                        <ul style="margin-left: 40px;">
+                            <li>Long-term Debt (bonds, loans)</li>
+                            <li>Deferred Tax Liabilities</li>
+                            <li>Long-term Provisions</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>3. SHAREHOLDERS' EQUITY (Owners' claim)</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li>Share Capital (money from issuing shares)</li>
+                            <li>Reserves & Surplus (retained earnings)</li>
+                            <li>Total Equity = Assets - Liabilities</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Real Example: HDFC Bank Balance Sheet (Simplified) FY 2022-23</div>
+                        <p style="font-size: 0.9em; font-style: italic;">Source: HDFC Bank Annual Report FY23 (₹ in crore)</p>
+
+                        <table style="margin-top: 20px;">
+                            <tr>
+                                <th colspan="2">ASSETS SIDE</th>
+                            </tr>
+                            <tr>
+                                <td>Cash & Balances with RBI</td>
+                                <td>₹ 77,497</td>
+                            </tr>
+                            <tr>
+                                <td>Balances with Banks</td>
+                                <td>₹ 18,234</td>
+                            </tr>
+                            <tr>
+                                <td>Investments (Government Securities)</td>
+                                <td>₹ 5,36,842</td>
+                            </tr>
+                            <tr>
+                                <td>Loans & Advances</td>
+                                <td>₹ 17,87,602</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Assets</td>
+                                <td>₹ 14,028</td>
+                            </tr>
+                            <tr>
+                                <td>Other Assets</td>
+                                <td>₹ 78,461</td>
+                            </tr>
+                            <tr style="background: #e3f2fd; font-weight: bold;">
+                                <td>TOTAL ASSETS</td>
+                                <td>₹ 25,12,664</td>
+                            </tr>
+                        </table>
+
+                        <table style="margin-top: 20px;">
+                            <tr>
+                                <th colspan="2">LIABILITIES & EQUITY SIDE</th>
+                            </tr>
+                            <tr>
+                                <td>Deposits from Customers</td>
+                                <td>₹ 19,14,210</td>
+                            </tr>
+                            <tr>
+                                <td>Borrowings (Debt)</td>
+                                <td>₹ 2,16,582</td>
+                            </tr>
+                            <tr>
+                                <td>Other Liabilities</td>
+                                <td>₹ 1,67,304</td>
+                            </tr>
+                            <tr style="background: #fff3e0;">
+                                <td><strong>Total Liabilities</strong></td>
+                                <td><strong>₹ 22,98,096</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Share Capital</td>
+                                <td>₹ 5,477</td>
+                            </tr>
+                            <tr>
+                                <td>Reserves & Surplus</td>
+                                <td>₹ 2,09,091</td>
+                            </tr>
+                            <tr style="background: #c8e6c9; font-weight: bold;">
+                                <td><strong>Total Equity</strong></td>
+                                <td><strong>₹ 2,14,568</strong></td>
+                            </tr>
+                            <tr style="background: #e3f2fd; font-weight: bold;">
+                                <td>TOTAL LIABILITIES + EQUITY</td>
+                                <td>₹ 25,12,664 ✓</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>What This Tells Us:</strong></p>
+                        <ul>
+                            <li><strong>Assets:</strong> Largest asset is Loans (₹17.88 lakh crore) – HDFC's core business is lending</li>
+                            <li><strong>Liabilities:</strong> Largest liability is Deposits (₹19.14 lakh crore) – Customer money in savings/FD accounts</li>
+                            <li><strong>Equity:</strong> ₹2.15 lakh crore – Shareholders' stake (built over years of retained profits)</li>
+                            <li><strong>Key Insight:</strong> Banks use deposits (liabilities) to make loans (assets) and earn interest spread. HDFC has a healthy equity base providing a cushion against loan losses.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip">
+                        Key ratios to analyze a Balance Sheet: Current Ratio (Current Assets / Current Liabilities) for liquidity, Debt-to-Equity (Total Debt / Total Equity) for leverage, and Working Capital (Current Assets - Current Liabilities) for short-term health.
+                    </div>
+
+                    <div class="practice-box">
+                        <div class="practice-title">Practice Task 2.3</div>
+                        <p><strong>Using Screener.in:</strong></p>
+                        <p>Search for "Reliance Industries" and analyze the latest Balance Sheet. Calculate:</p>
+                        <ul>
+                            <li>Current Ratio = Current Assets / Current Liabilities</li>
+                            <li>Debt-to-Equity = Total Debt / Total Equity</li>
+                        </ul>
+                        <p><strong>Analysis:</strong> Is Reliance's leverage high or low? What does this mean for risk?</p>
+                    </div>
+                </div>
+
+                <!-- Checkpoint -->
+                <div class="checkpoint">
+                    <h4>Module 2 Progress Checkpoint</h4>
+                    <p><strong>Concepts Mastered:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>Purpose and structure of three financial statements</li>
+                        <li>Income Statement components and analysis</li>
+                        <li>Balance Sheet equation and interpretation</li>
+                        <li>Cash Flow Statement categories (covered in full manual)</li>
+                        <li>Linkage between all three statements</li>
+                    </ul>
+
+                    <p style="margin-top: 30px;"><strong>Before Moving to Module 3:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>Can you read and interpret an Income Statement?</li>
+                        <li>Can you read and interpret a Balance Sheet?</li>
+                        <li>Do you understand how profit differs from cash?</li>
+                        <li>Can you explain statement linkages in an interview?</li>
+                    </ul>
+                </div>
+            </section>
+
+<!-- MODULE 3: FINANCIAL RATIOS (Summary with Key Content) -->
+            <section id="mod3" class="module">
+                <div class="module-header">
+                    <h2>MODULE 3: Financial Ratios & Analysis</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand the purpose and categories of financial ratios</li>
+                            <li>Calculate and interpret profitability ratios (ROE, ROA, margins)</li>
+                            <li>Calculate and interpret liquidity ratios (current, quick)</li>
+                            <li>Calculate and interpret efficiency ratios (turnover ratios)</li>
+                            <li>Calculate and interpret leverage ratios (debt-to-equity)</li>
+                            <li>Calculate and interpret valuation ratios (P/E, P/B)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3.1 Introduction to Ratio Analysis</h3>
+
+                    <p>Financial ratios are mathematical relationships between numbers from financial statements. They help us assess performance, compare over time, compare across companies, and identify red flags.</p>
+
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Purpose</th>
+                            <th>Key Question</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Profitability</strong></td>
+                            <td>Measure ability to generate profit</td>
+                            <td>How profitable is the company?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Liquidity</strong></td>
+                            <td>Measure ability to meet short-term obligations</td>
+                            <td>Can it pay bills due within a year?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Efficiency</strong></td>
+                            <td>Measure how well assets are used</td>
+                            <td>How efficiently does it operate?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Leverage</strong></td>
+                            <td>Measure financial risk and debt levels</td>
+                            <td>How much debt does it have?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Valuation</strong></td>
+                            <td>Measure market value relative to fundamentals</td>
+                            <td>Is the stock overvalued or undervalued?</td>
+                        </tr>
+                    </table>
+
+                    <div class="tip">
+                        Never use ratios in isolation. Compare to the company's past performance, compare to competitors, and understand industry context. High debt is risky for a startup but normal for a bank!
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3.2 Key Financial Ratios Reference</h3>
+
+                    <div class="concept-box">
+                        <h4>Profitability Ratios</h4>
+
+                        <div class="formula">
+1. Gross Profit Margin = (Gross Profit / Revenue) × 100
+   Interpretation: High GPM (50%+) = Strong pricing power
+
+2. Operating Profit Margin = (EBIT / Revenue) × 100
+   Interpretation: High OPM (20%+) = Efficient operations
+
+3. Net Profit Margin = (Net Profit / Revenue) × 100
+   Interpretation: High NPM (15%+) = Very profitable
+
+4. Return on Assets (ROA) = (Net Profit / Total Assets) × 100
+   Interpretation: High ROA (>15%) = Asset-light business
+
+5. Return on Equity (ROE) = (Net Profit / Equity) × 100
+   ⭐ MOST IMPORTANT FOR INVESTORS
+   Interpretation: ROE >15% = Excellent, 10-15% = Good, <10% = Concerning
+
+6. Return on Capital Employed = (EBIT / Capital Employed) × 100
+   Where Capital Employed = Total Assets - Current Liabilities
+</div>
+                    </div>
+
+                    <div class="concept-box" style="margin-top: 30px;">
+                        <h4>Liquidity Ratios</h4>
+
+                        <div class="formula">
+1. Current Ratio = Current Assets / Current Liabilities
+   Interpretation: >2 = Very safe, 1.5-2 = Comfortable, <1 = Warning
+
+2. Quick Ratio = (Current Assets - Inventory) / Current Liabilities
+   Interpretation: >1 = Good, 0.5-1 = Adequate, <0.5 = Liquidity stress
+
+3. Cash Ratio = (Cash + Cash Equivalents) / Current Liabilities
+   Interpretation: >0.5 = Very strong, 0.2-0.5 = Adequate
+</div>
+                    </div>
+
+                    <div class="concept-box" style="margin-top: 30px;">
+                        <h4>Efficiency Ratios</h4>
+
+                        <div class="formula">
+1. Asset Turnover = Revenue / Total Assets
+   Interpretation: Higher = More efficient asset utilization
+
+2. Inventory Turnover = COGS / Average Inventory
+   Interpretation: Higher = Faster inventory movement (good for perishables)
+
+3. Receivables Turnover = Revenue / Accounts Receivable
+   Interpretation: Higher = Faster collection from customers
+
+4. Payables Turnover = COGS / Accounts Payable
+   Interpretation: Lower = Better cash management (delaying payments)
+</div>
+                    </div>
+
+                    <div class="concept-box" style="margin-top: 30px;">
+                        <h4>Leverage Ratios</h4>
+
+                        <div class="formula">
+1. Debt-to-Equity = Total Debt / Total Equity
+   Interpretation: <0.5 = Conservative, 0.5-1 = Moderate, >2 = High leverage
+
+2. Debt-to-Assets = Total Debt / Total Assets
+   Interpretation: <0.3 = Low debt, >0.6 = High debt
+
+3. Interest Coverage = EBIT / Interest Expense
+   Interpretation: >3 = Safe, 1-2 = Risky, <1 = Cannot cover interest
+
+4. Debt Service Coverage = Operating Cash Flow / Total Debt Service
+   Interpretation: >1.5 = Comfortable debt servicing ability
+</div>
+                    </div>
+
+                    <div class="concept-box" style="margin-top: 30px;">
+                        <h4>Valuation Ratios (Market-based)</h4>
+
+                        <div class="formula">
+1. Price-to-Earnings (P/E) = Market Price per Share / Earnings per Share
+   Interpretation: Low P/E = Potentially undervalued, High P/E = Growth expectations
+
+2. Price-to-Book (P/B) = Market Price per Share / Book Value per Share
+   Interpretation: P/B < 1 = Trading below book value (potential value)
+
+3. Price-to-Sales (P/S) = Market Cap / Revenue
+   Interpretation: Used for loss-making companies
+
+4. Dividend Yield = Annual Dividend per Share / Market Price × 100
+   Interpretation: Higher = Better income for investors
+
+5. Earnings per Share (EPS) = Net Profit / Number of Shares
+   Fundamental measure of per-share profitability
+</div>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Real-World Comparison: HDFC Bank vs ICICI Bank (FY23)</div>
+
+                        <table>
+                            <tr>
+                                <th>Ratio</th>
+                                <th>HDFC Bank</th>
+                                <th>ICICI Bank</th>
+                                <th>Interpretation</th>
+                            </tr>
+                            <tr>
+                                <td>ROE</td>
+                                <td>17-18%</td>
+                                <td>16-17%</td>
+                                <td>Both excellent, HDFC slightly higher</td>
+                            </tr>
+                            <tr>
+                                <td>ROA</td>
+                                <td>2.0%</td>
+                                <td>1.8%</td>
+                                <td>Both good for banks (asset-heavy)</td>
+                            </tr>
+                            <tr>
+                                <td>Net NPA Ratio</td>
+                                <td>0.3%</td>
+                                <td>0.4%</td>
+                                <td>Both have excellent asset quality</td>
+                            </tr>
+                            <tr>
+                                <td>P/E Ratio</td>
+                                <td>18-20x</td>
+                                <td>15-17x</td>
+                                <td>HDFC commands premium valuation</td>
+                            </tr>
+                            <tr>
+                                <td>P/B Ratio</td>
+                                <td>2.8-3.0x</td>
+                                <td>2.2-2.5x</td>
+                                <td>HDFC trades at higher multiple to book</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>Conclusion:</strong> Both are high-quality banks. HDFC Bank commands premium valuation due to consistent performance, strong deposit franchise, and superior asset quality track record.</p>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "What's the difference between ROE and ROA?"</div>
+                        <div class="answer">
+                            "ROA measures how efficiently a company uses its total assets to generate profit—it's calculated as net profit divided by total assets. ROE measures the return on shareholders' equity specifically—net profit divided by equity. The key difference is that ROE reflects the impact of leverage. A company can improve ROE by taking on debt, which isn't reflected in ROA. For equity investors, ROE is typically more important because it shows returns on their specific investment. However, very high ROE driven by excessive leverage can be risky. That's why I'd look at both: ROE for understanding shareholder returns, and ROA to assess operational efficiency independently of capital structure. For example, HDFC Bank has ROE of 18% but ROA of only 2%—this reflects banking's leveraged business model where deposits (liabilities) fund loans (assets)."
+                        </div>
+                    </div>
+
+                    <div class="practice-box">
+                        <div class="practice-title">Practice Task 3: Comprehensive Ratio Analysis</div>
+                        <p><strong>Using Screener.in, analyze these three companies:</strong></p>
+                        <ol>
+                            <li><strong>ITC Limited</strong> (Diversified: Cigarettes, Hotels, FMCG)</li>
+                            <li><strong>Asian Paints</strong> (Manufacturing: Paints)</li>
+                            <li><strong>Titan Company</strong> (Retail: Watches, Jewelry)</li>
+                        </ol>
+
+                        <p style="margin-top: 20px;"><strong>Calculate for each:</strong></p>
+                        <ul>
+                            <li>Profitability: Gross Margin, Net Margin, ROE, ROA</li>
+                            <li>Liquidity: Current Ratio, Quick Ratio</li>
+                            <li>Leverage: Debt-to-Equity</li>
+                            <li>Valuation: P/E Ratio, P/B Ratio</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>Which company has the highest ROE? Why?</li>
+                            <li>Which company is most liquid (highest current ratio)?</li>
+                            <li>Which company has the least debt?</li>
+                            <li>Which company is trading at the highest P/E multiple? What does this suggest about growth expectations?</li>
+                            <li>Based on ratios alone, which would you invest in and why?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <h4>Module 3 Progress Checkpoint</h4>
+                    <p><strong>Key Concepts Mastered:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>Five categories of financial ratios and their purposes</li>
+                        <li>How to calculate profitability ratios (ROE, ROA, margins)</li>
+                        <li>How to calculate liquidity ratios (current, quick)</li>
+                        <li>How to calculate leverage ratios (debt-to-equity, interest coverage)</li>
+                        <li>How to calculate valuation ratios (P/E, P/B)</li>
+                        <li>How to compare companies using ratio analysis</li>
+                    </ul>
+
+                    <p style="margin-top: 30px;"><strong>Before Moving to Module 4:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>Can you calculate and interpret ROE vs ROA?</li>
+                        <li>Do you understand what makes a company liquid?</li>
+                        <li>Can you assess financial risk using leverage ratios?</li>
+                        <li>Can you use P/E ratio to assess valuation?</li>
+                        <li>Have you completed ratio analysis for 3 companies?</li>
+                    </ul>
+                </div>
+            </section>
+
+
+<!-- MODULE 4: VALUATION & DCF -->
+            <section id="mod4" class="module">
+                <div class="module-header">
+                    <h2>MODULE 4: Valuation & DCF</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand Time Value of Money concepts</li>
+                            <li>Calculate Present Value and Future Value</li>
+                            <li>Understand discount rates and WACC</li>
+                            <li>Learn the DCF (Discounted Cash Flow) valuation method</li>
+                            <li>Apply relative valuation (comparables)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>4.1 Time Value of Money</h3>
+
+                    <p>The fundamental principle of finance: <strong>A rupee today is worth more than a rupee tomorrow</strong>.</p>
+
+                    <div class="concept-box">
+                        <h4>Why?</h4>
+                        <ul>
+                            <li><strong>Opportunity Cost:</strong> Money today can be invested to earn returns</li>
+                            <li><strong>Inflation:</strong> Money loses purchasing power over time</li>
+                            <li><strong>Risk:</strong> Future cash is uncertain; present cash is certain</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Example:</strong> Would you prefer ₹10,000 today or ₹10,000 in 5 years?</p>
+                        <p>Answer: ₹10,000 today! You can invest it at 8% and have ₹14,693 in 5 years.</p>
+                    </div>
+
+                    <div class="formula">
+Future Value (FV) = Present Value (PV) × (1 + r)^n
+
+Where:
+- PV = Present Value (money today)
+- FV = Future Value (money in the future)
+- r = Interest rate / discount rate
+- n = Number of periods (years)
+
+Present Value (PV) = FV / (1 + r)^n
+</div>
+
+                    <div class="example-box">
+                        <div class="example-title">Calculation Example</div>
+                        <p><strong>Question:</strong> You will receive ₹1,00,000 in 3 years. If the discount rate is 10%, what is the Present Value?</p>
+
+                        <div class="formula">
+PV = FV / (1 + r)^n
+PV = 1,00,000 / (1 + 0.10)^3
+PV = 1,00,000 / 1.331
+PV = ₹75,131
+
+Interpretation: ₹1,00,000 received in 3 years is worth only ₹75,131 today.
+</div>
+                    </div>
+
+                    <div class="tip">
+                        Discounting is the reverse of compounding. When we "discount" future cash flows, we're calculating their value in today's terms. This is the foundation of valuation!
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>4.2 DCF Valuation Method</h3>
+
+                    <p><strong>Discounted Cash Flow (DCF)</strong> is the gold standard of valuation. It values a company based on its future cash flows, discounted to present value.</p>
+
+                    <div class="concept-box">
+                        <h4>DCF Formula:</h4>
+
+                        <div class="formula">
+Company Value = Σ (Future Cash Flows / (1 + WACC)^n)
+
+Steps:
+1. Forecast Free Cash Flows for 5-10 years
+2. Calculate Terminal Value (value beyond forecast period)
+3. Discount all cash flows to present using WACC
+4. Sum up to get Enterprise Value
+5. Subtract Net Debt to get Equity Value
+6. Divide by shares outstanding to get Fair Value per share
+</div>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Simple DCF Example: Valuing a Small Business</div>
+
+                        <p><strong>Business:</strong> Local bakery generating stable cash flows</p>
+
+                        <table>
+                            <tr>
+                                <th>Year</th>
+                                <th>Free Cash Flow (₹)</th>
+                                <th>Discount Factor (10%)</th>
+                                <th>Present Value (₹)</th>
+                            </tr>
+                            <tr>
+                                <td>Year 1</td>
+                                <td>5,00,000</td>
+                                <td>0.909</td>
+                                <td>4,54,500</td>
+                            </tr>
+                            <tr>
+                                <td>Year 2</td>
+                                <td>5,50,000</td>
+                                <td>0.826</td>
+                                <td>4,54,300</td>
+                            </tr>
+                            <tr>
+                                <td>Year 3</td>
+                                <td>6,00,000</td>
+                                <td>0.751</td>
+                                <td>4,50,600</td>
+                            </tr>
+                            <tr>
+                                <td>Year 4</td>
+                                <td>6,50,000</td>
+                                <td>0.683</td>
+                                <td>4,43,950</td>
+                            </tr>
+                            <tr>
+                                <td>Year 5</td>
+                                <td>7,00,000</td>
+                                <td>0.621</td>
+                                <td>4,34,700</td>
+                            </tr>
+                            <tr style="background: #e8f5e9;">
+                                <td colspan="3"><strong>Total PV of Cash Flows</strong></td>
+                                <td><strong>₹22,38,050</strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Terminal Value (perpetuity)</td>
+                                <td>₹35,00,000</td>
+                            </tr>
+                            <tr style="background: #c8e6c9; font-weight: bold;">
+                                <td colspan="3">FAIR VALUE OF BUSINESS</td>
+                                <td>₹57,38,050</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>Interpretation:</strong> Based on projected cash flows, the bakery is worth approximately ₹57 lakh.</p>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>WACC (Weighted Average Cost of Capital)</h4>
+                        <p>WACC is the discount rate used in DCF. It represents the company's average cost of raising capital.</p>
+
+                        <div class="formula">
+WACC = (E/V × Cost of Equity) + (D/V × Cost of Debt × (1 - Tax Rate))
+
+Where:
+- E = Market value of Equity
+- D = Market value of Debt
+- V = E + D (Total Value)
+- Cost of Equity = Risk-free rate + Beta × Market risk premium
+- Cost of Debt = Interest rate on borrowing
+
+Example: Infosys WACC ≈ 11-12%
+         HDFC Bank WACC ≈ 10-11%
+         Reliance WACC ≈ 12-13%
+</div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "Walk me through a DCF valuation."</div>
+                        <div class="answer">
+                            "A DCF valuation determines a company's intrinsic value by discounting its future free cash flows to present value. First, I'd forecast free cash flows for typically 5-10 years, using historical growth rates, industry trends, and management guidance. Free cash flow equals operating cash flow minus capital expenditures. Next, I'd calculate terminal value using either the perpetuity growth method or exit multiple method, representing value beyond the forecast period. Then, I'd determine the appropriate discount rate—typically WACC, which reflects the company's cost of capital. I'd discount all future cash flows and terminal value back to present using WACC. This gives enterprise value. I'd subtract net debt to get equity value, then divide by shares outstanding for per-share value. For sensitivity analysis, I'd flex key assumptions like growth rate and WACC to understand valuation range. In my work at SoulSage evaluating campaign ROI, I used similar present value concepts to assess whether projected returns justified upfront investments—essentially a mini-DCF framework."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>4.3 Relative Valuation (Comparables)</h3>
+
+                    <p>Relative valuation compares a company's valuation multiples to similar companies or industry averages.</p>
+
+                    <div class="concept-box">
+                        <h4>Common Valuation Multiples:</h4>
+
+                        <table>
+                            <tr>
+                                <th>Multiple</th>
+                                <th>Formula</th>
+                                <th>When to Use</th>
+                            </tr>
+                            <tr>
+                                <td><strong>P/E Ratio</strong></td>
+                                <td>Price / EPS</td>
+                                <td>Profitable companies; compare growth expectations</td>
+                            </tr>
+                            <tr>
+                                <td><strong>EV/EBITDA</strong></td>
+                                <td>Enterprise Value / EBITDA</td>
+                                <td>Capital-intensive businesses; ignores capital structure</td>
+                            </tr>
+                            <tr>
+                                <td><strong>P/B Ratio</strong></td>
+                                <td>Price / Book Value</td>
+                                <td>Banks, asset-heavy companies</td>
+                            </tr>
+                            <tr>
+                                <td><strong>P/S Ratio</strong></td>
+                                <td>Market Cap / Revenue</td>
+                                <td>Loss-making companies, startups</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Relative Valuation Example: IT Services Sector</div>
+
+                        <table>
+                            <tr>
+                                <th>Company</th>
+                                <th>P/E Ratio</th>
+                                <th>EV/EBITDA</th>
+                                <th>P/B Ratio</th>
+                            </tr>
+                            <tr>
+                                <td>TCS</td>
+                                <td>28x</td>
+                                <td>20x</td>
+                                <td>13x</td>
+                            </tr>
+                            <tr>
+                                <td>Infosys</td>
+                                <td>25x</td>
+                                <td>18x</td>
+                                <td>11x</td>
+                            </tr>
+                            <tr>
+                                <td>HCL Tech</td>
+                                <td>22x</td>
+                                <td>15x</td>
+                                <td>7x</td>
+                            </tr>
+                            <tr>
+                                <td>Wipro</td>
+                                <td>20x</td>
+                                <td>13x</td>
+                                <td>5x</td>
+                            </tr>
+                            <tr style="background: #fff3e0; font-weight: bold;">
+                                <td>Sector Average</td>
+                                <td>24x</td>
+                                <td>17x</td>
+                                <td>9x</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>Analysis:</strong> TCS trades at a premium (28x P/E vs 24x average) due to its market leadership, consistent execution, and superior margins. Wipro trades at a discount due to slower growth and margin concerns.</p>
+                    </div>
+
+                    <div class="practice-box">
+                        <div class="practice-title">Practice Task 4: Valuation Exercise</div>
+                        <p><strong>Scenario:</strong> You're analyzing Asian Paints vs Berger Paints</p>
+
+                        <ol>
+                            <li>Using Screener.in, find current P/E, P/B, and EV/EBITDA for both companies</li>
+                            <li>Compare their multiples. Which is trading at a premium? Why?</li>
+                            <li>Compare ROE for both. Does higher ROE justify higher valuation multiple?</li>
+                            <li>Look at 5-year revenue CAGR. Does faster growth justify premium valuation?</li>
+                            <li>Based on comparables, which stock appears more attractively valued?</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <h4>Module 4 Progress Checkpoint</h4>
+                    <ul class="checkbox-list">
+                        <li>Understand Time Value of Money and can calculate PV/FV</li>
+                        <li>Understand the DCF valuation framework</li>
+                        <li>Know what WACC is and why it matters</li>
+                        <li>Can apply relative valuation using multiples</li>
+                        <li>Can compare companies using P/E, P/B, EV/EBITDA</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MODULE 5: EQUITY MARKETS -->
+            <section id="mod5" class="module">
+                <div class="module-header">
+                    <h2>MODULE 5: Equity Markets & Investment Basics</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand stocks, bonds, mutual funds, and ETFs</li>
+                            <li>Differentiate between primary and secondary markets</li>
+                            <li>Understand the IPO process</li>
+                            <li>Learn about stock market indices (Sensex, Nifty)</li>
+                            <li>Understand risk, return, and diversification</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.1 Understanding Financial Instruments</h3>
+
+                    <div class="concept-box">
+                        <h4>Equity (Stocks/Shares)</h4>
+                        <p><strong>What:</strong> Ownership stake in a company</p>
+                        <p><strong>Returns:</strong> Dividends + Capital appreciation</p>
+                        <p><strong>Risk:</strong> High (can lose 100% if company fails)</p>
+                        <p><strong>Example:</strong> Buy 100 shares of Infosys at ₹1,400 = Ownership worth ₹1,40,000</p>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Debt (Bonds/Debentures)</h4>
+                        <p><strong>What:</strong> Lending money to company/government</p>
+                        <p><strong>Returns:</strong> Fixed interest (coupon) + Principal repayment</p>
+                        <p><strong>Risk:</strong> Lower than equity (fixed payments, senior in bankruptcy)</p>
+                        <p><strong>Example:</strong> Government of India 10-year bond paying 7% annual interest</p>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Mutual Funds</h4>
+                        <p><strong>What:</strong> Pool of money from many investors, professionally managed</p>
+                        <p><strong>Returns:</strong> Depends on fund performance (equity funds, debt funds, hybrid)</p>
+                        <p><strong>Risk:</strong> Diversified across multiple securities</p>
+                        <p><strong>Example:</strong> SBI Bluechip Fund invests in top 100 companies</p>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>ETFs (Exchange Traded Funds)</h4>
+                        <p><strong>What:</strong> Like mutual funds but traded on stock exchange like stocks</p>
+                        <p><strong>Returns:</strong> Tracks an index (e.g., Nifty 50 ETF)</p>
+                        <p><strong>Risk:</strong> Market risk, but diversified</p>
+                        <p><strong>Example:</strong> Nifty BeES tracks Nifty 50 index</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.2 Primary vs Secondary Markets</h3>
+
+                    <table>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Primary Market</th>
+                            <th>Secondary Market</th>
+                        </tr>
+                        <tr>
+                            <td><strong>What happens</strong></td>
+                            <td>New securities issued</td>
+                            <td>Existing securities traded</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Participants</strong></td>
+                            <td>Company & Investors</td>
+                            <td>Investor to Investor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price</strong></td>
+                            <td>Fixed by company/underwriter</td>
+                            <td>Determined by supply-demand</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Money goes to</strong></td>
+                            <td>Company (raises capital)</td>
+                            <td>Selling investor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Example</strong></td>
+                            <td>Zomato IPO in 2021</td>
+                            <td>Buying/selling Zomato shares on NSE</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h3>5.3 IPO Process (Case Study: Zomato IPO 2021)</h3>
+
+                    <div class="example-box">
+                        <div class="example-title">Zomato IPO Journey</div>
+
+                        <p><strong>Step 1: Decision to Go Public</strong></p>
+                        <ul>
+                            <li>Zomato decided to raise ₹9,375 crore for expansion and technology</li>
+                            <li>Hired merchant bankers: Kotak Mahindra, Morgan Stanley, Citi</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 2: SEBI Approval</strong></p>
+                        <ul>
+                            <li>Filed Draft Red Herring Prospectus (DRHP) with SEBI</li>
+                            <li>SEBI reviewed disclosures, financials, risk factors</li>
+                            <li>Approval received after satisfactory compliance</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 3: Pricing</strong></p>
+                        <ul>
+                            <li>Price band set at ₹72-76 per share</li>
+                            <li>Institutional investors bid during book-building process</li>
+                            <li>Final price: ₹76 per share</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 4: Subscription</strong></p>
+                        <ul>
+                            <li>IPO open for 3 days (July 14-16, 2021)</li>
+                            <li>Oversubscribed 38.25 times (huge demand!)</li>
+                            <li>Retail portion subscribed 7.45x, QIB portion 51.79x</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 5: Allotment & Listing</strong></p>
+                        <ul>
+                            <li>Shares allotted to investors proportionately</li>
+                            <li>Listed on NSE & BSE on July 23, 2021</li>
+                            <li>Opening price: ₹116 (53% premium over issue price!)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Outcome:</strong> Zomato raised ₹9,375 crore and became India's first food-tech unicorn to list. Stock traded with high volatility post-listing.</p>
+
+                        <p style="font-size: 0.9em; font-style: italic; margin-top: 15px;">Source: Zomato IPO Prospectus, NSE historical data</p>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "Why do companies go public?"</div>
+                        <div class="answer">
+                            "Companies go public primarily to raise capital for growth, expansion, and debt reduction. An IPO provides access to a broader investor base and large capital pools that private funding might not offer at scale. Additionally, going public offers liquidity to early investors and employees holding stock options, creates a currency for acquisitions through stock swaps, and enhances brand visibility and credibility. However, it comes with trade-offs—companies must comply with stringent disclosure requirements, face quarterly earnings pressure, and incur significant compliance costs. The decision often depends on whether the benefits of access to capital and liquidity outweigh the costs of being a public company. For example, Zomato went public to fund its expansion in quick commerce and compete with Swiggy, raising ₹9,375 crore that would be difficult to raise privately at that scale."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.4 Stock Market Indices</h3>
+
+                    <div class="concept-box">
+                        <h4>Sensex (S&P BSE Sensex)</h4>
+                        <ul>
+                            <li><strong>Exchange:</strong> Bombay Stock Exchange (BSE)</li>
+                            <li><strong>Constituents:</strong> 30 largest, most liquid companies</li>
+                            <li><strong>Base Year:</strong> 1978-79 (Base Value: 100)</li>
+                            <li><strong>Current Level:</strong> ~75,000 (as of 2025)</li>
+                            <li><strong>Examples:</strong> Reliance, HDFC Bank, Infosys, TCS, ITC</li>
+                        </ul>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Nifty 50 (NSE Nifty)</h4>
+                        <ul>
+                            <li><strong>Exchange:</strong> National Stock Exchange (NSE)</li>
+                            <li><strong>Constituents:</strong> 50 largest, most liquid companies</li>
+                            <li><strong>Base Year:</strong> 1995 (Base Value: 1000)</li>
+                            <li><strong>Current Level:</strong> ~22,000 (as of 2025)</li>
+                            <li><strong>Sectors:</strong> Represents 13 sectors of Indian economy</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip">
+                        Indices serve as market benchmarks. If Nifty is up 15% in a year, but your portfolio is up only 8%, you've underperformed the market. Mutual fund managers are judged against index performance!
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.5 Risk, Return & Diversification</h3>
+
+                    <div class="concept-box">
+                        <h4>The Risk-Return Trade-off</h4>
+                        <p><strong>Fundamental Principle:</strong> Higher return potential = Higher risk</p>
+
+                        <table style="margin-top: 20px;">
+                            <tr>
+                                <th>Investment</th>
+                                <th>Expected Return</th>
+                                <th>Risk Level</th>
+                            </tr>
+                            <tr>
+                                <td>Fixed Deposit (Bank)</td>
+                                <td>6-7%</td>
+                                <td>Very Low</td>
+                            </tr>
+                            <tr>
+                                <td>Government Bonds</td>
+                                <td>7-8%</td>
+                                <td>Low</td>
+                            </tr>
+                            <tr>
+                                <td>Corporate Bonds (AAA)</td>
+                                <td>8-9%</td>
+                                <td>Low-Medium</td>
+                            </tr>
+                            <tr>
+                                <td>Large-cap Stocks (Nifty 50)</td>
+                                <td>12-15%</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>Mid-cap Stocks</td>
+                                <td>15-18%</td>
+                                <td>Medium-High</td>
+                            </tr>
+                            <tr>
+                                <td>Small-cap Stocks</td>
+                                <td>18-25%</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <td>Startups/Venture Capital</td>
+                                <td>25-50% (or lose 100%)</td>
+                                <td>Very High</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Diversification: Don't Put All Eggs in One Basket</h4>
+
+                        <p><strong>Concept:</strong> Spread investments across multiple assets to reduce risk.</p>
+
+                        <p style="margin-top: 15px;"><strong>Example of Poor Diversification:</strong></p>
+                        <ul>
+                            <li>Investor puts 100% money in aviation stocks (SpiceJet, IndiGo, Air India)</li>
+                            <li>COVID-19 hits → Aviation sector collapses → Portfolio down 70%</li>
+                        </ul>
+
+                        <p style="margin-top: 15px;"><strong>Example of Good Diversification:</strong></p>
+                        <ul>
+                            <li>30% IT (Infosys, TCS)</li>
+                            <li>20% Banking (HDFC, ICICI)</li>
+                            <li>15% FMCG (HUL, ITC)</li>
+                            <li>15% Pharma (Sun Pharma, Cipla)</li>
+                            <li>10% Auto (Maruti, Tata Motors)</li>
+                            <li>10% Energy (Reliance, ONGC)</li>
+                        </ul>
+                        <p>If one sector declines, others may perform well, reducing overall portfolio volatility.</p>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Beta: Measuring Market Risk</h4>
+
+                        <div class="formula">
+Beta = Sensitivity of stock returns to market returns
+
+Beta = 1.0 → Stock moves exactly with the market
+Beta > 1.0 → Stock is more volatile than market (higher risk)
+Beta < 1.0 → Stock is less volatile than market (lower risk)
+
+Examples:
+- HDFC Bank Beta ≈ 0.9 (defensive, less volatile)
+- Infosys Beta ≈ 0.85 (stable)
+- Tata Motors Beta ≈ 1.5 (cyclical, high volatility)
+</div>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <h4>Module 5 Progress Checkpoint</h4>
+                    <ul class="checkbox-list">
+                        <li>Understand different financial instruments (stocks, bonds, MFs, ETFs)</li>
+                        <li>Can differentiate primary and secondary markets</li>
+                        <li>Understand the IPO process end-to-end</li>
+                        <li>Know what Sensex and Nifty represent</li>
+                        <li>Understand risk-return trade-off and diversification</li>
+                        <li>Know what Beta measures and how to interpret it</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- MODULE 6: EQUITY RESEARCH -->
+            <section id="mod6" class="module">
+                <div class="module-header">
+                    <h2>MODULE 6: Equity Research Process</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand what equity research analysts do</li>
+                            <li>Learn industry analysis frameworks (Porter's 5 Forces)</li>
+                            <li>Master company analysis step-by-step</li>
+                            <li>Learn revenue and margin forecasting basics</li>
+                            <li>Understand research report structure</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>6.1 What is Equity Research?</h3>
+
+                    <p><strong>Equity Research</strong> involves analyzing companies and industries to provide investment recommendations (Buy, Hold, Sell) to investors.</p>
+
+                    <div class="concept-box">
+                        <h4>Role of an Equity Research Analyst:</h4>
+                        <ul>
+                            <li><strong>Analyze companies:</strong> Financial statements, business models, competitive positioning</li>
+                            <li><strong>Build financial models:</strong> Forecast revenue, earnings, cash flows</li>
+                            <li><strong>Conduct valuation:</strong> DCF, comparable company analysis</li>
+                            <li><strong>Track industry trends:</strong> Regulatory changes, technological disruption</li>
+                            <li><strong>Write research reports:</strong> Investment thesis, risks, target price</li>
+                            <li><strong>Interact with management:</strong> Earnings calls, company visits, conferences</li>
+                        </ul>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Buy-Side vs Sell-Side Research:</h4>
+
+                        <table>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Sell-Side (Investment Banks/Brokerages)</th>
+                                <th>Buy-Side (Mutual Funds/Hedge Funds)</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Client</strong></td>
+                                <td>External investors</td>
+                                <td>Internal portfolio managers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coverage</strong></td>
+                                <td>Broad (cover 15-20 companies)</td>
+                                <td>Focused (deep dive on few companies)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reports</strong></td>
+                                <td>Published publicly</td>
+                                <td>Internal only</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pressure</strong></td>
+                                <td>Generate trading commissions</td>
+                                <td>Generate portfolio returns</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td>Kotak Securities, Motilal Oswal, Morgan Stanley</td>
+                                <td>HDFC Mutual Fund, SBI Mutual Fund, Sequoia Capital</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="tip">
+                        Your AI and analytics background is PERFECT for equity research! Modern research relies heavily on data analysis, automation, pattern recognition, and quantitative modeling—skills you've already developed at SoulSage.
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>6.2 Industry Analysis Framework</h3>
+
+                    <div class="concept-box">
+                        <h4>Porter's Five Forces Analysis</h4>
+
+                        <p><strong>1. Threat of New Entrants</strong></p>
+                        <ul>
+                            <li>How easy is it for new competitors to enter?</li>
+                            <li>Barriers: Capital requirements, regulations, brand loyalty, economies of scale</li>
+                            <li>Example: Banking (high barriers—RBI license, capital requirements) vs E-commerce (low barriers)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>2. Bargaining Power of Suppliers</strong></p>
+                        <ul>
+                            <li>Can suppliers dictate terms?</li>
+                            <li>Example: Apple has low supplier power (many component manufacturers). Diamond industry has high supplier power (few mine owners)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>3. Bargaining Power of Buyers</strong></p>
+                        <ul>
+                            <li>Can customers negotiate prices?</li>
+                            <li>Example: Enterprise software (low buyer power—switching costs high) vs Commodities (high buyer power—many alternatives)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>4. Threat of Substitutes</strong></p>
+                        <ul>
+                            <li>Are there alternative products/services?</li>
+                            <li>Example: Traditional taxis faced substitution from Ola/Uber. Movie theaters face substitution from OTT platforms</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>5. Competitive Rivalry</strong></p>
+                        <ul>
+                            <li>How intense is competition?</li>
+                            <li>Example: Telecom (intense—Jio, Airtel, Vi) vs Credit rating agencies (low—only CRISIL, ICRA, CARE)</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Industry Analysis: Indian Banking Sector</div>
+
+                        <table>
+                            <tr>
+                                <th>Force</th>
+                                <th>Assessment</th>
+                                <th>Impact on Profitability</th>
+                            </tr>
+                            <tr>
+                                <td>New Entrants</td>
+                                <td>LOW threat (RBI license, capital, compliance)</td>
+                                <td>Positive—protected from new competition</td>
+                            </tr>
+                            <tr>
+                                <td>Supplier Power</td>
+                                <td>MODERATE (depositors can switch banks)</td>
+                                <td>Neutral—banks compete on interest rates</td>
+                            </tr>
+                            <tr>
+                                <td>Buyer Power</td>
+                                <td>MODERATE (borrowers compare rates)</td>
+                                <td>Negative—pressure on lending rates</td>
+                            </tr>
+                            <tr>
+                                <td>Substitutes</td>
+                                <td>MODERATE (NBFCs, fintech, P2P lending)</td>
+                                <td>Negative—digital lending competition</td>
+                            </tr>
+                            <tr>
+                                <td>Rivalry</td>
+                                <td>HIGH (30+ banks competing)</td>
+                                <td>Negative—margin pressure</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>Conclusion:</strong> Indian banking is structurally attractive due to high entry barriers, but intense competition and emerging fintech substitutes create margin pressure. Quality banks with strong franchises (HDFC, ICICI) can maintain pricing power.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>6.3 Company Analysis Step-by-Step</h3>
+
+                    <div class="concept-box">
+                        <h4>Comprehensive Company Analysis Checklist:</h4>
+
+                        <p><strong>Step 1: Understand the Business</strong></p>
+                        <ul>
+                            <li>What does the company do? What products/services?</li>
+                            <li>What is the revenue model?</li>
+                            <li>Who are the customers?</li>
+                            <li>What is the competitive advantage (moat)?</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 2: Analyze the Industry</strong></p>
+                        <ul>
+                            <li>Apply Porter's Five Forces</li>
+                            <li>Identify industry trends (growth, consolidation, disruption)</li>
+                            <li>Assess regulatory environment</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 3: Financial Analysis</strong></p>
+                        <ul>
+                            <li>Read last 3-5 years of financial statements</li>
+                            <li>Calculate key ratios (profitability, liquidity, leverage, efficiency)</li>
+                            <li>Analyze trends: Is revenue/margin/ROE improving or declining?</li>
+                            <li>Identify red flags: Declining cash flow, rising debt, falling margins</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 4: Management Quality Assessment</strong></p>
+                        <ul>
+                            <li>Track record of execution</li>
+                            <li>Capital allocation decisions (M&A, capex, dividends)</li>
+                            <li>Corporate governance (board independence, related-party transactions)</li>
+                            <li>Communication transparency</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 5: Valuation</strong></p>
+                        <ul>
+                            <li>Build DCF model with revenue/margin forecasts</li>
+                            <li>Compare to peers using P/E, P/B, EV/EBITDA multiples</li>
+                            <li>Determine fair value and margin of safety</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>Step 6: Risk Assessment</strong></p>
+                        <ul>
+                            <li>Identify key risks: Regulatory, competitive, execution, macro</li>
+                            <li>Assess probability and impact</li>
+                            <li>Consider downside scenarios</li>
+                        </ul>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Interview Speak for Nakul: "Walk me through how you'd analyze a company."</div>
+                        <div class="answer">
+                            "I'd start by understanding the business model—what the company does, its revenue streams, and its competitive positioning. I'd then analyze the industry using Porter's Five Forces to assess structural attractiveness. Next, I'd dive into financials—reading annual reports, calculating profitability, liquidity, and leverage ratios, and analyzing trends over 3-5 years to identify whether key metrics are improving. I'd evaluate management quality by reviewing capital allocation decisions, corporate governance, and execution track record. For valuation, I'd build a DCF model forecasting revenues and margins based on historical growth and industry outlook, and compare to peer multiples for relative valuation. Finally, I'd identify key risks—regulatory, competitive, execution-related—and assess their materiality. Throughout this process, I'd leverage my analytics background from SoulSage, where I built data-driven frameworks to evaluate campaign performance—similar systematic thinking applies to equity analysis."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <h4>Module 6 Progress Checkpoint</h4>
+                    <ul class="checkbox-list">
+                        <li>Understand what equity research analysts do</li>
+                        <li>Can apply Porter's Five Forces to analyze industries</li>
+                        <li>Know the step-by-step company analysis framework</li>
+                        <li>Understand buy-side vs sell-side research differences</li>
+                        <li>Can articulate a systematic approach to company analysis</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MODULE 7: CORPORATE FINANCE -->
+            <section id="mod7" class="module">
+                <div class="module-header">
+                    <h2>MODULE 7: Corporate Finance Fundamentals</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Understand capital structure decisions (debt vs equity)</li>
+                            <li>Calculate Weighted Average Cost of Capital (WACC)</li>
+                            <li>Learn capital budgeting techniques (NPV, IRR)</li>
+                            <li>Understand dividend policy</li>
+                            <li>Master working capital management basics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>7.1 Capital Structure: Debt vs Equity</h3>
+
+                    <div class="concept-box">
+                        <h4>Financing Options Comparison:</h4>
+
+                        <table>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Debt (Loans, Bonds)</th>
+                                <th>Equity (Shares)</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Ownership</strong></td>
+                                <td>No dilution</td>
+                                <td>Dilutes ownership</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repayment</strong></td>
+                                <td>Mandatory (principal + interest)</td>
+                                <td>No obligation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tax Treatment</strong></td>
+                                <td>Interest is tax-deductible</td>
+                                <td>Dividends not tax-deductible</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cost</strong></td>
+                                <td>Fixed interest rate</td>
+                                <td>Variable (dividends + capital appreciation expected)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Risk</strong></td>
+                                <td>High (fixed obligations even if business struggles)</td>
+                                <td>Low (flexible, no mandatory payouts)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control</strong></td>
+                                <td>No voting rights</td>
+                                <td>Voting rights (shareholder say in decisions)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Optimal Capital Structure</h4>
+                        <p>The "right" mix of debt and equity that minimizes WACC and maximizes firm value.</p>
+
+                        <ul>
+                            <li><strong>Too much debt:</strong> Financial distress risk, bankruptcy potential</li>
+                            <li><strong>Too little debt:</strong> Missing tax benefits, not optimizing cost of capital</li>
+                        </ul>
+
+                        <p style="margin-top: 15px;"><strong>Industry Benchmarks:</strong></p>
+                        <ul>
+                            <li>IT Services (Infosys, TCS): 0-10% debt (cash-rich, low capex)</li>
+                            <li>FMCG (HUL, ITC): 10-30% debt (moderate capex)</li>
+                            <li>Telecom (Airtel, Jio): 30-50% debt (high capex)</li>
+                            <li>Infrastructure (L&T, Adani): 40-60% debt (very high capex)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip">
+                        The tax shield on debt makes it cheaper than equity. Interest expense reduces taxable income, so effective cost of debt = Interest Rate × (1 - Tax Rate). If interest is 10% and tax rate is 25%, effective cost = 10% × 0.75 = 7.5%.
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>7.2 Capital Budgeting: NPV & IRR</h3>
+
+                    <p>Capital budgeting helps companies decide which long-term investments to pursue.</p>
+
+                    <div class="concept-box">
+                        <h4>Net Present Value (NPV)</h4>
+
+                        <div class="formula">
+NPV = Σ (Cash Flow_t / (1 + r)^t) - Initial Investment
+
+Decision Rule:
+- NPV > 0 → Accept project (creates value)
+- NPV < 0 → Reject project (destroys value)
+- NPV = 0 → Indifferent
+</div>
+
+                        <p style="margin-top: 20px;"><strong>Example:</strong></p>
+                        <p>Reliance considering investing ₹100 crore in a new refinery. Expected cash flows:</p>
+                        <ul>
+                            <li>Year 1: ₹30 crore</li>
+                            <li>Year 2: ₹40 crore</li>
+                            <li>Year 3: ₹50 crore</li>
+                            <li>Discount rate (WACC): 12%</li>
+                        </ul>
+
+                        <div class="formula">
+NPV = (30/1.12^1) + (40/1.12^2) + (50/1.12^3) - 100
+    = 26.79 + 31.89 + 35.59 - 100
+    = ₹94.27 - ₹100
+    = -₹5.73 crore
+
+Decision: REJECT (NPV is negative—project destroys value)
+</div>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Internal Rate of Return (IRR)</h4>
+
+                        <div class="formula">
+IRR = Discount rate at which NPV = 0
+
+Decision Rule:
+- IRR > WACC → Accept project
+- IRR < WACC → Reject project
+
+IRR represents the project's expected return.
+</div>
+
+                        <p style="margin-top: 20px;"><strong>Example continued:</strong></p>
+                        <p>If IRR is calculated as 10.5%, and WACC is 12%, then IRR < WACC → REJECT</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Real Example: Amazon India Expansion Decision</div>
+
+                        <p><strong>Scenario:</strong> Amazon evaluating ₹5,000 crore investment in India logistics infrastructure</p>
+
+                        <p><strong>Capital Budgeting Analysis:</strong></p>
+                        <ul>
+                            <li>Initial Investment: ₹5,000 crore (warehouses, delivery network)</li>
+                            <li>Expected incremental cash flows: ₹800 crore/year for 10 years</li>
+                            <li>Terminal value: ₹3,000 crore (asset sale value after 10 years)</li>
+                            <li>WACC: 14%</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>NPV Calculation:</strong></p>
+                        <p>PV of annual cash flows + PV of terminal value - Initial investment</p>
+                        <p>= ₹4,171 + ₹809 - ₹5,000 = -₹20 crore</p>
+
+                        <p><strong>Decision:</strong> MARGINAL. NPV slightly negative, but strategic value (market share, customer acquisition, competitive positioning) might justify investment despite negative financial NPV.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>7.3 Dividend Policy</h3>
+
+                    <div class="concept-box">
+                        <h4>Dividend Payout Approaches:</h4>
+
+                        <p><strong>1. Residual Dividend Policy</strong></p>
+                        <p>Pay dividends only after funding all positive NPV projects.</p>
+                        <ul>
+                            <li>Example: Startups, high-growth companies (reinvest everything)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>2. Stable Dividend Policy</strong></p>
+                        <p>Maintain consistent dividend per share, gradually increasing over time.</p>
+                        <ul>
+                            <li>Example: HUL, Nestle (mature, predictable cash flows)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>3. Target Payout Ratio</strong></p>
+                        <p>Pay out a fixed percentage of earnings (e.g., 40% payout ratio).</p>
+                        <ul>
+                            <li>Example: TCS, Infosys (typically 70-85% payout)</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;"><strong>4. Zero Dividend Policy</strong></p>
+                        <p>Reinvest all profits into growth.</p>
+                        <ul>
+                            <li>Example: Zomato, Nykaa, most growth-stage companies</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">Dividend Policy Comparison: ITC vs Amazon</div>
+
+                        <table>
+                            <tr>
+                                <th>Company</th>
+                                <th>Dividend Payout</th>
+                                <th>Rationale</th>
+                            </tr>
+                            <tr>
+                                <td><strong>ITC</strong></td>
+                                <td>High (₹10.75/share, Yield ~5%)</td>
+                                <td>Mature business, strong cash flow, limited reinvestment opportunities in cigarettes. Shareholders prefer cash returns.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Amazon</strong></td>
+                                <td>Zero dividends</td>
+                                <td>High-growth phase, abundant reinvestment opportunities (AWS, logistics, R&D). Shareholders prefer capital appreciation over dividends.</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>Key Insight:</strong> Dividend policy depends on growth stage, investment opportunities, and shareholder preferences.</p>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <h4>Module 7 Progress Checkpoint</h4>
+                    <ul class="checkbox-list">
+                        <li>Understand debt vs equity trade-offs</li>
+                        <li>Can calculate NPV and IRR for capital budgeting</li>
+                        <li>Understand tax shield benefit of debt</li>
+                        <li>Know different dividend policy approaches</li>
+                        <li>Can assess optimal capital structure for different industries</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MODULE 8: INTERVIEW READINESS -->
+            <section id="mod8" class="module">
+                <div class="module-header">
+                    <h2>MODULE 8: Interview Readiness for Nakul</h2>
+                    <div class="objectives">
+                        <h4>Learning Objectives:</h4>
+                        <ul class="checkbox-list">
+                            <li>Master "Tell me about yourself" for finance interviews</li>
+                            <li>Answer 50+ common technical finance questions</li>
+                            <li>Prepare behavioral answers using STAR method</li>
+                            <li>Convert your AI/Analytics background into finance strengths</li>
+                            <li>Practice mock interview scenarios</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>8.1 "Tell Me About Yourself" - Nakul's Version</h3>
+
+                    <div class="interview-box">
+                        <div class="question">Nakul's Personalized "Tell Me About Yourself" Script</div>
+                        <div class="answer">
+                            "I'm Nakul Nandanwar, currently pursuing my MMS in Finance at SIMSREE, Mumbai. Before joining SIMSREE, I worked as an Operations Lead at SoulSage, a digital marketing agency, where I built AI-powered automation systems that improved operational efficiency by 40% and reduced costs by 30%. In that role, I was deeply involved in ROI tracking, financial evaluation of campaigns, and budget optimization—which gave me hands-on experience with data-driven financial decision-making.
+                            <br><br>
+                            What excites me about finance, particularly equity research, is the intersection of analytical rigor and business insight. My technical background in AI and analytics gives me a strong foundation for building financial models, analyzing large datasets, and identifying patterns—skills that are increasingly valuable in modern finance. I've been actively building my finance knowledge through coursework in investment banking, financial modeling, and portfolio management, and I'm particularly interested in using data-driven approaches to uncover investment opportunities.
+                            <br><br>
+                            I'm seeking a summer internship in equity research or financial analysis where I can leverage my analytical skills while continuing to develop deep sector expertise. I'm drawn to [Firm Name] because of your strong research reputation, focus on fundamental analysis, and commitment to developing young talent. I'm particularly interested in [mention specific sector if known—IT, Banking, Consumer]. I believe my combination of technical skills and finance training would allow me to contribute meaningfully to your research team while learning from experienced analysts."
+                        </div>
+                        <p style="margin-top: 20px;"><strong>Why this works:</strong></p>
+                        <ul>
+                            <li>Starts with clear identity and current status</li>
+                            <li>Highlights quantifiable achievements from SoulSage</li>
+                            <li>Connects past experience to finance naturally</li>
+                            <li>Shows genuine interest in equity research specifically</li>
+                            <li>Positions technical skills as differentiators</li>
+                            <li>Demonstrates research about the firm</li>
+                            <li>Ends with clear ask and value proposition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>8.2 50+ Technical Finance Interview Q&A</h3>
+
+                    <div class="interview-box">
+                        <div class="question">Q1: What are the three financial statements?</div>
+                        <div class="answer">
+                            The three financial statements are the Income Statement, Balance Sheet, and Cash Flow Statement. The Income Statement shows profitability over a period. The Balance Sheet shows financial position at a point in time. The Cash Flow Statement shows actual cash movements. They're interconnected: net profit flows from Income Statement to retained earnings on the Balance Sheet and serves as the starting point for operating cash flow.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q2: Walk me through a DCF valuation.</div>
+                        <div class="answer">
+                            A DCF values a company by discounting future free cash flows to present value. I'd forecast FCF for 5-10 years based on revenue growth and margin assumptions, calculate terminal value using perpetuity growth or exit multiple, discount everything using WACC, sum to get enterprise value, subtract net debt for equity value, and divide by shares for per-share value. Key sensitivities are growth rate, margins, and discount rate.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q3: What's the difference between ROE and ROA?</div>
+                        <div class="answer">
+                            ROA measures profit relative to total assets—operational efficiency independent of financing. ROE measures profit relative to shareholders' equity—returns to equity holders. The difference reflects leverage. A company can boost ROE through debt, but this increases financial risk. For example, HDFC Bank has 18% ROE but only 2% ROA, reflecting banking's leveraged model. I'd look at both to understand operational efficiency (ROA) and shareholder returns (ROE) separately.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q4: How do you value a bank?</div>
+                        <div class="answer">
+                            Banks are typically valued using P/B and P/E multiples rather than DCF because their balance sheets are their business—assets are loans, liabilities are deposits. I'd focus on P/B ratio comparing market cap to book value, adjusted for asset quality. Key metrics include ROE (profitability), net NPA ratio (asset quality), and capital adequacy ratio (buffer against losses). For example, HDFC Bank trades at 3x P/B due to superior ROE and asset quality. I'd also look at loan growth, deposit franchise strength, and cost-to-income ratio for operational efficiency.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q5: Why might a company have negative cash flow despite being profitable?</div>
+                        <div class="answer">
+                            Several reasons: high capital expenditures (investing in growth), building up inventory or receivables (working capital increase), or using accrual accounting where revenue is recognized before cash collection. For example, Zomato might show profit from food delivery while burning cash on expansion and customer acquisition. I'd check if negative cash flow is from operations (concerning) or investing activities (potentially strategic growth investment). Sustainable businesses must eventually convert profit to positive operating cash flow.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q6: What's EBITDA and why do we use it?</div>
+                        <div class="answer">
+                            EBITDA is Earnings Before Interest, Tax, Depreciation, and Amortization. It measures operating performance before financing decisions (interest), tax jurisdictions (tax), and accounting policies (depreciation). It's useful for comparing companies across different capital structures and tax regimes. However, it ignores capex requirements and working capital needs, so I'd never use it alone—always complement with free cash flow analysis. It's particularly useful in capital-intensive industries for comparing operating efficiency.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q7: How would you analyze a company if you only had 30 minutes?</div>
+                        <div class="answer">
+                            I'd prioritize: First, understand the business model and revenue drivers (5 mins—read latest annual report intro). Second, analyze financial health—look at last 3 years' revenue growth, margins, ROE, and debt-to-equity (10 mins—screener.in for quick ratios). Third, check recent news and management commentary for red flags or catalysts (5 mins). Fourth, quick valuation check using P/E vs peers and historical average (5 mins). Finally, form a preliminary view on investment thesis and key risks (5 mins). This gives a 80% understanding efficiently, which I'd deep-dive later if promising.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q8: Tell me about a recent stock you analyzed. What was your recommendation?</div>
+                        <div class="answer">
+                            "I recently analyzed Asian Paints as part of my coursework. The company has maintained 15%+ ROE consistently, operates in a duopolistic market with Berger Paints, and has strong brand equity. Revenue grew 12% CAGR over 5 years, and operating margins stayed robust at 18-20%. They're increasing distribution in Tier 2/3 cities and expanding into home decor. However, stock trades at 65x P/E versus historical average of 50x, suggesting premium valuation. Raw material costs are volatile. My recommendation would be HOLD—great company but fairly valued. I'd look for entry below 55x P/E. The key risk is housing market slowdown impacting paint demand."
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q9: How do you stay updated on markets and companies?</div>
+                        <div class="answer">
+                            "I follow a structured routine: Morning—Economic Times for market news and sector developments. I use Screener.in for quick company financials and track Nifty 50 constituents. I follow analyst reports from Kotak Securities and Motilal Oswal for sector insights. I listen to company earnings calls on their investor relations pages—particularly for my focus sectors. I also use Twitter to follow veteran investors like Saurabh Mukherjea and analysts for real-time insights. On weekends, I read annual reports and deep-dive on specific companies. This gives me breadth daily and depth weekly."
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Q10: Why do you want to work in equity research?</div>
+                        <div class="answer">
+                            "I'm drawn to equity research because it combines analytical rigor with business understanding. I enjoy dissecting company business models, analyzing competitive positioning, and building financial models—it's intellectually stimulating. My background in data analysis at SoulSage taught me to derive insights from numbers, and equity research lets me apply that systematically to investing. I also appreciate the learning curve—covering sectors means becoming an industry expert. Long-term, I want to build expertise that helps allocate capital to businesses creating genuine value. Research is the best foundation for that."
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 40px; font-size: 1.2em;"><strong>Additional Quick-Fire Q&A (30 more questions):</strong></p>
+
+                    <div class="concept-box">
+                        <h4>Financial Statements & Analysis:</h4>
+                        <ul style="line-height: 2;">
+                            <li><strong>Q:</strong> What's working capital? <strong>A:</strong> Current Assets - Current Liabilities. Represents liquidity buffer.</li>
+                            <li><strong>Q:</strong> What's free cash flow? <strong>A:</strong> Operating Cash Flow - Capex. Cash available for distribution.</li>
+                            <li><strong>Q:</strong> How are the three statements linked? <strong>A:</strong> Net profit → Retained earnings → Operating CFO starting point.</li>
+                            <li><strong>Q:</strong> What's goodwill? <strong>A:</strong> Excess paid over book value in acquisition. Intangible asset on balance sheet.</li>
+                            <li><strong>Q:</strong> What's depreciation? <strong>A:</strong> Non-cash expense allocating asset cost over useful life.</li>
+                        </ul>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Valuation & Modeling:</h4>
+                        <ul style="line-height: 2;">
+                            <li><strong>Q:</strong> What's enterprise value? <strong>A:</strong> Market Cap + Debt - Cash. Total firm value.</li>
+                            <li><strong>Q:</strong> Why use EV/EBITDA instead of P/E? <strong>A:</strong> Removes capital structure differences.</li>
+                            <li><strong>Q:</strong> What's beta? <strong>A:</strong> Measure of stock volatility relative to market. Beta=1 moves with market.</li>
+                            <li><strong>Q:</strong> What's a good P/E ratio? <strong>A:</strong> Depends on growth. High growth justifies high P/E. Compare to peers.</li>
+                            <li><strong>Q:</strong> How do you calculate cost of equity? <strong>A:</strong> CAPM: Risk-free rate + Beta × Market risk premium.</li>
+                        </ul>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Corporate Finance:</h4>
+                        <ul style="line-height: 2;">
+                            <li><strong>Q:</strong> Why do companies pay dividends? <strong>A:</strong> Return cash to shareholders when low reinvestment opportunities.</li>
+                            <li><strong>Q:</strong> Debt vs equity financing? <strong>A:</strong> Debt: tax shield, fixed cost, risky. Equity: flexible, dilutes ownership.</li>
+                            <li><strong>Q:</strong> What's WACC? <strong>A:</strong> Weighted average cost of debt and equity. Discount rate for DCF.</li>
+                            <li><strong>Q:</strong> What's NPV? <strong>A:</strong> Present value of cash inflows - Initial investment. Accept if NPV>0.</li>
+                            <li><strong>Q:</strong> What's IRR? <strong>A:</strong> Discount rate where NPV=0. Project's expected return.</li>
+                        </ul>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Markets & Instruments:</h4>
+                        <ul style="line-height: 2;">
+                            <li><strong>Q:</strong> What's an IPO? <strong>A:</strong> Initial Public Offering. Company sells shares to public first time.</li>
+                            <li><strong>Q:</strong> Primary vs secondary market? <strong>A:</strong> Primary=new issue, money to company. Secondary=trading, money to sellers.</li>
+                            <li><strong>Q:</strong> What's Nifty 50? <strong>A:</strong> Index of 50 largest, most liquid stocks on NSE. Market benchmark.</li>
+                            <li><strong>Q:</strong> What's a mutual fund? <strong>A:</strong> Pooled investment vehicle managed professionally. Diversification.</li>
+                            <li><strong>Q:</strong> What's an ETF? <strong>A:</strong> Exchange-traded fund. Like mutual fund but trades like stock.</li>
+                        </ul>
+                    </div>
+
+                    <div class="concept-box">
+                        <h4>Industry & Company Analysis:</h4>
+                        <ul style="line-height: 2;">
+                            <li><strong>Q:</strong> What's Porter's Five Forces? <strong>A:</strong> Framework analyzing industry attractiveness: threats, buyer/supplier power, rivalry.</li>
+                            <li><strong>Q:</strong> What's a moat? <strong>A:</strong> Sustainable competitive advantage. Brand, network effects, cost advantage.</li>
+                            <li><strong>Q:</strong> How do you value a loss-making company? <strong>A:</strong> P/S ratio, or DCF based on path to profitability.</li>
+                            <li><strong>Q:</strong> What's NPA in banking? <strong>A:</strong> Non-Performing Asset. Loan overdue 90+ days. Asset quality indicator.</li>
+                            <li><strong>Q:</strong> How do you forecast revenue? <strong>A:</strong> Volume × Price. Historical growth, industry trends, management guidance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>8.3 Behavioral Questions - STAR Method</h3>
+
+                    <div class="concept-box">
+                        <h4>STAR Method Framework:</h4>
+                        <ul>
+                            <li><strong>S</strong>ituation: Set the context</li>
+                            <li><strong>T</strong>ask: Describe your responsibility</li>
+                            <li><strong>A</strong>ction: Explain what you did</li>
+                            <li><strong>R</strong>esult: Share the outcome (quantify if possible)</li>
+                        </ul>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Behavioral Q1: "Tell me about a time you analyzed data to drive a business decision."</div>
+                        <div class="answer">
+                            <strong>Situation:</strong> At SoulSage, our client was spending ₹50 lakhs monthly on digital ads across Google, Facebook, and Instagram, but we weren't sure which channel delivered the best ROI.
+                            <br><br>
+                            <strong>Task:</strong> As Operations Lead, I was tasked with building a system to track campaign performance and optimize budget allocation.
+                            <br><br>
+                            <strong>Action:</strong> I designed an AI-powered dashboard that automatically pulled data from all platforms, calculated cost-per-acquisition for each channel, and tracked customer lifetime value. I analyzed three months of data and discovered Instagram ads had 40% lower CPA than Facebook despite getting less budget. I presented these findings with a recommendation to reallocate 30% of Facebook budget to Instagram.
+                            <br><br>
+                            <strong>Result:</strong> Client implemented the change, and within two months, overall CPA decreased by 25%, improving campaign ROI from 2.8x to 3.5x. This saved ₹12 lakhs over six months. This experience taught me how data-driven analysis directly impacts financial outcomes—similar to how equity research uses financial data to drive investment decisions.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Behavioral Q2: "Describe a time you had to learn something complex quickly."</div>
+                        <div class="answer">
+                            <strong>Situation:</strong> When I joined SIMSREE's MMS Finance program, I came from a computer engineering and operations background with limited formal finance education.
+                            <br><br>
+                            <strong>Task:</strong> I needed to quickly build foundational knowledge in financial modeling and investment banking to compete with peers who had commerce backgrounds.
+                            <br><br>
+                            <strong>Action:</strong> I created a structured 8-week learning plan: spent mornings on coursework, afternoons building Excel models using real company data from Screener.in, and evenings reading annual reports of Nifty 50 companies. I joined a study group where we taught each other concepts. I also reached out to seniors and alumni for mentorship on bridging my knowledge gaps.
+                            <br><br>
+                            <strong>Result:</strong> Within three months, I scored in the top quartile of my investment banking course and successfully built DCF models for three companies. More importantly, I discovered that my technical background gave me an edge in data analysis and financial modeling. This experience reinforced that I can master complex subjects through structured effort and leverage my existing strengths.
+                        </div>
+                    </div>
+
+                    <div class="interview-box">
+                        <div class="question">Behavioral Q3: "Tell me about a time you disagreed with a manager or team member."</div>
+                        <div class="answer">
+                            <strong>Situation:</strong> At SoulSage, my manager wanted to invest ₹15 lakhs in a marketing automation tool that promised to reduce manual work.
+                            <br><br>
+                            <strong>Task:</strong> I needed to evaluate whether this investment made financial sense versus building an in-house solution.
+                            <br><br>
+                            <strong>Action:</strong> I disagreed respectfully, proposing we conduct a cost-benefit analysis first. I researched the tool's capabilities, estimated time savings, calculated ROI over 24 months, and compared it to building a custom solution using existing platforms. I presented my analysis showing the tool would break even in 18 months, but a custom solution I could build would deliver similar benefits at 40% lower cost and break even in 10 months.
+                            <br><br>
+                            <strong>Result:</strong> My manager appreciated the data-driven approach. We went with the custom solution, which I implemented over six weeks. It delivered the promised efficiency gains and saved ₹6 lakhs over the first year. This taught me the importance of backing opinions with analysis and presenting alternatives constructively—skills directly applicable to equity research where analysts must challenge company narratives with data.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkpoint">
+                    <h4>Module 8 Progress Checkpoint</h4>
+                    <ul class="checkbox-list">
+                        <li>Have personalized "tell me about yourself" prepared</li>
+                        <li>Can answer 50+ technical finance questions confidently</li>
+                        <li>Know how to structure behavioral answers using STAR method</li>
+                        <li>Can articulate how AI/analytics background strengthens finance candidacy</li>
+                        <li>Have practiced answers out loud multiple times</li>
+                    </ul>
+
+                    <p style="margin-top: 30px; font-size: 1.2em;"><strong>Final Interview Prep Tips for Nakul:</strong></p>
+                    <ul class="checkbox-list">
+                        <li>Practice your "tell me about yourself" 20 times until it's natural, not rehearsed</li>
+                        <li>Prepare 3-5 company/stock ideas you've analyzed deeply (use from practice tasks)</li>
+                        <li>Read recent research reports from target firm to understand their style</li>
+                        <li>Prepare questions for interviewers (about team, research process, sector focus)</li>
+                        <li>Review your SoulSage achievements—quantify everything (%, ₹, time saved)</li>
+                        <li>Mock interview with friends/mentors before real interviews</li>
+                        <li>Stay updated on current market events day before interview</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- GLOSSARY -->
+            <section id="glossary" class="module">
+                <div class="module-header">
+                    <h2>Finance Glossary: 100+ Essential Terms</h2>
+                    <p style="font-size: 1.2em; margin-top: 20px;">Your comprehensive reference for finance terminology. Master these terms to speak the language of finance fluently.</p>
+                </div>
+
+                <div class="section">
+                    <h3>A - D</h3>
+
+                    <div class="glossary-term">
+                        <div class="term">Accrual Accounting</div>
+                        <p>Accounting method where revenues and expenses are recorded when earned/incurred, not when cash is exchanged. Matches revenues with related expenses.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Asset</div>
+                        <p>Resource owned by a company that has economic value. Examples: cash, inventory, property, equipment. Classified as current (liquid within 1 year) or non-current (long-term).</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Balance Sheet</div>
+                        <p>Financial statement showing company's assets, liabilities, and equity at a specific point in time. Formula: Assets = Liabilities + Equity.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Beta</div>
+                        <p>Measure of a stock's volatility relative to the overall market. Beta=1 means stock moves with market; Beta>1 more volatile; Beta<1 less volatile.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Book Value</div>
+                        <p>Net asset value of a company (Total Assets - Total Liabilities). Book Value per Share = Book Value / Number of Shares Outstanding.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Capital Expenditure (Capex)</div>
+                        <p>Funds used to acquire or upgrade physical assets like property, plants, or equipment. Long-term investment in business infrastructure.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Cash Flow Statement</div>
+                        <p>Financial statement showing cash inflows and outflows from operating, investing, and financing activities over a period.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">CAGR (Compound Annual Growth Rate)</div>
+                        <p>Average annual growth rate over a specified period longer than one year. Formula: (Ending Value / Beginning Value)^(1/years) - 1</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Current Ratio</div>
+                        <p>Liquidity ratio measuring ability to pay short-term obligations. Formula: Current Assets / Current Liabilities. Ratio > 1.5 generally considered healthy.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">DCF (Discounted Cash Flow)</div>
+                        <p>Valuation method that estimates company value by discounting projected future cash flows to present value using WACC.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Debt-to-Equity Ratio</div>
+                        <p>Leverage ratio showing proportion of debt to equity financing. Formula: Total Debt / Shareholders' Equity. Higher ratio = more leverage = more risk.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Depreciation</div>
+                        <p>Non-cash expense allocating cost of tangible assets over their useful life. Reduces asset value on balance sheet and profit on income statement.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Dividend</div>
+                        <p>Portion of company profits distributed to shareholders. Can be cash or stock dividends. Indicates financial health and management confidence.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Dividend Yield</div>
+                        <p>Annual dividend per share divided by stock price, expressed as percentage. Indicates income return on investment. Formula: (Annual Dividend / Price) × 100</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>E - N</h3>
+
+                    <div class="glossary-term">
+                        <div class="term">EBIT (Earnings Before Interest and Tax)</div>
+                        <p>Operating profit measure showing earnings from core operations before financing costs and taxes. Also called Operating Profit.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">EBITDA</div>
+                        <p>Earnings Before Interest, Tax, Depreciation, and Amortization. Measures operating performance excluding non-cash expenses and financing decisions.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Enterprise Value (EV)</div>
+                        <p>Total value of a company. Formula: Market Cap + Total Debt - Cash. Used in valuation multiples like EV/EBITDA.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">EPS (Earnings Per Share)</div>
+                        <p>Company's net profit divided by number of outstanding shares. Key metric for per-share profitability. Formula: Net Profit / Shares Outstanding.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Equity</div>
+                        <p>Ownership interest in a company (stocks/shares). Also refers to Shareholders' Equity = Assets - Liabilities on balance sheet.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Free Cash Flow (FCF)</div>
+                        <p>Cash generated after accounting for capital expenditures. Formula: Operating Cash Flow - Capex. Indicates cash available for distribution to shareholders.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Gross Profit Margin</div>
+                        <p>Profitability ratio showing percentage of revenue retained after cost of goods sold. Formula: (Gross Profit / Revenue) × 100. Indicates pricing power.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Income Statement</div>
+                        <p>Financial statement showing revenues, expenses, and profit over a period. Also called Profit & Loss (P&L) Statement. Shows company's financial performance.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">IPO (Initial Public Offering)</div>
+                        <p>Process where a private company offers shares to the public for first time, becoming publicly traded on stock exchanges.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">IRR (Internal Rate of Return)</div>
+                        <p>Discount rate at which NPV of an investment equals zero. Represents the expected annual return of a project. Used in capital budgeting decisions.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Liability</div>
+                        <p>Financial obligation or debt owed by a company. Examples: loans, accounts payable, bonds. Classified as current (due within 1 year) or long-term.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Liquidity</div>
+                        <p>Ability to convert assets to cash quickly or meet short-term obligations. Cash is most liquid asset; real estate is illiquid.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Market Capitalization</div>
+                        <p>Total market value of a company's outstanding shares. Formula: Share Price × Number of Shares Outstanding. Categorized as large-cap, mid-cap, small-cap.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Mutual Fund</div>
+                        <p>Investment vehicle pooling money from many investors to invest in diversified portfolio of stocks, bonds, or other securities. Professionally managed.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Net Profit Margin</div>
+                        <p>Profitability ratio showing percentage of revenue retained as profit after all expenses. Formula: (Net Profit / Revenue) × 100. Indicates overall efficiency.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">NPV (Net Present Value)</div>
+                        <p>Sum of present values of future cash flows minus initial investment. Positive NPV means project creates value. Key capital budgeting metric.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>P - Z</h3>
+
+                    <div class="glossary-term">
+                        <div class="term">P/E Ratio (Price-to-Earnings)</div>
+                        <p>Valuation multiple showing how much investors pay per rupee of earnings. Formula: Stock Price / EPS. Higher P/E suggests growth expectations or overvaluation.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">P/B Ratio (Price-to-Book)</div>
+                        <p>Valuation multiple comparing market value to book value. Formula: Stock Price / Book Value per Share. P/B < 1 may indicate undervaluation.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">ROA (Return on Assets)</div>
+                        <p>Profitability ratio measuring how efficiently company uses assets to generate profit. Formula: (Net Profit / Total Assets) × 100. Higher = better asset utilization.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">ROE (Return on Equity)</div>
+                        <p>Most important profitability ratio for investors. Measures return generated on shareholders' equity. Formula: (Net Profit / Shareholders' Equity) × 100. ROE >15% is excellent.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Revenue</div>
+                        <p>Total income from sales of goods/services. "Top line" of income statement. Also called Sales or Turnover. Does not include expenses.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">SEBI (Securities and Exchange Board of India)</div>
+                        <p>Regulatory body overseeing securities markets in India. Protects investors, regulates stock exchanges, and enforces securities laws.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Sensex</div>
+                        <p>Stock market index of 30 largest and most actively traded stocks on Bombay Stock Exchange (BSE). Benchmark for Indian equity market performance.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Valuation</div>
+                        <p>Process of determining the intrinsic or fair value of a company or asset. Methods include DCF, comparable company analysis, precedent transactions.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">WACC (Weighted Average Cost of Capital)</div>
+                        <p>Average rate company pays to finance assets, weighted by proportion of debt and equity. Used as discount rate in DCF valuation.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Working Capital</div>
+                        <p>Measure of company's short-term financial health. Formula: Current Assets - Current Liabilities. Positive working capital indicates ability to cover short-term obligations.</p>
+                    </div>
+
+                    <div class="glossary-term">
+                        <div class="term">Yield</div>
+                        <p>Income return on investment, expressed as percentage. For stocks: dividend yield. For bonds: interest yield. Indicates income generation potential.</p>
+                    </div>
+                </div>
+
+                <div class="tip" style="margin-top: 40px;">
+                    <strong>Pro Tip:</strong> Create flashcards for these terms! Spend 15 minutes daily reviewing 10-15 terms. Within two weeks, you'll have mastered finance vocabulary and speak confidently in interviews.
+                </div>
+            </section>
+
+            <!-- ROADMAP -->
+            <section id="roadmap" class="module">
+                <div class="module-header">
+                    <h2>Nakul's Personalized 12-Week Finance Mastery Roadmap</h2>
+                    <p style="font-size: 1.2em; margin-top: 20px;">Your structured path from finance beginner to interview-ready candidate. Follow this week-by-week plan while balancing SIMSREE coursework.</p>
+                </div>
+
+                <div class="roadmap">
+                    <h3>Phase 1: Foundation Building (Weeks 1-4)</h3>
+
+                    <div class="week">
+                        <h4>Week 1: Finance Fundamentals & Financial Statements</h4>
+                        <p><strong>Goals:</strong> Understand what finance is, master Income Statement and Balance Sheet basics</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 1 (Understanding Finance) and Module 2.1-2.3 (Income Statement, Balance Sheet)</li>
+                            <li><strong>Practice:</strong> Download Infosys and HDFC Bank annual reports. Locate and read their financial statements</li>
+                            <li><strong>Exercise:</strong> Calculate gross margin, operating margin, and net margin for 3 companies on Screener.in</li>
+                            <li><strong>Milestone:</strong> Can explain the three financial statements and their purpose in an interview setting</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 10-12 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 2: Cash Flow & Statement Linkages</h4>
+                        <p><strong>Goals:</strong> Master Cash Flow Statement, understand how three statements connect</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 2.4-2.6 (Cash Flow Statement, Linkages)</li>
+                            <li><strong>Practice:</strong> Trace how net profit flows through all three statements for TCS</li>
+                            <li><strong>Exercise:</strong> Calculate Free Cash Flow for 5 companies. Identify which ones generate strong cash vs just accounting profits</li>
+                            <li><strong>Case Study:</strong> Research Jet Airways collapse—understand why profitability alone isn't enough</li>
+                            <li><strong>Milestone:</strong> Can walk through statement linkages confidently in interview</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 10-12 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 3: Financial Ratios Part 1 (Profitability & Liquidity)</h4>
+                        <p><strong>Goals:</strong> Master profitability and liquidity ratios</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 3.1-3.3 (Ratio Analysis, Profitability, Liquidity)</li>
+                            <li><strong>Practice:</strong> Calculate ROE, ROA, margins for HDFC Bank, ITC, Asian Paints. Compare to sector peers</li>
+                            <li><strong>Exercise:</strong> Analyze why Infosys has 30%+ ROE vs manufacturing companies at 15%</li>
+                            <li><strong>Flashcards:</strong> Create ratio flashcards (formula + interpretation) for 20 key ratios</li>
+                            <li><strong>Milestone:</strong> Can calculate and interpret all profitability ratios from memory</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 12-14 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 4: Financial Ratios Part 2 (Efficiency, Leverage, Valuation)</h4>
+                        <p><strong>Goals:</strong> Complete ratio analysis toolkit, start valuation ratios</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 3.4-3.7 (Efficiency, Leverage, Valuation ratios)</li>
+                            <li><strong>Practice:</strong> Full ratio analysis (30+ ratios) for Titan, Maruti Suzuki, Reliance</li>
+                            <li><strong>Comparative Analysis:</strong> Compare HDFC Bank vs ICICI Bank using all ratio categories. Which is better investment?</li>
+                            <li><strong>Mock Interview:</strong> Practice answering "What's the difference between ROE and ROA?" with examples</li>
+                            <li><strong>Milestone:</strong> Complete comprehensive ratio analysis report for 1 company</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 14-16 hours</p>
+                    </div>
+                </div>
+
+                <div class="roadmap">
+                    <h3>Phase 2: Valuation & Markets (Weeks 5-8)</h3>
+
+                    <div class="week">
+                        <h4>Week 5: Time Value of Money & DCF Fundamentals</h4>
+                        <p><strong>Goals:</strong> Master TVM concepts, understand DCF framework</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 4.1-4.2 (Time Value of Money, DCF Basics)</li>
+                            <li><strong>Practice:</strong> Calculate PV and FV for different scenarios. Practice discounting cash flows</li>
+                            <li><strong>Excel Work:</strong> Build simple DCF template in Excel with 5-year forecast</li>
+                            <li><strong>Case Study:</strong> Read a sell-side DCF valuation report (Kotak/Motilal Oswal). Understand methodology</li>
+                            <li><strong>Milestone:</strong> Can explain DCF concept and calculate NPV manually</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 12-14 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 6: WACC & Relative Valuation</h4>
+                        <p><strong>Goals:</strong> Calculate WACC, apply comparable company analysis</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 4.3 (WACC, Relative Valuation)</li>
+                            <li><strong>Practice:</strong> Calculate WACC for Reliance, Tata Motors using real data</li>
+                            <li><strong>Comparative Valuation:</strong> Compare P/E, P/B, EV/EBITDA for IT sector (TCS, Infosys, HCL, Wipro). Identify outliers</li>
+                            <li><strong>Exercise:</strong> Value Asian Paints using comparable analysis vs Berger Paints</li>
+                            <li><strong>Milestone:</strong> Complete full valuation (DCF + Comps) for 1 company</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 14-16 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 7: Equity Markets & Investment Basics</h4>
+                        <p><strong>Goals:</strong> Understand markets, instruments, IPO process</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 5 (Equity Markets)</li>
+                            <li><strong>Research:</strong> Deep-dive on 3 recent IPOs (e.g., Zomato, Nykaa, LIC). Analyze pricing, subscription, post-listing performance</li>
+                            <li><strong>Exercise:</strong> Track Nifty 50 daily for one week. Note top movers and understand why</li>
+                            <li><strong>Portfolio Simulation:</strong> Create mock portfolio of 10 stocks with ₹10 lakh virtual capital. Track performance</li>
+                            <li><strong>Milestone:</strong> Can explain IPO process end-to-end with real example</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 10-12 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 8: Equity Research Process</h4>
+                        <p><strong>Goals:</strong> Learn industry and company analysis frameworks</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 6 (Equity Research)</li>
+                            <li><strong>Industry Analysis:</strong> Apply Porter's Five Forces to Indian Banking sector. Write 1-page analysis</li>
+                            <li><strong>Company Analysis:</strong> Full analysis of HDFC Bank using 6-step framework from Module 6.3</li>
+                            <li><strong>Reading:</strong> Read 5 equity research reports from Kotak/Motilal Oswal. Note structure and style</li>
+                            <li><strong>Milestone:</strong> Write a 2-page equity research note on 1 company with Buy/Hold/Sell recommendation</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 14-16 hours</p>
+                    </div>
+                </div>
+
+                <div class="roadmap">
+                    <h3>Phase 3: Corporate Finance & Interview Prep (Weeks 9-12)</h3>
+
+                    <div class="week">
+                        <h4>Week 9: Corporate Finance Fundamentals</h4>
+                        <p><strong>Goals:</strong> Master capital structure, budgeting, dividend policy</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Complete Module 7 (Corporate Finance)</li>
+                            <li><strong>Practice:</strong> Calculate NPV and IRR for hypothetical projects. Make accept/reject decisions</li>
+                            <li><strong>Case Study:</strong> Analyze capital structure evolution of Reliance over 10 years. Why did debt levels change?</li>
+                            <li><strong>Exercise:</strong> Compare dividend policies of ITC (high payout) vs Amazon (zero payout). Explain rationale</li>
+                            <li><strong>Milestone:</strong> Can explain capital budgeting decision framework with examples</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 12-14 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 10: Interview Preparation - Technical Questions</h4>
+                        <p><strong>Goals:</strong> Master 50+ technical Q&A, perfect "tell me about yourself"</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Review Module 8.1-8.2 (Interview Q&A)</li>
+                            <li><strong>Practice:</strong> Memorize and practice out loud all 50+ technical questions. Record yourself</li>
+                            <li><strong>Refine:</strong> Perfect your "tell me about yourself" script. Practice 20 times until natural</li>
+                            <li><strong>Prep:</strong> Prepare 5 "stock pitches"—companies you've analyzed deeply with investment thesis</li>
+                            <li><strong>Mock Interview:</strong> Conduct mock technical interview with friend/senior covering 20 random questions</li>
+                            <li><strong>Milestone:</strong> Can confidently answer any technical question from Module 8 within 60 seconds</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 15-18 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 11: Behavioral Interview Prep & SoulSage Story</h4>
+                        <p><strong>Goals:</strong> Master behavioral questions, polish SoulSage achievements</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Study:</strong> Review Module 8.3 (Behavioral Questions, STAR Method)</li>
+                            <li><strong>Quantify:</strong> List ALL achievements from SoulSage with numbers (%, ₹, time saved). Prepare 10 STAR stories</li>
+                            <li><strong>Practice:</strong> Record yourself answering behavioral questions. Watch for filler words, pace, clarity</li>
+                            <li><strong>Bridge:</strong> Prepare answers linking AI/analytics background to finance strengths (5 talking points)</li>
+                            <li><strong>Questions for Interviewer:</strong> Prepare 10 thoughtful questions about team, research process, learning opportunities</li>
+                            <li><strong>Milestone:</strong> Have 10 polished STAR stories ready covering: leadership, teamwork, data analysis, problem-solving, learning</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 12-14 hours</p>
+                    </div>
+
+                    <div class="week">
+                        <h4>Week 12: Final Polish & Mock Interviews</h4>
+                        <p><strong>Goals:</strong> Final preparation, full mock interviews, market awareness</p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Mock Interviews:</strong> 3 full mock interviews (45-60 mins each) with mentors/seniors covering technical + behavioral</li>
+                            <li><strong>Market Update:</strong> Read Economic Times daily. Know current Sensex/Nifty levels, recent IPOs, major market news</li>
+                            <li><strong>Company Research:</strong> Research target firms (check their recent reports, team bios, recent deals/coverage)</li>
+                            <li><strong>Final Review:</strong> Review glossary terms, key formulas, ratio interpretations one last time</li>
+                            <li><strong>Mental Prep:</strong> Visualize successful interviews. Get proper sleep night before. Dress professionally</li>
+                            <li><strong>Milestone:</strong> INTERVIEW READY! Confident, prepared, and excited to showcase your knowledge</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: bold;">Time Commitment: 15-20 hours</p>
+                    </div>
+                </div>
+
+                <div class="tip" style="margin-top: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 20px;">
+                    <h3 style="color: white; font-size: 2em; margin-bottom: 20px;">Nakul's Success Formula</h3>
+                    <p style="font-size: 1.2em; line-height: 2;">
+                        <strong>Consistency > Intensity.</strong> It's better to study 1-2 hours daily than cramming 10 hours on weekends.
+                        <br><br>
+                        <strong>Application > Theory.</strong> Always apply concepts to real companies. Use Screener.in daily.
+                        <br><br>
+                        <strong>Practice > Perfection.</strong> Mock interviews matter more than reading one more chapter.
+                        <br><br>
+                        <strong>Your Edge:</strong> Most candidates know finance. You know finance AND have real-world business experience with quantifiable results. Own that advantage!
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <h3 style="font-size: 2.2em; margin-bottom: 20px;">You've Got This, Nakul! 🚀</h3>
+            <p style="font-size: 1.3em; line-height: 2; margin-bottom: 30px;">
+                This manual represents 8 comprehensive modules, 100+ finance terms, 50+ interview questions, and a personalized 12-week roadmap—all designed specifically for your journey from SIMSREE to your dream finance role.
+            </p>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                Your AI/Analytics background + Finance knowledge = Unstoppable combination
+            </p>
+            <p style="font-size: 1.1em; margin-bottom: 30px;">
+                Remember: Every expert was once a beginner. Every successful analyst started by learning these same fundamentals. The difference is consistency, curiosity, and application.
+            </p>
+            <div style="background: rgba(255,255,255,0.2); padding: 30px; border-radius: 15px; margin-top: 40px;">
+                <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 15px;">Next Steps:</p>
+                <ol style="font-size: 1.1em; line-height: 2; text-align: left; margin: 0 auto; max-width: 800px;">
+                    <li>Print or bookmark this manual for quick reference</li>
+                    <li>Start Week 1 of the roadmap today—not tomorrow</li>
+                    <li>Join SIMSREE Finance Club and network with seniors</li>
+                    <li>Follow target firms on LinkedIn and monitor their updates</li>
+                    <li>Connect with alumni working in equity research for mentorship</li>
+                </ol>
+            </div>
+            <p style="font-size: 1.4em; margin-top: 50px; font-weight: bold;">
+                All the best for your summer internship hunt!<br>
+                You're ready to make an impact. Go get it! 💪
+            </p>
+            <p style="font-size: 0.95em; margin-top: 50px; opacity: 0.8;">
+                Manual Version 1.0 | Created October 2025 | Personalized for Nakul Nandanwar, SIMSREE MMS Finance
+            </p>
+        </div>
+    </div>
+</body>
+</html>

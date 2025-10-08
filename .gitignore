@@ -1,0 +1,60 @@
+# MMS-PREP Git Ignore File
+
+# Personal/Private files
+configs/*-private.json
+configs/personal-*.json
+**/PRIVATE_*
+
+# Large generated files (optional - you may want to commit these)
+# Uncomment if your guides get too large for Git
+# generated/*.html
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache (if using Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Backup files
+*.bak
+*.backup
+
+# Notes and drafts
+notes/
+drafts/
+NOTES.md
+TODO.md
+
+# Personal study notes (if you want to keep them private)
+my-notes/
+personal-notes/
+
+# Test files
+test/
+tests/
+*.test.html
