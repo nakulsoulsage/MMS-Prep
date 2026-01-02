@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations Management - Formulas & Numerical Problems | MMS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #3b82f6;
+            --accent-dark: #2563eb;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --purple: #8b5cf6;
+            --pink: #ec4899;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent-dark) 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav-container {
+            background: var(--card-bg);
+            padding: 20px;
+            border-bottom: 2px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .nav-links a {
+            padding: 10px 18px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Topic Section */
+        .topic-section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .topic-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .topic-header .icon {
+            font-size: 2rem;
+            background: rgba(255,255,255,0.2);
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        .topic-header h2 {
+            font-size: 1.6rem;
+        }
+
+        .topic-content {
+            padding: 30px;
+        }
+
+        /* Formula Box */
+        .formula-card {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .formula-card .formula-title {
+            font-weight: 700;
+            color: var(--accent-dark);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed var(--accent);
+        }
+
+        .formula-card .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            margin: 10px 0;
+            color: var(--primary);
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .formula-card .formula-note {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 6px;
+        }
+
+        .formula-card .formula-note strong {
+            color: var(--accent-dark);
+        }
+
+        /* Numerical Problem Box */
+        .numerical-box {
+            background: var(--card-bg);
+            border: 2px solid var(--success);
+            border-radius: 12px;
+            margin: 25px 0;
+            overflow: hidden;
+        }
+
+        .numerical-header {
+            background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .numerical-header .problem-num {
+            background: rgba(255,255,255,0.3);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .numerical-content {
+            padding: 25px;
+        }
+
+        .problem-statement {
+            background: #f0fdf4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--success);
+        }
+
+        .problem-statement h4 {
+            color: #047857;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .given-data {
+            background: #fefce8;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid var(--warning);
+        }
+
+        .given-data h5 {
+            color: #b45309;
+            margin-bottom: 10px;
+        }
+
+        .solution-box {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid var(--border);
+        }
+
+        .solution-box h5 {
+            color: var(--accent-dark);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .step {
+            display: flex;
+            margin: 15px 0;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            background: var(--accent);
+            color: white;
+            min-width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .calculation {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background: white;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .answer-box {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 2px solid var(--success);
+            text-align: center;
+        }
+
+        .answer-box .answer-label {
+            font-size: 0.85rem;
+            color: #047857;
+            margin-bottom: 5px;
+        }
+
+        .answer-box .answer-value {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #065f46;
+        }
+
+        /* Table Styles */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        .data-table th, .data-table td {
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .data-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .data-table tr:hover {
+            background: #e2e8f0;
+        }
+
+        .data-table .highlight-row {
+            background: #fef3c7 !important;
+        }
+
+        .data-table .result-row {
+            background: #dcfce7 !important;
+            font-weight: 600;
+        }
+
+        /* Method Steps */
+        .method-box {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border: 2px solid var(--purple);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .method-box h4 {
+            color: var(--purple);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .method-steps {
+            counter-reset: method-step;
+        }
+
+        .method-step {
+            padding: 12px 15px 12px 50px;
+            position: relative;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .method-step::before {
+            counter-increment: method-step;
+            content: counter(method-step);
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background: var(--purple);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Quick Reference Grid */
+        .formula-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .formula-mini-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .formula-mini-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+        }
+
+        .formula-mini-card h5 {
+            color: var(--accent-dark);
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .formula-mini-card .formula-text {
+            font-family: 'Cambria Math', serif;
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-align: center;
+            padding: 10px;
+            background: #f8fafc;
+            border-radius: 6px;
+        }
+
+        /* Print Button */
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px 25px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(59, 130, 246, 0.5);
+        }
+
+        /* Gantt Chart Style for Sequencing */
+        .gantt-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        .gantt-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-width: 600px;
+        }
+
+        .gantt-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .gantt-label {
+            min-width: 100px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .gantt-bar-container {
+            flex: 1;
+            height: 35px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            position: relative;
+            display: flex;
+        }
+
+        .gantt-bar {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+
+        .gantt-bar.job1 { background: var(--accent); }
+        .gantt-bar.job2 { background: var(--success); }
+        .gantt-bar.job3 { background: var(--warning); }
+        .gantt-bar.job4 { background: var(--purple); }
+        .gantt-bar.job5 { background: var(--pink); }
+        .gantt-bar.idle { background: #cbd5e1; }
+
+        .timeline {
+            display: flex;
+            margin-top: 5px;
+            margin-left: 110px;
+        }
+
+        .timeline-mark {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        /* Note Box */
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid var(--warning);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+        }
+
+        .note-box strong {
+            color: #b45309;
+        }
+
+        /* Print Styles */
+        @media print {
+            .nav-container, .print-btn {
+                display: none !important;
+            }
+            .topic-section {
+                break-inside: avoid;
+            }
+            .numerical-box {
+                break-inside: avoid;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .formula-card .formula {
+                font-size: 1.1rem;
+            }
+            .formula-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Operations Management</h1>
+    <p>Complete Formulas & Numerical Problems with Solutions</p>
+    <p style="margin-top: 10px; opacity: 0.8;">MMS Examination Preparation Guide</p>
+</div>
+
+<div class="nav-container">
+    <div class="nav-links">
+        <a href="#plant-location">Plant Location</a>
+        <a href="#work-study">Work Study</a>
+        <a href="#value-engineering">Value Engineering</a>
+        <a href="#inventory">Inventory & EOQ</a>
+        <a href="#sequencing">Sequencing</a>
+        <a href="#sqc">Quality Control</a>
+        <a href="#toc">TOC Accounting</a>
+        <a href="#forecasting">Forecasting</a>
+        <a href="#quick-ref">Quick Reference</a>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- ==================== PLANT LOCATION ==================== -->
+<section class="topic-section" id="plant-location">
+    <div class="topic-header">
+        <div class="icon">1</div>
+        <h2>Plant Location - Formulas & Numericals</h2>
+    </div>
+    <div class="topic-content">
+
+        <!-- Break-Even Analysis Formula -->
+        <div class="formula-card">
+            <div class="formula-title">Break-Even Analysis</div>
+            <div class="formula">BEP (units) = F / (S - V)</div>
+            <div class="formula-note">
+                <strong>Where:</strong><br>
+                F = Fixed Cost<br>
+                S = Selling Price per unit<br>
+                V = Variable Cost per unit<br>
+                (S - V) = Contribution per unit
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Total Cost at a Location</div>
+            <div class="formula">TC = Fixed Cost + (Variable Cost per unit x Quantity)</div>
+            <div class="formula">TC = F + V(Q)</div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Crossover Point (Between Two Locations)</div>
+            <div class="formula">F_A + V_A(X) = F_B + V_B(X)</div>
+            <div class="formula-note">
+                Solve for X to find the production volume at which both locations have equal total cost.
+                <br><strong>Decision Rule:</strong> Below crossover - choose location with lower fixed cost; Above crossover - choose location with lower variable cost.
+            </div>
+        </div>
+
+        <!-- Numerical 1 -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 1</span>
+                Break-Even Location Analysis
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>A company is considering two locations for a new plant:</p>
+                    <ul>
+                        <li>Location X: Fixed Cost = Rs. 150,000, Variable Cost = Rs. 10/unit</li>
+                        <li>Location Y: Fixed Cost = Rs. 350,000, Variable Cost = Rs. 8/unit</li>
+                    </ul>
+                    <p>Determine which location is appropriate if expected demand is 130,000 units.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Location X</th>
+                            <th>Location Y</th>
+                        </tr>
+                        <tr>
+                            <td>Fixed Cost (F)</td>
+                            <td>Rs. 150,000</td>
+                            <td>Rs. 350,000</td>
+                        </tr>
+                        <tr>
+                            <td>Variable Cost (V)</td>
+                            <td>Rs. 10/unit</td>
+                            <td>Rs. 8/unit</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Find Crossover Point</strong>
+                            <p>Set total costs equal:</p>
+                            <div class="calculation">
+                                F_X + V_X(Q) = F_Y + V_Y(Q)<br>
+                                150,000 + 10Q = 350,000 + 8Q
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Solve for Q</strong>
+                            <div class="calculation">
+                                10Q - 8Q = 350,000 - 150,000<br>
+                                2Q = 200,000<br>
+                                Q = 100,000 units
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Decision Rule</strong>
+                            <div class="calculation">
+                                If demand < 100,000: Choose Location X (lower fixed cost)<br>
+                                If demand > 100,000: Choose Location Y (lower variable cost)<br>
+                                <br>
+                                Given demand = 130,000 units > 100,000 units
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <strong>Verification</strong>
+                            <div class="calculation">
+                                TC at Location X = 150,000 + 10(130,000) = Rs. 1,450,000<br>
+                                TC at Location Y = 350,000 + 8(130,000) = Rs. 1,390,000
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Location Y is appropriate (Saves Rs. 60,000)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centre of Gravity Formula -->
+        <div class="formula-card">
+            <div class="formula-title">Centre of Gravity Method</div>
+            <div class="formula">C_x = (Sum of d_ix x W_i) / (Sum of W_i)</div>
+            <div class="formula">C_y = (Sum of d_iy x W_i) / (Sum of W_i)</div>
+            <div class="formula-note">
+                <strong>Where:</strong><br>
+                C_x, C_y = Coordinates of centre of gravity<br>
+                d_ix, d_iy = X and Y coordinates of location i<br>
+                W_i = Weight or volume shipped to/from location i
+            </div>
+        </div>
+
+        <!-- Centre of Gravity Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 2</span>
+                Centre of Gravity Method
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>A company needs to locate a warehouse to serve 4 retail stores. Find the optimal location using Centre of Gravity method.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Store</th>
+                            <th>X-Coordinate</th>
+                            <th>Y-Coordinate</th>
+                            <th>Weight (tons/month)</th>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>300</td>
+                            <td>100</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>400</td>
+                            <td>300</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>200</td>
+                            <td>400</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate Sum of Weights</strong>
+                            <div class="calculation">
+                                Sum W_i = 500 + 300 + 200 + 100 = 1,100 tons
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate C_x (X-coordinate)</strong>
+                            <div class="calculation">
+                                Sum(d_ix x W_i) = (100 x 500) + (300 x 300) + (400 x 200) + (200 x 100)<br>
+                                = 50,000 + 90,000 + 80,000 + 20,000 = 240,000<br><br>
+                                C_x = 240,000 / 1,100 = 218.18
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Calculate C_y (Y-coordinate)</strong>
+                            <div class="calculation">
+                                Sum(d_iy x W_i) = (200 x 500) + (100 x 300) + (300 x 200) + (400 x 100)<br>
+                                = 100,000 + 30,000 + 60,000 + 40,000 = 230,000<br><br>
+                                C_y = 230,000 / 1,100 = 209.09
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Optimal Location: (218.18, 209.09) or approximately (218, 209)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Factor Rating Method -->
+        <div class="formula-card">
+            <div class="formula-title">Weighted Factor Rating Method</div>
+            <div class="formula">Total Score = Sum of (Weight_i x Score_i) for all factors</div>
+            <div class="formula-note">
+                <strong>Steps:</strong><br>
+                1. Identify important factors<br>
+                2. Assign weights to each factor (total = 1.0 or 100)<br>
+                3. Score each location for each factor (e.g., 1-100)<br>
+                4. Calculate weighted score = Weight x Score<br>
+                5. Sum weighted scores; Select location with highest total
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== WORK STUDY ==================== -->
+<section class="topic-section" id="work-study">
+    <div class="topic-header">
+        <div class="icon">2</div>
+        <h2>Work Study - Formulas & Numericals</h2>
+    </div>
+    <div class="topic-content">
+
+        <!-- Basic Formulas -->
+        <div class="formula-card">
+            <div class="formula-title">Basic Time Calculation</div>
+            <div class="formula">Basic Time = Observed Time x (Rating / 100)</div>
+            <div class="formula-note">
+                <strong>Where:</strong><br>
+                Observed Time (OT) = Time recorded using stopwatch<br>
+                Rating = Performance rating (100 = standard pace, >100 = faster, <100 = slower)
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Standard Time Calculation</div>
+            <div class="formula">Standard Time = Basic Time + Allowances</div>
+            <div class="formula">OR</div>
+            <div class="formula">Standard Time = Basic Time x (1 + Allowance %)</div>
+            <div class="formula-note">
+                <strong>Types of Allowances:</strong><br>
+                - Personal Allowance (5-7%)<br>
+                - Fatigue Allowance (4-10%)<br>
+                - Contingency Allowance (2-5%)<br>
+                - Special Allowance (startup, shutdown, cleaning)<br>
+                - Rework Allowance
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Normal Time (Alternative Term)</div>
+            <div class="formula">Normal Time = Observed Time x (Rating / 100)</div>
+            <div class="formula-note">Normal Time and Basic Time are used interchangeably in time study calculations.</div>
+        </div>
+
+        <!-- Numerical 1 -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 1</span>
+                Basic Time Study Calculation
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>In a time study, observed time is 80 seconds and performance rating is 80%. Calculate the standard time if total allowance is 15%.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <ul>
+                        <li>Observed Time (OT) = 80 seconds</li>
+                        <li>Performance Rating = 80%</li>
+                        <li>Total Allowance = 15%</li>
+                    </ul>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate Basic Time</strong>
+                            <div class="calculation">
+                                Basic Time = Observed Time x (Rating / 100)<br>
+                                Basic Time = 80 x (80 / 100)<br>
+                                Basic Time = 80 x 0.80 = 64 seconds
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate Standard Time</strong>
+                            <div class="calculation">
+                                Standard Time = Basic Time x (1 + Allowance %)<br>
+                                Standard Time = 64 x (1 + 0.15)<br>
+                                Standard Time = 64 x 1.15 = 73.6 seconds
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Basic Time = 64 seconds | Standard Time = 73.6 seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Numerical 2 - Multi-Element -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 2</span>
+                Multi-Element Time Study (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>The observed times and performance ratings for 5 elements of a job are given. Calculate standard time assuming rest and personal allowance as 15% and contingency allowance as 2% of basic time.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Element</th>
+                            <th>Observed Time (Min)</th>
+                            <th>Performance Rating</th>
+                        </tr>
+                        <tr><td>1</td><td>0.20</td><td>85%</td></tr>
+                        <tr><td>2</td><td>0.08</td><td>80%</td></tr>
+                        <tr><td>3</td><td>0.50</td><td>90%</td></tr>
+                        <tr><td>4</td><td>0.12</td><td>85%</td></tr>
+                        <tr><td>5</td><td>0.10</td><td>80%</td></tr>
+                    </table>
+                    <p>Rest & Personal Allowance = 15%, Contingency Allowance = 2%</p>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate Basic Time for Each Element</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Element</th>
+                                    <th>OT (Min)</th>
+                                    <th>Rating</th>
+                                    <th>Basic Time = OT x (R/100)</th>
+                                </tr>
+                                <tr><td>1</td><td>0.20</td><td>85%</td><td>0.20 x 0.85 = 0.170</td></tr>
+                                <tr><td>2</td><td>0.08</td><td>80%</td><td>0.08 x 0.80 = 0.064</td></tr>
+                                <tr><td>3</td><td>0.50</td><td>90%</td><td>0.50 x 0.90 = 0.450</td></tr>
+                                <tr><td>4</td><td>0.12</td><td>85%</td><td>0.12 x 0.85 = 0.102</td></tr>
+                                <tr><td>5</td><td>0.10</td><td>80%</td><td>0.10 x 0.80 = 0.080</td></tr>
+                                <tr class="result-row"><td colspan="3"><strong>Total Basic Time</strong></td><td><strong>0.866 min</strong></td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate Total Allowance</strong>
+                            <div class="calculation">
+                                Total Allowance = Rest & Personal + Contingency<br>
+                                Total Allowance = 15% + 2% = 17%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Calculate Standard Time</strong>
+                            <div class="calculation">
+                                Standard Time = Basic Time x (1 + Allowance %)<br>
+                                Standard Time = 0.866 x (1 + 0.17)<br>
+                                Standard Time = 0.866 x 1.17 = 1.013 minutes
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Total Basic Time = 0.866 min | Standard Time = 1.013 min (60.78 seconds)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Numerical 3 - With Relaxation Allowance -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 3</span>
+                Time Study with Variable Relaxation Allowances (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Following are the elements of a machining operation. Calculate normal time and standard time for this job. Assume contingency allowance to be 3%.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Observed Time (Min)</th>
+                            <th>Rating %</th>
+                            <th>Relaxation Allowance %</th>
+                        </tr>
+                        <tr><td>1</td><td>1.80</td><td>60%</td><td>10%</td></tr>
+                        <tr><td>2</td><td>2.20</td><td>90%</td><td>12%</td></tr>
+                        <tr><td>3</td><td>6.30</td><td>100%</td><td>10%</td></tr>
+                        <tr><td>4</td><td>3.20</td><td>100%</td><td>10%</td></tr>
+                        <tr><td>5</td><td>1.40</td><td>90%</td><td>12%</td></tr>
+                    </table>
+                    <p>Contingency Allowance = 3%</p>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate Normal/Basic Time and Standard Time for Each Element</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Element</th>
+                                    <th>OT</th>
+                                    <th>Rating</th>
+                                    <th>Normal Time</th>
+                                    <th>Relax. Allow.</th>
+                                    <th>Contingency</th>
+                                    <th>Total Allow.</th>
+                                    <th>Std Time</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td><td>1.80</td><td>60%</td>
+                                    <td>1.80 x 0.60 = 1.08</td>
+                                    <td>10%</td><td>3%</td><td>13%</td>
+                                    <td>1.08 x 1.13 = 1.22</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td><td>2.20</td><td>90%</td>
+                                    <td>2.20 x 0.90 = 1.98</td>
+                                    <td>12%</td><td>3%</td><td>15%</td>
+                                    <td>1.98 x 1.15 = 2.28</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td><td>6.30</td><td>100%</td>
+                                    <td>6.30 x 1.00 = 6.30</td>
+                                    <td>10%</td><td>3%</td><td>13%</td>
+                                    <td>6.30 x 1.13 = 7.12</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td><td>3.20</td><td>100%</td>
+                                    <td>3.20 x 1.00 = 3.20</td>
+                                    <td>10%</td><td>3%</td><td>13%</td>
+                                    <td>3.20 x 1.13 = 3.62</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td><td>1.40</td><td>90%</td>
+                                    <td>1.40 x 0.90 = 1.26</td>
+                                    <td>12%</td><td>3%</td><td>15%</td>
+                                    <td>1.26 x 1.15 = 1.45</td>
+                                </tr>
+                                <tr class="result-row">
+                                    <td colspan="3"><strong>Total</strong></td>
+                                    <td><strong>13.82 min</strong></td>
+                                    <td colspan="3"></td>
+                                    <td><strong>15.69 min</strong></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Normal Time = 13.82 minutes | Standard Time = 15.69 minutes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== VALUE ENGINEERING ==================== -->
+<section class="topic-section" id="value-engineering">
+    <div class="topic-header">
+        <div class="icon">3</div>
+        <h2>Value Engineering - Formulas</h2>
+    </div>
+    <div class="topic-content">
+
+        <div class="formula-card">
+            <div class="formula-title">Value Equation</div>
+            <div class="formula">Value = Function / Cost</div>
+            <div class="formula-note">
+                <strong>Ways to Improve Value:</strong><br>
+                1. Same function at lower cost (Cost reduction)<br>
+                2. Better function at same cost (Performance improvement)<br>
+                3. Better function at lower cost (Ideal case)<br>
+                4. Much better function at slightly higher cost<br>
+                5. Slightly lower function at much lower cost
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Value Index</div>
+            <div class="formula">Value Index = Function Worth / Function Cost</div>
+            <div class="formula-note">
+                <strong>Interpretation:</strong><br>
+                - Value Index < 1: Poor value, needs improvement<br>
+                - Value Index = 1: Fair value<br>
+                - Value Index > 1: Good value
+            </div>
+        </div>
+
+        <div class="method-box">
+            <h4>Value Engineering Job Plan Steps</h4>
+            <div class="method-steps">
+                <div class="method-step"><strong>Information Phase:</strong> Gather data - What is it? What does it do? What does it cost?</div>
+                <div class="method-step"><strong>Analysis Phase:</strong> Function analysis - What should it do? What is the function worth?</div>
+                <div class="method-step"><strong>Creative Phase:</strong> Brainstorming - What else can perform the function?</div>
+                <div class="method-step"><strong>Evaluation Phase:</strong> Screen ideas - Which ideas are feasible?</div>
+                <div class="method-step"><strong>Development Phase:</strong> Develop solutions - What will it cost? Will it work?</div>
+                <div class="method-step"><strong>Presentation Phase:</strong> Present recommendations with cost-benefit analysis</div>
+                <div class="method-step"><strong>Implementation Phase:</strong> Implement approved changes</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== INVENTORY & EOQ ==================== -->
+<section class="topic-section" id="inventory">
+    <div class="topic-header">
+        <div class="icon">4</div>
+        <h2>Inventory Control & EOQ - Formulas & Numericals</h2>
+    </div>
+    <div class="topic-content">
+
+        <!-- EOQ Formula -->
+        <div class="formula-card">
+            <div class="formula-title">Economic Order Quantity (EOQ)</div>
+            <div class="formula">EOQ = √(2 x D x Co / Cc)</div>
+            <div class="formula-note">
+                <strong>Where:</strong><br>
+                D = Annual Demand (units/year)<br>
+                Co = Ordering Cost per order (Rs./order)<br>
+                Cc = Annual Carrying/Holding Cost per unit (Rs./unit/year)<br>
+                <br>
+                <strong>Alternative:</strong> If Cc is given as percentage of unit cost:<br>
+                Cc = Carrying Cost % x Unit Cost
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Total Inventory Cost</div>
+            <div class="formula">Total Cost = Ordering Cost + Carrying Cost</div>
+            <div class="formula">TC = (Co x D/Q) + (Cc x Q/2)</div>
+            <div class="formula-note">
+                <strong>Where:</strong><br>
+                D/Q = Number of orders per year<br>
+                Q/2 = Average inventory level<br>
+                <br>
+                <strong>At EOQ:</strong> Ordering Cost = Carrying Cost (costs are balanced)
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Related EOQ Calculations</div>
+            <div class="formula">Number of Orders per Year = D / EOQ</div>
+            <div class="formula">Time Between Orders = EOQ / D (in years)</div>
+            <div class="formula">Reorder Point = Demand during Lead Time = d x L</div>
+            <div class="formula-note">
+                <strong>Where:</strong> d = daily demand, L = lead time in days
+            </div>
+        </div>
+
+        <!-- EOQ Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 1</span>
+                Basic EOQ Calculation
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>A company has annual demand of 10,000 units. Ordering cost is Rs. 50 per order and carrying cost is Rs. 2 per unit per year. Calculate EOQ, number of orders, and total inventory cost.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <ul>
+                        <li>Annual Demand (D) = 10,000 units</li>
+                        <li>Ordering Cost (Co) = Rs. 50 per order</li>
+                        <li>Carrying Cost (Cc) = Rs. 2 per unit per year</li>
+                    </ul>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate EOQ</strong>
+                            <div class="calculation">
+                                EOQ = √(2 x D x Co / Cc)<br>
+                                EOQ = √(2 x 10,000 x 50 / 2)<br>
+                                EOQ = √(1,000,000 / 2)<br>
+                                EOQ = √500,000<br>
+                                EOQ = 707.11 ≈ 707 units
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate Number of Orders per Year</strong>
+                            <div class="calculation">
+                                Number of Orders = D / EOQ<br>
+                                Number of Orders = 10,000 / 707<br>
+                                Number of Orders = 14.14 ≈ 14 orders/year
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Calculate Total Inventory Cost</strong>
+                            <div class="calculation">
+                                Total Cost = (Co x D/Q) + (Cc x Q/2)<br>
+                                Total Cost = (50 x 10,000/707) + (2 x 707/2)<br>
+                                Total Cost = (50 x 14.14) + (2 x 353.5)<br>
+                                Total Cost = 707 + 707<br>
+                                Total Cost = Rs. 1,414
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">EOQ = 707 units | Orders/Year = 14 | Total Cost = Rs. 1,414</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EOQ with Storage Constraint -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 2</span>
+                EOQ with Storage Constraint (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Ashish keeps his inventory in special containers. Each container occupies 10 sq.ft. of store space. Only 5000 sq.ft. of storage space is available. The annual demand for the inventory item is 9000 containers, priced at Rs. 8 per container. The ordering cost is Rs. 40 per order, and the annual carrying costs amount to 25% of inventory value. Would you recommend to Ashish to increase his storage space? If so, how much should be the increase?</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <ul>
+                        <li>Available Storage = 5000 sq.ft.</li>
+                        <li>Space per container = 10 sq.ft.</li>
+                        <li>Maximum storage capacity = 5000/10 = 500 containers</li>
+                        <li>Annual Demand (D) = 9000 containers</li>
+                        <li>Unit Price (P) = Rs. 8</li>
+                        <li>Ordering Cost (Co) = Rs. 40/order</li>
+                        <li>Carrying Cost (Cc) = 25% of Rs. 8 = Rs. 2/unit/year</li>
+                    </ul>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate EOQ</strong>
+                            <div class="calculation">
+                                Cc = 25% x 8 = Rs. 2 per unit per year<br><br>
+                                EOQ = √(2 x D x Co / Cc)<br>
+                                EOQ = √(2 x 9000 x 40 / 2)<br>
+                                EOQ = √(720,000 / 2)<br>
+                                EOQ = √360,000<br>
+                                EOQ = 600 containers
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Compare with Storage Capacity</strong>
+                            <div class="calculation">
+                                EOQ = 600 containers<br>
+                                Current Max Storage = 500 containers<br>
+                                Shortfall = 600 - 500 = 100 containers
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Calculate Additional Space Required</strong>
+                            <div class="calculation">
+                                Additional containers = 100<br>
+                                Space per container = 10 sq.ft.<br>
+                                Additional space needed = 100 x 10 = 1000 sq.ft.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <strong>Cost Comparison</strong>
+                            <div class="calculation">
+                                <strong>At Current Capacity (Q = 500):</strong><br>
+                                TC = (40 x 9000/500) + (2 x 500/2) = 720 + 500 = Rs. 1,220<br><br>
+                                <strong>At EOQ (Q = 600):</strong><br>
+                                TC = (40 x 9000/600) + (2 x 600/2) = 600 + 600 = Rs. 1,200<br><br>
+                                Savings = 1220 - 1200 = Rs. 20/year
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Yes, increase storage by 1000 sq.ft. (to store 600 containers)<br>Annual savings = Rs. 20</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quantity Discount -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 3</span>
+                EOQ with Quantity Discount (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>GSB Department store stocks toy cars. The store was given a quantity discount schedule. Normal cost is $5.00; for orders 1000-1999 units, unit cost is $4.80; for orders 2000+ units, cost is $4.75. Ordering cost is $49 per order, annual demand is 5,000 cars, and carrying cost is 20% of unit cost. Find optimal order quantity.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Order Quantity</th>
+                            <th>Unit Price</th>
+                        </tr>
+                        <tr><td>1-999</td><td>$5.00</td></tr>
+                        <tr><td>1000-1999</td><td>$4.80</td></tr>
+                        <tr><td>2000+</td><td>$4.75</td></tr>
+                    </table>
+                    <ul>
+                        <li>D = 5,000 units/year</li>
+                        <li>Co = $49/order</li>
+                        <li>Carrying cost = 20% of unit price</li>
+                    </ul>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate EOQ for Each Price Level</strong>
+                            <div class="calculation">
+                                <strong>Price $5.00:</strong> Cc = 0.20 x 5.00 = $1.00<br>
+                                EOQ = √(2 x 5000 x 49 / 1.00) = √490,000 = 700 units<br>
+                                (Valid: 700 is in range 1-999) ✓<br><br>
+
+                                <strong>Price $4.80:</strong> Cc = 0.20 x 4.80 = $0.96<br>
+                                EOQ = √(2 x 5000 x 49 / 0.96) = √510,417 = 714 units<br>
+                                (Invalid: 714 not in range 1000-1999, adjust to 1000) ✗<br><br>
+
+                                <strong>Price $4.75:</strong> Cc = 0.20 x 4.75 = $0.95<br>
+                                EOQ = √(2 x 5000 x 49 / 0.95) = √515,789 = 718 units<br>
+                                (Invalid: 718 not in range 2000+, adjust to 2000) ✗
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate Total Cost for Valid Options</strong>
+                            <p>TC = Purchase Cost + Ordering Cost + Carrying Cost</p>
+                            <p>TC = P x D + Co x D/Q + Cc x Q/2</p>
+                            <div class="calculation">
+                                <strong>Q = 700, P = $5.00:</strong><br>
+                                TC = (5.00 x 5000) + (49 x 5000/700) + (1.00 x 700/2)<br>
+                                TC = 25,000 + 350 + 350 = $25,700<br><br>
+
+                                <strong>Q = 1000, P = $4.80:</strong><br>
+                                TC = (4.80 x 5000) + (49 x 5000/1000) + (0.96 x 1000/2)<br>
+                                TC = 24,000 + 245 + 480 = $24,725<br><br>
+
+                                <strong>Q = 2000, P = $4.75:</strong><br>
+                                TC = (4.75 x 5000) + (49 x 5000/2000) + (0.95 x 2000/2)<br>
+                                TC = 23,750 + 122.50 + 950 = $24,822.50
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Optimal Order Quantity = 1,000 units at $4.80 each<br>Minimum Total Cost = $24,725</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABC Analysis -->
+        <div class="formula-card">
+            <div class="formula-title">ABC Analysis Calculation</div>
+            <div class="formula">Annual Usage Value = Unit Cost x Annual Usage</div>
+            <div class="formula-note">
+                <strong>Steps:</strong><br>
+                1. Calculate annual usage value for each item<br>
+                2. Rank items in descending order of usage value<br>
+                3. Calculate cumulative percentage of value<br>
+                4. Classify: First ~70-80% value = A, Next ~15% = B, Remaining = C
+            </div>
+        </div>
+
+        <!-- ABC Analysis Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 4</span>
+                ABC Analysis (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Perform ABC analysis on the following inventory items:</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Item</th>
+                            <th>Annual Consumption</th>
+                            <th>Price/Unit (Rs.)</th>
+                        </tr>
+                        <tr><td>1</td><td>300</td><td>0.10</td></tr>
+                        <tr><td>2</td><td>2800</td><td>0.15</td></tr>
+                        <tr><td>3</td><td>30</td><td>0.10</td></tr>
+                        <tr><td>4</td><td>1100</td><td>0.05</td></tr>
+                        <tr><td>5</td><td>40</td><td>0.05</td></tr>
+                        <tr><td>6</td><td>220</td><td>1.00</td></tr>
+                        <tr><td>7</td><td>150</td><td>0.05</td></tr>
+                        <tr><td>8</td><td>800</td><td>0.05</td></tr>
+                        <tr><td>9</td><td>600</td><td>0.15</td></tr>
+                        <tr><td>10</td><td>80</td><td>0.10</td></tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate Annual Usage Value and Rank</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Consumption</th>
+                                    <th>Price</th>
+                                    <th>Usage Value</th>
+                                    <th>Rank</th>
+                                </tr>
+                                <tr><td>1</td><td>300</td><td>0.10</td><td>30</td><td>6</td></tr>
+                                <tr><td>2</td><td>2800</td><td>0.15</td><td>420</td><td>1</td></tr>
+                                <tr><td>3</td><td>30</td><td>0.10</td><td>3</td><td>10</td></tr>
+                                <tr><td>4</td><td>1100</td><td>0.05</td><td>55</td><td>4</td></tr>
+                                <tr><td>5</td><td>40</td><td>0.05</td><td>2</td><td>9</td></tr>
+                                <tr class="highlight-row"><td>6</td><td>220</td><td>1.00</td><td>220</td><td>2</td></tr>
+                                <tr><td>7</td><td>150</td><td>0.05</td><td>7.5</td><td>8</td></tr>
+                                <tr><td>8</td><td>800</td><td>0.05</td><td>40</td><td>5</td></tr>
+                                <tr><td>9</td><td>600</td><td>0.15</td><td>90</td><td>3</td></tr>
+                                <tr><td>10</td><td>80</td><td>0.10</td><td>8</td><td>7</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Arrange by Rank and Calculate Cumulative %</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Item</th>
+                                    <th>Usage Value</th>
+                                    <th>% of Total</th>
+                                    <th>Cumulative %</th>
+                                    <th>Class</th>
+                                </tr>
+                                <tr class="highlight-row"><td>1</td><td>2</td><td>420</td><td>47.9%</td><td>47.9%</td><td rowspan="2"><strong>A</strong></td></tr>
+                                <tr class="highlight-row"><td>2</td><td>6</td><td>220</td><td>25.1%</td><td>73.0%</td></tr>
+                                <tr><td>3</td><td>9</td><td>90</td><td>10.3%</td><td>83.3%</td><td rowspan="2"><strong>B</strong></td></tr>
+                                <tr><td>4</td><td>4</td><td>55</td><td>6.3%</td><td>89.6%</td></tr>
+                                <tr><td>5</td><td>8</td><td>40</td><td>4.6%</td><td>94.2%</td><td rowspan="6"><strong>C</strong></td></tr>
+                                <tr><td>6</td><td>1</td><td>30</td><td>3.4%</td><td>97.6%</td></tr>
+                                <tr><td>7</td><td>10</td><td>8</td><td>0.9%</td><td>98.5%</td></tr>
+                                <tr><td>8</td><td>7</td><td>7.5</td><td>0.9%</td><td>99.4%</td></tr>
+                                <tr><td>9</td><td>3</td><td>3</td><td>0.3%</td><td>99.7%</td></tr>
+                                <tr><td>10</td><td>5</td><td>2</td><td>0.2%</td><td>100%</td></tr>
+                                <tr class="result-row"><td colspan="2">Total</td><td>875.5</td><td>100%</td><td></td><td></td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">
+                            Class A: Items 2, 6 (20% of items, 73% of value)<br>
+                            Class B: Items 9, 4 (20% of items, 16.6% of value)<br>
+                            Class C: Items 8, 1, 10, 7, 3, 5 (60% of items, 10.4% of value)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== SEQUENCING ==================== -->
+<section class="topic-section" id="sequencing">
+    <div class="topic-header">
+        <div class="icon">5</div>
+        <h2>Sequencing - Methods & Numericals</h2>
+    </div>
+    <div class="topic-content">
+
+        <!-- Johnson's Rule -->
+        <div class="method-box">
+            <h4>Johnson's Rule (n Jobs, 2 Machines in sequence AB)</h4>
+            <div class="method-steps">
+                <div class="method-step">List all jobs with processing times on Machine A and Machine B</div>
+                <div class="method-step">Find the minimum processing time among all jobs on both machines</div>
+                <div class="method-step">If minimum is on Machine A → Place job FIRST in sequence<br>If minimum is on Machine B → Place job LAST in sequence</div>
+                <div class="method-step">Remove the job from list and repeat until all jobs are sequenced</div>
+                <div class="method-step">Create timeline (Gantt chart) and calculate total elapsed time</div>
+            </div>
+        </div>
+
+        <!-- Johnson's Rule Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 1</span>
+                Johnson's Rule - 5 Jobs, 2 Machines (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>There are 5 jobs, each of which has to go through machines A and B in the order AB. Determine the optimal sequence to minimize total elapsed time. Also find idle time for each machine.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Job</th>
+                            <th>J1</th>
+                            <th>J2</th>
+                            <th>J3</th>
+                            <th>J4</th>
+                            <th>J5</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Machine A</strong></td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Machine B</strong></td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Apply Johnson's Rule</strong>
+                            <div class="calculation">
+                                <strong>Iteration 1:</strong> Min = 1 (J5 on A and J3 on B)<br>
+                                J5 has min on A → Place J5 FIRST<br>
+                                Sequence: [J5, _, _, _, _]<br><br>
+
+                                <strong>Iteration 2:</strong> Min = 1 (J3 on B) among remaining<br>
+                                J3 has min on B → Place J3 LAST<br>
+                                Sequence: [J5, _, _, _, J3]<br><br>
+
+                                <strong>Iteration 3:</strong> Min = 2 (J1 on A) among remaining<br>
+                                J1 has min on A → Place J1 next from front<br>
+                                Sequence: [J5, J1, _, _, J3]<br><br>
+
+                                <strong>Iteration 4:</strong> Min = 4 (J2 on A or J4 on B)<br>
+                                J2 has min on A → Place J2 next from front<br>
+                                Sequence: [J5, J1, J2, _, J3]<br><br>
+
+                                <strong>Iteration 5:</strong> Only J4 remains<br>
+                                Sequence: [J5, J1, J2, J4, J3]
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate Time Schedule</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Sequence</th>
+                                    <th>Job</th>
+                                    <th>Machine A</th>
+                                    <th></th>
+                                    <th>Machine B</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>In</th>
+                                    <th>Out</th>
+                                    <th>In</th>
+                                    <th>Out</th>
+                                </tr>
+                                <tr><td>1</td><td>J5</td><td>0</td><td>1</td><td>1</td><td>9</td></tr>
+                                <tr><td>2</td><td>J1</td><td>1</td><td>3</td><td>9</td><td>12</td></tr>
+                                <tr><td>3</td><td>J2</td><td>3</td><td>7</td><td>12</td><td>18</td></tr>
+                                <tr><td>4</td><td>J4</td><td>7</td><td>14</td><td>18</td><td>22</td></tr>
+                                <tr><td>5</td><td>J3</td><td>14</td><td>19</td><td>22</td><td>23</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Calculate Idle Times</strong>
+                            <div class="calculation">
+                                Machine A: Idle at end = 23 - 19 = 4 hours<br>
+                                (Machine A finishes at 19, total time is 23)<br><br>
+
+                                Machine B: Idle at start = 1 hour (waits for J5 from A)<br>
+                                B also has idle between jobs where it waits for A<br>
+                                Machine B idle = 1 + (9-9) + (12-12) + (18-18) + (22-22) = 1 hour initially<br>
+                                Plus gaps: Check each job transition...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">
+                            Optimal Sequence: J5 → J1 → J2 → J4 → J3<br>
+                            Total Elapsed Time = 23 hours<br>
+                            Machine A Idle Time = 4 hours | Machine B Idle Time = 1 hour
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Machine Sequencing -->
+        <div class="method-box">
+            <h4>Extended Johnson's Rule (n Jobs, 3 Machines in sequence ABC)</h4>
+            <p><strong>Applicability Condition:</strong></p>
+            <div class="calculation" style="margin: 10px 0;">
+                Min(A) >= Max(B) OR Min(C) >= Max(B)
+            </div>
+            <p><strong>Conversion Method:</strong></p>
+            <div class="method-steps">
+                <div class="method-step">Check if conditions are satisfied</div>
+                <div class="method-step">Create virtual machines: G = A + B, H = B + C</div>
+                <div class="method-step">Apply standard Johnson's rule on G and H</div>
+                <div class="method-step">Use the resulting sequence for all three machines</div>
+            </div>
+        </div>
+
+        <!-- 3 Machine Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 2</span>
+                Extended Johnson's Rule - 3 Machines (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Find the sequence that minimizes total time for 5 jobs on 3 machines in order ABC.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Job</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Machine A</strong></td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Machine B</strong></td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Machine C</strong></td>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Check Applicability Condition</strong>
+                            <div class="calculation">
+                                Min(A) = min(8, 10, 6, 7, 11) = 6<br>
+                                Max(B) = max(5, 6, 2, 3, 4) = 6<br>
+                                Min(C) = min(4, 9, 8, 6, 5) = 4<br><br>
+
+                                Condition 1: Min(A) >= Max(B) → 6 >= 6 ✓ (Satisfied)<br>
+                                <br>
+                                Extended Johnson's Rule can be applied.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Create Virtual Machines G and H</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Job</th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                </tr>
+                                <tr>
+                                    <td><strong>G = A + B</strong></td>
+                                    <td>8+5=13</td>
+                                    <td>10+6=16</td>
+                                    <td>6+2=8</td>
+                                    <td>7+3=10</td>
+                                    <td>11+4=15</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>H = B + C</strong></td>
+                                    <td>5+4=9</td>
+                                    <td>6+9=15</td>
+                                    <td>2+8=10</td>
+                                    <td>3+6=9</td>
+                                    <td>4+5=9</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Apply Johnson's Rule on G and H</strong>
+                            <div class="calculation">
+                                <strong>Iteration 1:</strong> Min = 8 (Job 3 on G) → J3 FIRST<br>
+                                Sequence: [J3, _, _, _, _]<br><br>
+
+                                <strong>Iteration 2:</strong> Min = 9 (Jobs 1, 4, 5 on H)<br>
+                                Pick any with min on H → J1 LAST (or J4 or J5)<br>
+                                Let's use J1 → Sequence: [J3, _, _, _, J1]<br><br>
+
+                                <strong>Iteration 3:</strong> Min = 9 (J4 or J5 on H)<br>
+                                J4 → LAST available → Sequence: [J3, _, _, J4, J1]<br><br>
+
+                                <strong>Iteration 4:</strong> Min = 9 (J5 on H)<br>
+                                J5 → LAST available → Sequence: [J3, _, J5, J4, J1]<br><br>
+
+                                <strong>Iteration 5:</strong> Only J2 remains<br>
+                                Sequence: [J3, J2, J5, J4, J1]
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Optimal Sequence: J3 → J2 → J5 → J4 → J1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Machine Sequencing -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 3</span>
+                Processing 5 Jobs Through 4 Machines (From PPT)
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Find the solution for processing 5 jobs through 4 machines in sequence.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Job</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr><td><strong>Machine-1</strong></td><td>11</td><td>13</td><td>9</td><td>16</td><td>17</td></tr>
+                        <tr><td><strong>Machine-2</strong></td><td>4</td><td>3</td><td>5</td><td>2</td><td>6</td></tr>
+                        <tr><td><strong>Machine-3</strong></td><td>6</td><td>7</td><td>5</td><td>8</td><td>4</td></tr>
+                        <tr><td><strong>Machine-4</strong></td><td>15</td><td>8</td><td>13</td><td>9</td><td>11</td></tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Check Conditions for 4-Machine Problem</strong>
+                            <div class="calculation">
+                                Min(M1) = 9, Min(M4) = 8<br>
+                                Max(M2) = 6, Max(M3) = 8<br><br>
+
+                                Condition: Min(M1) >= Max(M2) AND Min(M1) >= Max(M3)<br>
+                                OR Min(M4) >= Max(M2) AND Min(M4) >= Max(M3)<br><br>
+
+                                Check: 9 >= 6 ✓ AND 9 >= 8 ✓<br>
+                                Condition satisfied!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Create Virtual Machines</strong>
+                            <div class="calculation">
+                                G = M1 + M2 + M3<br>
+                                H = M2 + M3 + M4
+                            </div>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Job</th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                </tr>
+                                <tr>
+                                    <td><strong>G</strong></td>
+                                    <td>11+4+6=21</td>
+                                    <td>13+3+7=23</td>
+                                    <td>9+5+5=19</td>
+                                    <td>16+2+8=26</td>
+                                    <td>17+6+4=27</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>H</strong></td>
+                                    <td>4+6+15=25</td>
+                                    <td>3+7+8=18</td>
+                                    <td>5+5+13=23</td>
+                                    <td>2+8+9=19</td>
+                                    <td>6+4+11=21</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <strong>Apply Johnson's Rule</strong>
+                            <div class="calculation">
+                                Min = 18 (J2 on H) → J2 LAST<br>
+                                Min = 19 (J3 on G, J4 on H) → J3 FIRST, J4 before J2<br>
+                                Min = 21 (J1 on G, J5 on H) → J1 second, J5 before J4<br>
+                                <br>
+                                Sequence: J3 → J1 → J5 → J4 → J2
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Optimal Sequence: J3 → J1 → J5 → J4 → J2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== SQC ==================== -->
+<section class="topic-section" id="sqc">
+    <div class="topic-header">
+        <div class="icon">6</div>
+        <h2>Statistical Quality Control - Formulas</h2>
+    </div>
+    <div class="topic-content">
+
+        <!-- Control Chart Formulas -->
+        <div class="formula-card">
+            <div class="formula-title">Control Limits (3-Sigma)</div>
+            <div class="formula">UCL = Mean + 3σ (Upper Control Limit)</div>
+            <div class="formula">CL = Mean (Centre Line)</div>
+            <div class="formula">LCL = Mean - 3σ (Lower Control Limit)</div>
+            <div class="formula-note">
+                99.73% of data falls within 3 standard deviations from mean in a normal distribution.
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">X-bar Chart (Mean Chart)</div>
+            <div class="formula">X̄ (Grand Mean) = Sum of sample means / Number of samples</div>
+            <div class="formula">UCL = X̄ + A₂R̄</div>
+            <div class="formula">LCL = X̄ - A₂R̄</div>
+            <div class="formula-note">
+                <strong>A₂</strong> is a factor depending on sample size (from tables):<br>
+                n=2: A₂=1.880, n=3: A₂=1.023, n=4: A₂=0.729, n=5: A₂=0.577
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">R Chart (Range Chart)</div>
+            <div class="formula">R̄ (Average Range) = Sum of sample ranges / Number of samples</div>
+            <div class="formula">UCL = D₄ x R̄</div>
+            <div class="formula">LCL = D₃ x R̄</div>
+            <div class="formula-note">
+                <strong>D₃ and D₄</strong> are factors depending on sample size:<br>
+                n=2: D₃=0, D₄=3.267 | n=3: D₃=0, D₄=2.575<br>
+                n=4: D₃=0, D₄=2.282 | n=5: D₃=0, D₄=2.115
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">p-Chart (Proportion Defective)</div>
+            <div class="formula">p̄ = Total defectives / Total inspected</div>
+            <div class="formula">UCL = p̄ + 3√(p̄(1-p̄)/n)</div>
+            <div class="formula">LCL = p̄ - 3√(p̄(1-p̄)/n)</div>
+            <div class="formula-note">
+                If LCL is negative, use LCL = 0<br>
+                n = sample size
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">c-Chart (Defects per Unit)</div>
+            <div class="formula">c̄ = Total defects / Number of units inspected</div>
+            <div class="formula">UCL = c̄ + 3√c̄</div>
+            <div class="formula">LCL = c̄ - 3√c̄</div>
+            <div class="formula-note">
+                Used for counting defects in a constant sample size.<br>
+                If LCL is negative, use LCL = 0
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Process Capability</div>
+            <div class="formula">Cp = (USL - LSL) / 6σ</div>
+            <div class="formula">Cpk = min[(USL - μ)/3σ, (μ - LSL)/3σ]</div>
+            <div class="formula-note">
+                <strong>USL</strong> = Upper Specification Limit<br>
+                <strong>LSL</strong> = Lower Specification Limit<br>
+                <strong>Cp >= 1</strong> means process is capable<br>
+                <strong>Cpk >= 1.33</strong> is generally desired
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== TOC ACCOUNTING ==================== -->
+<section class="topic-section" id="toc">
+    <div class="topic-header">
+        <div class="icon">7</div>
+        <h2>Theory of Constraints - Throughput Accounting</h2>
+    </div>
+    <div class="topic-content">
+
+        <div class="formula-card">
+            <div class="formula-title">Core TOC Measures</div>
+            <div class="formula">Throughput (T) = Revenue - Truly Variable Costs</div>
+            <div class="formula">Investment (I) = Money tied up in system</div>
+            <div class="formula">Operating Expense (OE) = Money to turn I into T</div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Derived Measures</div>
+            <div class="formula">Net Profit = Throughput - Operating Expenses</div>
+            <div class="formula">NP = T - OE</div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Return on Investment</div>
+            <div class="formula">ROI = Net Profit / Investment</div>
+            <div class="formula">ROI = (T - OE) / I</div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Productivity</div>
+            <div class="formula">Productivity = Throughput / Operating Expenses</div>
+            <div class="formula">Productivity = T / OE</div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Investment Turns</div>
+            <div class="formula">Investment Turns = Throughput / Investment</div>
+            <div class="formula">Investment Turns = T / I</div>
+        </div>
+
+        <div class="note-box">
+            <strong>TOC Decision Priority (In Order):</strong>
+            <ol>
+                <li>Increase Throughput (highest priority - unlimited potential)</li>
+                <li>Reduce Investment</li>
+                <li>Reduce Operating Expenses (limited - can't go below zero)</li>
+            </ol>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== FORECASTING ==================== -->
+<section class="topic-section" id="forecasting">
+    <div class="topic-header">
+        <div class="icon">8</div>
+        <h2>Demand Forecasting - Formulas & Numericals</h2>
+    </div>
+    <div class="topic-content">
+
+        <div class="formula-card">
+            <div class="formula-title">Simple Moving Average</div>
+            <div class="formula">MA_n = (D₁ + D₂ + ... + D_n) / n</div>
+            <div class="formula-note">
+                Average of last n periods' actual demand.<br>
+                All periods have equal weight.
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Weighted Moving Average</div>
+            <div class="formula">WMA = (w₁D₁ + w₂D₂ + ... + w_nD_n) / (w₁ + w₂ + ... + w_n)</div>
+            <div class="formula-note">
+                Recent periods typically get higher weights.<br>
+                Sum of weights should equal 1 (or 100%).
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Exponential Smoothing</div>
+            <div class="formula">F_t = F_{t-1} + α(A_{t-1} - F_{t-1})</div>
+            <div class="formula">OR</div>
+            <div class="formula">F_t = αA_{t-1} + (1-α)F_{t-1}</div>
+            <div class="formula-note">
+                <strong>α (alpha)</strong> = Smoothing constant (0 < α < 1)<br>
+                - Low α (0.1-0.3): Stable demand, smooths fluctuations<br>
+                - High α (0.4-0.5): Volatile demand, responds quickly to changes
+            </div>
+        </div>
+
+        <div class="formula-card">
+            <div class="formula-title">Forecast Error Measures</div>
+            <div class="formula">Error (e) = Actual - Forecast = A - F</div>
+            <div class="formula">MAD = Σ|A - F| / n</div>
+            <div class="formula">MSE = Σ(A - F)² / n</div>
+            <div class="formula">MAPE = (Σ|A - F|/A × 100) / n</div>
+            <div class="formula-note">
+                <strong>MAD</strong> = Mean Absolute Deviation<br>
+                <strong>MSE</strong> = Mean Squared Error<br>
+                <strong>MAPE</strong> = Mean Absolute Percentage Error
+            </div>
+        </div>
+
+        <!-- Forecasting Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 1</span>
+                Exponential Smoothing Forecast
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Given the following demand data, calculate forecast for period 6 using exponential smoothing with α = 0.3. Initial forecast F₁ = 100.</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Period</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Actual Demand</strong></td>
+                            <td>110</td>
+                            <td>105</td>
+                            <td>115</td>
+                            <td>120</td>
+                            <td>108</td>
+                        </tr>
+                    </table>
+                    <p>α = 0.3, F₁ = 100</p>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+                    <p>Using: F_t = F_{t-1} + α(A_{t-1} - F_{t-1})</p>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate Forecasts Step by Step</strong>
+                            <div class="calculation">
+                                F₁ = 100 (given)<br><br>
+
+                                F₂ = F₁ + 0.3(A₁ - F₁)<br>
+                                F₂ = 100 + 0.3(110 - 100) = 100 + 3 = 103<br><br>
+
+                                F₃ = F₂ + 0.3(A₂ - F₂)<br>
+                                F₃ = 103 + 0.3(105 - 103) = 103 + 0.6 = 103.6<br><br>
+
+                                F₄ = F₃ + 0.3(A₃ - F₃)<br>
+                                F₄ = 103.6 + 0.3(115 - 103.6) = 103.6 + 3.42 = 107.02<br><br>
+
+                                F₅ = F₄ + 0.3(A₄ - F₄)<br>
+                                F₅ = 107.02 + 0.3(120 - 107.02) = 107.02 + 3.89 = 110.91<br><br>
+
+                                F₆ = F₅ + 0.3(A₅ - F₅)<br>
+                                F₆ = 110.91 + 0.3(108 - 110.91) = 110.91 - 0.87 = 110.04
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">Forecast for Period 6 (F₆) = 110.04 ≈ 110 units</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moving Average Numerical -->
+        <div class="numerical-box">
+            <div class="numerical-header">
+                <span class="problem-num">Problem 2</span>
+                Moving Average and MAD Calculation
+            </div>
+            <div class="numerical-content">
+                <div class="problem-statement">
+                    <h4>Problem Statement:</h4>
+                    <p>Calculate 3-month moving average forecast and MAD for the following data:</p>
+                </div>
+
+                <div class="given-data">
+                    <h5>Given Data:</h5>
+                    <table class="data-table">
+                        <tr>
+                            <th>Month</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Demand</strong></td>
+                            <td>200</td>
+                            <td>220</td>
+                            <td>180</td>
+                            <td>240</td>
+                            <td>210</td>
+                            <td>230</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="solution-box">
+                    <h5>Solution:</h5>
+
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <strong>Calculate 3-Month Moving Average</strong>
+                            <div class="calculation">
+                                F₄ = (D₁ + D₂ + D₃)/3 = (200 + 220 + 180)/3 = 600/3 = 200<br>
+                                F₅ = (D₂ + D₃ + D₄)/3 = (220 + 180 + 240)/3 = 640/3 = 213.33<br>
+                                F₆ = (D₃ + D₄ + D₅)/3 = (180 + 240 + 210)/3 = 630/3 = 210
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <strong>Calculate Errors and MAD</strong>
+                            <table class="data-table">
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Actual (A)</th>
+                                    <th>Forecast (F)</th>
+                                    <th>Error (A-F)</th>
+                                    <th>|Error|</th>
+                                </tr>
+                                <tr><td>4</td><td>240</td><td>200</td><td>40</td><td>40</td></tr>
+                                <tr><td>5</td><td>210</td><td>213.33</td><td>-3.33</td><td>3.33</td></tr>
+                                <tr><td>6</td><td>230</td><td>210</td><td>20</td><td>20</td></tr>
+                                <tr class="result-row"><td colspan="4"><strong>Total |Error|</strong></td><td><strong>63.33</strong></td></tr>
+                            </table>
+                            <div class="calculation">
+                                MAD = Total |Error| / n = 63.33 / 3 = 21.11
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="answer-box">
+                        <div class="answer-label">Answer</div>
+                        <div class="answer-value">
+                            Forecast for Month 7 = (240 + 210 + 230)/3 = 226.67<br>
+                            MAD = 21.11 units
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== QUICK REFERENCE ==================== -->
+<section class="topic-section" id="quick-ref">
+    <div class="topic-header">
+        <div class="icon">*</div>
+        <h2>Quick Reference - All Formulas at a Glance</h2>
+    </div>
+    <div class="topic-content">
+
+        <div class="formula-grid">
+            <div class="formula-mini-card">
+                <h5>Break-Even Point</h5>
+                <div class="formula-text">BEP = F / (S - V)</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Centre of Gravity</h5>
+                <div class="formula-text">C = Σ(d × W) / ΣW</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Basic Time</h5>
+                <div class="formula-text">BT = OT × (Rating/100)</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Standard Time</h5>
+                <div class="formula-text">ST = BT × (1 + Allow%)</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Value</h5>
+                <div class="formula-text">Value = Function / Cost</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>EOQ</h5>
+                <div class="formula-text">EOQ = √(2DCo/Cc)</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Total Inventory Cost</h5>
+                <div class="formula-text">TC = (Co×D/Q) + (Cc×Q/2)</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Control Limits</h5>
+                <div class="formula-text">UCL/LCL = μ ± 3σ</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Net Profit (TOC)</h5>
+                <div class="formula-text">NP = T - OE</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>ROI (TOC)</h5>
+                <div class="formula-text">ROI = (T - OE) / I</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>Exponential Smoothing</h5>
+                <div class="formula-text">Ft = Ft-1 + α(At-1 - Ft-1)</div>
+            </div>
+            <div class="formula-mini-card">
+                <h5>MAD</h5>
+                <div class="formula-text">MAD = Σ|A - F| / n</div>
+            </div>
+        </div>
+
+        <h4 style="margin: 30px 0 20px 0;">Johnson's Rule Quick Reference</h4>
+        <div class="method-box">
+            <h4>2 Machines (A → B)</h4>
+            <div class="calculation">
+                Min time on A → Job goes FIRST<br>
+                Min time on B → Job goes LAST
+            </div>
+        </div>
+
+        <div class="method-box">
+            <h4>3 Machines (A → B → C) - Condition Check</h4>
+            <div class="calculation">
+                If Min(A) ≥ Max(B) OR Min(C) ≥ Max(B):<br>
+                Create G = A + B, H = B + C<br>
+                Apply 2-machine rule on G and H
+            </div>
+        </div>
+
+        <h4 style="margin: 30px 0 20px 0;">Variable Definitions</h4>
+        <table class="data-table">
+            <tr>
+                <th>Symbol</th>
+                <th>Meaning</th>
+            </tr>
+            <tr><td>D</td><td>Annual Demand</td></tr>
+            <tr><td>Co</td><td>Ordering Cost per order</td></tr>
+            <tr><td>Cc</td><td>Carrying Cost per unit per year</td></tr>
+            <tr><td>Q</td><td>Order Quantity</td></tr>
+            <tr><td>F</td><td>Fixed Cost / Forecast</td></tr>
+            <tr><td>V</td><td>Variable Cost per unit</td></tr>
+            <tr><td>S</td><td>Selling Price per unit</td></tr>
+            <tr><td>OT</td><td>Observed Time</td></tr>
+            <tr><td>BT</td><td>Basic Time / Normal Time</td></tr>
+            <tr><td>ST</td><td>Standard Time</td></tr>
+            <tr><td>α</td><td>Smoothing constant (0-1)</td></tr>
+            <tr><td>T</td><td>Throughput</td></tr>
+            <tr><td>I</td><td>Investment</td></tr>
+            <tr><td>OE</td><td>Operating Expense</td></tr>
+        </table>
+
+    </div>
+</section>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+</script>
+
+</body>
+</html>

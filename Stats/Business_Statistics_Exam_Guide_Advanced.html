@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Statistics - Complete Exam Guide (Assignment Level)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.8;
+            padding: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            color: #222;
+        }
+        h1 {
+            text-align: center;
+            color: #1a1a6e;
+            border-bottom: 3px double #1a1a6e;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        h2 {
+            color: #fff;
+            background: linear-gradient(135deg, #1a1a6e, #2d2d8a);
+            padding: 12px 20px;
+            margin: 35px 0 20px 0;
+            border-radius: 5px;
+            font-size: 1.25em;
+        }
+        h3 {
+            color: #1a1a6e;
+            border-left: 4px solid #4a4ac4;
+            padding: 8px 15px;
+            margin: 25px 0 15px 0;
+            background: #f5f5ff;
+        }
+        h4 {
+            color: #333;
+            margin: 20px 0 10px 0;
+            font-size: 1.05em;
+            text-decoration: underline;
+        }
+        .question-box {
+            background: #fffef0;
+            border: 2px solid #d4a017;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .question-box strong {
+            color: #8b4513;
+        }
+        .solution-box {
+            background: #fff;
+            border: 1px solid #4a4ac4;
+            border-left: 4px solid #4a4ac4;
+            padding: 15px 20px;
+            margin: 15px 0;
+        }
+        .formula-box {
+            background: #e8f4e8;
+            border: 2px solid #2e7d32;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+        }
+        .step {
+            margin: 12px 0;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+        .step:last-child { border-bottom: none; }
+        .step-label {
+            font-weight: bold;
+            color: #1a1a6e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        th {
+            background: #2d2d8a;
+            color: white;
+        }
+        tr:nth-child(even) { background: #f8f8ff; }
+        .answer-box {
+            background: #e8f5e9;
+            border: 2px solid #2e7d32;
+            padding: 12px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .interpretation {
+            background: #fff8e1;
+            border-left: 4px solid #ff9800;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .note {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        .calc {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .highlight {
+            background: #ffeb3b;
+            padding: 2px 5px;
+        }
+        .toc {
+            background: #f8f8ff;
+            border: 2px solid #4a4ac4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .toc h3 { background: none; border: none; padding: 0; margin-bottom: 15px; }
+        .toc ul { columns: 2; list-style: none; }
+        .toc li { padding: 4px 0; }
+        .toc a { color: #1a1a6e; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        @media print {
+            body { font-size: 11pt; }
+            h2 { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .question-box, .solution-box, .answer-box { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Business Statistics - Complete Exam Guide</h1>
+<p style="text-align:center; margin-bottom:20px;"><em>Comprehensive Problems with Step-by-Step Solutions (Assignment Level)</em></p>
+
+<div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+        <li><a href="#mean">1. Mean (with Missing Values)</a></li>
+        <li><a href="#median">2. Median (with Missing Values)</a></li>
+        <li><a href="#mode">3. Mode</a></li>
+        <li><a href="#sd">4. Standard Deviation & Variance</a></li>
+        <li><a href="#cv">5. Coefficient of Variation</a></li>
+        <li><a href="#quartile">6. Quartiles & Percentiles</a></li>
+        <li><a href="#probability">7. Probability</a></li>
+        <li><a href="#pearson">8. Pearson's Correlation</a></li>
+        <li><a href="#spearman">9. Spearman's Rank Correlation</a></li>
+        <li><a href="#regression">10. Regression Analysis</a></li>
+        <li><a href="#ftest">11. F-Test</a></li>
+        <li><a href="#ttest">12. t-Test</a></li>
+        <li><a href="#ztest">13. Z-Test</a></li>
+        <li><a href="#chisquare">14. Chi-Square Test</a></li>
+        <li><a href="#paired">15. Paired t-Test</a></li>
+        <li><a href="#tables">16. Critical Value Tables</a></li>
+    </ul>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="mean">1. MEAN (Arithmetic Mean)</h2>
+<!-- ================================================================== -->
+
+<h3>1.1 Continuous Series - Finding Missing Frequencies</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Mean (X̄) = Σfm / Σf<br>
+    Where: m = midpoint of class = (Lower limit + Upper limit) / 2
+</div>
+
+<div class="question-box">
+    <strong>Question 1:</strong> The following table shows frequency distribution with total frequency 80 and mean = 26. Find the missing frequencies x and y.
+    <table>
+        <tr><th>Class Interval</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+        <tr><th>Frequency (f)</th><td>10</td><td>x</td><td>25</td><td>y</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Set up equations</span><br>
+        Total frequency = 80<br>
+        <span class="calc">10 + x + 25 + y + 10 = 80</span><br>
+        <span class="calc">45 + x + y = 80</span><br>
+        <strong>∴ x + y = 35</strong> ... (Equation 1)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate midpoints and set up mean equation</span>
+        <table>
+            <tr><th>Class Interval</th><th>Frequency (f)</th><th>Midpoint (m)</th><th>fm</th></tr>
+            <tr><td>0-10</td><td>10</td><td>5</td><td>50</td></tr>
+            <tr><td>10-20</td><td>x</td><td>15</td><td>15x</td></tr>
+            <tr><td>20-30</td><td>25</td><td>25</td><td>625</td></tr>
+            <tr><td>30-40</td><td>y</td><td>35</td><td>35y</td></tr>
+            <tr><td>40-50</td><td>10</td><td>45</td><td>450</td></tr>
+            <tr><th>Total</th><th>80</th><th>-</th><th>1125 + 15x + 35y</th></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Apply mean formula</span><br>
+        Mean = Σfm / Σf<br>
+        <span class="calc">26 = (1125 + 15x + 35y) / 80</span><br>
+        <span class="calc">26 × 80 = 1125 + 15x + 35y</span><br>
+        <span class="calc">2080 = 1125 + 15x + 35y</span><br>
+        <span class="calc">15x + 35y = 955</span><br>
+        Dividing by 5: <strong>3x + 7y = 191</strong> ... (Equation 2)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Solve simultaneous equations</span><br>
+        From Equation 1: x = 35 - y<br>
+        Substituting in Equation 2:<br>
+        <span class="calc">3(35 - y) + 7y = 191</span><br>
+        <span class="calc">105 - 3y + 7y = 191</span><br>
+        <span class="calc">105 + 4y = 191</span><br>
+        <span class="calc">4y = 86</span><br>
+        <strong>y = 21.5</strong><br><br>
+        <span class="calc">x = 35 - 21.5 = <strong>13.5</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ x = 13.5 and y = 21.5
+    </div>
+</div>
+
+<div class="question-box">
+    <strong>Question 2:</strong> Calculate the mean wages from the following data:
+    <table>
+        <tr><th>Wages (₹)</th><td>200-300</td><td>300-400</td><td>400-500</td><td>500-600</td><td>600-700</td></tr>
+        <tr><th>No. of Workers</th><td>5</td><td>8</td><td>12</td><td>15</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Calculate midpoints and fm</span>
+        <table>
+            <tr><th>Wages</th><th>f</th><th>Midpoint (m)</th><th>fm</th></tr>
+            <tr><td>200-300</td><td>5</td><td>250</td><td>1250</td></tr>
+            <tr><td>300-400</td><td>8</td><td>350</td><td>2800</td></tr>
+            <tr><td>400-500</td><td>12</td><td>450</td><td>5400</td></tr>
+            <tr><td>500-600</td><td>15</td><td>550</td><td>8250</td></tr>
+            <tr><td>600-700</td><td>10</td><td>650</td><td>6500</td></tr>
+            <tr><th>Total</th><th>Σf = 50</th><th>-</th><th>Σfm = 24200</th></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate Mean</span><br>
+        <span class="calc">X̄ = Σfm / Σf = 24200 / 50 = <strong>484</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Mean Wages = ₹484
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="median">2. MEDIAN</h2>
+<!-- ================================================================== -->
+
+<h3>2.1 Continuous Series - Finding Missing Frequencies</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Median = L + [(N/2 - cf) / f] × h<br>
+    Where: L = Lower limit of median class, N = Total frequency,<br>
+    cf = Cumulative frequency before median class, f = Frequency of median class, h = Class width
+</div>
+
+<div class="question-box">
+    <strong>Question 3:</strong> Find the missing frequencies x and y if total frequency is 70 and median is 46.
+    <table>
+        <tr><th>Class</th><td>0-20</td><td>20-40</td><td>40-60</td><td>60-80</td><td>80-100</td></tr>
+        <tr><th>Frequency</th><td>5</td><td>x</td><td>30</td><td>y</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Set up frequency equation</span><br>
+        <span class="calc">5 + x + 30 + y + 10 = 70</span><br>
+        <strong>x + y = 25</strong> ... (Equation 1)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Find median class</span><br>
+        N/2 = 70/2 = 35<br>
+        Since median = 46, median class is <strong>40-60</strong>
+        <table>
+            <tr><th>Class</th><th>f</th><th>cf</th></tr>
+            <tr><td>0-20</td><td>5</td><td>5</td></tr>
+            <tr><td>20-40</td><td>x</td><td>5 + x</td></tr>
+            <tr><td>40-60</td><td>30</td><td>35 + x</td></tr>
+            <tr><td>60-80</td><td>y</td><td>35 + x + y</td></tr>
+            <tr><td>80-100</td><td>10</td><td>70</td></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Apply median formula</span><br>
+        L = 40, N/2 = 35, cf = 5 + x, f = 30, h = 20<br><br>
+        <span class="calc">46 = 40 + [(35 - (5 + x)) / 30] × 20</span><br>
+        <span class="calc">46 - 40 = [(30 - x) / 30] × 20</span><br>
+        <span class="calc">6 = [(30 - x) / 30] × 20</span><br>
+        <span class="calc">6 = (2/3)(30 - x)</span><br>
+        <span class="calc">18 = 2(30 - x)</span><br>
+        <span class="calc">9 = 30 - x</span><br>
+        <strong>x = 21</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Find y</span><br>
+        From Equation 1: x + y = 25<br>
+        <span class="calc">21 + y = 25</span><br>
+        <strong>y = 4</strong>
+    </div>
+
+    <div class="answer-box">
+        ∴ x = 21 and y = 4
+    </div>
+</div>
+
+<div class="question-box">
+    <strong>Question 4:</strong> Find the median from the following distribution:
+    <table>
+        <tr><th>Class</th><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td><td>50-60</td></tr>
+        <tr><th>Frequency</th><td>8</td><td>15</td><td>25</td><td>18</td><td>14</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Cumulative frequency table</span>
+        <table>
+            <tr><th>Class</th><th>f</th><th>cf</th></tr>
+            <tr><td>10-20</td><td>8</td><td>8</td></tr>
+            <tr><td>20-30</td><td>15</td><td>23</td></tr>
+            <tr><td>30-40</td><td>25</td><td>48</td></tr>
+            <tr><td>40-50</td><td>18</td><td>66</td></tr>
+            <tr><td>50-60</td><td>14</td><td>80</td></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Identify median class</span><br>
+        N = 80, N/2 = 40<br>
+        cf just greater than 40 is 48 → <strong>Median class = 30-40</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Apply formula</span><br>
+        L = 30, N/2 = 40, cf = 23, f = 25, h = 10<br>
+        <span class="calc">Median = 30 + [(40 - 23) / 25] × 10</span><br>
+        <span class="calc">= 30 + [17/25] × 10</span><br>
+        <span class="calc">= 30 + 6.8 = <strong>36.8</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Median = 36.8
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="mode">3. MODE</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula (Continuous Series):</strong><br>
+    Mode = L + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h<br>
+    Where: L = Lower limit of modal class, f₁ = Frequency of modal class,<br>
+    f₀ = Frequency of preceding class, f₂ = Frequency of succeeding class, h = Class width
+</div>
+
+<div class="question-box">
+    <strong>Question 5:</strong> Calculate the mode:
+    <table>
+        <tr><th>Marks</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+        <tr><th>Students</th><td>8</td><td>16</td><td>28</td><td>24</td><td>14</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Identify modal class</span><br>
+        Maximum frequency = 28 → <strong>Modal class = 20-30</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Identify values</span><br>
+        L = 20, f₁ = 28, f₀ = 16, f₂ = 24, h = 10
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Apply formula</span><br>
+        <span class="calc">Mode = 20 + [(28 - 16) / (2×28 - 16 - 24)] × 10</span><br>
+        <span class="calc">= 20 + [12 / (56 - 40)] × 10</span><br>
+        <span class="calc">= 20 + [12/16] × 10</span><br>
+        <span class="calc">= 20 + 7.5 = <strong>27.5</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Mode = 27.5 marks
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="sd">4. STANDARD DEVIATION & VARIANCE</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Variance:</strong> σ² = Σfd² / N - (Σfd/N)² × h²  <em>(Step deviation method)</em><br>
+    <strong>Standard Deviation:</strong> σ = √Variance<br>
+    <strong>Direct Method:</strong> σ = √[Σf(x-x̄)² / N]
+</div>
+
+<div class="question-box">
+    <strong>Question 6:</strong> Calculate the standard deviation and variance:
+    <table>
+        <tr><th>Wages (₹)</th><td>200-300</td><td>300-400</td><td>400-500</td><td>500-600</td><td>600-700</td></tr>
+        <tr><th>Workers</th><td>5</td><td>8</td><td>12</td><td>15</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Use Step Deviation Method (A = 450, h = 100)</span>
+        <table>
+            <tr><th>Class</th><th>m</th><th>f</th><th>d = (m-450)/100</th><th>fd</th><th>d²</th><th>fd²</th></tr>
+            <tr><td>200-300</td><td>250</td><td>5</td><td>-2</td><td>-10</td><td>4</td><td>20</td></tr>
+            <tr><td>300-400</td><td>350</td><td>8</td><td>-1</td><td>-8</td><td>1</td><td>8</td></tr>
+            <tr><td>400-500</td><td>450</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>500-600</td><td>550</td><td>15</td><td>1</td><td>15</td><td>1</td><td>15</td></tr>
+            <tr><td>600-700</td><td>650</td><td>10</td><td>2</td><td>20</td><td>4</td><td>40</td></tr>
+            <tr><th>Total</th><th>-</th><th>N=50</th><th>-</th><th>Σfd=17</th><th>-</th><th>Σfd²=83</th></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate Mean (for reference)</span><br>
+        <span class="calc">X̄ = A + (Σfd/N) × h = 450 + (17/50) × 100 = 450 + 34 = 484</span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate Variance</span><br>
+        <span class="calc">σ² = [(Σfd²/N) - (Σfd/N)²] × h²</span><br>
+        <span class="calc">= [(83/50) - (17/50)²] × 100²</span><br>
+        <span class="calc">= [1.66 - 0.1156] × 10000</span><br>
+        <span class="calc">= 1.5444 × 10000 = <strong>15444</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Calculate Standard Deviation</span><br>
+        <span class="calc">σ = √15444 = <strong>124.27</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Variance (σ²) = 15444, Standard Deviation (σ) = ₹124.27
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="cv">5. COEFFICIENT OF VARIATION</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Coefficient of Variation:</strong> CV = (σ / X̄) × 100<br>
+    <em>Used to compare variability between different datasets</em>
+</div>
+
+<div class="question-box">
+    <strong>Question 7:</strong> Compare the variability of two plants:
+    <table>
+        <tr><th></th><th>Plant A</th><th>Plant B</th></tr>
+        <tr><td>Mean</td><td>250</td><td>280</td></tr>
+        <tr><td>Standard Deviation</td><td>25</td><td>30</td></tr>
+    </table>
+    Which plant shows more consistency?
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Calculate CV for Plant A</span><br>
+        <span class="calc">CV_A = (25/250) × 100 = 0.1 × 100 = <strong>10%</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate CV for Plant B</span><br>
+        <span class="calc">CV_B = (30/280) × 100 = 0.107 × 100 = <strong>10.71%</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Compare</span><br>
+        Plant A: CV = 10%<br>
+        Plant B: CV = 10.71%
+    </div>
+
+    <div class="answer-box">
+        ∴ Plant A (CV = 10%) shows more consistency as it has lower coefficient of variation.
+    </div>
+
+    <div class="interpretation">
+        <strong>Interpretation:</strong> Lower CV indicates less relative variability and more consistency. Plant A's production is more consistent than Plant B.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="quartile">6. QUARTILES & PERCENTILES</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Quartile Formula:</strong> Qk = L + [(kN/4 - cf) / f] × h<br>
+    <strong>Percentile Formula:</strong> Pp = L + [(pN/100 - cf) / f] × h<br>
+    Where k = 1, 2, 3 for Q₁, Q₂, Q₃
+</div>
+
+<div class="question-box">
+    <strong>Question 8:</strong> Calculate Q₃ (Third Quartile) and P₇₇ (77th Percentile):
+    <table>
+        <tr><th>Class</th><td>0-20</td><td>20-40</td><td>40-60</td><td>60-80</td><td>80-100</td></tr>
+        <tr><th>Frequency</th><td>5</td><td>21</td><td>30</td><td>y</td><td>10</td></tr>
+    </table>
+    Given: x = 21, y = 4, Total N = 70
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Cumulative frequency table</span>
+        <table>
+            <tr><th>Class</th><th>f</th><th>cf</th></tr>
+            <tr><td>0-20</td><td>5</td><td>5</td></tr>
+            <tr><td>20-40</td><td>21</td><td>26</td></tr>
+            <tr><td>40-60</td><td>30</td><td>56</td></tr>
+            <tr><td>60-80</td><td>4</td><td>60</td></tr>
+            <tr><td>80-100</td><td>10</td><td>70</td></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate Q₃</span><br>
+        Q₃ position = (3 × 70)/4 = 52.5<br>
+        Q₃ class = 40-60 (cf = 56 ≥ 52.5)<br><br>
+        L = 40, cf_prev = 26, f = 30, h = 20<br>
+        <span class="calc">Q₃ = 40 + [(52.5 - 26) / 30] × 20</span><br>
+        <span class="calc">= 40 + [26.5/30] × 20</span><br>
+        <span class="calc">= 40 + 17.67 = <strong>57.67</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate P₇₇</span><br>
+        P₇₇ position = 0.77 × 70 = 53.9<br>
+        P₇₇ class = 40-60<br><br>
+        <span class="calc">P₇₇ = 40 + [(53.9 - 26) / 30] × 20</span><br>
+        <span class="calc">= 40 + [27.9/30] × 20</span><br>
+        <span class="calc">= 40 + 18.6 = <strong>58.60</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Q₃ = 57.67 and P₇₇ = 58.60
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="probability">7. PROBABILITY</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Basic Probability:</strong> P(E) = Favorable outcomes / Total outcomes<br>
+    <strong>Addition Rule:</strong> P(A ∪ B) = P(A) + P(B) - P(A ∩ B)<br>
+    <strong>Multiplication Rule:</strong> P(A ∩ B) = P(A) × P(B|A)<br>
+    <strong>Bayes' Theorem:</strong> P(A|B) = P(B|A) × P(A) / P(B)
+</div>
+
+<div class="question-box">
+    <strong>Question 9:</strong> A box contains 4 red, 5 white, and 6 blue balls. Three balls are drawn at random. Find the probability that:
+    <br>(a) All three are red
+    <br>(b) One of each color
+    <br>(c) None is blue
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Total balls = 4 + 5 + 6 = 15</span><br>
+        Total ways to select 3 balls = ¹⁵C₃ = 15!/(3!×12!) = (15×14×13)/(3×2×1) = <strong>455</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">(a) All three red:</span><br>
+        Ways to select 3 red from 4 = ⁴C₃ = 4<br>
+        <span class="calc">P(All red) = 4/455 = <strong>0.0088</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">(b) One of each color:</span><br>
+        Ways = ⁴C₁ × ⁵C₁ × ⁶C₁ = 4 × 5 × 6 = 120<br>
+        <span class="calc">P(One each) = 120/455 = <strong>0.264</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">(c) None is blue (all from red + white = 9):</span><br>
+        Ways = ⁹C₃ = (9×8×7)/(3×2×1) = 84<br>
+        <span class="calc">P(No blue) = 84/455 = <strong>0.185</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ (a) P(All red) = 0.0088, (b) P(One each) = 0.264, (c) P(No blue) = 0.185
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="pearson">8. PEARSON'S CORRELATION COEFFICIENT</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula:</strong> r = [nΣXY - (ΣX)(ΣY)] / √[nΣX² - (ΣX)²] × √[nΣY² - (ΣY)²]<br><br>
+    <strong>Interpretation:</strong><br>
+    r = +1: Perfect positive | r = -1: Perfect negative | r = 0: No correlation<br>
+    |r| > 0.7: Strong | 0.4 ≤ |r| ≤ 0.7: Moderate | |r| < 0.4: Weak
+</div>
+
+<div class="question-box">
+    <strong>Question 10:</strong> Calculate Pearson's correlation coefficient between aptitude test scores and job performance ratings:
+    <table>
+        <tr><th>Aptitude Score (X)</th><td>40</td><td>45</td><td>50</td><td>55</td><td>60</td><td>65</td><td>70</td></tr>
+        <tr><th>Performance (Y)</th><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td><td>7</td><td>8</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Construct calculation table</span>
+        <table>
+            <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+            <tr><td>40</td><td>3</td><td>1600</td><td>9</td><td>120</td></tr>
+            <tr><td>45</td><td>4</td><td>2025</td><td>16</td><td>180</td></tr>
+            <tr><td>50</td><td>5</td><td>2500</td><td>25</td><td>250</td></tr>
+            <tr><td>55</td><td>6</td><td>3025</td><td>36</td><td>330</td></tr>
+            <tr><td>60</td><td>6</td><td>3600</td><td>36</td><td>360</td></tr>
+            <tr><td>65</td><td>7</td><td>4225</td><td>49</td><td>455</td></tr>
+            <tr><td>70</td><td>8</td><td>4900</td><td>64</td><td>560</td></tr>
+            <tr><th>ΣX=385</th><th>ΣY=39</th><th>ΣX²=21875</th><th>ΣY²=235</th><th>ΣXY=2255</th></tr>
+        </table>
+        n = 7
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Apply formula</span><br>
+        <span class="calc">Numerator = nΣXY - (ΣX)(ΣY) = 7(2255) - (385)(39)</span><br>
+        <span class="calc">= 15785 - 15015 = <strong>770</strong></span><br><br>
+
+        <span class="calc">√[nΣX² - (ΣX)²] = √[7(21875) - 385²] = √[153125 - 148225] = √4900 = <strong>70</strong></span><br>
+        <span class="calc">√[nΣY² - (ΣY)²] = √[7(235) - 39²] = √[1645 - 1521] = √124 = <strong>11.14</strong></span><br><br>
+
+        <span class="calc">r = 770 / (70 × 11.14) = 770 / 779.8 = <strong>0.987</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ r = 0.987 (Approx 0.99)
+    </div>
+
+    <div class="interpretation">
+        <strong>Interpretation:</strong> The correlation between aptitude test scores and job performance is approximately 0.99, which is very close to +1. This indicates an <strong>extremely strong positive relationship</strong> between the two variables. The aptitude test is highly useful for predicting first-year job performance.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="spearman">9. SPEARMAN'S RANK CORRELATION</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula:</strong> ρ = 1 - [6Σd²] / [n(n² - 1)]<br>
+    Where: d = R₁ - R₂ (difference in ranks), n = number of pairs
+</div>
+
+<div class="question-box">
+    <strong>Question 11:</strong> Calculate Spearman's rank correlation coefficient:
+    <table>
+        <tr><th>Feature</th><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td></tr>
+        <tr><th>Group X (R₁)</th><td>3</td><td>5</td><td>6</td><td>4</td><td>4</td><td>7</td><td>1</td></tr>
+        <tr><th>Group Y (R₂)</th><td>3</td><td>4</td><td>5</td><td>0</td><td>7</td><td>5</td><td>2</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Calculate differences</span>
+        <table>
+            <tr><th>Feature</th><th>R₁</th><th>R₂</th><th>d = R₁ - R₂</th><th>d²</th></tr>
+            <tr><td>A</td><td>3</td><td>3</td><td>0</td><td>0</td></tr>
+            <tr><td>B</td><td>5</td><td>4</td><td>1</td><td>1</td></tr>
+            <tr><td>C</td><td>6</td><td>5</td><td>1</td><td>1</td></tr>
+            <tr><td>D</td><td>4</td><td>0</td><td>4</td><td>16</td></tr>
+            <tr><td>E</td><td>4</td><td>7</td><td>-3</td><td>9</td></tr>
+            <tr><td>F</td><td>7</td><td>5</td><td>2</td><td>4</td></tr>
+            <tr><td>G</td><td>1</td><td>2</td><td>-1</td><td>1</td></tr>
+            <tr><th colspan="4">Total</th><th>Σd² = 32</th></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Apply formula (n = 7)</span><br>
+        <span class="calc">ρ = 1 - [6 × 32] / [7(49 - 1)]</span><br>
+        <span class="calc">= 1 - 192 / [7 × 48]</span><br>
+        <span class="calc">= 1 - 192/336</span><br>
+        <span class="calc">= 1 - 0.571 = <strong>0.429</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ ρ = 0.429 (Moderate Positive Correlation)
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="regression">10. REGRESSION ANALYSIS</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Regression Line (Y on X):</strong> Y = a + bX<br>
+    <strong>Slope:</strong> b = Σ(X - X̄)(Y - Ȳ) / Σ(X - X̄)² = [nΣXY - ΣXΣY] / [nΣX² - (ΣX)²]<br>
+    <strong>Intercept:</strong> a = Ȳ - bX̄
+</div>
+
+<div class="question-box">
+    <strong>Question 12:</strong> Calculate the regression line and predict exam score for 6 hours of study:
+    <table>
+        <tr><th>Student</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><th>Hours Studied (X)</th><td>2</td><td>4</td><td>5</td><td>7</td><td>9</td></tr>
+        <tr><th>Exam Score (Y)</th><td>55</td><td>65</td><td>70</td><td>85</td><td>95</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Calculate required values</span>
+        <table>
+            <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+            <tr><td>2</td><td>55</td><td>4</td><td>3025</td><td>110</td></tr>
+            <tr><td>4</td><td>65</td><td>16</td><td>4225</td><td>260</td></tr>
+            <tr><td>5</td><td>70</td><td>25</td><td>4900</td><td>350</td></tr>
+            <tr><td>7</td><td>85</td><td>49</td><td>7225</td><td>595</td></tr>
+            <tr><td>9</td><td>95</td><td>81</td><td>9025</td><td>855</td></tr>
+            <tr><th>ΣX=27</th><th>ΣY=370</th><th>ΣX²=175</th><th>ΣY²=28400</th><th>ΣXY=2170</th></tr>
+        </table>
+        n = 5, X̄ = 27/5 = 5.4, Ȳ = 370/5 = 74
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate slope (b)</span><br>
+        <span class="calc">b = [nΣXY - ΣXΣY] / [nΣX² - (ΣX)²]</span><br>
+        <span class="calc">= [5(2170) - (27)(370)] / [5(175) - (27)²]</span><br>
+        <span class="calc">= [10850 - 9990] / [875 - 729]</span><br>
+        <span class="calc">= 860 / 146 = <strong>5.89</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate intercept (a)</span><br>
+        <span class="calc">a = Ȳ - bX̄ = 74 - 5.89(5.4) = 74 - 31.81 = <strong>42.19</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Regression equation</span><br>
+        <strong>Y = 42.19 + 5.89X</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Predict score for X = 6 hours</span><br>
+        <span class="calc">Y = 42.19 + 5.89(6) = 42.19 + 35.34 = <strong>77.53</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Regression Equation: Y = 42.19 + 5.89X<br>
+        Predicted exam score for 6 hours of study = <strong>78 marks (approximately)</strong>
+    </div>
+
+    <div class="interpretation">
+        <strong>Interpretation:</strong> For every additional hour of study, the exam score increases by approximately 5.89 marks. A student studying for 6 hours can expect to score around 78 marks.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="ftest">11. F-TEST (Variance Ratio Test)</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>F-Statistic:</strong> F = S₁² / S₂² (larger variance in numerator)<br>
+    <strong>Degrees of Freedom:</strong> df₁ = n₁ - 1, df₂ = n₂ - 1<br>
+    <strong>Decision Rule:</strong> If F_calc > F_crit, reject H₀
+</div>
+
+<div class="question-box">
+    <strong>Question 13:</strong> Compare the risk of two portfolios at 5% significance level:
+    <table>
+        <tr><th></th><th>Portfolio A</th><th>Portfolio B</th></tr>
+        <tr><td>Sample Size (n)</td><td>21</td><td>16</td></tr>
+        <tr><td>Variance (S²)</td><td>9.8</td><td>4.2</td></tr>
+    </table>
+    Test whether Portfolio A is significantly riskier than Portfolio B.
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: State Hypotheses</span><br>
+        H₀: σ₁² = σ₂² (No significant difference in variances)<br>
+        H₁: σ₁² > σ₂² (Portfolio A has higher variance - riskier)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate F-statistic</span><br>
+        <span class="calc">F = S₁² / S₂² = 9.8 / 4.2 = <strong>2.33</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Degrees of freedom</span><br>
+        df₁ = n₁ - 1 = 21 - 1 = <strong>20</strong><br>
+        df₂ = n₂ - 1 = 16 - 1 = <strong>15</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Critical value (Right-tail test, α = 0.05)</span><br>
+        F₀.₀₅(20, 15) ≈ <strong>2.28</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Decision</span><br>
+        F_calc (2.33) > F_crit (2.28)<br>
+        <strong>Reject H₀</strong>
+    </div>
+
+    <div class="answer-box">
+        ∴ F = 2.33 > F_crit = 2.28<br>
+        <strong>Conclusion:</strong> Portfolio A is significantly riskier than Portfolio B at 5% significance level.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="ttest">12. t-TEST</h2>
+<!-- ================================================================== -->
+
+<h3>12.1 One-Sample t-Test</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> t = (X̄ - μ₀) / (S / √n)<br>
+    <strong>df = n - 1</strong>
+</div>
+
+<div class="question-box">
+    <strong>Question 14:</strong> A sample of 15 measurements has mean X̄ = 9.85 cm and S = 0.5 cm. Test at 1% level whether the true mean differs from 10.0 cm.
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: State Hypotheses</span><br>
+        H₀: μ = 10.0 (Mean length is 10 cm)<br>
+        H₁: μ ≠ 10.0 (Mean length differs from 10 cm) - <em>Two-tailed test</em>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Given values</span><br>
+        X̄ = 9.85, μ₀ = 10.0, S = 0.5, n = 15<br>
+        √n = √15 = 3.873
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate t-statistic</span><br>
+        <span class="calc">S/√n = 0.5/3.873 = 0.129</span><br>
+        <span class="calc">t = (9.85 - 10.0) / 0.129 = -0.15 / 0.129 = <strong>-1.16</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Critical value</span><br>
+        df = 15 - 1 = 14<br>
+        t₀.₀₀₅,₁₄ = ±2.977 (two-tailed at α = 0.01)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Decision</span><br>
+        |t_calc| = 1.16 < |t_crit| = 2.977<br>
+        <strong>Fail to reject H₀</strong>
+    </div>
+
+    <div class="answer-box">
+        ∴ t = -1.16, Critical t = ±2.977<br>
+        <strong>Conclusion:</strong> We do not have enough evidence to say that the true mean length is different from 10 cm at 1% significance level.
+    </div>
+
+    <div class="step">
+        <span class="step-label">99% Confidence Interval:</span><br>
+        <span class="calc">CI = X̄ ± t₀.₀₀₅ × (S/√n)</span><br>
+        <span class="calc">= 9.85 ± 2.977 × 0.129</span><br>
+        <span class="calc">= 9.85 ± 0.384</span><br>
+        <span class="calc">= <strong>(9.466, 10.234)</strong></span><br>
+        Since 10.0 is within this interval, we cannot reject H₀.
+    </div>
+</div>
+
+<h3>12.2 Two-Sample t-Test</h3>
+
+<div class="question-box">
+    <strong>Question 15:</strong> Compare means of two independent samples:
+    <table>
+        <tr><th></th><th>Sample 1</th><th>Sample 2</th></tr>
+        <tr><td>n</td><td>10</td><td>12</td></tr>
+        <tr><td>Mean</td><td>75</td><td>68</td></tr>
+        <tr><td>Variance</td><td>16</td><td>25</td></tr>
+    </table>
+    Test at 5% level if there is a significant difference.
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: State Hypotheses</span><br>
+        H₀: μ₁ = μ₂<br>
+        H₁: μ₁ ≠ μ₂
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate pooled variance</span><br>
+        <span class="calc">S²p = [(n₁-1)S₁² + (n₂-1)S₂²] / (n₁ + n₂ - 2)</span><br>
+        <span class="calc">= [9(16) + 11(25)] / 20</span><br>
+        <span class="calc">= [144 + 275] / 20 = 419/20 = <strong>20.95</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate t-statistic</span><br>
+        <span class="calc">t = (X̄₁ - X̄₂) / √[S²p(1/n₁ + 1/n₂)]</span><br>
+        <span class="calc">= (75 - 68) / √[20.95(1/10 + 1/12)]</span><br>
+        <span class="calc">= 7 / √[20.95 × 0.183]</span><br>
+        <span class="calc">= 7 / √3.83 = 7 / 1.96 = <strong>3.57</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Critical value</span><br>
+        df = 10 + 12 - 2 = 20<br>
+        t₀.₀₂₅,₂₀ = ±2.086
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Decision</span><br>
+        |t_calc| = 3.57 > |t_crit| = 2.086<br>
+        <strong>Reject H₀</strong>
+    </div>
+
+    <div class="answer-box">
+        ∴ t = 3.57 > t_crit = 2.086<br>
+        <strong>Conclusion:</strong> There is a significant difference between the two means at 5% level.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="ztest">13. Z-TEST</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Z-Statistic:</strong> Z = (X̄ - μ₀) / (σ / √n)<br>
+    <strong>Used when:</strong> Population σ is known OR n ≥ 30
+</div>
+
+<div class="question-box">
+    <strong>Question 16:</strong> A sample of 36 has mean 148.5 cm. Population σ = 5 cm. Test at 1% level if population mean differs from 150 cm. Also find 99% confidence interval.
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: State Hypotheses</span><br>
+        H₀: μ = 150<br>
+        H₁: μ ≠ 150 (Two-tailed)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate Z</span><br>
+        <span class="calc">σ/√n = 5/√36 = 5/6 = 0.833</span><br>
+        <span class="calc">Z = (148.5 - 150) / 0.833 = -1.5 / 0.833 = <strong>-1.80</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Critical value (two-tailed, α = 0.01)</span><br>
+        Z_crit = ±2.576
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Decision</span><br>
+        |Z| = 1.80 < 2.576<br>
+        <strong>Fail to reject H₀</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: P-value</span><br>
+        P(Z < -1.80) = 0.0359<br>
+        P-value = 2 × 0.0359 = <strong>0.072</strong> (7.2%)
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 6: 99% Confidence Interval</span><br>
+        <span class="calc">CI = X̄ ± Z₀.₀₀₅ × (σ/√n)</span><br>
+        <span class="calc">= 148.5 ± 2.576 × 0.833</span><br>
+        <span class="calc">= 148.5 ± 2.15</span><br>
+        <span class="calc">= <strong>(146.35, 150.65)</strong></span>
+    </div>
+
+    <div class="answer-box">
+        ∴ Z = -1.80, P-value = 0.072<br>
+        99% CI = (146.35, 150.65)<br>
+        <strong>Conclusion:</strong> Since CI contains 150, we fail to reject H₀. The mean is not significantly different from 150 cm.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="chisquare">14. CHI-SQUARE TEST</h2>
+<!-- ================================================================== -->
+
+<h3>14.1 Test of Independence</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> χ² = Σ[(O - E)² / E]<br>
+    <strong>Expected Frequency:</strong> E = (Row Total × Column Total) / Grand Total<br>
+    <strong>df = (r - 1)(c - 1)</strong>
+</div>
+
+<div class="question-box">
+    <strong>Question 17:</strong> Test the association between gender and shopping preference at 5% level:
+    <table>
+        <tr><th></th><th>In-Store</th><th>Online</th><th>Total</th></tr>
+        <tr><th>Male</th><td>40</td><td>60</td><td>100</td></tr>
+        <tr><th>Female</th><td>30</td><td>70</td><td>100</td></tr>
+        <tr><th>Total</th><td>70</td><td>130</td><td>200</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: State Hypotheses</span><br>
+        H₀: Gender and shopping preference are independent<br>
+        H₁: Gender and shopping preference are not independent
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate Expected Frequencies</span><br>
+        E(Male, In-Store) = (100 × 70) / 200 = <strong>35</strong><br>
+        E(Male, Online) = (100 × 130) / 200 = <strong>65</strong><br>
+        E(Female, In-Store) = (100 × 70) / 200 = <strong>35</strong><br>
+        E(Female, Online) = (100 × 130) / 200 = <strong>65</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate χ²</span>
+        <table>
+            <tr><th>Cell</th><th>O</th><th>E</th><th>(O-E)²</th><th>(O-E)²/E</th></tr>
+            <tr><td>Male, In-Store</td><td>40</td><td>35</td><td>25</td><td>0.714</td></tr>
+            <tr><td>Male, Online</td><td>60</td><td>65</td><td>25</td><td>0.385</td></tr>
+            <tr><td>Female, In-Store</td><td>30</td><td>35</td><td>25</td><td>0.714</td></tr>
+            <tr><td>Female, Online</td><td>70</td><td>65</td><td>25</td><td>0.385</td></tr>
+            <tr><th colspan="4">Total</th><th>χ² = 2.198</th></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Critical value</span><br>
+        df = (2-1)(2-1) = 1<br>
+        χ²₀.₀₅,₁ = <strong>3.841</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Decision</span><br>
+        χ²_calc (2.198) < χ²_crit (3.841)<br>
+        <strong>Fail to reject H₀</strong>
+    </div>
+
+    <div class="answer-box">
+        ∴ χ² = 2.198 < 3.841<br>
+        <strong>Conclusion:</strong> Gender and shopping preference are independent at 5% level. There is no significant association.
+    </div>
+</div>
+
+<h3>14.2 Goodness of Fit Test</h3>
+
+<div class="question-box">
+    <strong>Question 18:</strong> Test if daily sales are uniformly distributed across weekdays:
+    <table>
+        <tr><th>Day</th><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td></tr>
+        <tr><th>Observed Sales</th><td>110</td><td>95</td><td>80</td><td>105</td><td>110</td></tr>
+    </table>
+    Total = 500. Test at 5% level.
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: State Hypotheses</span><br>
+        H₀: Sales are uniformly distributed<br>
+        H₁: Sales are not uniformly distributed
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Expected frequency</span><br>
+        If uniform: E = 500/5 = <strong>100</strong> for each day
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate χ²</span>
+        <table>
+            <tr><th>Day</th><th>O</th><th>E</th><th>(O-E)²/E</th></tr>
+            <tr><td>Monday</td><td>110</td><td>100</td><td>100/100 = 1.00</td></tr>
+            <tr><td>Tuesday</td><td>95</td><td>100</td><td>25/100 = 0.25</td></tr>
+            <tr><td>Wednesday</td><td>80</td><td>100</td><td>400/100 = 4.00</td></tr>
+            <tr><td>Thursday</td><td>105</td><td>100</td><td>25/100 = 0.25</td></tr>
+            <tr><td>Friday</td><td>110</td><td>100</td><td>100/100 = 1.00</td></tr>
+            <tr><th colspan="3">Total</th><th>χ² = 6.50</th></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Critical value</span><br>
+        df = k - 1 = 5 - 1 = 4<br>
+        χ²₀.₀₅,₄ = <strong>9.488</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Decision</span><br>
+        χ²_calc (6.50) < χ²_crit (9.488)<br>
+        <strong>Fail to reject H₀</strong>
+    </div>
+
+    <div class="answer-box">
+        ∴ χ² = 6.50 < 9.488<br>
+        <strong>Conclusion:</strong> Sales are uniformly distributed across weekdays at 5% level.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="paired">15. PAIRED t-TEST</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula:</strong> t = d̄ / (Sd / √n)<br>
+    Where: d̄ = mean of differences, Sd = standard deviation of differences<br>
+    <strong>df = n - 1</strong>
+</div>
+
+<div class="question-box">
+    <strong>Question 19:</strong> Test if a new fertilizer increases yield. Data for 10 plots:
+    <table>
+        <tr><th>Plot</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+        <tr><th>Standard</th><td>58</td><td>65</td><td>70</td><td>62</td><td>55</td><td>75</td><td>60</td><td>68</td><td>59</td><td>68</td></tr>
+        <tr><th>New</th><td>61</td><td>64</td><td>73</td><td>68</td><td>60</td><td>74</td><td>65</td><td>69</td><td>62</td><td>71</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <div class="step">
+        <span class="step-label">Step 1: Calculate differences (d = New - Standard)</span>
+        <table>
+            <tr><th>Plot</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><th>d</th><td>3</td><td>-1</td><td>3</td><td>6</td><td>5</td><td>-1</td><td>5</td><td>1</td><td>3</td><td>3</td></tr>
+        </table>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 2: Calculate d̄ and Sd</span><br>
+        Σd = 3-1+3+6+5-1+5+1+3+3 = <strong>27</strong><br>
+        d̄ = 27/10 = <strong>2.7</strong><br><br>
+
+        Σ(d - d̄)² = (0.3)² + (-3.7)² + (0.3)² + (3.3)² + (2.3)² + (-3.7)² + (2.3)² + (-1.7)² + (0.3)² + (0.3)²<br>
+        = 0.09 + 13.69 + 0.09 + 10.89 + 5.29 + 13.69 + 5.29 + 2.89 + 0.09 + 0.09 = <strong>52.1</strong><br><br>
+
+        Sd = √[52.1/(10-1)] = √5.79 = <strong>2.406</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 3: Calculate t-statistic</span><br>
+        SE = Sd/√n = 2.406/√10 = 2.406/3.162 = <strong>0.761</strong><br>
+        <span class="calc">t = d̄ / SE = 2.7 / 0.761 = <strong>3.55</strong></span>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 4: Critical value (one-tailed, α = 0.05)</span><br>
+        df = 10 - 1 = 9<br>
+        t₀.₀₅,₉ = <strong>1.833</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">Step 5: Decision</span><br>
+        t_calc (3.55) > t_crit (1.833)<br>
+        <strong>Reject H₀</strong>
+    </div>
+
+    <div class="step">
+        <span class="step-label">95% Confidence Interval for mean difference:</span><br>
+        <span class="calc">CI = d̄ ± t₀.₀₂₅,₉ × SE</span><br>
+        t₀.₀₂₅,₉ = 2.262<br>
+        <span class="calc">= 2.7 ± 2.262 × 0.761 = 2.7 ± 1.72</span><br>
+        <span class="calc">= <strong>(0.98, 4.42)</strong> bushels/acre</span>
+    </div>
+
+    <div class="answer-box">
+        ∴ t = 3.55 > t_crit = 1.833<br>
+        95% CI for improvement = (0.98, 4.42) bushels/acre<br>
+        <strong>Conclusion:</strong> The new fertilizer significantly increases yield. Expected improvement is between 1 and 4.4 bushels per acre.
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="tables">16. CRITICAL VALUE TABLES</h2>
+<!-- ================================================================== -->
+
+<h3>Chi-Square (χ²) Critical Values</h3>
+<table>
+    <tr><th>df</th><th>α = 0.10</th><th>α = 0.05</th><th>α = 0.01</th></tr>
+    <tr><td>1</td><td>2.706</td><td>3.841</td><td>6.635</td></tr>
+    <tr><td>2</td><td>4.605</td><td>5.991</td><td>9.210</td></tr>
+    <tr><td>3</td><td>6.251</td><td>7.815</td><td>11.345</td></tr>
+    <tr><td>4</td><td>7.779</td><td>9.488</td><td>13.277</td></tr>
+    <tr><td>5</td><td>9.236</td><td>11.070</td><td>15.086</td></tr>
+    <tr><td>6</td><td>10.645</td><td>12.592</td><td>16.812</td></tr>
+    <tr><td>7</td><td>12.017</td><td>14.067</td><td>18.475</td></tr>
+    <tr><td>8</td><td>13.362</td><td>15.507</td><td>20.090</td></tr>
+    <tr><td>9</td><td>14.684</td><td>16.919</td><td>21.666</td></tr>
+    <tr><td>10</td><td>15.987</td><td>18.307</td><td>23.209</td></tr>
+</table>
+
+<h3>t-Distribution Critical Values</h3>
+<table>
+    <tr><th>df</th><th colspan="2">Two-tailed</th><th colspan="2">One-tailed</th></tr>
+    <tr><th></th><th>α=0.05</th><th>α=0.01</th><th>α=0.05</th><th>α=0.01</th></tr>
+    <tr><td>5</td><td>2.571</td><td>4.032</td><td>2.015</td><td>3.365</td></tr>
+    <tr><td>6</td><td>2.447</td><td>3.707</td><td>1.943</td><td>3.143</td></tr>
+    <tr><td>7</td><td>2.365</td><td>3.499</td><td>1.895</td><td>2.998</td></tr>
+    <tr><td>8</td><td>2.306</td><td>3.355</td><td>1.860</td><td>2.896</td></tr>
+    <tr><td>9</td><td>2.262</td><td>3.250</td><td>1.833</td><td>2.821</td></tr>
+    <tr><td>10</td><td>2.228</td><td>3.169</td><td>1.812</td><td>2.764</td></tr>
+    <tr><td>11</td><td>2.201</td><td>3.106</td><td>1.796</td><td>2.718</td></tr>
+    <tr><td>12</td><td>2.179</td><td>3.055</td><td>1.782</td><td>2.681</td></tr>
+    <tr><td>14</td><td>2.145</td><td>2.977</td><td>1.761</td><td>2.624</td></tr>
+    <tr><td>15</td><td>2.131</td><td>2.947</td><td>1.753</td><td>2.602</td></tr>
+    <tr><td>20</td><td>2.086</td><td>2.845</td><td>1.725</td><td>2.528</td></tr>
+    <tr><td>25</td><td>2.060</td><td>2.787</td><td>1.708</td><td>2.485</td></tr>
+    <tr><td>30</td><td>2.042</td><td>2.750</td><td>1.697</td><td>2.457</td></tr>
+    <tr><td>∞</td><td>1.960</td><td>2.576</td><td>1.645</td><td>2.326</td></tr>
+</table>
+
+<h3>F-Distribution Critical Values (α = 0.05)</h3>
+<table>
+    <tr><th>df₂ \ df₁</th><th>5</th><th>10</th><th>15</th><th>20</th><th>25</th></tr>
+    <tr><td>5</td><td>5.05</td><td>4.74</td><td>4.62</td><td>4.56</td><td>4.52</td></tr>
+    <tr><td>10</td><td>3.33</td><td>2.98</td><td>2.85</td><td>2.77</td><td>2.73</td></tr>
+    <tr><td>15</td><td>2.90</td><td>2.54</td><td>2.40</td><td>2.33</td><td>2.28</td></tr>
+    <tr><td>20</td><td>2.71</td><td>2.35</td><td>2.20</td><td>2.12</td><td>2.07</td></tr>
+    <tr><td>25</td><td>2.60</td><td>2.24</td><td>2.09</td><td>2.01</td><td>1.96</td></tr>
+</table>
+
+<h3>Z (Standard Normal) Critical Values</h3>
+<table>
+    <tr><th>Confidence Level</th><th>α</th><th>Z (two-tailed)</th><th>Z (one-tailed)</th></tr>
+    <tr><td>90%</td><td>0.10</td><td>±1.645</td><td>1.282</td></tr>
+    <tr><td>95%</td><td>0.05</td><td>±1.960</td><td>1.645</td></tr>
+    <tr><td>99%</td><td>0.01</td><td>±2.576</td><td>2.326</td></tr>
+</table>
+
+<!-- ================================================================== -->
+<h2>FORMULA QUICK REFERENCE</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <h4>Central Tendency</h4>
+    <strong>Mean:</strong> X̄ = Σfm/Σf<br>
+    <strong>Median:</strong> L + [(N/2 - cf)/f] × h<br>
+    <strong>Mode:</strong> L + [(f₁-f₀)/(2f₁-f₀-f₂)] × h
+</div>
+
+<div class="formula-box">
+    <h4>Dispersion</h4>
+    <strong>Variance:</strong> σ² = Σf(x-x̄)²/N<br>
+    <strong>SD:</strong> σ = √Variance<br>
+    <strong>CV:</strong> (σ/X̄) × 100
+</div>
+
+<div class="formula-box">
+    <h4>Correlation & Regression</h4>
+    <strong>Pearson r:</strong> [nΣXY - ΣXΣY] / √[nΣX²-(ΣX)²][nΣY²-(ΣY)²]<br>
+    <strong>Spearman ρ:</strong> 1 - 6Σd²/n(n²-1)<br>
+    <strong>Regression:</strong> b = [nΣXY - ΣXΣY]/[nΣX² - (ΣX)²], a = Ȳ - bX̄
+</div>
+
+<div class="formula-box">
+    <h4>Hypothesis Testing</h4>
+    <strong>Chi-square:</strong> χ² = Σ(O-E)²/E<br>
+    <strong>t-test:</strong> t = (X̄-μ)/(S/√n)<br>
+    <strong>Z-test:</strong> Z = (X̄-μ)/(σ/√n)<br>
+    <strong>F-test:</strong> F = S₁²/S₂²
+</div>
+
+<hr>
+<p style="text-align:center; color:#666; margin-top:30px;">
+    <strong>Best of Luck for Your Exam!</strong><br>
+    <em>Practice these problems and understand the interpretation of results.</em>
+</p>
+
+</body>
+</html>

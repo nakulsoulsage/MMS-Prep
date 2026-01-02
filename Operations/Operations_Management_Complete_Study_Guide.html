@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations Management - Complete Study Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #7c3aed;
+            --accent: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .nav-container {
+            background: var(--card-bg);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 120px;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .nav-links a {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .topic-section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .topic-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 25px 30px;
+        }
+
+        .topic-header h2 {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topic-content {
+            padding: 30px;
+        }
+
+        .sub-topic {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sub-topic:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sub-topic h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .sub-topic h4 {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin: 15px 0 10px 0;
+        }
+
+        .keyword-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-left: 4px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+        }
+
+        .keyword-box strong {
+            color: var(--primary-dark);
+        }
+
+        .example-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+        }
+
+        .example-box::before {
+            content: "Example: ";
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .important-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--warning);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+        }
+
+        .important-box::before {
+            content: "Important: ";
+            font-weight: bold;
+            color: var(--warning);
+        }
+
+        .formula-box {
+            background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+            border: 2px dashed var(--danger);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .grid-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .grid-card h5 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        tr:hover {
+            background: #e2e8f0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--primary);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin: 2px;
+        }
+
+        .tag.green { background: var(--accent); }
+        .tag.purple { background: var(--secondary); }
+        .tag.orange { background: var(--warning); }
+        .tag.red { background: var(--danger); }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, var(--accent) 0%, #047857 100%);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(5, 150, 105, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(5, 150, 105, 0.5);
+        }
+
+        @media print {
+            .header {
+                position: relative;
+            }
+            .nav-container, .print-btn {
+                display: none;
+            }
+            .topic-section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .nav-links a {
+                padding: 6px 12px;
+                font-size: 0.75rem;
+            }
+            .topic-header h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #fef08a 0%, #fde047 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .steps-container {
+            counter-reset: step-counter;
+        }
+
+        .step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 15px;
+        }
+
+        .step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            width: 35px;
+            height: 35px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .comparison-table {
+            margin: 20px 0;
+        }
+
+        .vs-box {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .vs-side {
+            flex: 1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .vs-side.pros {
+            background: #d1fae5;
+            border: 2px solid var(--accent);
+        }
+
+        .vs-side.cons {
+            background: #fee2e2;
+            border: 2px solid var(--danger);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Operations Management</h1>
+    <p>Complete Study Guide - MMS Exam Preparation</p>
+</div>
+
+<div class="nav-container">
+    <div class="nav-links">
+        <a href="#intro">Introduction</a>
+        <a href="#plant-location">Plant Location</a>
+        <a href="#plant-layout">Plant Layout</a>
+        <a href="#work-study">Work Study</a>
+        <a href="#value-engineering">Value Engineering</a>
+        <a href="#iso">ISO Standards</a>
+        <a href="#mrp">MRP</a>
+        <a href="#inventory">Inventory Control</a>
+        <a href="#sequencing">Sequencing</a>
+        <a href="#scm">Supply Chain</a>
+        <a href="#sqc">Quality Control</a>
+        <a href="#lean">Lean & TOC</a>
+        <a href="#forecasting">Forecasting</a>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- SECTION 1: Introduction to OM -->
+<section class="topic-section" id="intro">
+    <div class="topic-header">
+        <h2>1. Introduction to Operations Management</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>What is Operations Management?</h3>
+            <div class="keyword-box">
+                <strong>Definition:</strong> OM is the strategic management of processes and resources that transform inputs into desired outputs. It optimizes efficiency, quality, and customer satisfaction.
+            </div>
+
+            <h4>Key Objectives of OM</h4>
+            <div class="grid-2">
+                <div class="grid-card">
+                    <h5>1. Efficiency</h5>
+                    <p>Maximize resource utilization and minimize costs</p>
+                </div>
+                <div class="grid-card">
+                    <h5>2. Quality</h5>
+                    <p>Deliver products/services meeting customer expectations</p>
+                </div>
+                <div class="grid-card">
+                    <h5>3. Effectiveness</h5>
+                    <p>Producing right goods/services satisfying customer needs</p>
+                </div>
+                <div class="grid-card">
+                    <h5>4. Lead Time</h5>
+                    <p>Minimizing throughput time by reducing delays</p>
+                </div>
+                <div class="grid-card">
+                    <h5>5. Capacity Utilization</h5>
+                    <p>Maximizing utilization of manpower, machines</p>
+                </div>
+                <div class="grid-card">
+                    <h5>6. Cost Minimization</h5>
+                    <p>Reducing cost of production/service delivery</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Scope of OM</h3>
+            <ul>
+                <li><span class="tag">Plant Location</span> <span class="tag purple">Facilities Layout</span></li>
+                <li><span class="tag green">Material Handling</span> <span class="tag orange">Product Design</span></li>
+                <li><span class="tag">Process Design</span> <span class="tag purple">Production Planning & Control</span></li>
+                <li><span class="tag green">Quality Control</span> <span class="tag orange">Materials Management</span></li>
+                <li><span class="tag red">Maintenance Management</span></li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Competitive Advantages</h3>
+            <table>
+                <tr>
+                    <th>Strategy</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>Cost Leadership</strong></td>
+                    <td>Cost-efficient processes for competitive prices without compromising quality</td>
+                </tr>
+                <tr>
+                    <td><strong>Differentiation</strong></td>
+                    <td>Unique value propositions through innovative processes and customization</td>
+                </tr>
+                <tr>
+                    <td><strong>Speed</strong></td>
+                    <td>Efficient and agile operations to meet customer demands faster</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2: Plant Location -->
+<section class="topic-section" id="plant-location">
+    <div class="topic-header">
+        <h2>2. Plant Location</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition</h3>
+            <div class="keyword-box">
+                <strong>Plant Location:</strong> Selection of specific site for establishment of the physical unit of production process. It is a strategic decision of an organization.
+            </div>
+
+            <h4>Need for Plant Location</h4>
+            <div class="grid-2">
+                <div class="grid-card">
+                    <h5>New Factory</h5>
+                    <ul>
+                        <li>First-time establishment</li>
+                        <li>Strategic expansion</li>
+                    </ul>
+                </div>
+                <div class="grid-card">
+                    <h5>Existing Factory</h5>
+                    <ul>
+                        <li>Change in resource availability</li>
+                        <li>Shift of demand</li>
+                        <li>New target market</li>
+                        <li>New technology</li>
+                        <li>Socio-political changes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Location Decision Factors</h3>
+
+            <h4>Country Level Decisions</h4>
+            <ul>
+                <li>Political risks, government rules, attitudes</li>
+                <li>Cultural and economic issues</li>
+                <li>Labor availability, productivity, costs</li>
+                <li>Availability of supplies, communications, energy</li>
+                <li>Exchange rates and currency risks</li>
+            </ul>
+
+            <h4>Region/Community Level</h4>
+            <ul>
+                <li>Labor availability, costs, union attitudes</li>
+                <li>Costs and availability of utilities</li>
+                <li>Environmental regulations</li>
+                <li>Government incentives and fiscal policies</li>
+                <li>Proximity to raw materials and customers</li>
+            </ul>
+
+            <h4>Site Level Decisions</h4>
+            <ul>
+                <li>Site size and cost</li>
+                <li>Transportation systems (air, rail, highways, water)</li>
+                <li>Zoning restrictions</li>
+                <li>Environmental impact issues</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>General Location Factors</h3>
+
+            <table>
+                <tr>
+                    <th>Controllable Factors</th>
+                    <th>Uncontrollable Factors</th>
+                </tr>
+                <tr>
+                    <td>Proximity to market</td>
+                    <td>Government policy</td>
+                </tr>
+                <tr>
+                    <td>Supply of raw materials</td>
+                    <td>Climate conditions</td>
+                </tr>
+                <tr>
+                    <td>Transportation facilities</td>
+                    <td>Supporting industries</td>
+                </tr>
+                <tr>
+                    <td>Infrastructure availability</td>
+                    <td>Community attitudes</td>
+                </tr>
+                <tr>
+                    <td>Availability of labor</td>
+                    <td>Community infrastructure</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Location Models</h3>
+
+            <h4>1. Factor Rating Method</h4>
+            <div class="steps-container">
+                <div class="step">Identify important location factors</div>
+                <div class="step">Rate each factor by relative importance</div>
+                <div class="step">Assign scores to each location for each factor</div>
+                <div class="step">Calculate rating = Factor Weight x Location Score</div>
+                <div class="step">Select location with highest total score</div>
+            </div>
+
+            <h4>2. Weighted Factor Rating Method</h4>
+            <div class="formula-box">
+                Weighted Score = Sum of (Weight x Score) for each factor
+            </div>
+
+            <h4>3. Break-even Analysis</h4>
+            <div class="formula-box">
+                BEP = F / (S - V)<br>
+                <small>F = Fixed Cost, S = Selling Price, V = Variable Cost per unit</small>
+            </div>
+            <div class="example-box">
+                Location X: Fixed Cost Rs.150,000, Variable Cost Rs.10<br>
+                Location Y: Fixed Cost Rs.350,000, Variable Cost Rs.8<br>
+                Crossover: 10X + 150,000 = 8X + 350,000 => X = 100,000 units<br>
+                For demand 130,000 units, Location Y is appropriate.
+            </div>
+
+            <h4>4. Centre of Gravity Method</h4>
+            <div class="formula-box">
+                Cx = Sum(Dix × Wi) / Sum(Wi)<br>
+                Cy = Sum(Diy × Wi) / Sum(Wi)<br>
+                <small>Dix, Diy = Coordinates; Wi = Weight/Volume</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3: Plant Layout -->
+<section class="topic-section" id="plant-layout">
+    <div class="topic-header">
+        <h2>3. Plant Layout</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition & Objectives</h3>
+            <div class="keyword-box">
+                <strong>Plant Layout:</strong> Arrangement of machinery, equipment, and other industrial facilities for achieving quick production at least cost.
+            </div>
+
+            <h4>Objectives of Good Layout</h4>
+            <div class="grid-2">
+                <div class="grid-card">
+                    <h5>Minimize</h5>
+                    <ul>
+                        <li>Material handling cost</li>
+                        <li>Movement of people/material</li>
+                        <li>Hazards & accidents</li>
+                    </ul>
+                </div>
+                <div class="grid-card">
+                    <h5>Maximize</h5>
+                    <ul>
+                        <li>Production capacity</li>
+                        <li>Labor efficiency</li>
+                        <li>Employee morale</li>
+                        <li>Space utilization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Types of Layout</h3>
+
+            <h4>1. Product Layout (Line Layout)</h4>
+            <div class="keyword-box">
+                Machines arranged in ONE LINE depending on sequence of operations. Materials fed in first machine, finished product from last.
+            </div>
+            <div class="example-box">
+                Sugarcane Mill, Paper Mill, Automobiles, Chemicals, Refineries
+            </div>
+            <div class="vs-box">
+                <div class="vs-side pros">
+                    <strong>Advantages</strong>
+                    <ul>
+                        <li>Low material handling cost</li>
+                        <li>Less work-in-progress</li>
+                        <li>Less skill required</li>
+                        <li>Continuous flow</li>
+                        <li>Shorter processing time</li>
+                    </ul>
+                </div>
+                <div class="vs-side cons">
+                    <strong>Disadvantages</strong>
+                    <ul>
+                        <li>High capital investment</li>
+                        <li>One breakdown affects all</li>
+                        <li>Slow machine affects all</li>
+                        <li>Less flexibility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4>2. Process Layout (Functional Layout)</h4>
+            <div class="keyword-box">
+                Grouping of like machines in one department. Uses general purpose machines.
+            </div>
+            <div class="vs-box">
+                <div class="vs-side pros">
+                    <strong>Advantages</strong>
+                    <ul>
+                        <li>Breakdown doesn't affect overall productivity</li>
+                        <li>High machine utilization</li>
+                        <li>Flexible to design/volume changes</li>
+                        <li>Variety of products possible</li>
+                    </ul>
+                </div>
+                <div class="vs-side cons">
+                    <strong>Disadvantages</strong>
+                    <ul>
+                        <li>High material handling cost</li>
+                        <li>More time lag</li>
+                        <li>High WIP inventory</li>
+                        <li>More inspection required</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4>3. Fixed Position Layout</h4>
+            <div class="keyword-box">
+                Movement of men and machines TO the product. Used for bulky products.
+            </div>
+            <div class="example-box">
+                Aircraft Assembly, Ship Building, Building Construction, Dams
+            </div>
+
+            <h4>4. Cellular Manufacturing (Group Technology)</h4>
+            <div class="keyword-box">
+                Similar parts grouped to take advantage of similarities in design and production. Machines grouped into cells, each producing a part family.
+            </div>
+            <div class="important-box">
+                When automated, cellular manufacturing becomes <strong>Flexible Manufacturing System (FMS)</strong>
+            </div>
+
+            <h4>5. Combined Layout</h4>
+            <p>Combination of process and product layout. Useful when items made in different types and sizes.</p>
+            <div class="example-box">
+                Soap manufacturing: Product layout for soap production, Process layout for ancillary services (heating, glycerin, power house)
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Factors Influencing Layout</h3>
+            <ul>
+                <li><strong>Product:</strong> Heavy/light, big/small, liquid/solid</li>
+                <li><strong>Materials:</strong> Types, storage needs, movement requirements</li>
+                <li><strong>Manpower:</strong> Availability, skills, safety</li>
+                <li><strong>Factory Building:</strong> Size, air conditioning, dust control</li>
+                <li><strong>Location:</strong> Topography, climate, utilities</li>
+                <li><strong>Management Policies:</strong> Volume, marketing, purchasing</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Tools for Layout Planning</h3>
+            <table>
+                <tr>
+                    <th>Tool</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>Operation Process Chart</td>
+                    <td>Shows points where materials introduced, sequence of operations, inspections</td>
+                </tr>
+                <tr>
+                    <td>Flow Process Chart</td>
+                    <td>Graphic representation of all production activities including transport, storage, delay</td>
+                </tr>
+                <tr>
+                    <td>Flow Diagram</td>
+                    <td>Represents relative position of machinery, gangways, and paths</td>
+                </tr>
+                <tr>
+                    <td>Scale Models</td>
+                    <td>3D models of wood/plastic/metal representing real situation</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4: Work Study -->
+<section class="topic-section" id="work-study">
+    <div class="topic-header">
+        <h2>4. Work Study</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Components of Work Study</h3>
+            <div class="keyword-box">
+                <strong>Work Study = Method Study + Time Study</strong><br>
+                Purpose: To improve productivity by analyzing and optimizing work methods and measuring time required.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Method Study</h3>
+            <div class="keyword-box">
+                Systematic recording and critical examination of existing and proposed ways of doing work to develop and apply easier, more effective methods.
+            </div>
+
+            <h4>Steps of Method Study</h4>
+            <div class="steps-container">
+                <div class="step"><strong>SELECT</strong> - Choose work to be studied</div>
+                <div class="step"><strong>RECORD</strong> - Collect all relevant facts</div>
+                <div class="step"><strong>EXAMINE</strong> - Critically analyze facts</div>
+                <div class="step"><strong>DEVELOP</strong> - Develop most practical method</div>
+                <div class="step"><strong>EVALUATE</strong> - Assess alternative solutions</div>
+                <div class="step"><strong>DEFINE</strong> - Define new method clearly</div>
+                <div class="step"><strong>INSTALL</strong> - Implement new method</div>
+                <div class="step"><strong>MAINTAIN</strong> - Check regularly</div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Time Study</h3>
+            <div class="keyword-box">
+                Technique of establishing an allowed time standard for a qualified worker to perform a specified task at defined level of performance.
+            </div>
+
+            <h4>Steps of Time Study</h4>
+            <div class="steps-container">
+                <div class="step">Select the job to be studied</div>
+                <div class="step">Record all relevant data</div>
+                <div class="step">Examine the method critically</div>
+                <div class="step">Measure time (stopwatch)</div>
+                <div class="step">Compile data and calculate standard time</div>
+            </div>
+
+            <h4>Time Study Calculations</h4>
+            <div class="formula-box">
+                <strong>Basic Time = Observed Time × Rating/100</strong><br><br>
+                <strong>Standard Time = Basic Time + Allowances</strong><br><br>
+                <strong>Standard Time = Basic Time × (1 + Allowance%)</strong>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Types of Allowances</h3>
+            <table>
+                <tr>
+                    <th>Allowance Type</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><strong>Personal Allowance</strong></td>
+                    <td>For personal needs (drinking, washroom)</td>
+                </tr>
+                <tr>
+                    <td><strong>Fatigue Allowance</strong></td>
+                    <td>For recovery from physical/mental fatigue</td>
+                </tr>
+                <tr>
+                    <td><strong>Contingency Allowance</strong></td>
+                    <td>For unexpected delays</td>
+                </tr>
+                <tr>
+                    <td><strong>Special Allowance</strong></td>
+                    <td>Startup, shutdown, cleaning allowance</td>
+                </tr>
+                <tr>
+                    <td><strong>Rework Allowance</strong></td>
+                    <td>For reworking spoiled parts</td>
+                </tr>
+            </table>
+
+            <div class="example-box">
+                Observed time = 80 seconds, Performance rating = 80%<br>
+                Basic Time = 80 × 0.80 = 64 seconds<br>
+                If allowance = 15%, Standard Time = 64 × 1.15 = 73.6 seconds
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5: Value Engineering -->
+<section class="topic-section" id="value-engineering">
+    <div class="topic-header">
+        <h2>5. Value Engineering / Value Analysis</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition</h3>
+            <div class="keyword-box">
+                <strong>Value Engineering:</strong> Systematic method to improve the "value" of goods by examining function. It analyzes products/services to achieve essential functions at lowest cost without sacrificing quality, reliability, or performance.
+            </div>
+
+            <div class="formula-box">
+                <strong>Value = Function / Cost</strong><br>
+                <small>Higher value when same function at lower cost OR better function at same cost</small>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Steps of Value Engineering</h3>
+            <div class="steps-container">
+                <div class="step"><strong>Information Phase:</strong> Gather data about product, function, cost</div>
+                <div class="step"><strong>Analysis Phase:</strong> Analyze functions - What does it do? What should it do?</div>
+                <div class="step"><strong>Creative Phase:</strong> Generate alternative ideas (Brainstorming)</div>
+                <div class="step"><strong>Evaluation Phase:</strong> Evaluate alternatives for feasibility</div>
+                <div class="step"><strong>Development Phase:</strong> Develop selected alternatives into workable solutions</div>
+                <div class="step"><strong>Presentation Phase:</strong> Present recommendations with cost-benefit analysis</div>
+                <div class="step"><strong>Implementation Phase:</strong> Implement approved changes</div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Importance of Brainstorming</h3>
+            <div class="important-box">
+                Brainstorming is crucial in Value Engineering for generating creative ideas without criticism. Rules: No criticism, wild ideas welcome, quantity wanted, combination and improvement sought.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6: ISO Standards -->
+<section class="topic-section" id="iso">
+    <div class="topic-header">
+        <h2>6. ISO Standards</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>What is ISO?</h3>
+            <div class="keyword-box">
+                <strong>ISO (International Organization for Standardization):</strong> Develops and publishes standardization in all technical and non-technical fields. Has published over 24,500 international standards.
+            </div>
+            <p>Official languages: English, French, Russian</p>
+            <p>Has 809 Technical committees and sub-committees</p>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Popular ISO Standards</h3>
+            <table>
+                <tr>
+                    <th>Standard</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><strong>ISO 9001</strong></td>
+                    <td>Quality Management Systems</td>
+                </tr>
+                <tr>
+                    <td><strong>ISO 14001</strong></td>
+                    <td>Environmental Management Systems</td>
+                </tr>
+                <tr>
+                    <td><strong>ISO 45001</strong></td>
+                    <td>Occupational Health & Safety</td>
+                </tr>
+                <tr>
+                    <td><strong>ISO 27001</strong></td>
+                    <td>Information Security Management</td>
+                </tr>
+                <tr>
+                    <td><strong>ISO 22000</strong></td>
+                    <td>Food Safety Management</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Benefits of ISO Certification</h3>
+            <ul>
+                <li>Improved quality and efficiency</li>
+                <li>Enhanced customer satisfaction</li>
+                <li>Better risk management</li>
+                <li>International recognition</li>
+                <li>Competitive advantage</li>
+                <li>Reduced operational costs</li>
+                <li>Improved employee morale</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Steps for ISO Certification</h3>
+            <div class="steps-container">
+                <div class="step">Gap Analysis - Assess current systems</div>
+                <div class="step">Documentation - Develop required documents</div>
+                <div class="step">Implementation - Put systems into practice</div>
+                <div class="step">Internal Audit - Check compliance</div>
+                <div class="step">Management Review - Top management evaluation</div>
+                <div class="step">Certification Audit - External auditor assessment</div>
+                <div class="step">Certification - Receive certificate</div>
+                <div class="step">Surveillance Audits - Periodic reviews</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 7: MRP -->
+<section class="topic-section" id="mrp">
+    <div class="topic-header">
+        <h2>7. Material Requirements Planning (MRP)</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition</h3>
+            <div class="keyword-box">
+                <strong>MRP:</strong> Set of techniques using bill of materials, inventory data, and master production schedule to calculate requirements of materials. Determines WHAT to order, HOW MUCH to order, WHEN to order, WHEN to schedule delivery.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Objectives of MRP</h3>
+            <ol>
+                <li><strong>Determine Requirements:</strong> What components are needed to meet MPS</li>
+                <li><strong>Keep Priorities Current:</strong> Add, delete, expedite, delay, change orders</li>
+            </ol>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Inputs to MRP</h3>
+            <div class="grid-2">
+                <div class="grid-card">
+                    <h5>1. Master Production Schedule (MPS)</h5>
+                    <ul>
+                        <li>Statement of end items to be produced</li>
+                        <li>Quantity of each</li>
+                        <li>Completion dates</li>
+                        <li>Based on sales forecast</li>
+                    </ul>
+                </div>
+                <div class="grid-card">
+                    <h5>2. Bill of Materials (BOM)</h5>
+                    <ul>
+                        <li>Structure of product</li>
+                        <li>Part numbers, descriptions</li>
+                        <li>Quantity required</li>
+                        <li>Material specifications</li>
+                    </ul>
+                </div>
+                <div class="grid-card">
+                    <h5>3. Inventory Records</h5>
+                    <ul>
+                        <li>Planning factors (order qty, lead times)</li>
+                        <li>Status (on-hand, on-order, allocated)</li>
+                        <li>Safety stock levels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>MRP Terminology</h3>
+            <table>
+                <tr>
+                    <th>Term</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td><strong>Dependent Demand</strong></td>
+                    <td>Product demand related to other items (component of another product)</td>
+                </tr>
+                <tr>
+                    <td><strong>Lumpy Demand</strong></td>
+                    <td>Sudden/large quantity demand to make batch of final product</td>
+                </tr>
+                <tr>
+                    <td><strong>Lead Time</strong></td>
+                    <td>Time from order to receipt (ordering or manufacturing)</td>
+                </tr>
+                <tr>
+                    <td><strong>Gross Requirement</strong></td>
+                    <td>Total quantity needed</td>
+                </tr>
+                <tr>
+                    <td><strong>Net Requirement</strong></td>
+                    <td>Gross - (On hand - Safety stock - Allocated)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>How MRP Works</h3>
+            <div class="steps-container">
+                <div class="step"><strong>Bucketing:</strong> Consolidate period requirements</div>
+                <div class="step"><strong>Part Explosion:</strong> Divide items into constituent materials</div>
+                <div class="step"><strong>Offsetting:</strong> Displace requirement by lead time</div>
+                <div class="step"><strong>Aggregation:</strong> Find gross requirements</div>
+                <div class="step"><strong>Netting:</strong> Calculate net requirements</div>
+                <div class="step"><strong>Lot Sizing:</strong> Consolidate into economic order quantity</div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>MRP Outputs</h3>
+            <div class="grid-2">
+                <div class="grid-card">
+                    <h5>Primary Outputs</h5>
+                    <ul>
+                        <li>Planned order schedule</li>
+                        <li>Changes in planned orders</li>
+                    </ul>
+                </div>
+                <div class="grid-card">
+                    <h5>Secondary Outputs</h5>
+                    <ul>
+                        <li>Planning reports</li>
+                        <li>Performance reports</li>
+                        <li>Exception reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Benefits & Disadvantages</h3>
+            <div class="vs-box">
+                <div class="vs-side pros">
+                    <strong>Benefits</strong>
+                    <ul>
+                        <li>Materials available when needed</li>
+                        <li>Minimized inventory levels</li>
+                        <li>Reduced customer lead times</li>
+                        <li>Increased manufacturing efficiency</li>
+                        <li>Better capacity utilization</li>
+                    </ul>
+                </div>
+                <div class="vs-side cons">
+                    <strong>Disadvantages</strong>
+                    <ul>
+                        <li>Expensive to implement</li>
+                        <li>Lack of flexibility</li>
+                        <li>Dependent on accurate inputs</li>
+                        <li>Inaccuracies cause wrong estimates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 8: Inventory Control -->
+<section class="topic-section" id="inventory">
+    <div class="topic-header">
+        <h2>8. Inventory Control</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>What is Inventory?</h3>
+            <div class="keyword-box">
+                <strong>Inventory:</strong> Stock of items kept to meet future demand.<br>
+                <strong>Inventory Control:</strong> Planned approach of determining what to order, when to order, how much to order, and how much to stock.
+            </div>
+
+            <h4>Components of Inventory</h4>
+            <ul>
+                <li>Raw materials</li>
+                <li>Purchased parts</li>
+                <li>Work-in-progress</li>
+                <li>Items being transported</li>
+                <li>Tools and equipment</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Need for Inventory</h3>
+            <ul>
+                <li>Manage <span class="highlight">Bullwhip Effect</span> (demand distortion)</li>
+                <li>Handle seasonal/cyclical demand</li>
+                <li>Provide independence from vendors</li>
+                <li>Take advantage of price discounts</li>
+                <li>Avoid work stoppages</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>ABC Analysis</h3>
+            <div class="keyword-box">
+                Classification based on <strong>cost and volume</strong> - annual usage value
+            </div>
+
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>% of Items</th>
+                    <th>% of Value</th>
+                    <th>Control</th>
+                </tr>
+                <tr>
+                    <td><strong>A</strong></td>
+                    <td>5-15%</td>
+                    <td>70-80%</td>
+                    <td>Tight control, accurate records, frequent review</td>
+                </tr>
+                <tr>
+                    <td><strong>B</strong></td>
+                    <td>30%</td>
+                    <td>15%</td>
+                    <td>Normal control, periodic review</td>
+                </tr>
+                <tr>
+                    <td><strong>C</strong></td>
+                    <td>50-60%</td>
+                    <td>5-10%</td>
+                    <td>Simple control, large orders</td>
+                </tr>
+            </table>
+
+            <div class="important-box">
+                ABC Analysis helps manager focus attention on few important items (A class) and show results quickly.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>VED Analysis</h3>
+            <div class="keyword-box">
+                Classification based on <strong>criticality</strong> to production
+            </div>
+
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>V - Vital</strong></td>
+                    <td>Unavailability will STOP production</td>
+                </tr>
+                <tr>
+                    <td><strong>E - Essential</strong></td>
+                    <td>Stock-out costs are VERY HIGH</td>
+                </tr>
+                <tr>
+                    <td><strong>D - Desirable</strong></td>
+                    <td>No immediate stoppage, nominal stock-out costs</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Economic Order Quantity (EOQ)</h3>
+            <div class="keyword-box">
+                <strong>EOQ:</strong> Optimal order quantity that minimizes total inventory cost
+            </div>
+
+            <h4>Assumptions</h4>
+            <ul>
+                <li>Demand is known and constant</li>
+                <li>No shortages allowed</li>
+                <li>Lead time is constant</li>
+                <li>Order received all at once</li>
+            </ul>
+
+            <div class="formula-box">
+                <strong>EOQ = √(2 × D × Co / Cc)</strong><br><br>
+                D = Annual Demand<br>
+                Co = Ordering Cost per order<br>
+                Cc = Annual Carrying Cost per unit
+            </div>
+
+            <div class="formula-box">
+                <strong>Total Cost = (Co × D/Q) + (Cc × Q/2)</strong><br>
+                <small>Ordering Cost + Carrying Cost</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 9: Sequencing -->
+<section class="topic-section" id="sequencing">
+    <div class="topic-header">
+        <h2>9. Sequencing</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition</h3>
+            <div class="keyword-box">
+                <strong>Sequencing:</strong> Determining the order in which jobs are processed on machines to minimize total elapsed time, idle time, and optimize resource utilization.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Johnson's Rule (2 Machines)</h3>
+            <div class="keyword-box">
+                Used to find optimal sequence for n jobs on 2 machines (A & B) in order AB.
+            </div>
+
+            <h4>Steps</h4>
+            <div class="steps-container">
+                <div class="step">List all jobs with processing times on both machines</div>
+                <div class="step">Find minimum processing time among all jobs</div>
+                <div class="step">If minimum is on Machine A: Place job FIRST in sequence</div>
+                <div class="step">If minimum is on Machine B: Place job LAST in sequence</div>
+                <div class="step">Remove job from list and repeat until all jobs sequenced</div>
+            </div>
+
+            <div class="example-box">
+                Jobs: J1(A=2,B=3), J2(A=4,B=6), J3(A=5,B=1), J4(A=7,B=4), J5(A=1,B=8)<br>
+                Min = 1 (J5 on A) → Place J5 first<br>
+                Min = 1 (J3 on B) → Place J3 last<br>
+                Continue... Optimal: J5-J1-J2-J4-J3
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Extended Johnson's Rule (3+ Machines)</h3>
+            <div class="keyword-box">
+                Can be applied when: Min time on Machine 1 ≥ Max time on Machine 2<br>
+                OR Min time on Machine 3 ≥ Max time on Machine 2
+            </div>
+
+            <h4>Method</h4>
+            <p>Convert to 2-machine problem:</p>
+            <ul>
+                <li>Machine G = Machine 1 + Machine 2 times</li>
+                <li>Machine H = Machine 2 + Machine 3 times</li>
+                <li>Apply Johnson's rule on G and H</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Graphical Method (2 Jobs, Multiple Machines)</h3>
+            <p>Used when 2 jobs need to be processed on multiple machines with different sequences.</p>
+            <div class="steps-container">
+                <div class="step">Draw axes with Job 1 times on X-axis, Job 2 times on Y-axis</div>
+                <div class="step">Mark blocks for each machine (one job at a time)</div>
+                <div class="step">Find path that avoids all blocked regions</div>
+                <div class="step">Calculate total elapsed time</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 10: Supply Chain Management -->
+<section class="topic-section" id="scm">
+    <div class="topic-header">
+        <h2>10. Supply Chain Management</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>What is Supply Chain?</h3>
+            <div class="keyword-box">
+                <strong>Supply Chain:</strong> All stages involved directly/indirectly in fulfilling customer request. Includes manufacturers, suppliers, transporters, warehouses, retailers, and customers.
+            </div>
+
+            <h4>Flows in Supply Chain</h4>
+            <ul>
+                <li><strong>Information Flow:</strong> Capacity, schedules, orders, quality data</li>
+                <li><strong>Material Flow:</strong> Raw materials → WIP → Finished goods</li>
+                <li><strong>Finance Flow:</strong> Credits, payments, invoices</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Types of Supply Chains</h3>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Manufacturer → Wholesaler → Retailer → Customer</td>
+                    <td>Traditional FMCG</td>
+                </tr>
+                <tr>
+                    <td>Manufacturer → Retailer → Customer</td>
+                    <td>Big Bazaar, Reliance</td>
+                </tr>
+                <tr>
+                    <td>Manufacturer → Customer</td>
+                    <td>BHEL</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>SCM Objective</h3>
+            <div class="formula-box">
+                <strong>Maximize Supply Chain Value</strong><br>
+                Value = What product is worth to customer - Effort to fill request<br>
+                Profitability = Revenue - Total SC Cost
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Supplier Tiers</h3>
+            <ul>
+                <li><strong>Tier 1:</strong> Directly supplies to firm doing business with final customer</li>
+                <li><strong>Tier 2:</strong> Supplies to Tier 1 suppliers</li>
+                <li><strong>Tier 3:</strong> Supplies to Tier 2 suppliers</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Bullwhip Effect</h3>
+            <div class="keyword-box">
+                <strong>Bullwhip Effect:</strong> Demand information gets distorted as it moves away from end customer. Leads to higher safety stock inventories.
+            </div>
+
+            <h4>Ways to Reduce Bullwhip Effect</h4>
+            <ul>
+                <li>Good demand forecasting</li>
+                <li>Information sharing (EDI)</li>
+                <li>Coordination among partners</li>
+                <li>Eliminate price promotions/quantity discounts</li>
+                <li>Use bar codes and electronic scanning</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Key SCM Concepts</h3>
+
+            <h4>Vertical Integration</h4>
+            <ul>
+                <li><strong>Backward:</strong> Acquiring control of raw material suppliers</li>
+                <li><strong>Forward:</strong> Acquiring control of distribution channels</li>
+            </ul>
+
+            <h4>Outsourcing</h4>
+            <p>Paying third-party suppliers for raw materials/services instead of in-house production.</p>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Case Studies</h3>
+
+            <h4>Coca-Cola Success</h4>
+            <ul>
+                <li>225 bottling partners worldwide</li>
+                <li>1.9 billion servings daily in 200+ countries</li>
+                <li>Local sourcing (water, sugar)</li>
+                <li>Blockchain for partner coordination</li>
+                <li>Recycled marine plastic bottles</li>
+            </ul>
+
+            <h4>McDonald's Success</h4>
+            <ul>
+                <li><span class="highlight">3-Legged Stool:</span> Franchisees, Suppliers, Employees</li>
+                <li>Long-term supplier relationships (Martin-Brower since 1956)</li>
+                <li>Effective vertical integration</li>
+                <li>Controls meat processing, potato growing, transportation</li>
+            </ul>
+
+            <h4>Supply Chain Failures</h4>
+            <ul>
+                <li><strong>Boeing 787:</strong> Outsourced core functions to 50+ suppliers, quality issues, 3-year delay</li>
+                <li><strong>KFC UK 2018:</strong> Chicken shortage, DHL had no chilled food experience, single distribution center, 700 stores closed</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 11: Statistical Quality Control -->
+<section class="topic-section" id="sqc">
+    <div class="topic-header">
+        <h2>11. Statistical Quality Control (SQC)</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition</h3>
+            <div class="keyword-box">
+                <strong>Quality:</strong> Fitness for purpose at lowest cost. Degree to which product fulfills customer requirements.<br><br>
+                <strong>SQC:</strong> Quality control system using statistical techniques to control, improve, and maintain quality through inspection, testing, and analysis.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Factors Affecting Quality</h3>
+            <p><strong>5 M's:</strong> Men, Materials, Machines, Manufacturing conditions, Money + Management, Market Research</p>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Objectives of Quality Control</h3>
+            <ul>
+                <li>Decide quality standards acceptable to customers</li>
+                <li>Take measures to improve quality standards</li>
+                <li>Solve deviations during manufacturing</li>
+            </ul>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Divisions of SQC</h3>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><strong>Descriptive Statistics</strong></td>
+                    <td>Describe quality characteristics (Mean, SD, Range)</td>
+                </tr>
+                <tr>
+                    <td><strong>SPC (Statistical Process Control)</strong></td>
+                    <td>Inspect random samples, decide if process within range</td>
+                </tr>
+                <tr>
+                    <td><strong>Acceptance Sampling</strong></td>
+                    <td>Randomly inspect samples, accept/reject entire lot</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Causes of Variation</h3>
+            <div class="grid-2">
+                <div class="grid-card">
+                    <h5>Chance Causes (Common/Random)</h5>
+                    <ul>
+                        <li>Natural/inherent variation</li>
+                        <li>Aged machines, material variability</li>
+                        <li>Poor lighting, worker training</li>
+                        <li><strong>Management responsibility</strong></li>
+                    </ul>
+                </div>
+                <div class="grid-card">
+                    <h5>Assignable Causes (Special/Non-random)</h5>
+                    <ul>
+                        <li>Due to change in material, machine, operator</li>
+                        <li>Machine improper setting</li>
+                        <li>Defective raw material batch</li>
+                        <li><strong>Worker/supervisor responsibility</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Control Charts</h3>
+            <div class="keyword-box">
+                <strong>Control Charts:</strong> Graphical representation based on statistical sampling theory to detect variations and warn of departure from tolerance limits.
+            </div>
+
+            <h4>Components of Control Chart</h4>
+            <ul>
+                <li><strong>Centre Line (CL):</strong> Average value or standard value (solid line)</li>
+                <li><strong>Upper Control Limit (UCL):</strong> Upper value of variation (dotted line)</li>
+                <li><strong>Lower Control Limit (LCL):</strong> Lower value of variation (dotted line)</li>
+            </ul>
+
+            <div class="formula-box">
+                <strong>3-Sigma Limits</strong><br>
+                UCL = Mean + 3σ<br>
+                LCL = Mean - 3σ<br>
+                <small>Data beyond 3σ represents less than 1% of all points</small>
+            </div>
+
+            <h4>Types of Control Charts</h4>
+            <table>
+                <tr>
+                    <th>For Variables (Measurable)</th>
+                    <th>For Attributes (Count)</th>
+                </tr>
+                <tr>
+                    <td>X-bar Chart (Mean)</td>
+                    <td>p-Chart (Proportion defective)</td>
+                </tr>
+                <tr>
+                    <td>R Chart (Range)</td>
+                    <td>np-Chart (Number defective)</td>
+                </tr>
+                <tr>
+                    <td>σ Chart (Std Dev)</td>
+                    <td>c-Chart (Defects per unit)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Advantages of Control Charts</h3>
+            <ul>
+                <li>Indicates if process in control or out of control</li>
+                <li>Determines process variability</li>
+                <li>Ensures product quality level</li>
+                <li>Warns in time, reduces scrap/rejection</li>
+                <li>Builds organization reputation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 12: Lean Management & TOC -->
+<section class="topic-section" id="lean">
+    <div class="topic-header">
+        <h2>12. Lean Management & Theory of Constraints</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Lean Management</h3>
+            <div class="keyword-box">
+                <strong>Lean Management:</strong> Customer-focused waste elimination method that makes process and organization lean. Long-term approach seeking small, incremental changes to improve efficiency and quality.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>The 3 M's of Lean</h3>
+            <table>
+                <tr>
+                    <th>Term</th>
+                    <th>Meaning</th>
+                    <th>Focus</th>
+                </tr>
+                <tr>
+                    <td><strong>Muda</strong></td>
+                    <td>Waste</td>
+                    <td>Activities to be eliminated</td>
+                </tr>
+                <tr>
+                    <td><strong>Mura</strong></td>
+                    <td>Inconsistency</td>
+                    <td>Increases variability</td>
+                </tr>
+                <tr>
+                    <td><strong>Muri</strong></td>
+                    <td>Unreasonableness</td>
+                    <td>Blaming vs resolving</td>
+                </tr>
+            </table>
+
+            <h4>7 Types of Waste (Muda)</h4>
+            <ol>
+                <li>Excess/early production</li>
+                <li>Delays</li>
+                <li>Movement and transport</li>
+                <li>Poor process design</li>
+                <li>Inventory</li>
+                <li>Inefficient performance</li>
+                <li>Making defective items</li>
+            </ol>
+        </div>
+
+        <div class="sub-topic">
+            <h3>The 5 S's of Lean</h3>
+            <table>
+                <tr>
+                    <th>Japanese</th>
+                    <th>English</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td><strong>Seiri</strong></td>
+                    <td>Sort</td>
+                    <td>Keep necessary items only</td>
+                </tr>
+                <tr>
+                    <td><strong>Seiton</strong></td>
+                    <td>Set-in-order</td>
+                    <td>Efficient placement</td>
+                </tr>
+                <tr>
+                    <td><strong>Seiso</strong></td>
+                    <td>Shine/Sweep</td>
+                    <td>Cleanliness</td>
+                </tr>
+                <tr>
+                    <td><strong>Seiketsu</strong></td>
+                    <td>Standardize</td>
+                    <td>Continuous improvement</td>
+                </tr>
+                <tr>
+                    <td><strong>Shitsuke</strong></td>
+                    <td>Sustain</td>
+                    <td>Discipline</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>5 Steps of Lean Implementation</h3>
+            <div class="steps-container">
+                <div class="step"><strong>Specify Value:</strong> Define value from customer perspective</div>
+                <div class="step"><strong>Map:</strong> Identify value stream, create current/future state map</div>
+                <div class="step"><strong>Flow:</strong> Make remaining steps flow, eliminate functional barriers</div>
+                <div class="step"><strong>Pull:</strong> Let customer pull products, eliminate need for forecast</div>
+                <div class="step"><strong>Perfection:</strong> Continuous improvement, return to step 1</div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Theory of Constraints (TOC)</h3>
+            <div class="keyword-box">
+                <strong>TOC:</strong> Methodology for identifying most important limiting factor (constraint/bottleneck) and systematically improving it. Every complex system has one constraint that limits the entire system.
+            </div>
+            <p><em>Developed by Dr. Eliyahu Goldratt (1984 book "The Goal")</em></p>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Five Focusing Steps of TOC</h3>
+            <div class="steps-container">
+                <div class="step"><strong>IDENTIFY</strong> the system's constraint</div>
+                <div class="step"><strong>EXPLOIT</strong> the constraint (maximize output)</div>
+                <div class="step"><strong>SUBORDINATE</strong> everything else to the constraint</div>
+                <div class="step"><strong>ELEVATE</strong> the constraint (add capacity)</div>
+                <div class="step"><strong>REPEAT</strong> - Don't let inertia become constraint</div>
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Throughput Accounting</h3>
+            <div class="keyword-box">
+                Alternative to traditional accounting. Considers inventory as LIABILITY (not asset).
+            </div>
+
+            <div class="formula-box">
+                <strong>Net Profit = Throughput - Operating Expenses</strong><br>
+                <strong>ROI = Net Profit / Investment</strong><br>
+                <strong>Productivity = Throughput / Operating Expenses</strong><br>
+                <strong>Investment Turns = Throughput / Investment</strong>
+            </div>
+
+            <h4>TOC Priority (in order)</h4>
+            <ol>
+                <li>Increase Throughput (highest priority)</li>
+                <li>Reduce Investment</li>
+                <li>Reduce Operating Expenses</li>
+            </ol>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Benefits of TOC</h3>
+            <ul>
+                <li>Increased profit</li>
+                <li>Fast improvement</li>
+                <li>Improved capacity</li>
+                <li>Reduced lead times</li>
+                <li>Reduced inventory</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 13: Demand Forecasting -->
+<section class="topic-section" id="forecasting">
+    <div class="topic-header">
+        <h2>13. Demand Forecasting</h2>
+    </div>
+    <div class="topic-content">
+        <div class="sub-topic">
+            <h3>Definition</h3>
+            <div class="keyword-box">
+                <strong>Demand Forecasting:</strong> Process of predicting future demand for products/services using historical data and various techniques.
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Types of Forecasting Methods</h3>
+
+            <h4>1. Qualitative Methods</h4>
+            <table>
+                <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>Delphi Method</strong></td>
+                    <td>Expert panel gives anonymous opinions, iteratively refined</td>
+                </tr>
+                <tr>
+                    <td><strong>Market Research</strong></td>
+                    <td>Surveys, interviews, focus groups</td>
+                </tr>
+                <tr>
+                    <td><strong>Sales Force Composite</strong></td>
+                    <td>Sales team estimates compiled</td>
+                </tr>
+                <tr>
+                    <td><strong>Executive Opinion</strong></td>
+                    <td>Management judgment combined</td>
+                </tr>
+            </table>
+
+            <h4>2. Quantitative Methods</h4>
+            <table>
+                <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>Moving Average</strong></td>
+                    <td>Average of last n periods</td>
+                </tr>
+                <tr>
+                    <td><strong>Weighted Moving Average</strong></td>
+                    <td>Recent periods given more weight</td>
+                </tr>
+                <tr>
+                    <td><strong>Exponential Smoothing</strong></td>
+                    <td>Weighted average with smoothing constant α</td>
+                </tr>
+                <tr>
+                    <td><strong>Linear Regression</strong></td>
+                    <td>Trend line based on historical data</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Key Formulas</h3>
+
+            <div class="formula-box">
+                <strong>Simple Moving Average</strong><br>
+                MA = (D₁ + D₂ + ... + Dₙ) / n
+            </div>
+
+            <div class="formula-box">
+                <strong>Exponential Smoothing</strong><br>
+                Ft = Ft-1 + α(At-1 - Ft-1)<br>
+                <small>Ft = Forecast, At-1 = Actual last period, α = Smoothing constant (0-1)</small>
+            </div>
+
+            <div class="formula-box">
+                <strong>Forecast Error Measures</strong><br>
+                MAD = Σ|Actual - Forecast| / n<br>
+                MSE = Σ(Actual - Forecast)² / n<br>
+                MAPE = (Σ|Error|/Actual) × 100 / n
+            </div>
+        </div>
+
+        <div class="sub-topic">
+            <h3>Factors Affecting Forecasting</h3>
+            <ul>
+                <li>Historical data availability and quality</li>
+                <li>Time horizon (short/medium/long term)</li>
+                <li>Market conditions and competition</li>
+                <li>Economic factors</li>
+                <li>Seasonal patterns</li>
+                <li>Product life cycle stage</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Reference -->
+<section class="topic-section">
+    <div class="topic-header">
+        <h2>Quick Reference - Key Formulas</h2>
+    </div>
+    <div class="topic-content">
+        <div class="grid-2">
+            <div class="grid-card">
+                <h5>Plant Location</h5>
+                <p>BEP = F / (S - V)</p>
+                <p>Centre of Gravity: Cx = ΣDix×Wi / ΣWi</p>
+            </div>
+            <div class="grid-card">
+                <h5>Work Study</h5>
+                <p>Basic Time = OT × Rating/100</p>
+                <p>Standard Time = BT × (1 + Allowance%)</p>
+            </div>
+            <div class="grid-card">
+                <h5>Value Engineering</h5>
+                <p>Value = Function / Cost</p>
+            </div>
+            <div class="grid-card">
+                <h5>Inventory (EOQ)</h5>
+                <p>EOQ = √(2×D×Co / Cc)</p>
+                <p>TC = (Co×D/Q) + (Cc×Q/2)</p>
+            </div>
+            <div class="grid-card">
+                <h5>Quality Control</h5>
+                <p>UCL = Mean + 3σ</p>
+                <p>LCL = Mean - 3σ</p>
+            </div>
+            <div class="grid-card">
+                <h5>TOC Throughput</h5>
+                <p>Net Profit = Throughput - OE</p>
+                <p>ROI = NP / Investment</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+<script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            const headerOffset = 180;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microeconomics & Managerial Economics - Complete Graph Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+        }
+
+        nav h3 {
+            color: #ecf0f1;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .toc-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .toc-container a {
+            color: #3498db;
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .toc-container a:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        section h2 {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .graph-container {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .graph-container:last-child {
+            border-bottom: none;
+        }
+
+        .graph-container h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .notation {
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-left: 4px solid #3498db;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .explanation {
+            background: #e8f4f8;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+
+        .graph-svg {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            background: #fff;
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .graph-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .graph-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+        }
+
+        .formula {
+            background: #fff3cd;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            margin: 0.5rem 0;
+            display: inline-block;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                position: relative;
+                top: 0;
+            }
+
+            .toc-container {
+                flex-direction: column;
+            }
+
+            .graph-item {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Microeconomics & Managerial Economics</h1>
+        <p>Complete Graph Reference for MMS Examination | Based on Course Notes by Prof. Agnelo Menezes</p>
+    </header>
+
+    <nav>
+        <h3>Table of Contents</h3>
+        <div class="toc-container">
+            <a href="#demand">1. Demand & Elasticity</a>
+            <a href="#production">2. Production Analysis</a>
+            <a href="#cost">3. Cost Curves</a>
+            <a href="#revenue">4. Revenue Analysis</a>
+            <a href="#perfect-competition">5. Perfect Competition</a>
+            <a href="#monopoly">6. Monopoly</a>
+            <a href="#monopolistic">7. Monopolistic Competition</a>
+            <a href="#oligopoly">8. Oligopoly</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: DEMAND & ELASTICITY -->
+        <section id="demand">
+            <h2>1. Demand & Elasticity</h2>
+
+            <!-- Basic Demand Curve -->
+            <div class="graph-container">
+                <h3>1.1 Basic Demand Curve (Marshallian Model)</h3>
+                <div class="notation">
+                    <strong>Axes:</strong> Y-axis: Price (P) | X-axis: Quantity (Q)<br>
+                    <strong>Curve:</strong> D (Downward sloping)
+                </div>
+                <div class="graph-svg">
+                    <svg width="400" height="300" viewBox="0 0 400 300">
+                        <!-- Axes -->
+                        <line x1="50" y1="250" x2="380" y2="250" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="250" x2="50" y2="20" stroke="black" stroke-width="2"/>
+                        <!-- Arrow heads -->
+                        <polygon points="380,250 370,245 370,255" fill="black"/>
+                        <polygon points="50,20 45,30 55,30" fill="black"/>
+                        <!-- Labels -->
+                        <text x="390" y="255" font-size="14" font-weight="bold">Q</text>
+                        <text x="35" y="15" font-size="14" font-weight="bold">P</text>
+                        <text x="20" y="265" font-size="12">O</text>
+                        <!-- Demand Curve -->
+                        <path d="M 80 60 Q 200 150 350 230" stroke="#e74c3c" stroke-width="3" fill="none"/>
+                        <text x="355" y="225" font-size="14" fill="#e74c3c" font-weight="bold">D</text>
+                        <!-- Price cause, Demand effect notation -->
+                        <text x="100" y="40" font-size="11" fill="#666">Price = Cause</text>
+                        <text x="280" y="270" font-size="11" fill="#666">Demand = Effect</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Key Features:</strong> The demand curve shows an inverse relationship between price and quantity demanded. As price increases, quantity demanded decreases (Law of Demand). The curve incorporates the time element (market, short run, long run) and shows the role of elasticity in price adjustments.
+                </div>
+            </div>
+
+            <!-- Five Degrees of Price Elasticity -->
+            <div class="graph-container">
+                <h3>1.2 Five Degrees of Price Elasticity of Demand</h3>
+                <div class="notation">
+                    <strong>Formula:</strong> e<sub>dp</sub> = (%ΔD) / (%ΔP) = (ΔD/ΔP) × (P<sub>0</sub>/D<sub>0</sub>) = m(P/D) = tan θ (P/D)
+                </div>
+                <div class="graph-row">
+                    <!-- Perfectly Inelastic -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Perfectly Inelastic (e<sub>dp</sub> = 0)</h4>
+                        <div class="graph-svg">
+                            <svg width="250" height="200" viewBox="0 0 250 200">
+                                <line x1="40" y1="170" x2="220" y2="170" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="170" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="225" y="175" font-size="12">Q</text>
+                                <text x="30" y="15" font-size="12">P</text>
+                                <!-- Vertical line -->
+                                <line x1="120" y1="30" x2="120" y2="160" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="125" y="50" font-size="12" fill="#e74c3c">D</text>
+                                <text x="60" y="190" font-size="10" fill="#666">%ΔP → %ΔD = 0</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Eg: Pharma (life-saving drugs)</p>
+                    </div>
+
+                    <!-- Relatively Inelastic -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Relatively Inelastic (e<sub>dp</sub> < 1)</h4>
+                        <div class="graph-svg">
+                            <svg width="250" height="200" viewBox="0 0 250 200">
+                                <line x1="40" y1="170" x2="220" y2="170" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="170" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="225" y="175" font-size="12">Q</text>
+                                <text x="30" y="15" font-size="12">P</text>
+                                <!-- Steep demand curve -->
+                                <line x1="80" y1="30" x2="140" y2="160" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="145" y="155" font-size="12" fill="#e74c3c">D</text>
+                                <text x="60" y="190" font-size="10" fill="#666">%ΔP > %ΔD</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Eg: Necessities (salt, sugar)</p>
+                    </div>
+
+                    <!-- Unitary Elastic -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Unitary Elastic (e<sub>dp</sub> = 1)</h4>
+                        <div class="graph-svg">
+                            <svg width="250" height="200" viewBox="0 0 250 200">
+                                <line x1="40" y1="170" x2="220" y2="170" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="170" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="225" y="175" font-size="12">Q</text>
+                                <text x="30" y="15" font-size="12">P</text>
+                                <!-- Rectangular hyperbola -->
+                                <path d="M 60 35 Q 90 80 120 110 Q 160 145 200 158" stroke="#e74c3c" stroke-width="3" fill="none"/>
+                                <text x="205" y="155" font-size="12" fill="#e74c3c">D</text>
+                                <text x="60" y="190" font-size="10" fill="#666">%ΔP = %ΔD</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Theoretical case only</p>
+                    </div>
+
+                    <!-- Relatively Elastic -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Relatively Elastic (e<sub>dp</sub> > 1)</h4>
+                        <div class="graph-svg">
+                            <svg width="250" height="200" viewBox="0 0 250 200">
+                                <line x1="40" y1="170" x2="220" y2="170" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="170" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="225" y="175" font-size="12">Q</text>
+                                <text x="30" y="15" font-size="12">P</text>
+                                <!-- Flat demand curve -->
+                                <line x1="50" y1="50" x2="200" y2="150" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="205" y="145" font-size="12" fill="#e74c3c">D</text>
+                                <text x="60" y="190" font-size="10" fill="#666">%ΔP < %ΔD</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Eg: Luxuries</p>
+                    </div>
+
+                    <!-- Perfectly Elastic -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Perfectly Elastic (e<sub>dp</sub> = ∞)</h4>
+                        <div class="graph-svg">
+                            <svg width="250" height="200" viewBox="0 0 250 200">
+                                <line x1="40" y1="170" x2="220" y2="170" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="170" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="225" y="175" font-size="12">Q</text>
+                                <text x="30" y="15" font-size="12">P</text>
+                                <!-- Horizontal line -->
+                                <line x1="50" y1="90" x2="200" y2="90" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="205" y="95" font-size="12" fill="#e74c3c">D</text>
+                                <text x="60" y="190" font-size="10" fill="#666">%ΔP → %ΔD = ∞</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Perfect Competition</p>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Interpretation:</strong> RIE is good when price rises (demand falls but not much). RIE is bad when price falls (even though price drops, demand drops a bit). RE is bad when price rises (market is emptying). RE is good when price falls (market is increasing).
+                </div>
+            </div>
+
+            <!-- Cross Elasticity -->
+            <div class="graph-container">
+                <h3>1.3 Cross Elasticity of Demand</h3>
+                <div class="notation">
+                    <strong>Formula:</strong> e<sub>dxy</sub> = (%ΔD<sub>x</sub>) / (%ΔP<sub>y</sub>) = (ΔD<sub>x</sub>/ΔP<sub>y</sub>) × (P<sub>y0</sub>/D<sub>x0</sub>) = m(P<sub>y</sub>/D<sub>x</sub>)
+                </div>
+                <div class="graph-row">
+                    <!-- Substitutes -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Substitutes (e<sub>dxy</sub> > 0)</h4>
+                        <div class="graph-svg">
+                            <svg width="300" height="220" viewBox="0 0 300 220">
+                                <line x1="40" y1="180" x2="270" y2="180" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="180" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="275" y="185" font-size="12">D<sub>x</sub></text>
+                                <text x="25" y="15" font-size="12">P<sub>y</sub></text>
+                                <!-- Upward sloping line -->
+                                <line x1="60" y1="160" x2="240" y2="50" stroke="#27ae60" stroke-width="3"/>
+                                <text x="245" y="55" font-size="12" fill="#27ae60" font-weight="bold">+ve</text>
+                                <text x="80" y="200" font-size="11" fill="#666">↑P<sub>y</sub> → ↓D<sub>y</sub> → ↑D<sub>x</sub></text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Positive relationship (Rival goods)</p>
+                    </div>
+
+                    <!-- Complements -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Complements (e<sub>dxy</sub> < 0)</h4>
+                        <div class="graph-svg">
+                            <svg width="300" height="220" viewBox="0 0 300 220">
+                                <line x1="40" y1="180" x2="270" y2="180" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="180" x2="40" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="275" y="185" font-size="12">D<sub>x</sub></text>
+                                <text x="25" y="15" font-size="12">P<sub>y</sub></text>
+                                <!-- Downward sloping line -->
+                                <line x1="60" y1="50" x2="240" y2="160" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="245" y="165" font-size="12" fill="#e74c3c" font-weight="bold">-ve</text>
+                                <text x="80" y="200" font-size="11" fill="#666">↑P<sub>y</sub> → ↓D<sub>y</sub> → ↓D<sub>x</sub></text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Negative relationship (Supportive goods)</p>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>TINA Factor:</strong> If there's a TINA (There Is No Alternative) factor, D<sub>x</sub> = 0, e<sub>dxy</sub> = 0, market is monopolized (perfectly inelastic). When there is no TINA factor, there is competition. Supportive goods constantly need to be innovated to survive when main good is getting a beating.
+                </div>
+            </div>
+
+            <!-- Bandwagon and Snob Effect -->
+            <div class="graph-container">
+                <h3>1.4 Bandwagon Effect & Snob Effect</h3>
+                <div class="graph-row">
+                    <!-- Bandwagon Effect -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Bandwagon Effect (D<sup>BW</sup>)</h4>
+                        <div class="graph-svg">
+                            <svg width="350" height="250" viewBox="0 0 350 250">
+                                <line x1="50" y1="210" x2="320" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="50" y1="210" x2="50" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="325" y="215" font-size="12">Q</text>
+                                <text x="35" y="15" font-size="12">P</text>
+
+                                <!-- Individual demand curves -->
+                                <line x1="80" y1="50" x2="120" y2="180" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <line x1="120" y1="50" x2="160" y2="180" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <line x1="160" y1="50" x2="200" y2="180" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <text x="125" y="45" font-size="10" fill="#95a5a6">D<sub>1</sub></text>
+                                <text x="165" y="45" font-size="10" fill="#95a5a6">D<sub>2</sub></text>
+                                <text x="205" y="45" font-size="10" fill="#95a5a6">D<sub>3</sub></text>
+
+                                <!-- Bandwagon demand curve - flatter -->
+                                <line x1="70" y1="60" x2="280" y2="190" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="285" y="185" font-size="12" fill="#e74c3c" font-weight="bold">D<sup>BW</sup></text>
+
+                                <text x="100" y="235" font-size="11" fill="#666">More elastic than individual demand</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Consumers buy more because others are buying (herd behavior)</p>
+                    </div>
+
+                    <!-- Snob Effect -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Snob Effect (D<sup>SG</sup>)</h4>
+                        <div class="graph-svg">
+                            <svg width="350" height="250" viewBox="0 0 350 250">
+                                <line x1="50" y1="210" x2="320" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="50" y1="210" x2="50" y2="20" stroke="black" stroke-width="2"/>
+                                <text x="325" y="215" font-size="12">Q</text>
+                                <text x="35" y="15" font-size="12">P</text>
+
+                                <!-- Individual demand curves -->
+                                <line x1="100" y1="50" x2="180" y2="180" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <line x1="140" y1="50" x2="220" y2="180" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <line x1="180" y1="50" x2="260" y2="180" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <text x="185" y="45" font-size="10" fill="#95a5a6">D<sub>1</sub></text>
+                                <text x="225" y="45" font-size="10" fill="#95a5a6">D<sub>2</sub></text>
+                                <text x="265" y="45" font-size="10" fill="#95a5a6">D<sub>3</sub></text>
+
+                                <!-- Snob demand curve - steeper -->
+                                <line x1="80" y1="50" x2="140" y2="190" stroke="#9b59b6" stroke-width="3"/>
+                                <text x="145" y="185" font-size="12" fill="#9b59b6" font-weight="bold">D<sup>SG</sup></text>
+
+                                <text x="100" y="235" font-size="11" fill="#666">More inelastic than individual demand</text>
+                            </svg>
+                        </div>
+                        <p style="font-size:0.85rem; text-align:center;">Consumers buy less because others are buying (exclusivity)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PRODUCTION ANALYSIS -->
+        <section id="production">
+            <h2>2. Production Analysis</h2>
+
+            <!-- TPP, APP, MPP Curves -->
+            <div class="graph-container">
+                <h3>2.1 TPP, APP, MPP Curves (Law of Variable Proportions)</h3>
+                <div class="notation">
+                    <strong>Axes:</strong> X-axis: Quantity of Labour (Q<sub>L</sub>) | Y-axis: Output (TPP/APP/MPP)<br>
+                    <strong>Formulas:</strong> TPP<sub>n</sub> = ∫MPP(dQ) | APP<sub>n</sub> = TPP<sub>n</sub>/Q<sub>n</sub> | MPP<sub>n</sub> = d(TPP<sub>n</sub>)/d(Q<sub>n</sub>)
+                </div>
+                <div class="graph-svg">
+                    <svg width="500" height="400" viewBox="0 0 500 400">
+                        <!-- Axes -->
+                        <line x1="60" y1="350" x2="470" y2="350" stroke="black" stroke-width="2"/>
+                        <line x1="60" y1="350" x2="60" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="355" font-size="12">Q<sub>L</sub></text>
+                        <text x="35" y="25" font-size="12">TPP</text>
+
+                        <!-- Stage markers -->
+                        <line x1="180" y1="30" x2="180" y2="350" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="320" y1="30" x2="320" y2="350" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+
+                        <!-- Stage labels -->
+                        <text x="100" y="55" font-size="11" fill="#27ae60" font-weight="bold">Mechanical</text>
+                        <text x="100" y="70" font-size="11" fill="#27ae60">Freshness</text>
+                        <text x="220" y="55" font-size="11" fill="#f39c12" font-weight="bold">Mechanical</text>
+                        <text x="220" y="70" font-size="11" fill="#f39c12">Fatigue</text>
+                        <text x="360" y="55" font-size="11" fill="#e74c3c" font-weight="bold">Mechanical</text>
+                        <text x="360" y="70" font-size="11" fill="#e74c3c">Exhaustion</text>
+
+                        <!-- TPP Curve (S-shaped) -->
+                        <path d="M 70 340 Q 100 320 140 260 Q 180 180 240 120 Q 300 90 350 85 Q 400 90 440 130"
+                              stroke="#3498db" stroke-width="3" fill="none"/>
+                        <text x="445" y="140" font-size="14" fill="#3498db" font-weight="bold">TPP</text>
+
+                        <!-- Maximum TPP point -->
+                        <circle cx="350" cy="85" r="5" fill="#3498db"/>
+                        <text x="355" y="75" font-size="10" fill="#3498db">Max TPP</text>
+                    </svg>
+                </div>
+
+                <div class="graph-svg">
+                    <svg width="500" height="300" viewBox="0 0 500 300">
+                        <!-- Second graph for APP and MPP -->
+                        <line x1="60" y1="250" x2="470" y2="250" stroke="black" stroke-width="2"/>
+                        <line x1="60" y1="250" x2="60" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="255" font-size="12">Q<sub>L</sub></text>
+                        <text x="25" y="25" font-size="12">APP/MPP</text>
+
+                        <!-- Zero line -->
+                        <line x1="60" y1="200" x2="470" y2="200" stroke="#ccc" stroke-width="1"/>
+
+                        <!-- Stage markers -->
+                        <line x1="180" y1="30" x2="180" y2="250" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="320" y1="30" x2="320" y2="250" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+
+                        <!-- APP Curve -->
+                        <path d="M 70 200 Q 120 120 180 90 Q 250 85 320 130 Q 380 170 440 190"
+                              stroke="#27ae60" stroke-width="3" fill="none"/>
+                        <text x="445" y="185" font-size="14" fill="#27ae60" font-weight="bold">APP</text>
+
+                        <!-- MPP Curve -->
+                        <path d="M 70 180 Q 100 80 150 60 Q 200 70 250 120 Q 300 180 320 200 Q 380 250 440 270"
+                              stroke="#e74c3c" stroke-width="3" fill="none"/>
+                        <text x="445" y="275" font-size="14" fill="#e74c3c" font-weight="bold">MPP</text>
+
+                        <!-- MPP = 0 point -->
+                        <circle cx="320" cy="200" r="5" fill="#e74c3c"/>
+                        <text x="325" y="215" font-size="10" fill="#e74c3c">MPP=0</text>
+
+                        <!-- MPP = APP intersection -->
+                        <circle cx="180" cy="90" r="5" fill="#9b59b6"/>
+                        <text x="185" y="80" font-size="10" fill="#9b59b6">MPP=APP</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Law of Variable Proportions:</strong> In the short term, technology does not change. Marginal shapes the Total. When T is at peak (maxima), M becomes zero. The three stages represent: (1) Mechanical Freshness - warranty period, (2) Mechanical Fatigue - repair/replace period, (3) Mechanical Exhaustion - recycle/salvage period.
+                </div>
+            </div>
+
+            <!-- Isoquant Curves -->
+            <div class="graph-container">
+                <h3>2.2 Isoquant Curves (Isoquant Map)</h3>
+                <div class="notation">
+                    <strong>Axes:</strong> X-axis: Labour (L) | Y-axis: Capital (K)<br>
+                    <strong>Curves:</strong> IQ<sub>1</sub>, IQ<sub>2</sub>, IQ<sub>3</sub> (representing different output levels: 10, 20, 30 units)
+                </div>
+                <div class="graph-svg">
+                    <svg width="450" height="350" viewBox="0 0 450 350">
+                        <line x1="50" y1="300" x2="420" y2="300" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="300" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="425" y="305" font-size="12">Labour</text>
+                        <text x="30" y="25" font-size="12">Capital</text>
+
+                        <!-- Isoquant curves (convex to origin) -->
+                        <path d="M 80 80 Q 150 100 200 150 Q 250 200 380 250" stroke="#3498db" stroke-width="2.5" fill="none"/>
+                        <text x="385" y="245" font-size="12" fill="#3498db">IQ<sub>3</sub>;30</text>
+
+                        <path d="M 80 130 Q 140 150 180 190 Q 220 230 350 270" stroke="#27ae60" stroke-width="2.5" fill="none"/>
+                        <text x="355" y="265" font-size="12" fill="#27ae60">IQ<sub>2</sub>;20</text>
+
+                        <path d="M 80 180 Q 130 200 160 230 Q 200 260 320 285" stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                        <text x="325" y="280" font-size="12" fill="#e74c3c">IQ<sub>1</sub>;10</text>
+
+                        <!-- Arrow showing increasing output -->
+                        <path d="M 120 250 L 150 180" stroke="#666" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                        <text x="155" y="175" font-size="10" fill="#666">Higher output</text>
+
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Isoquant Map:</strong> Represents the willingness of the producer to produce a certain quantity of output. Isoquant is locus of varying quantities of L and Capital (K) showing the same level of output. Higher isoquants represent higher levels of production.
+                </div>
+            </div>
+
+            <!-- Factor Cost Line and Producer's Equilibrium -->
+            <div class="graph-container">
+                <h3>2.3 Factor Cost Line & Producer's Equilibrium</h3>
+                <div class="notation">
+                    <strong>Axes:</strong> X-axis: Labour | Y-axis: Capital<br>
+                    <strong>Lines:</strong> C<sub>1</sub>, C<sub>2</sub>, C<sub>3</sub> (Factor Cost Lines at different budget levels)
+                </div>
+                <div class="graph-svg">
+                    <svg width="500" height="380" viewBox="0 0 500 380">
+                        <line x1="50" y1="330" x2="470" y2="330" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="330" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="335" font-size="12">Labour</text>
+                        <text x="30" y="25" font-size="12">Capital</text>
+
+                        <!-- Factor Cost Lines -->
+                        <line x1="50" y1="100" x2="180" y2="330" stroke="#3498db" stroke-width="2"/>
+                        <text x="185" y="325" font-size="11" fill="#3498db">C<sub>1</sub></text>
+
+                        <line x1="50" y1="70" x2="280" y2="330" stroke="#27ae60" stroke-width="2"/>
+                        <text x="285" y="325" font-size="11" fill="#27ae60">C<sub>2</sub></text>
+
+                        <line x1="50" y1="50" x2="380" y2="330" stroke="#e74c3c" stroke-width="2"/>
+                        <text x="385" y="325" font-size="11" fill="#e74c3c">C<sub>3</sub></text>
+
+                        <!-- Isoquant curves -->
+                        <path d="M 70 120 Q 110 150 140 200 Q 180 270 250 300" stroke="#9b59b6" stroke-width="2" fill="none"/>
+                        <text x="255" y="295" font-size="10" fill="#9b59b6">IQ<sub>0</sub></text>
+
+                        <path d="M 70 90 Q 130 120 180 180 Q 230 250 340 290" stroke="#9b59b6" stroke-width="2" fill="none"/>
+                        <text x="345" y="285" font-size="10" fill="#9b59b6">IQ<sub>1</sub></text>
+
+                        <path d="M 70 60 Q 150 90 220 150 Q 300 230 420 280" stroke="#9b59b6" stroke-width="2" fill="none"/>
+                        <text x="425" y="275" font-size="10" fill="#9b59b6">IQ<sub>2</sub></text>
+
+                        <!-- Equilibrium points -->
+                        <circle cx="115" cy="165" r="6" fill="#f39c12"/>
+                        <text x="100" y="155" font-size="10" fill="#f39c12">E<sub>1</sub></text>
+
+                        <circle cx="165" cy="170" r="6" fill="#f39c12"/>
+                        <text x="150" y="160" font-size="10" fill="#f39c12">E<sub>2</sub></text>
+
+                        <circle cx="230" cy="170" r="6" fill="#f39c12"/>
+                        <text x="215" y="160" font-size="10" fill="#f39c12">E<sub>3</sub></text>
+
+                        <!-- Expansion Path -->
+                        <path d="M 80 200 Q 115 175 165 170 Q 200 168 230 170 Q 280 175 350 190"
+                              stroke="#f39c12" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
+                        <text x="355" y="195" font-size="12" fill="#f39c12" font-weight="bold">Expansion Path</text>
+
+                        <!-- Points A, B, G -->
+                        <circle cx="95" cy="200" r="4" fill="#666"/>
+                        <text x="80" y="215" font-size="10">A</text>
+                        <circle cx="135" cy="230" r="4" fill="#666"/>
+                        <text x="120" y="245" font-size="10">B</text>
+                        <circle cx="100" cy="100" r="4" fill="#666"/>
+                        <text x="85" y="95" font-size="10">G (aspirational)</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Producer's Equilibrium:</strong> At point E, producer's ability and willingness are compatible. E is the tangent for the isoquant, i.e., the willingness = slope of ability. G is aspirational (out of budget). A and B are irrational as with same cost as E, less is produced. <strong>Expansion Path:</strong> Trajectory of production that a firm adopts, given its willingness and ability to produce as well as the state of technology.
+                </div>
+            </div>
+
+            <!-- Returns to Scale -->
+            <div class="graph-container">
+                <h3>2.4 Returns to Scale (Long Run)</h3>
+                <div class="notation">
+                    <strong>Axes:</strong> X-axis: Labour | Y-axis: Capital<br>
+                    <strong>Types:</strong> IRS (Increasing), CRS (Constant), DRS (Decreasing)
+                </div>
+                <div class="graph-row">
+                    <!-- IRS -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Increasing Returns to Scale (IRS)</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="260" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="265" y="215" font-size="11">L</text>
+                                <text x="25" y="25" font-size="11">K</text>
+
+                                <!-- Expansion path -->
+                                <line x1="40" y1="210" x2="240" y2="50" stroke="#27ae60" stroke-width="2"/>
+
+                                <!-- Isoquants with decreasing gaps -->
+                                <path d="M 55 180 Q 70 170 85 180" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 75 155 Q 95 140 115 155" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 100 125 Q 125 105 155 125" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 130 90 Q 165 65 205 90" stroke="#3498db" stroke-width="1.5" fill="none"/>
+
+                                <!-- Points -->
+                                <circle cx="70" cy="175" r="4" fill="#e74c3c"/>
+                                <circle cx="95" cy="147" r="4" fill="#e74c3c"/>
+                                <circle cx="127" cy="113" r="4" fill="#e74c3c"/>
+                                <circle cx="167" cy="75" r="4" fill="#e74c3c"/>
+
+                                <text x="80" y="235" font-size="10" fill="#666">Decreasing Gaps</text>
+                                <text x="60" y="245" font-size="10" fill="#666">Less expenditure for same output</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- CRS -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Constant Returns to Scale (CRS)</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="260" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="265" y="215" font-size="11">L</text>
+                                <text x="25" y="25" font-size="11">K</text>
+
+                                <!-- Expansion path -->
+                                <line x1="40" y1="210" x2="240" y2="50" stroke="#f39c12" stroke-width="2"/>
+
+                                <!-- Isoquants with equal gaps -->
+                                <path d="M 55 185 Q 70 175 85 185" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 85 150 Q 105 135 130 150" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 120 115 Q 145 95 175 115" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 155 80 Q 185 55 220 80" stroke="#3498db" stroke-width="1.5" fill="none"/>
+
+                                <!-- Points with equal spacing -->
+                                <circle cx="70" cy="180" r="4" fill="#e74c3c"/>
+                                <circle cx="107" cy="143" r="4" fill="#e74c3c"/>
+                                <circle cx="147" cy="103" r="4" fill="#e74c3c"/>
+                                <circle cx="187" cy="63" r="4" fill="#e74c3c"/>
+
+                                <text x="80" y="235" font-size="10" fill="#666">Equal Gaps</text>
+                                <text x="50" y="245" font-size="10" fill="#666">Proportional expenditure change</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- DRS -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Decreasing Returns to Scale (DRS)</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="260" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="265" y="215" font-size="11">L</text>
+                                <text x="25" y="25" font-size="11">K</text>
+
+                                <!-- Expansion path -->
+                                <line x1="40" y1="210" x2="240" y2="50" stroke="#e74c3c" stroke-width="2"/>
+
+                                <!-- Isoquants with increasing gaps -->
+                                <path d="M 50 200 Q 60 195 70 200" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 65 185 Q 80 175 100 185" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 90 155 Q 120 130 155 155" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                                <path d="M 130 110 Q 175 70 230 110" stroke="#3498db" stroke-width="1.5" fill="none"/>
+
+                                <!-- Points with increasing spacing -->
+                                <circle cx="60" cy="197" r="4" fill="#e74c3c"/>
+                                <circle cx="82" cy="180" r="4" fill="#e74c3c"/>
+                                <circle cx="122" cy="143" r="4" fill="#e74c3c"/>
+                                <circle cx="180" cy="90" r="4" fill="#e74c3c"/>
+
+                                <text x="80" y="235" font-size="10" fill="#666">Increasing Gaps</text>
+                                <text x="50" y="245" font-size="10" fill="#666">More expenditure for same output</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Note:</strong> DRS emerges when a very superior technology is being made operational when the appropriate support systems (infrastructure) are not in place. IRS creates negative trajectory (reducing gaps) and DRS causes upward slope (increasing gaps). The LAC is shaped by the operations of Laws of Returns to Scale.
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: COST CURVES -->
+        <section id="cost">
+            <h2>3. Cost Curves</h2>
+
+            <!-- TFC, TVC, TC -->
+            <div class="graph-container">
+                <h3>3.1 Total Fixed Cost (TFC), Total Variable Cost (TVC), Total Cost (TC)</h3>
+                <div class="notation">
+                    <strong>Axes:</strong> X-axis: Quantity (Output) | Y-axis: Cost<br>
+                    <strong>Formulas:</strong> TC = TFC + TVC | TVC' = MC | TC = ∫MC(dq)
+                </div>
+                <div class="graph-svg">
+                    <svg width="550" height="380" viewBox="0 0 550 380">
+                        <line x1="60" y1="330" x2="520" y2="330" stroke="black" stroke-width="2"/>
+                        <line x1="60" y1="330" x2="60" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="525" y="335" font-size="12">Qty</text>
+                        <text x="25" y="25" font-size="12">TC/TVC/TFC</text>
+
+                        <!-- TFC - Horizontal line -->
+                        <line x1="60" y1="280" x2="500" y2="280" stroke="#e74c3c" stroke-width="3"/>
+                        <text x="505" y="285" font-size="12" fill="#e74c3c" font-weight="bold">TFC</text>
+                        <text x="65" y="275" font-size="10">F</text>
+
+                        <!-- TVC - S-shaped starting from origin -->
+                        <path d="M 60 330 Q 120 320 180 290 Q 250 240 320 180 Q 380 130 440 100 Q 480 90 500 95"
+                              stroke="#27ae60" stroke-width="3" fill="none"/>
+                        <text x="505" y="100" font-size="12" fill="#27ae60" font-weight="bold">TVC</text>
+
+                        <!-- TC - S-shaped starting from TFC -->
+                        <path d="M 60 280 Q 120 270 180 240 Q 250 190 320 130 Q 380 80 440 50 Q 480 40 500 45"
+                              stroke="#3498db" stroke-width="3" fill="none"/>
+                        <text x="505" y="50" font-size="12" fill="#3498db" font-weight="bold">TC</text>
+
+                        <!-- Stage labels -->
+                        <text x="150" y="355" font-size="10" fill="#27ae60">(A) Fresh</text>
+                        <text x="280" y="355" font-size="10" fill="#f39c12">(B) Fatigue</text>
+                        <text x="420" y="355" font-size="10" fill="#e74c3c">(C) Exhaust</text>
+
+                        <!-- Vertical markers for stages -->
+                        <line x1="200" y1="330" x2="200" y2="40" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="350" y1="330" x2="350" y2="40" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+
+                        <!-- Point markings -->
+                        <text x="100" y="350" font-size="10">Q<sub>1</sub></text>
+                        <text x="200" y="350" font-size="10">Q<sub>2</sub></text>
+                        <text x="350" y="350" font-size="10">Q<sub>3</sub></text>
+                        <text x="450" y="350" font-size="10">Q<sub>4</sub></text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Key Relationships:</strong> TFC ≠ f(Q) - Fixed cost doesn't change with output. TVC = f(Q) - Variable cost changes with output level. TC curve shares the vertical intercept with TFC (TC curve starts at point F). TC curve is shaped by TVC, i.e., TVC' = MC. TFC is the gap between TVC and TC. Initiating cost (a) is reflected in TVC starting position.
+                </div>
+            </div>
+
+            <!-- AFC Curve -->
+            <div class="graph-container">
+                <h3>3.2 Average Fixed Cost (AFC)</h3>
+                <div class="notation">
+                    <strong>Formula:</strong> AFC = TFC/Q<br>
+                    <strong>Properties:</strong> Rectangular Hyperbola, Asymptotic
+                </div>
+                <div class="graph-svg">
+                    <svg width="400" height="280" viewBox="0 0 400 280">
+                        <line x1="50" y1="240" x2="370" y2="240" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="240" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="375" y="245" font-size="12">Quantity</text>
+                        <text x="35" y="25" font-size="12">AFC</text>
+
+                        <!-- AFC Curve - Rectangular Hyperbola -->
+                        <path d="M 60 50 Q 80 100 120 160 Q 180 200 260 220 Q 320 230 360 235"
+                              stroke="#e74c3c" stroke-width="3" fill="none"/>
+                        <text x="365" y="225" font-size="12" fill="#e74c3c" font-weight="bold">AFC</text>
+
+                        <!-- Asymptotic indication -->
+                        <line x1="50" y1="237" x2="370" y2="237" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>AFC Curve Features:</strong> (1) It's a Rectangular Hyperbola. (2) Asymptotic - AFC cannot be zero because the numerator can never be zero. Also, Qty cannot be zero due to mechanical exhaustion, production stops. The AFC continuously falls as output increases.
+                </div>
+            </div>
+
+            <!-- AVC Curve -->
+            <div class="graph-container">
+                <h3>3.3 Average Variable Cost (AVC)</h3>
+                <div class="notation">
+                    <strong>Formula:</strong> AVC = TVC/Q<br>
+                    <strong>Shape:</strong> Nearly J-shaped (U-shaped)
+                </div>
+                <div class="graph-svg">
+                    <svg width="400" height="280" viewBox="0 0 400 280">
+                        <line x1="50" y1="240" x2="370" y2="240" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="240" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="375" y="245" font-size="12">Quantity</text>
+                        <text x="35" y="25" font-size="12">AVC</text>
+
+                        <!-- AVC Curve - J-shaped -->
+                        <path d="M 70 180 Q 100 200 140 210 Q 180 215 220 210 Q 280 190 340 130 Q 360 100 365 80"
+                              stroke="#27ae60" stroke-width="3" fill="none"/>
+                        <text x="370" y="85" font-size="12" fill="#27ae60" font-weight="bold">AVC</text>
+
+                        <!-- Stage markers -->
+                        <line x1="140" y1="30" x2="140" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <line x1="260" y1="30" x2="260" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+
+                        <text x="90" y="260" font-size="9">(A)</text>
+                        <text x="190" y="260" font-size="9">(B)</text>
+                        <text x="300" y="260" font-size="9">(C)</text>
+
+                        <!-- Minimum point -->
+                        <circle cx="200" cy="213" r="5" fill="#27ae60"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- AC and MC Relationship -->
+            <div class="graph-container">
+                <h3>3.4 Average Cost (AC) and Marginal Cost (MC) Relationship</h3>
+                <div class="notation">
+                    <strong>Formulas:</strong> AC = TC/Q = AFC + AVC | MC = d(TC)/d(Q)<br>
+                    <strong>Key Relationship:</strong> MC intersects AC at AC's minimum (optimal output)
+                </div>
+                <div class="graph-svg">
+                    <svg width="500" height="350" viewBox="0 0 500 350">
+                        <line x1="50" y1="300" x2="470" y2="300" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="300" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="305" font-size="12">Qty</text>
+                        <text x="25" y="25" font-size="12">AC/MC</text>
+
+                        <!-- AC Curve - U-shaped -->
+                        <path d="M 80 80 Q 120 120 180 180 Q 220 210 260 215 Q 300 210 340 180 Q 380 140 420 80"
+                              stroke="#3498db" stroke-width="3" fill="none"/>
+                        <text x="425" y="85" font-size="14" fill="#3498db" font-weight="bold">AC</text>
+
+                        <!-- MC Curve - J-shaped, intersects AC at minimum -->
+                        <path d="M 70 200 Q 100 230 140 240 Q 180 235 220 200 Q 260 150 300 100 Q 340 60 400 40"
+                              stroke="#e74c3c" stroke-width="3" fill="none"/>
+                        <text x="405" y="45" font-size="14" fill="#e74c3c" font-weight="bold">MC</text>
+
+                        <!-- Intersection point (Optimal Output) -->
+                        <circle cx="260" cy="215" r="6" fill="#9b59b6"/>
+                        <text x="265" y="235" font-size="11" fill="#9b59b6">M<sub>2</sub>=A<sub>2</sub></text>
+                        <text x="240" y="255" font-size="10" fill="#9b59b6">(Optimal Output)</text>
+
+                        <!-- Sub-optimal region -->
+                        <line x1="260" y1="300" x2="260" y2="30" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <text x="130" y="320" font-size="11" fill="#666">Sub-optimal output</text>
+                        <text x="320" y="320" font-size="11" fill="#666">Post-optimal output</text>
+
+                        <!-- Points for comparison -->
+                        <circle cx="150" cy="160" r="4" fill="#3498db"/>
+                        <text x="155" y="155" font-size="10">A<sub>1</sub></text>
+                        <circle cx="150" cy="235" r="4" fill="#e74c3c"/>
+                        <text x="155" y="250" font-size="10">M<sub>1</sub></text>
+
+                        <circle cx="370" cy="115" r="4" fill="#3498db"/>
+                        <text x="375" y="110" font-size="10">A<sub>3</sub></text>
+                        <circle cx="370" cy="55" r="4" fill="#e74c3c"/>
+                        <text x="375" y="70" font-size="10">M<sub>3</sub></text>
+
+                        <!-- Labels for relationships -->
+                        <text x="100" y="290" font-size="10" fill="#27ae60">MC < AC</text>
+                        <text x="380" y="290" font-size="10" fill="#e74c3c">MC > AC</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Three Definite Relationships:</strong> (1) At optimal output: MC = AC at AC's minima. (2) Before optimal (sub-optimal): AC continuously falls due to mechanical freshness; MC falls and rises; MC lies below AC. (3) After optimal (post-optimal): Both AC and MC continuously rise; MC lies above AC. The MC curve is indicative of the fixed factor efficiency: Efficiency of MC<sub>1</sub> > MC (if MC<sub>1</sub> curve is lower).
+                </div>
+            </div>
+
+            <!-- Excess Capacity -->
+            <div class="graph-container">
+                <h3>3.5 Excess Capacity / Idle Capacity</h3>
+                <div class="notation">
+                    <strong>Formula:</strong> Excess Capacity = OQ<sub>2</sub> - OQ<sub>1</sub> = Optimum Qty - Actual Qty
+                </div>
+                <div class="graph-svg">
+                    <svg width="450" height="300" viewBox="0 0 450 300">
+                        <line x1="50" y1="250" x2="420" y2="250" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="250" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="425" y="255" font-size="12">Qty</text>
+                        <text x="25" y="25" font-size="12">AC/MC</text>
+
+                        <!-- AC Curve -->
+                        <path d="M 80 70 Q 130 120 180 160 Q 230 180 280 180 Q 330 170 380 130"
+                              stroke="#3498db" stroke-width="3" fill="none"/>
+                        <text x="385" y="135" font-size="12" fill="#3498db" font-weight="bold">AC</text>
+
+                        <!-- MC Curve -->
+                        <path d="M 70 200 Q 120 210 180 180 Q 240 130 300 80 Q 350 50 390 40"
+                              stroke="#e74c3c" stroke-width="3" fill="none"/>
+                        <text x="395" y="45" font-size="12" fill="#e74c3c" font-weight="bold">MC</text>
+
+                        <!-- Actual output Q1 -->
+                        <line x1="150" y1="250" x2="150" y2="145" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <text x="145" y="265" font-size="10">Q<sub>1</sub></text>
+
+                        <!-- Optimal output Q2 -->
+                        <line x1="280" y1="250" x2="280" y2="180" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+                        <text x="275" y="265" font-size="10">Q<sub>2</sub></text>
+
+                        <!-- Excess capacity arrow -->
+                        <line x1="150" y1="235" x2="280" y2="235" stroke="#9b59b6" stroke-width="2"/>
+                        <polygon points="280,235 270,230 270,240" fill="#9b59b6"/>
+                        <polygon points="150,235 160,230 160,240" fill="#9b59b6"/>
+                        <text x="185" y="225" font-size="11" fill="#9b59b6" font-weight="bold">Excess Capacity</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Interpretation:</strong> <em>Tragedy:</em> Leads to inflationary pressures, aggravates unemployment, causes large scale resource wastage. <em>Strategy:</em> Modern companies use excess capacity strategically for production agility, seasonality compliance (minimal inventories), and scientific inventory management.
+                </div>
+            </div>
+
+            <!-- Long Run Average Cost (LAC) -->
+            <div class="graph-container">
+                <h3>3.6 Long Run Average Cost (LAC) - Envelope Curve</h3>
+                <div class="notation">
+                    <strong>Concept:</strong> LAC is the locus of operational points of every adopted technology<br>
+                    <strong>Also called:</strong> Envelope Curve, Planning Curve
+                </div>
+                <div class="graph-svg">
+                    <svg width="550" height="350" viewBox="0 0 550 350">
+                        <line x1="50" y1="300" x2="520" y2="300" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="300" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="525" y="305" font-size="12">Quantity</text>
+                        <text x="20" y="25" font-size="12">SAC/LAC</text>
+
+                        <!-- SAC Curves (Short-run Average Costs) -->
+                        <path d="M 70 200 Q 100 180 130 150 Q 150 140 170 145 Q 200 170 230 220"
+                              stroke="#95a5a6" stroke-width="2" fill="none"/>
+                        <text x="120" y="130" font-size="10" fill="#95a5a6">SAC<sub>1</sub></text>
+
+                        <path d="M 130 180 Q 170 150 210 120 Q 240 110 270 115 Q 310 140 350 190"
+                              stroke="#95a5a6" stroke-width="2" fill="none"/>
+                        <text x="210" y="100" font-size="10" fill="#95a5a6">SAC<sub>2</sub></text>
+
+                        <path d="M 220 160 Q 270 120 320 90 Q 360 85 400 95 Q 440 120 480 170"
+                              stroke="#95a5a6" stroke-width="2" fill="none"/>
+                        <text x="330" y="75" font-size="10" fill="#95a5a6">SAC<sub>3</sub></text>
+
+                        <path d="M 340 140 Q 400 100 450 90 Q 480 95 500 110"
+                              stroke="#95a5a6" stroke-width="2" fill="none"/>
+                        <text x="450" y="80" font-size="10" fill="#95a5a6">SAC<sub>4</sub></text>
+
+                        <!-- LAC Envelope Curve -->
+                        <path d="M 80 190 Q 140 155 200 120 Q 280 95 360 90 Q 420 95 480 120"
+                              stroke="#e74c3c" stroke-width="3" fill="none"/>
+                        <text x="485" y="125" font-size="14" fill="#e74c3c" font-weight="bold">LAC</text>
+
+                        <!-- Point A (concurrent point) -->
+                        <circle cx="180" cy="130" r="5" fill="#f39c12"/>
+                        <text x="185" y="125" font-size="10" fill="#f39c12">A</text>
+
+                        <!-- IRS and DRS regions -->
+                        <text x="120" y="320" font-size="11" fill="#27ae60">IRS (Reducing gaps)</text>
+                        <text x="380" y="320" font-size="11" fill="#e74c3c">DRS (Increasing gaps)</text>
+
+                        <line x1="300" y1="300" x2="300" y2="80" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Key Points:</strong> One short run Avg. cost curve represents one technology. Every successive technology is more cost effective than the previous one. LAC is shaped by laws of Return to Scale with IRS creating negative trajectory and DRS causing upward slope. Point A is concurrent point between technologies. Positive externalities shift LAC downwards (LAC<sub>2</sub> to LAC<sub>1</sub>). Negative externalities shift LAC upwards.
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: REVENUE ANALYSIS -->
+        <section id="revenue">
+            <h2>4. Revenue Analysis</h2>
+
+            <!-- TR, AR, MR under Perfect Competition -->
+            <div class="graph-container">
+                <h3>4.1 TR, AR, MR under Perfect Competition</h3>
+                <div class="notation">
+                    <strong>Formulas:</strong> TR = AR × Q | AR = TR/Q = P | MR = TR' = d(TR)/d(Q)<br>
+                    <strong>Key Feature:</strong> AR = MR = P (constant price)
+                </div>
+                <div class="graph-svg">
+                    <svg width="500" height="320" viewBox="0 0 500 320">
+                        <line x1="50" y1="270" x2="470" y2="270" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="270" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="275" font-size="12">Qty</text>
+                        <text x="20" y="25" font-size="12">TR/AR/MR</text>
+
+                        <!-- TR Curve - Linear upward sloping from origin -->
+                        <line x1="50" y1="270" x2="420" y2="60" stroke="#3498db" stroke-width="3"/>
+                        <text x="425" y="65" font-size="14" fill="#3498db" font-weight="bold">TR</text>
+
+                        <!-- AR = MR = P (horizontal line) -->
+                        <line x1="50" y1="180" x2="420" y2="180" stroke="#e74c3c" stroke-width="3"/>
+                        <text x="425" y="175" font-size="14" fill="#e74c3c" font-weight="bold">AR<sub>c</sub>/MR<sub>c</sub></text>
+
+                        <!-- Price label -->
+                        <text x="30" y="185" font-size="10">P</text>
+                        <line x1="45" y1="180" x2="50" y2="180" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Under Perfect Competition:</strong> Prices are uniform, AR = Price. Since TR function is R = 30Q (linear), the corresponding curve will be linear. The slope of AR and MR curves = 0. AR and MR curves are concurrent at market determined price. Such firms can opt for profit maximization or breakeven status but they cannot opt for sales maximization.
+                </div>
+            </div>
+
+            <!-- TR, AR, MR under Imperfect Competition -->
+            <div class="graph-container">
+                <h3>4.2 TR, AR, MR under Imperfect Competition</h3>
+                <div class="notation">
+                    <strong>Key Features:</strong> TR is inverted U-shaped | AR is downward sloping (= Demand curve) | MR is downward sloping (steeper than AR)<br>
+                    <strong>Relationship:</strong> Slope of MR = 2 × Slope of AR (linear case)
+                </div>
+                <div class="graph-svg">
+                    <svg width="500" height="350" viewBox="0 0 500 350">
+                        <line x1="50" y1="300" x2="470" y2="300" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="300" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="305" font-size="12">Qty</text>
+                        <text x="15" y="25" font-size="12">TR/MR/AR</text>
+
+                        <!-- TR Curve - Inverted U-shape -->
+                        <path d="M 50 300 Q 150 180 250 100 Q 320 80 380 100 Q 420 140 450 200"
+                              stroke="#3498db" stroke-width="3" fill="none"/>
+                        <text x="455" y="205" font-size="14" fill="#3498db" font-weight="bold">TR<sub>c</sub></text>
+
+                        <!-- Maximum TR point -->
+                        <circle cx="320" cy="80" r="5" fill="#3498db"/>
+                        <line x1="320" y1="80" x2="320" y2="300" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+
+                        <!-- AR Curve (Demand Curve) - Downward sloping -->
+                        <line x1="80" y1="60" x2="420" y2="280" stroke="#27ae60" stroke-width="3"/>
+                        <text x="425" y="275" font-size="14" fill="#27ae60" font-weight="bold">AR<sub>c</sub></text>
+
+                        <!-- MR Curve - Steeper downward slope (2x AR slope) -->
+                        <line x1="80" y1="60" x2="320" y2="300" stroke="#e74c3c" stroke-width="3"/>
+                        <text x="305" y="315" font-size="14" fill="#e74c3c" font-weight="bold">MR<sub>c</sub></text>
+
+                        <!-- MR = 0 at TR max -->
+                        <text x="325" y="290" font-size="10" fill="#666">MR = 0</text>
+
+                        <!-- Annotation showing MR bisects horizontal -->
+                        <text x="180" y="330" font-size="10" fill="#666">MR bisects AR horizontally (50-50 rule for linear AR)</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Key Relationships:</strong> AR curve is the demand curve. MR can be >0, =0, <0. When TR peaks, MR = 0. MR = a - 2kq (derivative of TR). The MR intersects the horizontal axis at more than mid point (for linear AR) or at less than mid point (depending on the curvature). <strong>e<sub>dp</sub> = AR/(AR-MR)</strong>. Sales maximization is possible only under imperfect competition because in perfect competition, the TR function does not have a maximum position.
+                </div>
+            </div>
+
+            <!-- AR-MR Convex and Concave Cases -->
+            <div class="graph-container">
+                <h3>4.3 AR-MR Relationship: Convex and Concave Cases</h3>
+                <div class="graph-row">
+                    <!-- Convex AR -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Convex AR (MR intersects at more than mid pt)</h4>
+                        <div class="graph-svg">
+                            <svg width="300" height="250" viewBox="0 0 300 250">
+                                <line x1="40" y1="210" x2="270" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="275" y="215" font-size="11">Q</text>
+                                <text x="25" y="25" font-size="11">P</text>
+
+                                <!-- AR Curve - Convex -->
+                                <path d="M 60 50 Q 120 100 200 180 Q 240 200 260 205"
+                                      stroke="#27ae60" stroke-width="2.5" fill="none"/>
+                                <text x="265" y="200" font-size="11" fill="#27ae60">D</text>
+
+                                <!-- Point A on Y-axis -->
+                                <circle cx="40" cy="50" r="4" fill="#3498db"/>
+                                <text x="20" y="55" font-size="10">A</text>
+
+                                <!-- Horizontal line to B on AR -->
+                                <line x1="40" y1="130" x2="155" y2="130" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <circle cx="155" cy="130" r="4" fill="#e74c3c"/>
+                                <text x="160" y="125" font-size="10">B</text>
+
+                                <!-- Point T on X-axis -->
+                                <line x1="155" y1="130" x2="155" y2="210" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <circle cx="155" cy="210" r="4" fill="#f39c12"/>
+                                <text x="150" y="225" font-size="10">T</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Concave AR -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Concave AR (MR intersects at less than mid pt)</h4>
+                        <div class="graph-svg">
+                            <svg width="300" height="250" viewBox="0 0 300 250">
+                                <line x1="40" y1="210" x2="270" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="275" y="215" font-size="11">Q</text>
+                                <text x="25" y="25" font-size="11">P</text>
+
+                                <!-- AR Curve - Concave -->
+                                <path d="M 60 50 Q 180 80 240 150 Q 255 180 260 200"
+                                      stroke="#27ae60" stroke-width="2.5" fill="none"/>
+                                <text x="265" y="195" font-size="11" fill="#27ae60">D</text>
+
+                                <!-- Point A on Y-axis -->
+                                <circle cx="40" cy="50" r="4" fill="#3498db"/>
+                                <text x="20" y="55" font-size="10">A</text>
+
+                                <!-- Horizontal line to B on AR -->
+                                <line x1="40" y1="100" x2="200" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <circle cx="200" cy="100" r="4" fill="#e74c3c"/>
+                                <text x="205" y="95" font-size="10">B</text>
+
+                                <!-- Point T on X-axis -->
+                                <line x1="200" y1="100" x2="200" y2="210" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <circle cx="200" cy="210" r="4" fill="#f39c12"/>
+                                <text x="195" y="225" font-size="10">T</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: PERFECT COMPETITION -->
+        <section id="perfect-competition">
+            <h2>5. Perfect Competition</h2>
+
+            <!-- Normal Profit (Breakeven) -->
+            <div class="graph-container">
+                <h3>5.1 Normal Profit (Breakeven) - TR = TC, π = 0</h3>
+                <div class="notation">
+                    <strong>Condition:</strong> MC = MR and slope of MC > slope of MR<br>
+                    <strong>At Equilibrium:</strong> TR = TC, Total Profit (π) = zero
+                </div>
+                <div class="graph-row">
+                    <!-- Industry Graph -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Industry</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="250" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="255" y="215" font-size="11">Q<sub>d</sub>,Q<sub>s</sub></text>
+                                <text x="25" y="25" font-size="11">Price</text>
+
+                                <!-- Supply Curve -->
+                                <line x1="60" y1="190" x2="230" y2="50" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="235" y="55" font-size="11" fill="#27ae60">S</text>
+
+                                <!-- Demand Curve -->
+                                <line x1="60" y1="50" x2="230" y2="190" stroke="#e74c3c" stroke-width="2.5"/>
+                                <text x="235" y="185" font-size="11" fill="#e74c3c">D</text>
+
+                                <!-- Equilibrium Point -->
+                                <circle cx="145" cy="120" r="5" fill="#3498db"/>
+                                <text x="150" y="115" font-size="10">E<sub>i</sub></text>
+
+                                <!-- Price line -->
+                                <line x1="40" y1="120" x2="145" y2="120" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="25" y="125" font-size="10">P</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Firm Graph -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Firm</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="250" viewBox="0 0 320 250">
+                                <line x1="40" y1="210" x2="290" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="215" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 180 Q 100 190 140 160 Q 180 110 220 70 Q 250 50 270 45"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="50" font-size="11" fill="#e74c3c">MC</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 70 100 Q 110 130 150 145 Q 190 150 220 140 Q 250 120 270 90"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="95" font-size="11" fill="#3498db">AC</text>
+
+                                <!-- AR = MR (horizontal) -->
+                                <line x1="40" y1="145" x2="270" y2="145" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="275" y="150" font-size="11" fill="#27ae60">AR/MR</text>
+
+                                <!-- Equilibrium Point E -->
+                                <circle cx="175" cy="145" r="5" fill="#f39c12"/>
+                                <text x="180" y="140" font-size="10">E</text>
+
+                                <!-- Price line -->
+                                <text x="25" y="150" font-size="10">P</text>
+
+                                <!-- Quantity at equilibrium -->
+                                <line x1="175" y1="145" x2="175" y2="210" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="170" y="225" font-size="10">Q</text>
+
+                                <!-- TR = TC annotation -->
+                                <text x="100" y="240" font-size="10" fill="#666">T(π) = 0 as TR = TC</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>At point E:</strong> The firm reaches stable equilibrium since MC = MR and the slope of MC > Slope of MR. At price OP, the firm produces OQ units. TR [A(□OPEQ)] = TC [A(□OPEQ)] so π = zero. Many NGOs and charitable institutions perform as not-for-profit firms.
+                </div>
+            </div>
+
+            <!-- Supernormal Profit -->
+            <div class="graph-container">
+                <h3>5.2 Supernormal Profit (π > 0)</h3>
+                <div class="notation">
+                    <strong>Condition:</strong> MC = MR = AR > AC<br>
+                    <strong>Result:</strong> TR > TC, firm earns supernormal (positive) profit
+                </div>
+                <div class="graph-row">
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Industry</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="250" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="255" y="215" font-size="11">Q<sub>d</sub>,Q<sub>s</sub></text>
+                                <text x="25" y="25" font-size="11">Price</text>
+
+                                <line x1="60" y1="190" x2="230" y2="50" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="235" y="55" font-size="11" fill="#27ae60">S</text>
+
+                                <line x1="60" y1="50" x2="230" y2="190" stroke="#e74c3c" stroke-width="2.5"/>
+                                <text x="235" y="185" font-size="11" fill="#e74c3c">D</text>
+
+                                <circle cx="145" cy="120" r="5" fill="#3498db"/>
+                                <text x="150" y="115" font-size="10">E<sub>i</sub></text>
+
+                                <line x1="40" y1="120" x2="250" y2="120" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <text x="25" y="125" font-size="10">P</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Firm</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="280" viewBox="0 0 320 280">
+                                <line x1="40" y1="240" x2="290" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="245" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 200 Q 100 210 140 180 Q 180 130 220 90 Q 250 65 270 55"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="60" font-size="11" fill="#e74c3c">MC</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 70 120 Q 110 150 160 170 Q 200 175 240 160 Q 265 140 275 115"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="280" y="120" font-size="11" fill="#3498db">AC</text>
+
+                                <!-- AR = MR (horizontal) at higher level -->
+                                <line x1="40" y1="120" x2="270" y2="120" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="275" y="125" font-size="11" fill="#27ae60">AR/MR</text>
+
+                                <!-- Equilibrium Point E -->
+                                <circle cx="190" cy="120" r="5" fill="#f39c12"/>
+                                <text x="195" y="115" font-size="10">E</text>
+
+                                <!-- Cost point C on AC -->
+                                <circle cx="190" cy="173" r="4" fill="#3498db"/>
+                                <text x="195" y="185" font-size="10">C</text>
+
+                                <!-- Supernormal profit area -->
+                                <rect x="40" y="120" width="150" height="53" fill="rgba(46, 204, 113, 0.3)" stroke="#27ae60" stroke-width="1"/>
+                                <text x="80" y="150" font-size="10" fill="#27ae60">Super NP</text>
+
+                                <!-- T point -->
+                                <circle cx="40" cy="173" r="3" fill="#666"/>
+                                <text x="25" y="178" font-size="10">T</text>
+
+                                <line x1="40" y1="173" x2="190" y2="173" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+
+                                <line x1="190" y1="120" x2="190" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="185" y="255" font-size="10">Q</text>
+
+                                <text x="70" y="270" font-size="10" fill="#27ae60">A(□TPEC) = +ve T(π) as TR > TC</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Analysis:</strong> At stable equilibrium point E: MC = MR = AR > AC. The firm's total expenditure (at stable eq.) is A(□OTCQ) = TC, but with market prices being OP, which is more than OT by PT, the firm's overall supernormal profit = A(□TPEC). These are the usual commercial entities that ensure their revenues more than cover costs. Supernormal profit would be subject to deductions like CIT (22%), CSR (2%), dividends, and reinvestment.
+                </div>
+            </div>
+
+            <!-- Subnormal Profit (Continue) -->
+            <div class="graph-container">
+                <h3>5.3 Subnormal Profit - Continue (π < 0, AR > AVC)</h3>
+                <div class="notation">
+                    <strong>Condition:</strong> MC = MR = AC < C (but AR > AVC)<br>
+                    <strong>Decision:</strong> Continue production (covers variable costs partially covers fixed costs)
+                </div>
+                <div class="graph-row">
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Industry</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="250" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="255" y="215" font-size="11">Q<sub>d</sub>,Q<sub>s</sub></text>
+                                <text x="25" y="25" font-size="11">Price</text>
+
+                                <line x1="60" y1="190" x2="230" y2="50" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="235" y="55" font-size="11" fill="#27ae60">S</text>
+
+                                <line x1="60" y1="50" x2="230" y2="190" stroke="#e74c3c" stroke-width="2.5"/>
+                                <text x="235" y="185" font-size="11" fill="#e74c3c">D</text>
+
+                                <circle cx="145" cy="120" r="5" fill="#3498db"/>
+                                <text x="150" y="115" font-size="10">E<sub>i</sub></text>
+
+                                <line x1="40" y1="120" x2="250" y2="120" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <text x="25" y="125" font-size="10">P</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Firm</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="280" viewBox="0 0 320 280">
+                                <line x1="40" y1="240" x2="290" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="245" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 200 Q 100 210 140 175 Q 180 130 220 90 Q 250 65 270 55"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="60" font-size="11" fill="#e74c3c">MC</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 70 90 Q 110 120 160 130 Q 200 133 240 120 Q 265 100 275 75"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="280" y="80" font-size="11" fill="#3498db">AC</text>
+
+                                <!-- AVC Curve -->
+                                <path d="M 70 140 Q 110 165 160 175 Q 200 178 240 165 Q 265 145 275 120"
+                                      stroke="#9b59b6" stroke-width="2" fill="none"/>
+                                <text x="280" y="125" font-size="11" fill="#9b59b6">AVC</text>
+
+                                <!-- AR = MR (horizontal) below AC but above AVC -->
+                                <line x1="40" y1="155" x2="270" y2="155" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="275" y="160" font-size="11" fill="#27ae60">AR/MR</text>
+
+                                <!-- Equilibrium Point E -->
+                                <circle cx="175" cy="155" r="5" fill="#f39c12"/>
+                                <text x="180" y="150" font-size="10">E</text>
+
+                                <!-- Points T and C -->
+                                <circle cx="40" cy="130" r="3" fill="#666"/>
+                                <text x="25" y="135" font-size="10">T</text>
+
+                                <circle cx="175" cy="130" r="4" fill="#3498db"/>
+                                <text x="180" y="125" font-size="10">C</text>
+
+                                <!-- Subnormal loss area -->
+                                <rect x="40" y="130" width="135" height="25" fill="rgba(231, 76, 60, 0.3)" stroke="#e74c3c" stroke-width="1"/>
+                                <text x="70" y="145" font-size="9" fill="#e74c3c">Subnormal</text>
+
+                                <!-- V point on AVC -->
+                                <circle cx="175" cy="177" r="3" fill="#9b59b6"/>
+                                <text x="180" y="190" font-size="10">V</text>
+
+                                <line x1="175" y1="155" x2="175" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="170" y="255" font-size="10">Q</text>
+
+                                <text x="50" y="270" font-size="10" fill="#666">AR > AVC: Continue (covers OPEX, partly CAPEX)</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Analysis:</strong> At stable eq. point E: MC = MR = AC < C (AR > AVC). Total cost (at stable eq.) is A(□OTCQ) = TC, which is greater than Total Revenue [A(□OPEQ) = TR]. The subnormal profit = A(□TPEC). Since AR > AVC (Price EQ > variable cost VQ), this firm is able to cover OPEX and partly covers CAPEX. The firm would be advised to continue production hoping that when other firms shut down, the revenue situation improves. This is a financially sick company and will not be allowed to file for bankruptcy.
+                </div>
+            </div>
+
+            <!-- Subnormal Profit (Shutdown) -->
+            <div class="graph-container">
+                <h3>5.4 Subnormal Profit - Shutdown (π < 0, AR < AVC)</h3>
+                <div class="notation">
+                    <strong>Condition:</strong> AR < AVC (Price < Variable Cost)<br>
+                    <strong>Decision:</strong> Shutdown (cannot cover even variable costs)
+                </div>
+                <div class="graph-row">
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Industry</h4>
+                        <div class="graph-svg">
+                            <svg width="280" height="250" viewBox="0 0 280 250">
+                                <line x1="40" y1="210" x2="250" y2="210" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="210" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="255" y="215" font-size="11">Q<sub>d</sub>,Q<sub>s</sub></text>
+                                <text x="25" y="25" font-size="11">Price</text>
+
+                                <line x1="60" y1="190" x2="230" y2="50" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="235" y="55" font-size="11" fill="#27ae60">S</text>
+
+                                <line x1="60" y1="50" x2="230" y2="190" stroke="#e74c3c" stroke-width="2.5"/>
+                                <text x="235" y="185" font-size="11" fill="#e74c3c">D</text>
+
+                                <circle cx="145" cy="120" r="5" fill="#3498db"/>
+                                <text x="150" y="115" font-size="10">E</text>
+
+                                <line x1="40" y1="120" x2="250" y2="120" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="5,3"/>
+                                <text x="25" y="125" font-size="10">P</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Firm</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="280" viewBox="0 0 320 280">
+                                <line x1="40" y1="240" x2="290" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="245" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 190 Q 100 200 140 170 Q 180 130 220 90 Q 250 65 270 55"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="60" font-size="11" fill="#e74c3c">MC</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 70 80 Q 110 110 160 120 Q 200 123 240 110 Q 265 90 275 65"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="280" y="70" font-size="11" fill="#3498db">AC</text>
+
+                                <!-- AVC Curve -->
+                                <path d="M 70 130 Q 110 155 160 165 Q 200 168 240 155 Q 265 135 275 110"
+                                      stroke="#9b59b6" stroke-width="2" fill="none"/>
+                                <text x="280" y="115" font-size="11" fill="#9b59b6">AVC</text>
+
+                                <!-- AR = MR (horizontal) below AVC -->
+                                <line x1="40" y1="185" x2="270" y2="185" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="275" y="190" font-size="11" fill="#27ae60">AR/MR</text>
+
+                                <!-- Equilibrium Point E -->
+                                <circle cx="140" cy="185" r="5" fill="#f39c12"/>
+                                <text x="145" y="180" font-size="10">E</text>
+
+                                <!-- Points T, C, V -->
+                                <circle cx="40" cy="120" r="3" fill="#666"/>
+                                <text x="25" y="125" font-size="10">T</text>
+
+                                <circle cx="140" cy="120" r="4" fill="#3498db"/>
+                                <text x="145" y="115" font-size="10">C</text>
+
+                                <circle cx="140" cy="163" r="3" fill="#9b59b6"/>
+                                <text x="145" y="158" font-size="10">V</text>
+
+                                <!-- Huge subnormal loss area -->
+                                <rect x="40" y="120" width="100" height="65" fill="rgba(231, 76, 60, 0.3)" stroke="#e74c3c" stroke-width="1"/>
+                                <text x="55" y="155" font-size="9" fill="#e74c3c">Subnormal</text>
+                                <text x="65" y="168" font-size="9" fill="#e74c3c">Profit</text>
+
+                                <line x1="140" y1="185" x2="140" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="135" y="255" font-size="10">Q</text>
+
+                                <text x="50" y="270" font-size="10" fill="#e74c3c">AR < AVC: SHUTDOWN (legally allowed)</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Analysis:</strong> The firm's total cost is as high as OTCQ and revenue is as low as A(□OPEQ). The huge subnormal profit A(□TPEC) would compel this firm to shut down. Since AVC (QV) is more than the price QE, such firms are counselled to shut down since their AVC is more than the price. Such firms would be legally allowed to file for bankruptcy. Example: Mumbai Mills.
+                </div>
+            </div>
+
+            <!-- Firm Supply Curve Derivation -->
+            <div class="graph-container">
+                <h3>5.5 Firm Supply Curve Derivation</h3>
+                <div class="notation">
+                    <strong>Key Insight:</strong> The upward sloping MC curve above AVC is the supply curve of the firm.<br>
+                    <strong>Relationship:</strong> Supply is direct function of price; Price is direct function of cost
+                </div>
+                <div class="graph-svg">
+                    <svg width="550" height="350" viewBox="0 0 550 350">
+                        <!-- First graph: Firm with multiple price levels -->
+                        <g transform="translate(0,0)">
+                            <line x1="40" y1="300" x2="230" y2="300" stroke="black" stroke-width="2"/>
+                            <line x1="40" y1="300" x2="40" y2="50" stroke="black" stroke-width="2"/>
+                            <text x="235" y="305" font-size="11">Qty</text>
+                            <text x="25" y="45" font-size="11">Price</text>
+
+                            <!-- MC/Supply Curve -->
+                            <path d="M 50 280 Q 80 270 100 230 Q 130 170 160 120 Q 190 80 210 60"
+                                  stroke="#e74c3c" stroke-width="3" fill="none"/>
+
+                            <!-- AVC Curve -->
+                            <path d="M 50 260 Q 90 270 130 265 Q 170 250 200 220"
+                                  stroke="#9b59b6" stroke-width="2" fill="none"/>
+
+                            <!-- Multiple AR/MR levels -->
+                            <line x1="40" y1="260" x2="200" y2="260" stroke="#27ae60" stroke-width="1.5"/>
+                            <text x="205" y="265" font-size="9">AR<sub>0</sub>/MR<sub>0</sub></text>
+
+                            <line x1="40" y1="200" x2="200" y2="200" stroke="#27ae60" stroke-width="1.5"/>
+                            <text x="205" y="205" font-size="9">AR<sub>1</sub>/MR<sub>1</sub></text>
+
+                            <line x1="40" y1="150" x2="200" y2="150" stroke="#27ae60" stroke-width="1.5"/>
+                            <text x="205" y="155" font-size="9">AR<sub>2</sub>/MR<sub>2</sub></text>
+
+                            <line x1="40" y1="100" x2="200" y2="100" stroke="#27ae60" stroke-width="1.5"/>
+                            <text x="205" y="105" font-size="9">AR<sub>3</sub>/MR<sub>3</sub></text>
+
+                            <!-- Equilibrium points -->
+                            <circle cx="85" cy="260" r="4" fill="#f39c12"/>
+                            <text x="90" y="255" font-size="9">E<sub>0</sub></text>
+
+                            <circle cx="115" cy="200" r="4" fill="#f39c12"/>
+                            <text x="120" y="195" font-size="9">E<sub>1</sub></text>
+
+                            <circle cx="145" cy="150" r="4" fill="#f39c12"/>
+                            <text x="150" y="145" font-size="9">E<sub>2</sub></text>
+
+                            <circle cx="175" cy="100" r="4" fill="#f39c12"/>
+                            <text x="180" y="95" font-size="9">E<sub>3</sub></text>
+
+                            <!-- Price labels -->
+                            <text x="25" y="265" font-size="9">P<sub>0</sub></text>
+                            <text x="25" y="205" font-size="9">P<sub>1</sub></text>
+                            <text x="25" y="155" font-size="9">P<sub>2</sub></text>
+                            <text x="25" y="105" font-size="9">P<sub>3</sub></text>
+
+                            <!-- Quantity labels -->
+                            <line x1="85" y1="260" x2="85" y2="300" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                            <line x1="115" y1="200" x2="115" y2="300" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                            <line x1="145" y1="150" x2="145" y2="300" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                            <line x1="175" y1="100" x2="175" y2="300" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+
+                            <text x="80" y="315" font-size="9">Q<sub>0</sub></text>
+                            <text x="110" y="315" font-size="9">Q<sub>1</sub></text>
+                            <text x="140" y="315" font-size="9">Q<sub>2</sub></text>
+                            <text x="170" y="315" font-size="9">Q<sub>3</sub></text>
+
+                            <text x="60" y="335" font-size="10">Gaps should be same</text>
+                        </g>
+
+                        <!-- Second graph: Industry Supply -->
+                        <g transform="translate(280,0)">
+                            <line x1="40" y1="300" x2="230" y2="300" stroke="black" stroke-width="2"/>
+                            <line x1="40" y1="300" x2="40" y2="50" stroke="black" stroke-width="2"/>
+                            <text x="235" y="305" font-size="11">Qty</text>
+                            <text x="25" y="45" font-size="11">Price</text>
+
+                            <!-- Industry Supply Curve -->
+                            <path d="M 50 280 Q 100 220 140 150 Q 180 100 210 70"
+                                  stroke="#27ae60" stroke-width="3" fill="none"/>
+                            <text x="215" y="75" font-size="12" fill="#27ae60" font-weight="bold">S</text>
+
+                            <!-- Supply points -->
+                            <circle cx="65" cy="260" r="4" fill="#f39c12"/>
+                            <text x="70" y="255" font-size="9">S<sub>0</sub></text>
+
+                            <circle cx="100" cy="200" r="4" fill="#f39c12"/>
+                            <text x="105" y="195" font-size="9">S<sub>1</sub></text>
+
+                            <circle cx="135" cy="150" r="4" fill="#f39c12"/>
+                            <text x="140" y="145" font-size="9">S<sub>2</sub></text>
+
+                            <circle cx="175" cy="100" r="4" fill="#f39c12"/>
+                            <text x="180" y="95" font-size="9">S<sub>3</sub></text>
+
+                            <!-- Price labels -->
+                            <text x="25" y="265" font-size="9">P<sub>0</sub></text>
+                            <text x="25" y="205" font-size="9">P<sub>1</sub></text>
+                            <text x="25" y="155" font-size="9">P<sub>2</sub></text>
+                            <text x="25" y="105" font-size="9">P<sub>3</sub></text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Production Efficiency:</strong> The slopes of individual firms' supply curve is the same as the slopes of MC curves. If slopes are the same, these firms have the same yellow path - equally efficient, equally productive. If the slope of MC differs (firm C* steeper), less efficient is that firm. Gentler the slopedness of MC curve (firm B*), more efficient is that firm. The summation of each firm's supply is indicative of industry's supply situation.
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: MONOPOLY -->
+        <section id="monopoly">
+            <h2>6. Monopoly</h2>
+
+            <!-- Monopoly Profit Cases -->
+            <div class="graph-container">
+                <h3>6.1 Monopoly Operations under Different Profit Conditions</h3>
+                <div class="notation">
+                    <strong>Definition:</strong> Single seller situation with no close substitutes (TINA - There Is No Alternative)<br>
+                    <strong>Equilibrium:</strong> MR = MC, slope of MC > slope of MR
+                </div>
+
+                <div class="graph-row">
+                    <!-- Supernormal Profit -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Case 1: Supernormal Profit (Short Run)</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="280" viewBox="0 0 320 280">
+                                <line x1="40" y1="240" x2="290" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="245" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 60 120 Q 100 140 140 150 Q 180 152 220 145 Q 260 130 280 110"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="285" y="115" font-size="10" fill="#3498db">AC</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 180 Q 100 170 130 140 Q 160 100 200 70 Q 240 50 270 45"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="50" font-size="10" fill="#e74c3c">MC</text>
+
+                                <!-- AR (Demand) -->
+                                <line x1="60" y1="60" x2="260" y2="210" stroke="#27ae60" stroke-width="2"/>
+                                <text x="265" y="205" font-size="10" fill="#27ae60">AR</text>
+
+                                <!-- MR -->
+                                <line x1="60" y1="60" x2="180" y2="230" stroke="#9b59b6" stroke-width="2"/>
+                                <text x="185" y="225" font-size="10" fill="#9b59b6">MR</text>
+
+                                <!-- Equilibrium -->
+                                <circle cx="135" cy="135" r="4" fill="#f39c12"/>
+                                <text x="140" y="130" font-size="9">E</text>
+
+                                <!-- Price point R on AR -->
+                                <line x1="135" y1="135" x2="135" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <circle cx="135" cy="100" r="4" fill="#27ae60"/>
+                                <text x="140" y="95" font-size="9">R</text>
+
+                                <!-- Cost point C on AC -->
+                                <circle cx="135" cy="150" r="4" fill="#3498db"/>
+                                <text x="140" y="165" font-size="9">C</text>
+
+                                <!-- Supernormal profit area -->
+                                <rect x="40" y="100" width="95" height="50" fill="rgba(46, 204, 113, 0.2)" stroke="#27ae60" stroke-width="1"/>
+
+                                <line x1="135" y1="240" x2="135" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <line x1="40" y1="100" x2="135" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+
+                                <text x="45" y="260" font-size="9" fill="#666">Expected with TINA factor</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Normal Profit -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Case 2: Normal Profit (Short Run)</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="280" viewBox="0 0 320 280">
+                                <line x1="40" y1="240" x2="290" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="245" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 60 90 Q 100 120 140 135 Q 180 140 220 130 Q 260 110 280 85"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="285" y="90" font-size="10" fill="#3498db">AC</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 160 Q 100 150 130 120 Q 160 85 200 60 Q 240 45 270 40"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="45" font-size="10" fill="#e74c3c">MC</text>
+
+                                <!-- AR (Demand) -->
+                                <line x1="60" y1="50" x2="260" y2="200" stroke="#27ae60" stroke-width="2"/>
+                                <text x="265" y="195" font-size="10" fill="#27ae60">AR</text>
+
+                                <!-- MR -->
+                                <line x1="60" y1="50" x2="180" y2="220" stroke="#9b59b6" stroke-width="2"/>
+                                <text x="185" y="215" font-size="10" fill="#9b59b6">MR</text>
+
+                                <!-- Equilibrium where R=C -->
+                                <circle cx="120" cy="115" r="4" fill="#f39c12"/>
+                                <text x="125" y="110" font-size="9">E</text>
+
+                                <!-- R=C point -->
+                                <circle cx="120" cy="100" r="4" fill="#27ae60"/>
+                                <text x="125" y="95" font-size="9">R=C</text>
+
+                                <text x="50" y="260" font-size="9" fill="#666">Peri-urban, demonstration effect</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Subnormal Profit -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center; margin-bottom:10px;">Case 3: Sub-Normal Profit (Short Run)</h4>
+                        <div class="graph-svg">
+                            <svg width="320" height="280" viewBox="0 0 320 280">
+                                <line x1="40" y1="240" x2="290" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="295" y="245" font-size="11">Qty</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 60 70 Q 100 100 140 115 Q 180 120 220 110 Q 260 90 280 65"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="285" y="70" font-size="10" fill="#3498db">AC</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 150 Q 100 140 130 110 Q 160 75 200 50 Q 240 35 270 30"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="275" y="35" font-size="10" fill="#e74c3c">MC</text>
+
+                                <!-- AR (Demand) - lower -->
+                                <line x1="60" y1="90" x2="260" y2="220" stroke="#27ae60" stroke-width="2"/>
+                                <text x="265" y="215" font-size="10" fill="#27ae60">AR</text>
+
+                                <!-- MR -->
+                                <line x1="60" y1="90" x2="180" y2="230" stroke="#9b59b6" stroke-width="2"/>
+                                <text x="185" y="225" font-size="10" fill="#9b59b6">MR</text>
+
+                                <!-- Equilibrium -->
+                                <circle cx="110" cy="130" r="4" fill="#f39c12"/>
+                                <text x="115" y="125" font-size="9">E</text>
+
+                                <!-- Price point R on AR -->
+                                <circle cx="110" cy="125" r="4" fill="#27ae60"/>
+                                <text x="115" y="140" font-size="9">R</text>
+
+                                <!-- Cost point C on AC -->
+                                <circle cx="110" cy="105" r="4" fill="#3498db"/>
+                                <text x="115" y="100" font-size="9">C</text>
+
+                                <!-- Subnormal loss area -->
+                                <rect x="40" y="105" width="70" height="20" fill="rgba(231, 76, 60, 0.2)" stroke="#e74c3c" stroke-width="1"/>
+
+                                <text x="40" y="260" font-size="9" fill="#666">First mover advantage, low purchasing</text>
+                                <text x="40" y="272" font-size="9" fill="#666">power segment, social recognition</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Monopoly Analysis:</strong> Supernormal profit is expected due to TINA factor and commercial power (urban, conspicuous consumption areas). Normal profit occurs in peri-urban space where consumption can be impacted through demonstration effect. Sub-normal profit: monopoly firm engages with low purchasing power segment in anticipation that consumption basket would normalize the consumption of this good. Supernormal profits will persist in the long run due to TINA factor continuation - ensured by IPR (Intellectual Property Rights).
+                </div>
+            </div>
+
+            <!-- Monopoly Long Run -->
+            <div class="graph-container">
+                <h3>6.2 Monopoly Long Run Operation</h3>
+                <div class="graph-svg">
+                    <svg width="500" height="350" viewBox="0 0 500 350">
+                        <line x1="50" y1="300" x2="470" y2="300" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="300" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="475" y="305" font-size="12">Qty</text>
+                        <text x="25" y="25" font-size="12">Rev/Cost</text>
+
+                        <!-- AC1 (older technology) -->
+                        <path d="M 70 100 Q 120 140 180 160 Q 240 165 300 155 Q 360 135 400 100"
+                              stroke="#3498db" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+                        <text x="405" y="105" font-size="11" fill="#3498db">AC<sub>1</sub></text>
+
+                        <!-- MC1 -->
+                        <path d="M 70 200 Q 120 180 160 140 Q 200 100 250 70 Q 300 55 350 50"
+                              stroke="#e74c3c" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+                        <text x="355" y="55" font-size="11" fill="#e74c3c">MC<sub>1</sub></text>
+
+                        <!-- AC2 (newer technology - lower) -->
+                        <path d="M 100 180 Q 160 210 220 220 Q 280 222 340 210 Q 400 190 440 160"
+                              stroke="#3498db" stroke-width="2.5" fill="none"/>
+                        <text x="445" y="165" font-size="11" fill="#3498db">AC<sub>2</sub></text>
+
+                        <!-- MC2 -->
+                        <path d="M 100 270 Q 160 250 200 210 Q 250 170 300 140 Q 360 120 420 110"
+                              stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                        <text x="425" y="115" font-size="11" fill="#e74c3c">MC<sub>2</sub></text>
+
+                        <!-- AR (inflected demand curve) -->
+                        <path d="M 80 70 Q 200 130 300 200 Q 380 260 440 280"
+                              stroke="#27ae60" stroke-width="2.5" fill="none"/>
+                        <text x="445" y="275" font-size="11" fill="#27ae60">AR</text>
+
+                        <!-- MR -->
+                        <path d="M 80 70 Q 160 150 230 230 Q 280 280 320 300"
+                              stroke="#9b59b6" stroke-width="2.5" fill="none"/>
+                        <text x="325" y="295" font-size="11" fill="#9b59b6">MR</text>
+
+                        <!-- Equilibrium points -->
+                        <circle cx="180" cy="130" r="5" fill="#f39c12"/>
+                        <text x="185" y="125" font-size="10">E<sub>1</sub></text>
+
+                        <circle cx="260" cy="195" r="5" fill="#f39c12"/>
+                        <text x="265" y="190" font-size="10">E<sub>2</sub></text>
+
+                        <!-- Price levels -->
+                        <line x1="50" y1="100" x2="180" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="30" y="105" font-size="10">P<sub>1</sub></text>
+
+                        <line x1="50" y1="170" x2="260" y2="170" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="30" y="175" font-size="10">P<sub>2</sub></text>
+
+                        <!-- R1 and R2 points -->
+                        <circle cx="180" cy="100" r="4" fill="#27ae60"/>
+                        <text x="185" y="95" font-size="9">R<sub>1</sub></text>
+
+                        <circle cx="260" cy="170" r="4" fill="#27ae60"/>
+                        <text x="265" y="165" font-size="9">R<sub>2</sub></text>
+
+                        <!-- Quantity outputs -->
+                        <line x1="180" y1="300" x2="180" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="175" y="315" font-size="10">Q<sub>1</sub></text>
+
+                        <line x1="260" y1="300" x2="260" y2="170" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="255" y="315" font-size="10">Q<sub>2</sub></text>
+
+                        <!-- Annotations -->
+                        <text x="100" y="335" font-size="10" fill="#666">Over time: AC<sub>1</sub> → AC<sub>2</sub> (newer tech), P<sub>1</sub> → P<sub>2</sub> (reduced), creates illusion of 'up-to-date' good</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Long Run Monopoly:</strong> The demand for the monopoly firm's commodity persists. The demand curve overtime will be inflected curve. Over time, the monopoly firm finds it useful to adopt newer technologies (AC<sub>1</sub> becomes AC<sub>2</sub>) so that prices would reduce (OP<sub>1</sub> becoming OP<sub>2</sub>) and it creates the illusion of an 'up-to-date' good being sold by the monopoly firm. Supernormal profits will persist in the long run due to TINA factor continuation.
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: MONOPOLISTIC COMPETITION -->
+        <section id="monopolistic">
+            <h2>7. Monopolistic Competition</h2>
+
+            <!-- dd and DD Curves -->
+            <div class="graph-container">
+                <h3>7.1 Subjective (dd) and Objective (DD) Demand Curves</h3>
+                <div class="notation">
+                    <strong>Chamberlin's Analysis:</strong> Monopolistic competition = Brand vs Brand competition<br>
+                    <strong>Curves:</strong> dd (individual firm's aspirations) | DD (group behavior pattern)
+                </div>
+                <div class="graph-svg">
+                    <svg width="450" height="320" viewBox="0 0 450 320">
+                        <line x1="50" y1="280" x2="420" y2="280" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="280" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="425" y="285" font-size="12">Qty</text>
+                        <text x="35" y="25" font-size="12">Price</text>
+
+                        <!-- DD Curve (steep - objective/group) -->
+                        <line x1="100" y1="50" x2="200" y2="260" stroke="#e74c3c" stroke-width="3"/>
+                        <text x="205" y="255" font-size="12" fill="#e74c3c" font-weight="bold">D<sub>1</sub></text>
+
+                        <!-- Shifted DD Curve -->
+                        <line x1="180" y1="50" x2="280" y2="260" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3"/>
+                        <text x="285" y="255" font-size="11" fill="#e74c3c">D<sub>2</sub></text>
+
+                        <!-- dd Curve (gentle - subjective/individual) -->
+                        <line x1="80" y1="100" x2="350" y2="200" stroke="#3498db" stroke-width="3"/>
+                        <text x="355" y="195" font-size="12" fill="#3498db" font-weight="bold">d<sub>1</sub></text>
+
+                        <!-- Shifted dd Curve -->
+                        <line x1="80" y1="170" x2="350" y2="270" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3"/>
+                        <text x="355" y="265" font-size="11" fill="#3498db">d<sub>2</sub></text>
+
+                        <!-- Intersection points R -->
+                        <circle cx="145" cy="140" r="5" fill="#f39c12"/>
+                        <text x="150" y="135" font-size="10">R<sub>1</sub></text>
+
+                        <circle cx="165" cy="180" r="5" fill="#f39c12"/>
+                        <text x="170" y="175" font-size="10">R<sub>2</sub></text>
+
+                        <circle cx="185" cy="210" r="5" fill="#f39c12"/>
+                        <text x="190" y="205" font-size="10">R<sub>3</sub></text>
+
+                        <circle cx="205" cy="240" r="5" fill="#f39c12"/>
+                        <text x="210" y="235" font-size="10">R<sub>4</sub></text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>dd (Subjective Demand Curve):</strong> Trendline depicting commercial aspirations of that firm. Gently sloped downwards - a fall in price would hopefully lead to significant increase in demand. When dd shifts downwards, the firm is lowering price.<br>
+                    <strong>DD (Objective Demand Curve):</strong> Captures behavior pattern of all firms involved. Steeply sloped downwards since the Law of Averages would force the increment in market to be much lesser than aspired. When DD shifts to the right, firms are exiting the market. When DD shifts left, new firms are entering.
+                </div>
+            </div>
+
+            <!-- Group Equilibrium -->
+            <div class="graph-container">
+                <h3>7.2 Short-Run Supernormal Profit in Monopolistic Competition</h3>
+                <div class="graph-svg">
+                    <svg width="450" height="350" viewBox="0 0 450 350">
+                        <line x1="50" y1="300" x2="420" y2="300" stroke="black" stroke-width="2"/>
+                        <line x1="50" y1="300" x2="50" y2="30" stroke="black" stroke-width="2"/>
+                        <text x="425" y="305" font-size="12">Qty</text>
+                        <text x="25" y="25" font-size="12">Price/Cost</text>
+
+                        <!-- MC Curve -->
+                        <path d="M 70 250 Q 120 240 160 200 Q 200 150 250 100 Q 300 70 350 55"
+                              stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                        <text x="355" y="60" font-size="11" fill="#e74c3c">MC</text>
+
+                        <!-- AC Curve -->
+                        <path d="M 80 130 Q 130 170 180 190 Q 230 198 280 190 Q 330 170 370 140"
+                              stroke="#3498db" stroke-width="2.5" fill="none"/>
+                        <text x="375" y="145" font-size="11" fill="#3498db">AC</text>
+
+                        <!-- AR (Demand) -->
+                        <line x1="80" y1="80" x2="340" y2="260" stroke="#27ae60" stroke-width="2.5"/>
+                        <text x="345" y="255" font-size="11" fill="#27ae60">AR (dd)</text>
+
+                        <!-- MR -->
+                        <line x1="80" y1="80" x2="220" y2="280" stroke="#9b59b6" stroke-width="2.5"/>
+                        <text x="225" y="275" font-size="11" fill="#9b59b6">MR</text>
+
+                        <!-- Equilibrium Point E -->
+                        <circle cx="175" cy="175" r="5" fill="#f39c12"/>
+                        <text x="180" y="170" font-size="10">E</text>
+
+                        <!-- Price point P -->
+                        <circle cx="175" cy="130" r="4" fill="#27ae60"/>
+                        <text x="180" y="125" font-size="10">P</text>
+
+                        <!-- Cost point C -->
+                        <circle cx="175" cy="190" r="4" fill="#3498db"/>
+                        <text x="180" y="205" font-size="10">C</text>
+
+                        <!-- Supernormal profit area -->
+                        <rect x="50" y="130" width="125" height="60" fill="rgba(46, 204, 113, 0.2)" stroke="#27ae60" stroke-width="1"/>
+                        <text x="85" y="165" font-size="10" fill="#27ae60">Supernormal</text>
+
+                        <!-- Price line -->
+                        <line x1="50" y1="130" x2="175" y2="130" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="30" y="135" font-size="10">P</text>
+
+                        <!-- Quantity -->
+                        <line x1="175" y1="300" x2="175" y2="130" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="170" y="315" font-size="10">Q</text>
+                    </svg>
+                </div>
+                <div class="explanation">
+                    <strong>Short Run Analysis:</strong> In the short run, firms can earn supernormal profits. Due to entry/exit dynamics (Schumpeterian dynamics), this leads to interdependence among existing firms, giving rise to entry/exit of firms affecting group dynamics. Firms indulge in product differentiation (cosmetically - aroma, color, size) serving the same purpose. Different firms have different objectives (profit max, sales max, welfare) requiring different pricing strategies.
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: OLIGOPOLY -->
+        <section id="oligopoly">
+            <h2>8. Oligopoly</h2>
+
+            <!-- Dominant Firm Price Leadership Model -->
+            <div class="graph-container">
+                <h3>8.1 Dominant Firm Price Leadership Model</h3>
+                <div class="notation">
+                    <strong>Structure:</strong> Few large firms (dominant) + Many small firms<br>
+                    <strong>Market Division:</strong> Shared market between dominant firm and smaller firms
+                </div>
+                <div class="graph-row">
+                    <!-- Shared Market -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Shared Market (Smaller Firms)</h4>
+                        <div class="graph-svg">
+                            <svg width="300" height="280" viewBox="0 0 300 280">
+                                <line x1="40" y1="240" x2="270" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="275" y="245" font-size="11">Q<sub>d</sub>,Q<sub>s</sub></text>
+                                <text x="25" y="25" font-size="11">Price</text>
+
+                                <!-- Supply of smaller firms (SF) -->
+                                <line x1="60" y1="220" x2="200" y2="60" stroke="#27ae60" stroke-width="2.5"/>
+                                <text x="205" y="65" font-size="11" fill="#27ae60">S<sub>F</sub></text>
+
+                                <!-- Demand (D) -->
+                                <line x1="60" y1="60" x2="240" y2="220" stroke="#e74c3c" stroke-width="2.5"/>
+                                <text x="245" y="215" font-size="11" fill="#e74c3c">D</text>
+
+                                <!-- Equilibrium Es -->
+                                <circle cx="130" cy="140" r="5" fill="#3498db"/>
+                                <text x="135" y="135" font-size="10">E<sub>s</sub></text>
+
+                                <!-- Price P -->
+                                <line x1="40" y1="140" x2="130" y2="140" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="25" y="145" font-size="10">P</text>
+
+                                <!-- Market share annotations -->
+                                <rect x="100" y="140" width="50" height="80" fill="rgba(155, 89, 182, 0.2)" stroke="#9b59b6" stroke-width="1"/>
+                                <text x="105" y="185" font-size="9" fill="#9b59b6">P-E<sub>s</sub></text>
+
+                                <!-- Smaller firms' supply -->
+                                <line x1="100" y1="220" x2="150" y2="60" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="3,3"/>
+                                <text x="100" y="255" font-size="9">S<sub>1</sub></text>
+                                <text x="150" y="255" font-size="9">S<sub>2</sub></text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Dominant Firm -->
+                    <div class="graph-item">
+                        <h4 style="text-align:center;">Dominant Firm</h4>
+                        <div class="graph-svg">
+                            <svg width="340" height="280" viewBox="0 0 340 280">
+                                <line x1="40" y1="240" x2="310" y2="240" stroke="black" stroke-width="2"/>
+                                <line x1="40" y1="240" x2="40" y2="30" stroke="black" stroke-width="2"/>
+                                <text x="315" y="245" font-size="11">Quantity</text>
+                                <text x="20" y="25" font-size="11">Rev/Cost</text>
+
+                                <!-- AC Curve -->
+                                <path d="M 60 100 Q 110 140 160 160 Q 210 168 260 155 Q 290 135 300 110"
+                                      stroke="#3498db" stroke-width="2.5" fill="none"/>
+                                <text x="305" y="115" font-size="10" fill="#3498db">AC</text>
+
+                                <!-- MC Curve -->
+                                <path d="M 60 180 Q 100 170 140 140 Q 180 100 220 70 Q 260 50 290 45"
+                                      stroke="#e74c3c" stroke-width="2.5" fill="none"/>
+                                <text x="295" y="50" font-size="10" fill="#e74c3c">MC</text>
+
+                                <!-- AR (Demand for dominant firm) -->
+                                <path d="M 80 60 Q 150 100 200 150 Q 250 200 280 220"
+                                      stroke="#27ae60" stroke-width="2.5" fill="none"/>
+                                <text x="285" y="215" font-size="10" fill="#27ae60">AR</text>
+
+                                <!-- MR -->
+                                <path d="M 80 60 Q 120 120 160 180 Q 190 220 210 240"
+                                      stroke="#9b59b6" stroke-width="2.5" fill="none"/>
+                                <text x="215" y="235" font-size="10" fill="#9b59b6">MR</text>
+
+                                <!-- Point A (smaller firms' price level) -->
+                                <circle cx="80" cy="60" r="4" fill="#f39c12"/>
+                                <text x="65" y="55" font-size="10">A</text>
+
+                                <!-- Equilibrium E for dominant firm -->
+                                <circle cx="155" cy="135" r="5" fill="#f39c12"/>
+                                <text x="160" y="130" font-size="10">E</text>
+
+                                <!-- P1 (dominant firm's price) -->
+                                <line x1="40" y1="110" x2="155" y2="110" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="20" y="115" font-size="10">P<sub>1</sub></text>
+
+                                <!-- Quantity Q for dominant firm -->
+                                <line x1="155" y1="240" x2="155" y2="110" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="150" y="255" font-size="10">Q</text>
+
+                                <!-- P = OA line -->
+                                <line x1="40" y1="60" x2="80" y2="60" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+                                <text x="20" y="65" font-size="9">OP</text>
+
+                                <text x="60" y="270" font-size="9" fill="#666">DF price = OP<sub>1</sub> < smaller firms' price OP</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <strong>Model Explanation:</strong> In Figure 1, Demand curve (D) shows demand that consumers and all firms (smaller and dominant) would like to cater to. The P<sub>n</sub>-S<sub>F</sub> curve represents supply function of smaller firms. E<sub>s</sub> becomes the equilibrium from which smaller firms operate. The average price charged by smaller firms is OP and supply size is P-E<sub>s</sub> units.<br><br>
+                    Once the dominant firm realizes that smaller firms on average would be charging price OP, it would begin operating from point A in Figure 2. Hence, the financial functions (AR, MR, AC, MC) will be based on position of point A. Since the DF is the dominant firm, it can opt for profit maximization and produce OQ units at price OP<sub>1</sub> (NOTE: OP<sub>1</sub> < OP).<br><br>
+                    The dominant firm passes on its low price into the market. Since it lowered the price, demand increases from P-E<sub>s</sub> to P<sub>1</sub>D<sub>1</sub>. The market share of smaller firms is P<sub>1</sub>S<sub>1</sub> and DF's market share is S<sub>1</sub>D<sub>1</sub>. In order to increase its market share further, the DF would continue the price cutting strategy by even sacrificing maximum profits.<br><br>
+                    <strong>Traits of Dominant Firm:</strong> (1) Deep pocketed - benefit of cross financialization to tide over sub-normal profits. (2) Able to create entry barriers like IPR (Trademarks, etc.), constant tech migration, large scale promotions. (3) Able to sustain the feeding of a large market size (30+%) individually. (4) Can create cartels to become price leaders.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Microeconomics & Managerial Economics - Graph Reference</strong></p>
+        <p>Based on course material by Prof. Agnelo Menezes | Xavier's Institute</p>
+        <p>Source: Handwritten Notes (Eco Notes_Disha.pdf)</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+            Generated for MMS Examination Preparation | Priority 1: Handwritten Notes
+        </p>
+    </footer>
+</body>
+</html>

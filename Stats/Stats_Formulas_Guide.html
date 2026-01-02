@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Exam Formula Guide - 14 Problems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f3460 0%, #533483 100%);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 1.1em;
+        }
+
+        .toc {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .toc h2 {
+            color: #00d9ff;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 10px;
+        }
+
+        .toc a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .toc a:hover {
+            background: rgba(0,217,255,0.2);
+            color: #00d9ff;
+            transform: translateX(5px);
+        }
+
+        .problem-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .problem-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .problem-number {
+            background: linear-gradient(135deg, #00d9ff, #00ff88);
+            color: #1a1a2e;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .problem-title {
+            font-size: 1.4em;
+            color: #fff;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            color: #00d9ff;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .formula-box {
+            background: linear-gradient(135deg, rgba(0,217,255,0.1), rgba(0,255,136,0.1));
+            border: 2px solid rgba(0,217,255,0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .formula-box .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.3em;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .formula-name {
+            color: #00ff88;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .variables {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .variables h4 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .variables ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 8px;
+        }
+
+        .variables li {
+            color: #ccc;
+            padding: 5px 10px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+        }
+
+        .variables li strong {
+            color: #00d9ff;
+        }
+
+        .steps {
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .steps h4 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+
+        .steps ol {
+            margin-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .example {
+            background: rgba(255,204,0,0.1);
+            border-left: 4px solid #ffcc00;
+            padding: 15px 20px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .example h4 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .tip {
+            background: rgba(0,255,136,0.1);
+            border-left: 4px solid #00ff88;
+            padding: 15px 20px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .tip h4 {
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: rgba(255,107,107,0.2);
+            color: #ff6b6b;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        th {
+            background: rgba(0,217,255,0.2);
+            color: #00d9ff;
+        }
+
+        tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .critical-values {
+            background: rgba(255,107,107,0.1);
+            border: 1px solid rgba(255,107,107,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .critical-values h4 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #666;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .problem-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .category-tag {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Statistics Exam Formula Guide</h1>
+            <p>Complete Study Guide for All 14 Exam Problems | HBM25062</p>
+        </header>
+
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <div class="toc-grid">
+                <a href="#p1">1. Missing Frequencies (Mean)</a>
+                <a href="#p2">2. Missing Frequencies (Median)</a>
+                <a href="#p3">3. Quartiles & Percentiles</a>
+                <a href="#p4">4. Standard Deviation</a>
+                <a href="#p5">5. Coefficient of Variation</a>
+                <a href="#p6">6. Pearson Correlation</a>
+                <a href="#p7">7. Spearman Rank Correlation</a>
+                <a href="#p8">8. Linear Regression</a>
+                <a href="#p9">9. F-Test (Variance Comparison)</a>
+                <a href="#p10">10. One-Sample t-Test</a>
+                <a href="#p11">11. One-Sample Z-Test</a>
+                <a href="#p12">12. Chi-Square Independence</a>
+                <a href="#p13">13. Chi-Square Goodness of Fit</a>
+                <a href="#p14">14. Paired t-Test</a>
+            </div>
+        </nav>
+
+        <!-- Problem 1 -->
+        <div class="problem-card" id="p1">
+            <div class="problem-header">
+                <div class="problem-number">1</div>
+                <h2 class="problem-title">Find Two Missing Frequencies Using Mean and Total Frequency</h2>
+                <span class="category-tag">Descriptive Statistics</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Mean for Grouped Data</div>
+                    <div class="formula">x&#772; = &Sigma;fm / &Sigma;f</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Midpoint of Class Interval</div>
+                    <div class="formula">m = (Lower Limit + Upper Limit) / 2</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>x&#772;</strong> = Arithmetic Mean</li>
+                    <li><strong>f</strong> = Frequency of each class</li>
+                    <li><strong>m</strong> = Midpoint of class interval</li>
+                    <li><strong>&Sigma;f</strong> = Total frequency (N)</li>
+                    <li><strong>&Sigma;fm</strong> = Sum of (frequency × midpoint)</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li>Calculate midpoint (m) for each class interval: m = (L + U) / 2</li>
+                    <li>Set up equation 1: Sum of all frequencies = Total frequency (N)
+                        <br>&Sigma;f = known frequencies + x + y = N</li>
+                    <li>Set up equation 2 using mean formula:
+                        <br>Mean × &Sigma;f = &Sigma;fm
+                        <br>Substitute values and express in terms of x and y</li>
+                    <li>Solve the two simultaneous equations to find x and y</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Given: Mean = 26, Total Frequency = 80</p>
+                <p>Equation 1: x + y = 35 (from total frequency)</p>
+                <p>Equation 2: 15x + 35y = 955 (from mean formula)</p>
+                <p><strong>Solution: x = 13.5, y = 21.5</strong></p>
+            </div>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="problem-card" id="p2">
+            <div class="problem-header">
+                <div class="problem-number">2</div>
+                <h2 class="problem-title">Find Two Missing Frequencies Using Median and Total Frequency</h2>
+                <span class="category-tag">Descriptive Statistics</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Median Formula for Grouped Data</div>
+                    <div class="formula">Median = L + ((N/2 - CF) / f) × h</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>L</strong> = Lower boundary of median class</li>
+                    <li><strong>N</strong> = Total frequency</li>
+                    <li><strong>N/2</strong> = Position of median</li>
+                    <li><strong>CF</strong> = Cumulative frequency of class preceding median class</li>
+                    <li><strong>f</strong> = Frequency of median class</li>
+                    <li><strong>h</strong> = Class size (width)</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li>Set up equation 1: Sum of frequencies = Total (N)</li>
+                    <li>Find N/2 to locate median class</li>
+                    <li>Build cumulative frequency column</li>
+                    <li>Identify the median class (where CF first exceeds N/2)</li>
+                    <li>Apply median formula and set equal to given median</li>
+                    <li>Solve the two simultaneous equations</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Given: Median = 46, Total Frequency = 70</p>
+                <p>Median class: 40-60 (since N/2 = 35 falls here)</p>
+                <p>L = 40, h = 20, f = 30, CF = 5 + x</p>
+                <p>46 = 40 + ((35 - (5+x)) / 30) × 20</p>
+                <p><strong>Solution: x = 21, y = 4</strong></p>
+            </div>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="problem-card" id="p3">
+            <div class="problem-header">
+                <div class="problem-number">3</div>
+                <h2 class="problem-title">Quartiles and Percentiles</h2>
+                <span class="category-tag">Descriptive Statistics</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">General Position Formula</div>
+                    <div class="formula">Value = L + ((Position - CF) / f) × h</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Quartile Positions</div>
+                    <div class="formula">Q1 Position = N/4 | Q2 Position = 2N/4 | Q3 Position = 3N/4</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Percentile Position</div>
+                    <div class="formula">Pk Position = (k × N) / 100</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>Q1</strong> = First Quartile (25th percentile)</li>
+                    <li><strong>Q2</strong> = Second Quartile (Median, 50th percentile)</li>
+                    <li><strong>Q3</strong> = Third Quartile (75th percentile)</li>
+                    <li><strong>Pk</strong> = kth Percentile</li>
+                    <li><strong>N</strong> = Total frequency</li>
+                    <li><strong>CF</strong> = Cumulative frequency of preceding class</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li>Calculate cumulative frequencies</li>
+                    <li>Find the position: For Q3 = 3N/4, For P77 = 77N/100</li>
+                    <li>Locate the class where this position falls</li>
+                    <li>Apply the interpolation formula</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>For Q3: Position = 3×70/4 = 52.5 (falls in 40-60 class)</p>
+                <p>Q3 = 40 + ((52.5 - 26) / 30) × 20 = <strong>57.67</strong></p>
+                <p>For P77: Position = 77×70/100 = 53.9</p>
+                <p>P77 = 40 + ((53.9 - 26) / 30) × 20 = <strong>58.6</strong></p>
+            </div>
+        </div>
+
+        <!-- Problem 4 -->
+        <div class="problem-card" id="p4">
+            <div class="problem-header">
+                <div class="problem-number">4</div>
+                <h2 class="problem-title">Standard Deviation (Step Deviation Method)</h2>
+                <span class="category-tag">Measures of Dispersion</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Step Deviation</div>
+                    <div class="formula">d = (m - A) / h</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Standard Deviation (Step Deviation Method)</div>
+                    <div class="formula">&sigma; = h × &radic;[(&Sigma;fd²/&Sigma;f) - (&Sigma;fd/&Sigma;f)²]</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>A</strong> = Assumed mean (usually midpoint of middle class)</li>
+                    <li><strong>h</strong> = Class size (width)</li>
+                    <li><strong>d</strong> = Step deviation = (m - A) / h</li>
+                    <li><strong>m</strong> = Midpoint of each class</li>
+                    <li><strong>fd</strong> = Frequency × deviation</li>
+                    <li><strong>fd²</strong> = Frequency × deviation squared</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li>Calculate midpoint (m) for each class</li>
+                    <li>Choose assumed mean (A) - typically middle class midpoint</li>
+                    <li>Calculate d = (m - A) / h for each class</li>
+                    <li>Calculate fd and fd² columns</li>
+                    <li>Find &Sigma;f, &Sigma;fd, and &Sigma;fd²</li>
+                    <li>Apply the standard deviation formula</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Wages distribution: A = 550, h = 100, &Sigma;f = 50</p>
+                <p>&Sigma;fd = -33, &Sigma;fd² = 99</p>
+                <p>&sigma; = 100 × &radic;[(99/50) - (-33/50)²]</p>
+                <p>&sigma; = 100 × &radic;[1.98 - 0.4356] = <strong>124.27</strong></p>
+            </div>
+        </div>
+
+        <!-- Problem 5 -->
+        <div class="problem-card" id="p5">
+            <div class="problem-header">
+                <div class="problem-number">5</div>
+                <h2 class="problem-title">Coefficient of Variation (CV)</h2>
+                <span class="category-tag">Measures of Dispersion</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formula</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Coefficient of Variation</div>
+                    <div class="formula">CV = (&sigma; / x&#772;) × 100</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>CV</strong> = Coefficient of Variation (expressed as %)</li>
+                    <li><strong>&sigma;</strong> = Standard Deviation</li>
+                    <li><strong>x&#772;</strong> = Mean (arithmetic average)</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <h4>Important Interpretation:</h4>
+                <p><strong>Lower CV = More Consistent</strong> (less variability relative to mean)</p>
+                <p><strong>Higher CV = Less Consistent</strong> (more variability relative to mean)</p>
+                <p>CV is useful for comparing variability between datasets with different units or means.</p>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <table>
+                    <tr>
+                        <th>Plant</th>
+                        <th>Mean (x&#772;)</th>
+                        <th>&sigma;</th>
+                        <th>CV Calculation</th>
+                        <th>CV</th>
+                    </tr>
+                    <tr>
+                        <td>Plant A</td>
+                        <td>250 units</td>
+                        <td>25 units</td>
+                        <td>(25/250) × 100</td>
+                        <td><strong>10%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Plant B</td>
+                        <td>280 units</td>
+                        <td>30 units</td>
+                        <td>(30/280) × 100</td>
+                        <td><strong>10.71%</strong></td>
+                    </tr>
+                </table>
+                <p><strong>Conclusion:</strong> Plant A has lower CV (10% < 10.71%), so Plant A shows greater consistency.</p>
+            </div>
+        </div>
+
+        <!-- Problem 6 -->
+        <div class="problem-card" id="p6">
+            <div class="problem-header">
+                <div class="problem-number">6</div>
+                <h2 class="problem-title">Pearson's Correlation Coefficient</h2>
+                <span class="category-tag">Correlation & Regression</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formula</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Pearson's Correlation Coefficient (r)</div>
+                    <div class="formula">r = [N&Sigma;XY - (&Sigma;X)(&Sigma;Y)] / &radic;{[N&Sigma;X² - (&Sigma;X)²][N&Sigma;Y² - (&Sigma;Y)²]}</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>r</strong> = Correlation coefficient (-1 to +1)</li>
+                    <li><strong>N</strong> = Number of data pairs</li>
+                    <li><strong>X, Y</strong> = Variables being correlated</li>
+                    <li><strong>&Sigma;XY</strong> = Sum of products of X and Y</li>
+                    <li><strong>&Sigma;X²</strong> = Sum of X squared</li>
+                    <li><strong>&Sigma;Y²</strong> = Sum of Y squared</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <h4>Interpretation of r:</h4>
+                <table>
+                    <tr><th>Value of r</th><th>Interpretation</th></tr>
+                    <tr><td>r = +1</td><td>Perfect positive correlation</td></tr>
+                    <tr><td>0.7 to 0.99</td><td>Strong positive correlation</td></tr>
+                    <tr><td>0.4 to 0.69</td><td>Moderate positive correlation</td></tr>
+                    <tr><td>0.1 to 0.39</td><td>Weak positive correlation</td></tr>
+                    <tr><td>r = 0</td><td>No correlation</td></tr>
+                    <tr><td>r = -1</td><td>Perfect negative correlation</td></tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Data: N=5, &Sigma;X=365, &Sigma;Y=385, &Sigma;X²=27375, &Sigma;Y²=30273, &Sigma;XY=28780</p>
+                <p>r = [5×28780 - 365×385] / &radic;{[5×27375 - 365²][5×30273 - 385²]}</p>
+                <p>r = 3375 / 3385.41 = <strong>0.997</strong></p>
+                <p><strong>Interpretation:</strong> Very strong positive correlation - aptitude test is an excellent predictor of job performance.</p>
+            </div>
+        </div>
+
+        <!-- Problem 7 -->
+        <div class="problem-card" id="p7">
+            <div class="problem-header">
+                <div class="problem-number">7</div>
+                <h2 class="problem-title">Spearman's Rank Correlation Coefficient</h2>
+                <span class="category-tag">Correlation & Regression</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formula</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Spearman's Rank Correlation (rs)</div>
+                    <div class="formula">rs = 1 - [6&Sigma;d² / N(N² - 1)]</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>rs</strong> = Spearman's rank correlation coefficient</li>
+                    <li><strong>d</strong> = Difference between ranks (R1 - R2)</li>
+                    <li><strong>d²</strong> = Squared difference</li>
+                    <li><strong>&Sigma;d²</strong> = Sum of squared differences</li>
+                    <li><strong>N</strong> = Number of paired observations</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li>Assign ranks to each variable (if not already ranked)</li>
+                    <li>Calculate d = R1 - R2 for each pair</li>
+                    <li>Square each d to get d²</li>
+                    <li>Sum all d² values to get &Sigma;d²</li>
+                    <li>Apply the formula</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Marketing firm ranking data: N = 7, &Sigma;d² = 16</p>
+                <p>rs = 1 - [6×16 / 7(49-1)]</p>
+                <p>rs = 1 - [96 / 336] = 1 - 0.286 = <strong>0.714</strong></p>
+                <p><strong>Interpretation:</strong> Strong positive correlation between Group X and Group Y rankings - they agree on feature importance.</p>
+            </div>
+        </div>
+
+        <!-- Problem 8 -->
+        <div class="problem-card" id="p8">
+            <div class="problem-header">
+                <div class="problem-number">8</div>
+                <h2 class="problem-title">Simple Linear Regression</h2>
+                <span class="category-tag">Correlation & Regression</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Regression Equation</div>
+                    <div class="formula">&#375; = a + bX</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Slope (b)</div>
+                    <div class="formula">b = [N&Sigma;XY - (&Sigma;X)(&Sigma;Y)] / [N&Sigma;X² - (&Sigma;X)²]</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Y-Intercept (a)</div>
+                    <div class="formula">a = Y&#772; - bX&#772;</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>&#375;</strong> = Predicted value of Y</li>
+                    <li><strong>a</strong> = Y-intercept (value of Y when X = 0)</li>
+                    <li><strong>b</strong> = Slope (change in Y per unit change in X)</li>
+                    <li><strong>X&#772;</strong> = Mean of X values (&Sigma;X/N)</li>
+                    <li><strong>Y&#772;</strong> = Mean of Y values (&Sigma;Y/N)</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li>Create columns: X, Y, X², XY</li>
+                    <li>Calculate &Sigma;X, &Sigma;Y, &Sigma;X², &Sigma;XY</li>
+                    <li>Calculate slope b using the formula</li>
+                    <li>Calculate means: X&#772; = &Sigma;X/N, Y&#772; = &Sigma;Y/N</li>
+                    <li>Calculate intercept: a = Y&#772; - bX&#772;</li>
+                    <li>Write regression equation: &#375; = a + bX</li>
+                    <li>To predict: substitute X value into equation</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Student study hours vs exam scores: N=5</p>
+                <p>&Sigma;X=27, &Sigma;Y=370, &Sigma;X²=175, &Sigma;XY=2170</p>
+                <p>b = [5×2170 - 27×370] / [5×175 - 27²] = 860/146 = <strong>5.89</strong></p>
+                <p>X&#772; = 5.4, Y&#772; = 74</p>
+                <p>a = 74 - 5.89×5.4 = <strong>42.19</strong></p>
+                <p>Regression equation: <strong>&#375; = 42.19 + 5.89X</strong></p>
+                <p>For X = 6 hours: &#375; = 42.19 + 5.89(6) = <strong>77.53</strong></p>
+            </div>
+        </div>
+
+        <!-- Problem 9 -->
+        <div class="problem-card" id="p9">
+            <div class="problem-header">
+                <div class="problem-number">9</div>
+                <h2 class="problem-title">F-Test for Comparing Two Variances</h2>
+                <span class="category-tag">Hypothesis Testing</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">F-Statistic</div>
+                    <div class="formula">F = S²<sub>larger</sub> / S²<sub>smaller</sub> = S²<sub>A</sub> / S²<sub>B</sub></div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>S²<sub>A</sub></strong> = Sample variance of group A (numerator)</li>
+                    <li><strong>S²<sub>B</sub></strong> = Sample variance of group B (denominator)</li>
+                    <li><strong>df1</strong> = Degrees of freedom numerator = n<sub>A</sub> - 1</li>
+                    <li><strong>df2</strong> = Degrees of freedom denominator = n<sub>B</sub> - 1</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li><strong>State Hypotheses:</strong>
+                        <br>H₀: &sigma;²<sub>A</sub> = &sigma;²<sub>B</sub> (variances are equal)
+                        <br>H₁: &sigma;²<sub>A</sub> > &sigma;²<sub>B</sub> (variance A is greater)</li>
+                    <li>Calculate F-statistic (larger variance in numerator)</li>
+                    <li>Determine degrees of freedom: df1 = n₁ - 1, df2 = n₂ - 1</li>
+                    <li>Find F-critical from F-table at given &alpha;</li>
+                    <li>Decision: Reject H₀ if F<sub>calculated</sub> > F<sub>critical</sub></li>
+                </ol>
+            </div>
+
+            <div class="critical-values">
+                <h4>F-Critical Values (Common):</h4>
+                <table>
+                    <tr><th>df1, df2</th><th>&alpha; = 0.05</th><th>&alpha; = 0.01</th></tr>
+                    <tr><td>20, 15</td><td>2.33</td><td>3.37</td></tr>
+                    <tr><td>10, 10</td><td>2.98</td><td>4.85</td></tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Portfolio A: n=21, S²=9.8 | Portfolio B: n=16, S²=4.2</p>
+                <p>F = 9.8 / 4.2 = <strong>2.333</strong></p>
+                <p>df1 = 20, df2 = 15, &alpha; = 0.05</p>
+                <p>F<sub>critical</sub>(0.05, 20, 15) = 2.33</p>
+                <p>Since 2.333 > 2.33, <strong>Reject H₀</strong></p>
+                <p><strong>Conclusion:</strong> Portfolio A has significantly greater variance (risk) than Portfolio B.</p>
+            </div>
+        </div>
+
+        <!-- Problem 10 -->
+        <div class="problem-card" id="p10">
+            <div class="problem-header">
+                <div class="problem-number">10</div>
+                <h2 class="problem-title">One-Sample t-Test (Unknown Population SD)</h2>
+                <span class="category-tag">Hypothesis Testing</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formula</h3>
+                <div class="formula-box">
+                    <div class="formula-name">t-Statistic</div>
+                    <div class="formula">t = (X&#772; - &mu;₀) / (s / &radic;n)</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>X&#772;</strong> = Sample mean</li>
+                    <li><strong>&mu;₀</strong> = Hypothesized population mean</li>
+                    <li><strong>s</strong> = Sample standard deviation</li>
+                    <li><strong>n</strong> = Sample size</li>
+                    <li><strong>df</strong> = Degrees of freedom = n - 1</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <h4>When to Use t-Test:</h4>
+                <ul>
+                    <li>Population standard deviation (&sigma;) is <strong>unknown</strong></li>
+                    <li>Sample size is typically small (n < 30)</li>
+                    <li>Population is approximately normally distributed</li>
+                </ul>
+            </div>
+
+            <div class="critical-values">
+                <h4>t-Critical Values (Two-Tailed):</h4>
+                <table>
+                    <tr><th>df</th><th>&alpha; = 0.05</th><th>&alpha; = 0.01</th></tr>
+                    <tr><td>14</td><td>±2.145</td><td>±2.977</td></tr>
+                    <tr><td>20</td><td>±2.086</td><td>±2.845</td></tr>
+                    <tr><td>30</td><td>±2.042</td><td>±2.750</td></tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Screw lengths: X&#772; = 9.85cm, &mu;₀ = 10.0cm, s = 0.5cm, n = 15</p>
+                <p>H₀: &mu; = 10.0cm | H₁: &mu; ≠ 10.0cm | &alpha; = 0.01</p>
+                <p>t = (9.85 - 10.0) / (0.5 / &radic;15) = -0.15 / 0.129 = <strong>-1.163</strong></p>
+                <p>df = 14, t<sub>critical</sub>(0.01, 14) = ±2.977</p>
+                <p>Since |-1.163| < 2.977, <strong>Fail to reject H₀</strong></p>
+                <p><strong>Conclusion:</strong> No significant evidence that mean differs from 10.0cm standard.</p>
+            </div>
+        </div>
+
+        <!-- Problem 11 -->
+        <div class="problem-card" id="p11">
+            <div class="problem-header">
+                <div class="problem-number">11</div>
+                <h2 class="problem-title">One-Sample Z-Test (Known Population SD)</h2>
+                <span class="category-tag">Hypothesis Testing</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formula</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Z-Statistic</div>
+                    <div class="formula">Z = (X&#772; - &mu;₀) / (&sigma; / &radic;n)</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>X&#772;</strong> = Sample mean</li>
+                    <li><strong>&mu;₀</strong> = Hypothesized population mean</li>
+                    <li><strong>&sigma;</strong> = Population standard deviation (KNOWN)</li>
+                    <li><strong>n</strong> = Sample size</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <h4>When to Use Z-Test:</h4>
+                <ul>
+                    <li>Population standard deviation (&sigma;) is <strong>known</strong></li>
+                    <li>Sample size is large (n ≥ 30) OR population is normal</li>
+                </ul>
+            </div>
+
+            <div class="critical-values">
+                <h4>Z-Critical Values:</h4>
+                <table>
+                    <tr><th>Test Type</th><th>&alpha; = 0.05</th><th>&alpha; = 0.01</th></tr>
+                    <tr><td>Two-Tailed</td><td>±1.96</td><td>±2.576</td></tr>
+                    <tr><td>One-Tailed (Right)</td><td>+1.645</td><td>+2.33</td></tr>
+                    <tr><td>One-Tailed (Left)</td><td>-1.645</td><td>-2.33</td></tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Bolt strength: X&#772; = 148.5kg, &mu;₀ = 150kg, &sigma; = 5kg, n = 36</p>
+                <p>H₀: &mu; = 150kg | H₁: &mu; ≠ 150kg | &alpha; = 0.01</p>
+                <p>Z = (148.5 - 150) / (5 / &radic;36) = -1.5 / 0.833 = <strong>-1.80</strong></p>
+                <p>Z<sub>critical</sub>(0.01, two-tailed) = ±2.576</p>
+                <p>Since |-1.80| < 2.576, <strong>Fail to reject H₀</strong></p>
+                <p><strong>Conclusion:</strong> No significant evidence that mean strength differs from 150kg.</p>
+            </div>
+        </div>
+
+        <!-- Problem 12 -->
+        <div class="problem-card" id="p12">
+            <div class="problem-header">
+                <div class="problem-number">12</div>
+                <h2 class="problem-title">Chi-Square Test for Independence</h2>
+                <span class="category-tag">Hypothesis Testing</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Expected Frequency</div>
+                    <div class="formula">E = (Row Total × Column Total) / Grand Total</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Chi-Square Statistic</div>
+                    <div class="formula">&chi;² = &Sigma;[(O - E)² / E]</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Degrees of Freedom</div>
+                    <div class="formula">df = (Rows - 1) × (Columns - 1)</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>O</strong> = Observed frequency</li>
+                    <li><strong>E</strong> = Expected frequency</li>
+                    <li><strong>&chi;²</strong> = Chi-square statistic</li>
+                    <li><strong>df</strong> = Degrees of freedom</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li><strong>State Hypotheses:</strong>
+                        <br>H₀: Variables are independent (no relationship)
+                        <br>H₁: Variables are not independent (relationship exists)</li>
+                    <li>Calculate row and column totals</li>
+                    <li>Calculate expected frequency for each cell: E = (Row × Col) / Total</li>
+                    <li>Calculate (O - E)² / E for each cell</li>
+                    <li>Sum all values to get &chi;²<sub>calculated</sub></li>
+                    <li>Find df = (r-1)(c-1) and lookup &chi;²<sub>critical</sub></li>
+                    <li>Decision: Reject H₀ if &chi;²<sub>calc</sub> > &chi;²<sub>critical</sub></li>
+                </ol>
+            </div>
+
+            <div class="critical-values">
+                <h4>&chi;² Critical Values:</h4>
+                <table>
+                    <tr><th>df</th><th>&alpha; = 0.05</th><th>&alpha; = 0.01</th></tr>
+                    <tr><td>1</td><td>3.841</td><td>6.635</td></tr>
+                    <tr><td>2</td><td>5.991</td><td>9.210</td></tr>
+                    <tr><td>3</td><td>7.815</td><td>11.345</td></tr>
+                    <tr><td>4</td><td>9.488</td><td>13.277</td></tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Gender vs Shopping Channel (In-store/Online): 2×2 table, n = 200</p>
+                <table>
+                    <tr><th></th><th>In-store</th><th>Online</th><th>Total</th></tr>
+                    <tr><td>Male</td><td>O=40, E=35</td><td>O=60, E=65</td><td>100</td></tr>
+                    <tr><td>Female</td><td>O=30, E=35</td><td>O=70, E=65</td><td>100</td></tr>
+                    <tr><td>Total</td><td>70</td><td>130</td><td>200</td></tr>
+                </table>
+                <p>&chi;² = (40-35)²/35 + (60-65)²/65 + (30-35)²/35 + (70-65)²/65</p>
+                <p>&chi;² = 0.714 + 0.385 + 0.714 + 0.385 = <strong>2.198</strong></p>
+                <p>df = (2-1)(2-1) = 1, &chi;²<sub>critical</sub>(0.05, 1) = 3.841</p>
+                <p>Since 2.198 < 3.841, <strong>Fail to reject H₀</strong></p>
+                <p><strong>Conclusion:</strong> No significant relationship between gender and shopping channel preference.</p>
+            </div>
+        </div>
+
+        <!-- Problem 13 -->
+        <div class="problem-card" id="p13">
+            <div class="problem-header">
+                <div class="problem-number">13</div>
+                <h2 class="problem-title">Chi-Square Goodness of Fit Test</h2>
+                <span class="category-tag">Hypothesis Testing</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Expected Frequency (Uniform Distribution)</div>
+                    <div class="formula">E = N / k (where k = number of categories)</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Chi-Square Statistic</div>
+                    <div class="formula">&chi;² = &Sigma;[(O - E)² / E]</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Degrees of Freedom</div>
+                    <div class="formula">df = k - 1</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>O</strong> = Observed frequency</li>
+                    <li><strong>E</strong> = Expected frequency</li>
+                    <li><strong>N</strong> = Total observations</li>
+                    <li><strong>k</strong> = Number of categories</li>
+                    <li><strong>df</strong> = k - 1</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li><strong>State Hypotheses:</strong>
+                        <br>H₀: Data follows the expected distribution (e.g., uniform)
+                        <br>H₁: Data does not follow the expected distribution</li>
+                    <li>Calculate expected frequencies (E = N/k for uniform)</li>
+                    <li>Calculate (O - E)² / E for each category</li>
+                    <li>Sum to get &chi;²<sub>calculated</sub></li>
+                    <li>Find df = k - 1 and lookup &chi;²<sub>critical</sub></li>
+                    <li>Decision: Reject H₀ if &chi;²<sub>calc</sub> > &chi;²<sub>critical</sub></li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Customer service requests across 5 weekdays: Total = 500</p>
+                <table>
+                    <tr><th>Day</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+                    <tr><td>Observed (O)</td><td>110</td><td>95</td><td>80</td><td>105</td><td>110</td></tr>
+                    <tr><td>Expected (E)</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td></tr>
+                    <tr><td>(O-E)²/E</td><td>1.00</td><td>0.25</td><td>4.00</td><td>0.25</td><td>1.00</td></tr>
+                </table>
+                <p>&chi;² = 1.00 + 0.25 + 4.00 + 0.25 + 1.00 = <strong>6.50</strong></p>
+                <p>df = 5 - 1 = 4, &chi;²<sub>critical</sub>(0.05, 4) = 9.488</p>
+                <p>Since 6.50 < 9.488, <strong>Fail to reject H₀</strong></p>
+                <p><strong>Conclusion:</strong> Requests are distributed uniformly across weekdays.</p>
+            </div>
+        </div>
+
+        <!-- Problem 14 -->
+        <div class="problem-card" id="p14">
+            <div class="problem-header">
+                <div class="problem-number">14</div>
+                <h2 class="problem-title">Paired t-Test (Dependent Samples)</h2>
+                <span class="category-tag">Hypothesis Testing</span>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Key Formulas</h3>
+                <div class="formula-box">
+                    <div class="formula-name">Mean Difference</div>
+                    <div class="formula">d&#772; = &Sigma;d / N</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">Standard Deviation of Differences</div>
+                    <div class="formula">S<sub>d</sub> = &radic;[(&Sigma;d² - (&Sigma;d)²/N) / (N-1)]</div>
+                </div>
+                <div class="formula-box">
+                    <div class="formula-name">t-Statistic (Paired)</div>
+                    <div class="formula">t = d&#772; / (S<sub>d</sub> / &radic;N)</div>
+                </div>
+            </div>
+
+            <div class="variables">
+                <h4>Variables Explained:</h4>
+                <ul>
+                    <li><strong>d</strong> = Difference between paired observations (X₂ - X₁)</li>
+                    <li><strong>d&#772;</strong> = Mean of differences</li>
+                    <li><strong>S<sub>d</sub></strong> = Standard deviation of differences</li>
+                    <li><strong>N</strong> = Number of pairs</li>
+                    <li><strong>df</strong> = N - 1</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h4>Solution Steps:</h4>
+                <ol>
+                    <li><strong>State Hypotheses:</strong>
+                        <br>H₀: &mu;<sub>d</sub> = 0 (no difference)
+                        <br>H₁: &mu;<sub>d</sub> ≠ 0 (significant difference)</li>
+                    <li>Calculate d = X₂ - X₁ for each pair</li>
+                    <li>Calculate d² for each pair</li>
+                    <li>Find &Sigma;d and &Sigma;d²</li>
+                    <li>Calculate d&#772; = &Sigma;d / N</li>
+                    <li>Calculate S<sub>d</sub> using the formula</li>
+                    <li>Calculate t-statistic</li>
+                    <li>Compare with t<sub>critical</sub> (df = N-1)</li>
+                </ol>
+            </div>
+
+            <div class="example">
+                <h4>From Your Assignment:</h4>
+                <p>Fertilizer comparison: N = 10 plots</p>
+                <p>&Sigma;d = 27, &Sigma;d² = 125</p>
+                <p>d&#772; = 27/10 = <strong>2.7</strong></p>
+                <p>S<sub>d</sub> = &radic;[(125 - 729/10) / 9] = &radic;[52.1/9] = <strong>2.406</strong></p>
+                <p>t = 2.7 / (2.406/&radic;10) = 2.7 / 0.761 = <strong>3.549</strong></p>
+                <p>df = 9, &alpha; = 0.05, t<sub>critical</sub>(0.05, 9) = 1.833 (one-tailed)</p>
+                <p>Since 3.549 > 1.833, <strong>Reject H₀</strong></p>
+                <p><strong>Conclusion:</strong> New fertilizer significantly increases crop yield.</p>
+            </div>
+        </div>
+
+        <!-- Quick Reference Card -->
+        <div class="problem-card">
+            <div class="problem-header">
+                <div class="problem-number" style="background: linear-gradient(135deg, #ff6b6b, #feca57);">!</div>
+                <h2 class="problem-title">Quick Reference: Which Test to Use?</h2>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Situation</th>
+                    <th>Test</th>
+                    <th>Key Indicator</th>
+                </tr>
+                <tr>
+                    <td>Compare sample mean to known value, &sigma; KNOWN</td>
+                    <td><strong>Z-Test</strong></td>
+                    <td>Population SD given</td>
+                </tr>
+                <tr>
+                    <td>Compare sample mean to known value, &sigma; UNKNOWN</td>
+                    <td><strong>t-Test</strong></td>
+                    <td>Sample SD given, small n</td>
+                </tr>
+                <tr>
+                    <td>Compare two sample variances</td>
+                    <td><strong>F-Test</strong></td>
+                    <td>Two variances given</td>
+                </tr>
+                <tr>
+                    <td>Before/After or Matched pairs</td>
+                    <td><strong>Paired t-Test</strong></td>
+                    <td>Same subjects, two measurements</td>
+                </tr>
+                <tr>
+                    <td>Test if observed fits expected distribution</td>
+                    <td><strong>&chi;² Goodness of Fit</strong></td>
+                    <td>One variable, categories</td>
+                </tr>
+                <tr>
+                    <td>Test relationship between two categorical variables</td>
+                    <td><strong>&chi;² Independence</strong></td>
+                    <td>Contingency table (rows × columns)</td>
+                </tr>
+                <tr>
+                    <td>Measure linear relationship strength</td>
+                    <td><strong>Pearson's r</strong></td>
+                    <td>Numerical data, linear relationship</td>
+                </tr>
+                <tr>
+                    <td>Compare rankings</td>
+                    <td><strong>Spearman's r<sub>s</sub></strong></td>
+                    <td>Rank/ordinal data</td>
+                </tr>
+                <tr>
+                    <td>Predict Y from X</td>
+                    <td><strong>Regression</strong></td>
+                    <td>Find equation Y = a + bX</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p>Statistics Formula Guide | Prepared for HBM25062 Exam</p>
+            <p>Good luck on your exam!</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,720 @@
+# LEGAL TAX - EXAM QUICK REFERENCE GUIDE
+## Income Tax Act, 1961 - Complete Study Material
+
+---
+
+# SECTION 1: BASICS OF INCOME TAX
+
+## Section 2(24) - Definition of Income
+- **Definition**: INCLUSIVE (not exhaustive) - covers items mentioned + any receipt having nature of income
+- **Income Includes**:
+  - Profits & gains from business/profession
+  - Dividend income
+  - Voluntary contributions to charitable trusts
+  - Perquisites & profits in lieu of salary
+  - Capital gains from transfer of capital assets
+  - Winnings from lotteries, gambling, betting (special rates)
+  - Life insurance proceeds (except exempt under Sec 10(10D))
+  - Deemed incomes (gifts beyond limits)
+
+---
+
+## STEPS TO DETERMINE TAXABLE INCOME
+
+### Step I: Determine Nature of Receipt
+| Type | Examples | Taxability |
+|------|----------|------------|
+| **Income Receipt** | Salary, Business income, Rent, Interest | Generally Taxable |
+| **Capital Receipt** | Sale of assets, Loans, Gifts | Generally NOT taxable (exceptions exist) |
+
+### Taxability of Gifts
+- **Taxable if**: Aggregate value > Rs.50,000/year from non-relatives
+- **EXEMPT Gifts**:
+  - From relatives (as defined under IT Act)
+  - On occasion of marriage
+  - From local authorities
+  - From approved charitable/religious trusts
+  - From educational institutions
+
+### Step II: Taxable Capital Receipts
+1. **Capital Gains** - profit from transfer of capital assets
+2. **Taxable Gifts** - >Rs.50,000 from non-relatives
+3. **Compensation on compulsory acquisition**
+4. **Share premium in excess of FMV**
+5. **Forfeiture of advance money**
+6. **Deemed capital receipts**
+
+### Step III: Tax Exempt Income (Section 10)
+
+| Section | Income Type | Exemption |
+|---------|-------------|-----------|
+| **10(1)** | Agricultural Income | Fully Exempt |
+| **10(2A)** | Partner's share of profit | Exempt (firm already taxed) |
+| **10(20)** | Local Authorities Income | Fully Exempt |
+| **Sec 11** | Charitable/Religious Trust | Exempt if used for approved purposes |
+| **10(16)** | Scholarships | Fully Exempt |
+| **10(10)** | Gratuity | Exempt up to limits |
+| **10(5)** | LTA | Exempt for domestic travel |
+| **10(13A)** | HRA | Partially Exempt |
+
+---
+
+## FIVE HEADS OF INCOME (Section 14)
+
+| Head | Sections | Key Components |
+|------|----------|----------------|
+| **1. Income from Salary** | 15-17 | Basic salary, Allowances, Bonus, Perquisites |
+| **2. House Property** | 22-27 | NAV - Municipal Tax - 30% SD - Interest on loan |
+| **3. Business/Profession** | 28-44DB | Business income minus allowable expenses |
+| **4. Capital Gains** | 45-55A | STCG & LTCG from asset transfer |
+| **5. Other Sources** | 56-59 | Interest, Dividend, Gifts, Residual income |
+
+---
+
+## COMPUTING TOTAL INCOME
+
+**Formula:**
+```
+Gross Total Income (GTI) = Sum of all 5 heads
+Total Income = GTI - Chapter VI-A Deductions (80C to 80U)
+```
+
+---
+
+# SECTION 2: CHAPTER VI-A DEDUCTIONS
+
+| Section | Deduction For | Limit |
+|---------|---------------|-------|
+| **80C** | PPF, ELSS, LIC, etc. | Max Rs.1,50,000 |
+| **80D** | Medical Insurance Premium | Varies by age |
+| **80E** | Interest on Education Loan | Full interest |
+| **80G** | Donations to approved institutions | 50% or 100% (with/without 10% limit) |
+| **80TTA** | Savings Bank Interest | Up to Rs.10,000 |
+| **80TTB** | Interest for Senior Citizens | Up to Rs.50,000 |
+| **80CCD(2)** | Employer's NPS Contribution | Up to 10% of salary |
+
+---
+
+# SECTION 3: TAX REGIMES (FY 2023-24)
+
+## OLD TAX REGIME
+| Income Range | Tax Rate |
+|--------------|----------|
+| Up to Rs.2,50,000 | NIL |
+| Rs.2,50,001 - Rs.5,00,000 | 5% |
+| Rs.5,00,001 - Rs.10,00,000 | 20% |
+| Above Rs.10,00,000 | 30% |
+
+**Features**: Allows all exemptions & deductions
+
+## NEW TAX REGIME (Section 115BAC) - DEFAULT
+| Income Range | Tax Rate |
+|--------------|----------|
+| Up to Rs.3,00,000 | NIL |
+| Rs.3,00,001 - Rs.6,00,000 | 5% |
+| Rs.6,00,001 - Rs.9,00,000 | 10% |
+| Rs.9,00,001 - Rs.12,00,000 | 15% |
+| Rs.12,00,001 - Rs.15,00,000 | 20% |
+| Above Rs.15,00,000 | 30% |
+
+**Features**: Lower rates but MOST deductions NOT allowed
+**Allowed**: Standard Deduction (Rs.50,000), Employer NPS (80CCD(2)), Agricultural Income exempt
+
+---
+
+# SECTION 4: WAYS OF PAYING TAX
+
+## I. Advance Tax
+- **Who**: Tax liability > Rs.10,000/year
+- **Due Dates**:
+  - 15th June - 15%
+  - 15th September - 45%
+  - 15th December - 75%
+  - 15th March - 100%
+
+## II. TDS (Tax Deducted at Source)
+- Deducted by payer at time of payment
+- **Applies to**: Salary, Interest, Rent, Professional fees, Commission
+
+## III. Self-Assessment Tax
+- Balance tax after adjusting Advance Tax & TDS
+- Paid before filing return
+
+---
+
+# SECTION 5: SURCHARGE & CESS
+
+## Surcharge (on Income Tax)
+| Total Income | Surcharge Rate |
+|--------------|----------------|
+| Up to Rs.50 lakh | NIL |
+| Rs.50 lakh - Rs.1 crore | 10% |
+| Rs.1 crore - Rs.2 crore | 15% |
+| Rs.2 crore - Rs.5 crore | 25% |
+| Above Rs.5 crore | 37% |
+
+## Health & Education Cess
+- **Rate**: 4% on (Income Tax + Surcharge)
+
+---
+
+# SECTION 6: CONCEALED INCOME (Section 115BBE)
+
+| Section | Type of Concealment |
+|---------|---------------------|
+| **68** | Unexplained cash credits |
+| **69** | Unexplained investments |
+| **69A** | Unexplained assets (cash, bullion, jewellery) |
+| **69B** | Excess investment over declared |
+| **69C** | Unexplained expenditure |
+
+**TAX RATE: FLAT 60%** (+ surcharge & cess)
+
+---
+
+# SECTION 7: RESIDENTIAL STATUS (Section 6)
+
+## Basic Conditions for RESIDENT
+Must satisfy ANY ONE:
+1. Stay in India >= 182 days in previous year, OR
+2. Stay >= 60 days in PY AND >= 365 days in preceding 4 years
+
+## Types of Residents
+
+### A. Resident & Ordinarily Resident (ROR)
+- **Additional Conditions** (BOTH required):
+  - Resident in at least 2 of 10 preceding years
+  - Stay >= 730 days in preceding 7 years
+- **Taxability**: Global income taxable
+
+### B. Resident but Not Ordinarily Resident (RNOR)
+- **Conditions** (ANY ONE):
+  - Non-resident in 9 of 10 preceding years, OR
+  - Stay <= 729 days in preceding 7 years
+- **Taxability**: Indian income + Business controlled from India
+
+### C. Non-Resident (NR)
+- Does NOT satisfy basic conditions
+- **Taxability**: Only Indian income taxable
+
+## Bank Accounts for NRIs
+
+| Account | Currency | Repatriation | Interest Tax |
+|---------|----------|--------------|--------------|
+| **NRO** | INR | Restricted | Taxable + TDS |
+| **NRE** | INR | Fully Free | EXEMPT (Sec 10(4)) |
+| **FCNR** | Foreign | Fully Free | EXEMPT |
+| **RFC** | Foreign | Free | Exempt 2 years (RNOR), then taxable |
+
+---
+
+# SECTION 8: CLUBBING OF INCOME (Section 64)
+
+## Purpose
+Prevent tax evasion by transferring income to relatives in lower tax brackets
+
+## Clubbing Provisions
+
+| Section | Situation | Clubbing With |
+|---------|-----------|---------------|
+| **64(1)(ii)** | Spouse's salary from concern where assessee has substantial interest | Assessee's income |
+| **64(1)(iv)** | Income from asset transferred to spouse without adequate consideration | Transferor's income |
+| **64(1)(vi)** | Income from asset transferred to son's wife | Transferor's income |
+| **64(1A)** | Minor child's income | Parent with higher income |
+| **64(1)(v)** | Income from revocable transfer | Transferor's income |
+
+### Exceptions to Clubbing:
+- Spouse employed due to professional/technical qualifications
+- Transfer under agreement to live apart
+- Minor's income from:
+  - Manual work
+  - Skill/talent/specialized knowledge
+  - Disabled child (Sec 80U)
+
+### Minor Child Income
+- **Exemption**: Rs.1,500 per child per year
+- Remaining clubbed with higher-earning parent
+
+---
+
+# SECTION 9: SECTION 80G - DONATIONS
+
+## Types of Deductions
+
+| Category | Deduction | 10% Limit |
+|----------|-----------|-----------|
+| **A** | 100% | NO limit (PM Relief Fund, Defence Fund, PM CARES) |
+| **B** | 50% | NO limit |
+| **C** | 100% or 50% | Subject to 10% of Adjusted Total Income |
+
+## Adjusted Total Income =
+Total Income MINUS:
+- Deductions 80C to 80U (except 80G)
+- Long-term capital gains
+- Short-term capital gains u/s 111A
+- Income taxed at special rates
+
+---
+
+# SECTION 10: SALARY INCOME
+
+## Section 15 - Chargeability
+- Taxable on **DUE or RECEIPT basis** (whichever earlier)
+- Includes: Basic, Allowances, Bonus, Commission, Perquisites, Advance salary, Arrears
+- **Advance salary**: Taxable in year of receipt
+- **Arrears**: Taxable in year of receipt (Relief u/s 89 available)
+
+## Section 16 - Deductions from Salary
+
+| Section | Deduction | Amount |
+|---------|-----------|--------|
+| **16(1)** | Standard Deduction | Rs.50,000 |
+| **16(2)** | Entertainment Allowance | Only Govt employees (Least of: Actual, Rs.5,000, 20% of basic) |
+| **16(3)** | Professional Tax | Actual paid (max ~Rs.2,500/year) |
+
+---
+
+# SECTION 11: PERQUISITES (Section 17(2))
+
+## Definition
+Any benefit/amenity provided by employer FREE or at concessional rate
+
+## Types of Perquisites
+
+| Type | Section | Taxable Value |
+|------|---------|---------------|
+| **Rent-Free Accommodation** | 17(2)(i) | Based on employer type, city, salary |
+| **Concessional Loans** | 17(2)(vii) | SBI rate - Actual rate charged |
+| **Motor Car** | 17(2)(iii) | Depends on purpose & who bears expenses |
+| **ESOPs** | 17(2)(vi) | FMV - Exercise Price (at exercise) |
+| **Medical Facilities** | 17(2) | Excess over exemption limit |
+
+### Loan Exemptions:
+- Loan <= Rs.20,000
+- Medical loan for specified diseases (80DDB)
+
+### Motor Car - NOT taxable if:
+- Used only for official purpose
+- Records maintained
+
+---
+
+# SECTION 12: ALLOWANCES (Section 10)
+
+## I. Leave Travel Allowance - LTA [Sec 10(5)]
+- **Exempt**: Domestic travel expenses only
+- **Conditions**:
+  - 2 journeys in block of 4 years
+  - Only transportation (NOT hotel, food, sightseeing)
+  - Travel within India
+  - Can carry forward 1 unused journey
+
+## II. House Rent Allowance - HRA [Sec 10(13A)]
+**Exemption = LEAST of:**
+1. Actual HRA received
+2. Rent paid - 10% of salary (Basic + DA)
+3. 50% of salary (Metro) OR 40% (Non-Metro)
+
+## III. Gratuity [Sec 10(10)]
+- **Govt employees**: Fully EXEMPT
+- **Others**: Exempt up to Rs.20 LAKH
+
+## IV. Leave Encashment [Sec 10(10AA)]
+- **Govt employees**: Fully EXEMPT
+- **Others**: Exempt up to Rs.3 LAKH
+
+## V. VRS [Sec 10(10C)]
+- **Exempt**: Up to Rs.5 LAKH
+- **Conditions**:
+  - 10 years service OR 40 years age
+  - Exemption only ONCE
+
+---
+
+# SECTION 13: ESOP (Employee Stock Option Plan)
+
+## Key Features
+- Right to purchase shares at predetermined price after vesting period
+- Lock-in period: Generally 3 years
+- Needs shareholder approval
+
+## Taxation - TWO STAGES
+
+### 1. At Exercise (Perquisite Tax)
+**Taxable Value = FMV on exercise date - Exercise Price**
+- Taxed as Salary Income
+- TDS by employer
+
+### 2. At Sale (Capital Gains)
+**Capital Gain = Sale Price - Exercise Price**
+
+| Type | Holding Period | Tax Rate |
+|------|----------------|----------|
+| **STCG** | <= 36 months | 15% |
+| **LTCG** | > 36 months | 10% (above Rs.1 lakh) |
+
+---
+
+# SECTION 14: HOUSE PROPERTY (Section 22-24)
+
+## Section 22 - Chargeability
+- Income from building/land owned by assessee
+- Tax on Annual Value (ownership basis, not receipt)
+
+## Section 24 - Deductions
+
+| Deduction | Section | Amount |
+|-----------|---------|--------|
+| **Standard Deduction** | 24(a) | 30% of Annual Value |
+| **Interest on Home Loan** | 24(b) | Up to Rs.2 lakh (self-occupied) |
+
+## Computation Formula
+```
+Income from House Property =
+Annual Value
+- Municipal Taxes Paid
+- 30% Standard Deduction
+- Interest on Home Loan
+```
+
+## Co-Ownership
+- Each co-owner taxed separately
+- Deductions in proportion to ownership share
+
+---
+
+# SECTION 15: SECTION 72A - CARRY FORWARD (AMALGAMATION/DEMERGER)
+
+## Purpose
+Tax relief in corporate restructuring - allows carry forward of losses & unabsorbed depreciation
+
+## Amalgamation (Merger)
+**Conditions**:
+1. Government approval
+2. Transfer ALL assets & liabilities
+3. Continue business of transferor
+4. Transferee holds >= 75% voting power
+5. Business continued for >= 5 years after amalgamation
+
+## Demerger
+**Conditions**:
+1. Transfer part of business with assets/liabilities
+2. Shareholders get shares in resulting company (proportionate)
+3. Both companies continue to exist
+4. No sale of shares involved
+5. Accounting as per Companies Act, 2013
+
+---
+
+# SECTION 16: DEPRECIATION (Section 32)
+
+## Meaning
+Reduction in asset value due to wear & tear, usage, obsolescence
+
+## Methods
+
+### I. Straight Line Method (SLM)
+- Fixed rate on ORIGINAL COST every year
+- **Formula**: Depreciation = Original Cost x Rate
+
+### II. Written Down Value (WDV) - Used under IT Act
+- Rate on BOOK VALUE (reducing balance)
+- **Formula**: Depreciation = Book Value x Rate
+
+## Depreciation Rates (WDV)
+| Asset | Rate |
+|-------|------|
+| Residential Building | 5% |
+| Other Buildings | 10% |
+| Plant & Machinery | 15% |
+| Intangible Assets | 25% |
+
+## Conditions for Claiming
+1. **Ownership** of asset
+2. **Eligible assets** (Tangible: Buildings, Plant, Machinery, Furniture; Intangible: Patents, Trademarks, Copyrights, Licenses, Know-how)
+3. **Used for business/profession**
+4. **Put to use** in that year
+
+**NOTE**: Land is NOT depreciable
+
+---
+
+# SECTION 17: SECTION 37 - GENERAL BUSINESS EXPENSES
+
+## Conditions
+- Expense must be WHOLLY and EXCLUSIVELY for business
+- NOT covered under Sections 30-36
+
+## Allowed Expenses
+- Rent for business premises
+- Salaries and wages
+- Legal and professional fees
+- Office expenses
+- Advertising and marketing
+
+## NOT Allowed
+- Personal expenses
+- Capital expenditure
+- Illegal/prohibited activities
+
+---
+
+# SECTION 18: LEASE CONCEPTS
+
+## Parties
+- **Lessee**: Rents the asset, pays lease rent (DEDUCTIBLE)
+- **Lessor**: Owns asset, receives rent (can claim depreciation)
+
+## Types of Leasing
+| Type | Feature | Suitable For |
+|------|---------|--------------|
+| **Front-End** | Higher payments initially | Strong initial cash flow |
+| **Back-End** | Lower payments initially | Growing businesses, startups |
+| **Balloon** | Large final payment | Vehicles, heavy machinery |
+
+---
+
+# SECTION 19: MAT & UNABSORBED DEPRECIATION
+
+## MAT (Minimum Alternate Tax) - Section 115JB
+- Ensures companies pay minimum tax
+- Calculated on BOOK PROFITS (not taxable income)
+- Applicable to companies
+
+## Unabsorbed Depreciation
+- Depreciation not fully adjusted in a year
+- Carry forward: NO TIME LIMIT
+- Set off against ANY head (except Salary)
+
+## Business Loss Carry Forward
+- Carry forward: 8 assessment years
+- Set off: Only against business income
+- Return must be filed within due date
+
+---
+
+# SECTION 20: SECTION 35AB - KNOW-HOW EXPENDITURE
+
+## Applicability
+Capital expenditure for acquiring:
+- Patents
+- Technical processes
+- Designs
+- Technology transfer rights
+
+## Amortization
+- **Period**: 6 years
+- **Deduction**: 1/6th of total expenditure per year
+
+---
+
+# SECTION 21: DTAA (Double Tax Avoidance Agreement)
+
+## Meaning
+Bilateral agreement between countries to prevent same income being taxed twice
+
+## Methods of Relief
+1. **Exemption Method** - Tax in only one country
+2. **Tax Credit Method** - Credit for foreign tax paid
+3. **Deduction Method** - Foreign tax as expense
+
+## Indo-Mauritius DTAA
+- **Old benefit**: Capital gains on Indian shares taxable only in Mauritius (effectively tax-free)
+- **Amendment**: Now may be taxable in India depending on date of acquisition
+
+## Conditions to Claim DTAA Benefits
+1. Permanent place of abode in treaty country
+2. Tax residency in DTAA country
+3. Centre of vital interests (family, business, employment)
+
+## Permanent Establishment (PE)
+- **Definition**: Fixed place of business in another country
+- **Examples**: Branch, Factory, Office, Workshop
+- **If PE exists**: Income attributable to PE is taxable in source country
+- **Communication/Liaison office**: Does NOT create PE
+
+---
+
+# SECTION 22: CAPITAL GAINS (Section 45)
+
+## Section 45 - Chargeability
+- Profits from transfer of capital asset = Capital Gains
+- Taxable in year of transfer
+- For immovable property: Date of registration = Date of transfer
+
+## Capital Gain Formula
+```
+Capital Gain = Sale Consideration - Cost of Acquisition - Transfer Expenses
+```
+
+## Transfer (Section 2(47)) Includes:
+- Sale
+- Exchange
+- Gift
+- Relinquishment
+- Compulsory acquisition
+- Parting with possession
+- Distribution on dissolution of partnership
+- Extinguishment of rights
+
+## Capital Loss Carry Forward
+- Carry forward: 8 assessment years
+- Set off: ONLY against capital gains
+- Return must be filed on time
+
+---
+
+## STCG vs LTCG
+
+| Asset Type | Short-Term | Long-Term |
+|------------|------------|-----------|
+| General | < 36 months | >= 36 months |
+| Immovable Property | < 24 months | >= 24 months |
+| Listed Equity Shares | < 12 months | >= 12 months |
+
+## Tax Rates
+| Type | Rate |
+|------|------|
+| **STCG (Equity with STT)** | 15% |
+| **STCG (Others)** | Normal slab rates |
+| **LTCG (Equity)** | 10% (above Rs.1 lakh) |
+| **LTCG (Others)** | 20% with indexation |
+
+## Section 10(37) - Agricultural Land Exemption
+- **Exempt**: Land > 8 km from municipality/city
+- **Taxable**: Land within 8 km (urban)
+
+---
+
+## Section 2(14) - Capital Asset
+
+### Includes:
+Property of any kind - movable/immovable, tangible/intangible
+
+### EXCLUDES (NOT Capital Assets):
+1. Stock-in-trade
+2. Personal effects (except jewellery, paintings, sculptures, art)
+3. Agricultural land in RURAL India (outside 8 km of municipality with population >= 10,000)
+4. Indian currency
+5. Gold bonds under Gold Bonds Act, 1965
+
+---
+
+# SECTION 23: TAXATION OF ENTITIES
+
+| Entity | Tax Rate | Notes |
+|--------|----------|-------|
+| **Individual** | 5% to 30% (slabs) | Basic exemption available |
+| **HUF** | Same as Individual | Separate PAN, separate return |
+| **Partnership Firm** | 30% FLAT | No basic exemption, partner's share exempt in their hands |
+| **Domestic Company** | 25% (turnover <= Rs.400 cr) / 30% | Based on turnover |
+| **Foreign Company** | 40% FLAT | On income earned in India |
+| **AOP** | Individual slab rates | Separate taxable entity |
+| **Charitable Trusts** | May be exempt (Sec 11) | If income used for charitable purposes |
+
+---
+
+# SECTION 24: PRESUMPTIVE TAXATION
+
+## Section 44AD - Small Business
+- **Eligibility**: Resident Individual, HUF, Partnership (NOT LLP)
+- **Turnover Limit**: Rs.2 crore (Rs.3 crore if cash receipts/payments <= 5%)
+- **Presumptive Income**:
+  - Cash receipts: 8%
+  - Digital receipts: 6%
+- **Books/Audit**: NOT required if income >= presumptive rate
+- **Opt-out restriction**: Cannot re-enter for 5 years
+
+## Section 44ADA - Professionals
+- **Eligibility**: Resident individuals/firms in specified professions
+- **Professions**: Legal, Medical, Engineering, Architectural, Accountancy, Technical consultancy, Interior decoration
+- **Gross Receipts Limit**: Rs.50 lakh
+- **Presumptive Income**: 50% of gross receipts
+
+## Section 44AE - Transport Business
+- **Eligibility**: Own <= 10 goods vehicles
+- **Presumptive Income**:
+  - Heavy Goods Vehicle: Rs.1,000/ton GVW/month
+  - Other vehicles: Rs.7,500/vehicle/month
+
+## Other Presumptive Sections (Non-Residents)
+| Section | Business | Rate |
+|---------|----------|------|
+| **44B** | Shipping | 7.5% of gross receipts |
+| **44BB** | Oil/Mineral Exploration | 10% of gross receipts |
+| **44BBA** | Aircraft Operation | 5% of gross receipts |
+| **44BBB** | Power Projects (Foreign Co.) | 10% of gross receipts |
+| **44BBC** | Cruise Ships | As notified |
+
+## Common Provisions
+- **Advance Tax**: 100% by 15th March (no installments)
+- **Chapter VI-A Deductions**: ALLOWED
+- **Business Deductions (30-38)**: NOT allowed separately
+
+---
+
+# QUICK MEMORY TIPS
+
+## Important Limits
+| Item | Limit |
+|------|-------|
+| Gift exemption | Rs.50,000/year |
+| Gratuity (non-govt) | Rs.20 lakh |
+| Leave encashment (non-govt) | Rs.3 lakh |
+| VRS | Rs.5 lakh |
+| Standard deduction (salary) | Rs.50,000 |
+| Home loan interest (self-occupied) | Rs.2 lakh |
+| 80C deduction | Rs.1.5 lakh |
+| Minor child exemption (clubbing) | Rs.1,500/child |
+
+## Important Days to Remember
+| Purpose | Day/Period |
+|---------|------------|
+| Resident (basic condition 1) | 182 days |
+| Resident (basic condition 2) | 60 days + 365 days |
+| ROR (stay in 7 years) | 730 days |
+| RNOR (stay in 7 years) | <= 729 days |
+| STCG (general) | < 36 months |
+| STCG (immovable) | < 24 months |
+| STCG (listed shares) | < 12 months |
+| Business loss carry forward | 8 years |
+| Capital loss carry forward | 8 years |
+| Agricultural land (urban) | Within 8 km |
+
+## Section Number Quick Reference
+| Section | Topic |
+|---------|-------|
+| 2(14) | Capital Asset definition |
+| 2(24) | Income definition |
+| 2(47) | Transfer definition |
+| 6 | Residential Status |
+| 10 | Exempt Incomes |
+| 14 | Heads of Income |
+| 15-17 | Salary |
+| 22-27 | House Property |
+| 24 | Deductions from House Property |
+| 28-44DB | Business/Profession |
+| 32 | Depreciation |
+| 37 | General Business Expenses |
+| 45-55A | Capital Gains |
+| 56-59 | Other Sources |
+| 64 | Clubbing of Income |
+| 72A | Amalgamation/Demerger losses |
+| 80C-80U | Chapter VI-A Deductions |
+| 115BAC | New Tax Regime |
+| 115BBE | Concealed Income (60%) |
+| 115JB | MAT |
+
+---
+
+# ALL THE BEST FOR YOUR EXAM!
+
+Key Success Tips:
+1. Focus on Section numbers with their topics
+2. Remember key limits and percentages
+3. Understand exemptions vs deductions
+4. Know the conditions for each provision
+5. Practice computation problems
+
+---
+*Study Guide prepared from Legal Tax comprehensive material*

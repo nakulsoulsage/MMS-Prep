@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Statistics - Complete Exam Guide with 3 Examples Each</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            padding: 20px;
+            max-width: 950px;
+            margin: 0 auto;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #1a5276;
+            border-bottom: 3px double #1a5276;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+        h2 {
+            color: #fff;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            padding: 12px 20px;
+            margin: 35px 0 20px 0;
+            border-radius: 5px;
+            font-size: 1.3em;
+        }
+        h3 {
+            color: #1a5276;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin: 25px 0 15px 0;
+            background: #f8f9fa;
+            padding: 10px 15px;
+        }
+        h4 {
+            color: #2980b9;
+            margin: 20px 0 10px 0;
+            font-size: 1.1em;
+            border-bottom: 2px dotted #3498db;
+            padding-bottom: 5px;
+        }
+        .example-number {
+            background: #e74c3c;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        .problem-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .solution-box {
+            background: #fff;
+            border: 1px solid #28a745;
+            border-left: 4px solid #28a745;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .formula-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 1px solid #f39c12;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+        }
+        .step {
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .step:last-child {
+            border-bottom: none;
+        }
+        .step-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 0.85em;
+            line-height: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        th {
+            background: #34495e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        .answer {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+            padding: 12px 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .note {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        .toc {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .toc h3 {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+        .toc ul {
+            list-style: none;
+            columns: 2;
+        }
+        .toc li {
+            padding: 5px 0;
+        }
+        .toc a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        @media print {
+            body { font-size: 10pt; line-height: 1.5; }
+            h2 { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .problem-box, .solution-box, .formula-box, .answer { break-inside: avoid; }
+            .toc { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Business Statistics - Complete Exam Guide</h1>
+<p style="text-align: center; color: #666; margin-bottom: 20px;"><strong>3 Solved Examples for Each Topic</strong></p>
+
+<div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+        <li><a href="#mean">1. Mean (Simple, Discrete, Continuous)</a></li>
+        <li><a href="#median">2. Median (Simple, Discrete, Continuous)</a></li>
+        <li><a href="#mode">3. Mode (Simple, Discrete, Continuous)</a></li>
+        <li><a href="#sd">4. Standard Deviation & Variance</a></li>
+        <li><a href="#probability">5. Probability</a></li>
+        <li><a href="#quartile">6. Quartiles</a></li>
+        <li><a href="#pearson">7. Pearson Correlation</a></li>
+        <li><a href="#spearman">8. Spearman's Rank Correlation</a></li>
+        <li><a href="#regression">9. Regression Analysis</a></li>
+        <li><a href="#chisquare">10. Chi-Square Test</a></li>
+        <li><a href="#ttest">11. T-Test</a></li>
+        <li><a href="#tables">12. Critical Value Tables</a></li>
+    </ul>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="mean">1. MEAN (Arithmetic Mean)</h2>
+<!-- ================================================================== -->
+
+<h3>1.1 Simple (Individual) Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Mean (X̄) = ΣX / n<br>
+    Where: ΣX = Sum of all observations, n = Number of observations
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate the mean of marks obtained by 7 students:</strong><br>
+    56, 48, 65, 72, 58, 44, 67
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Sum of observations:</strong> ΣX = 56 + 48 + 65 + 72 + 58 + 44 + 67 = <strong>410</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>Number of observations:</strong> n = 7
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Mean:</strong> X̄ = 410 / 7 = <strong>58.57</strong>
+    </div>
+    <div class="answer">∴ Mean = 58.57 marks</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find the mean daily sales (in ₹000):</strong><br>
+    25, 30, 18, 42, 35, 28, 40, 32
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Sum:</strong> ΣX = 25 + 30 + 18 + 42 + 35 + 28 + 40 + 32 = <strong>250</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>n = 8</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Mean:</strong> X̄ = 250 / 8 = <strong>31.25</strong>
+    </div>
+    <div class="answer">∴ Mean Daily Sales = ₹31,250</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate mean temperature (°C) for a week:</strong><br>
+    32, 35, 33, 38, 36, 34
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Sum:</strong> ΣX = 32 + 35 + 33 + 38 + 36 + 34 = <strong>208</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>n = 6</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Mean:</strong> X̄ = 208 / 6 = <strong>34.67°C</strong>
+    </div>
+    <div class="answer">∴ Mean Temperature = 34.67°C</div>
+</div>
+
+<h3>1.2 Discrete (Frequency) Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Mean (X̄) = Σfx / Σf<br>
+    Where: f = frequency, x = variable value
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate mean from the frequency distribution:</strong>
+    <table>
+        <tr><th>Marks (X)</th><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td></tr>
+        <tr><th>Students (f)</th><td>4</td><td>6</td><td>10</td><td>5</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>fx</th></tr>
+        <tr><td>20</td><td>4</td><td>80</td></tr>
+        <tr><td>30</td><td>6</td><td>180</td></tr>
+        <tr><td>40</td><td>10</td><td>400</td></tr>
+        <tr><td>50</td><td>5</td><td>250</td></tr>
+        <tr><td>60</td><td>5</td><td>300</td></tr>
+        <tr><th>Total</th><th>Σf = 30</th><th>Σfx = 1210</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = Σfx / Σf = 1210 / 30 = <strong>40.33</strong>
+    </div>
+    <div class="answer">∴ Mean = 40.33 marks</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find mean number of defects per unit:</strong>
+    <table>
+        <tr><th>Defects (X)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+        <tr><th>Units (f)</th><td>15</td><td>20</td><td>25</td><td>8</td><td>2</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>fx</th></tr>
+        <tr><td>0</td><td>15</td><td>0</td></tr>
+        <tr><td>1</td><td>20</td><td>20</td></tr>
+        <tr><td>2</td><td>25</td><td>50</td></tr>
+        <tr><td>3</td><td>8</td><td>24</td></tr>
+        <tr><td>4</td><td>2</td><td>8</td></tr>
+        <tr><th>Total</th><th>Σf = 70</th><th>Σfx = 102</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 102 / 70 = <strong>1.46</strong>
+    </div>
+    <div class="answer">∴ Mean Defects = 1.46 per unit</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate mean family size:</strong>
+    <table>
+        <tr><th>Family Size (X)</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+        <tr><th>Families (f)</th><td>8</td><td>12</td><td>15</td><td>10</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>fx</th></tr>
+        <tr><td>2</td><td>8</td><td>16</td></tr>
+        <tr><td>3</td><td>12</td><td>36</td></tr>
+        <tr><td>4</td><td>15</td><td>60</td></tr>
+        <tr><td>5</td><td>10</td><td>50</td></tr>
+        <tr><td>6</td><td>5</td><td>30</td></tr>
+        <tr><th>Total</th><th>Σf = 50</th><th>Σfx = 192</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 192 / 50 = <strong>3.84</strong>
+    </div>
+    <div class="answer">∴ Mean Family Size = 3.84 members</div>
+</div>
+
+<h3>1.3 Continuous (Grouped) Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Mean (X̄) = Σfm / Σf<br>
+    Where: m = mid-point of class = (Lower limit + Upper limit) / 2
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate mean from the following:</strong>
+    <table>
+        <tr><th>Class</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+        <tr><th>Frequency</th><td>5</td><td>12</td><td>18</td><td>10</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>Mid-point (m)</th><th>f</th><th>fm</th></tr>
+        <tr><td>0-10</td><td>5</td><td>5</td><td>25</td></tr>
+        <tr><td>10-20</td><td>15</td><td>12</td><td>180</td></tr>
+        <tr><td>20-30</td><td>25</td><td>18</td><td>450</td></tr>
+        <tr><td>30-40</td><td>35</td><td>10</td><td>350</td></tr>
+        <tr><td>40-50</td><td>45</td><td>5</td><td>225</td></tr>
+        <tr><th>Total</th><th>-</th><th>Σf = 50</th><th>Σfm = 1230</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 1230 / 50 = <strong>24.6</strong>
+    </div>
+    <div class="answer">∴ Mean = 24.6</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find the mean wages (₹):</strong>
+    <table>
+        <tr><th>Wages</th><td>100-200</td><td>200-300</td><td>300-400</td><td>400-500</td><td>500-600</td></tr>
+        <tr><th>Workers</th><td>8</td><td>15</td><td>22</td><td>12</td><td>3</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>m</th><th>f</th><th>fm</th></tr>
+        <tr><td>100-200</td><td>150</td><td>8</td><td>1200</td></tr>
+        <tr><td>200-300</td><td>250</td><td>15</td><td>3750</td></tr>
+        <tr><td>300-400</td><td>350</td><td>22</td><td>7700</td></tr>
+        <tr><td>400-500</td><td>450</td><td>12</td><td>5400</td></tr>
+        <tr><td>500-600</td><td>550</td><td>3</td><td>1650</td></tr>
+        <tr><th>Total</th><th>-</th><th>60</th><th>19700</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 19700 / 60 = <strong>328.33</strong>
+    </div>
+    <div class="answer">∴ Mean Wages = ₹328.33</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate mean age of employees:</strong>
+    <table>
+        <tr><th>Age</th><td>20-25</td><td>25-30</td><td>30-35</td><td>35-40</td><td>40-45</td></tr>
+        <tr><th>Employees</th><td>10</td><td>18</td><td>25</td><td>15</td><td>12</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>m</th><th>f</th><th>fm</th></tr>
+        <tr><td>20-25</td><td>22.5</td><td>10</td><td>225</td></tr>
+        <tr><td>25-30</td><td>27.5</td><td>18</td><td>495</td></tr>
+        <tr><td>30-35</td><td>32.5</td><td>25</td><td>812.5</td></tr>
+        <tr><td>35-40</td><td>37.5</td><td>15</td><td>562.5</td></tr>
+        <tr><td>40-45</td><td>42.5</td><td>12</td><td>510</td></tr>
+        <tr><th>Total</th><th>-</th><th>80</th><th>2605</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 2605 / 80 = <strong>32.56</strong>
+    </div>
+    <div class="answer">∴ Mean Age = 32.56 years</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="median">2. MEDIAN</h2>
+<!-- ================================================================== -->
+
+<h3>2.1 Simple (Individual) Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong><br>
+    If n is <strong>odd</strong>: Median = Value of ((n+1)/2)th item<br>
+    If n is <strong>even</strong>: Median = Average of (n/2)th and ((n/2)+1)th items<br>
+    <strong>Note:</strong> Always arrange data in ascending order first!
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find median of: 12, 18, 25, 8, 15, 22, 30</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Arrange in ascending order:</strong> 8, 12, 15, 18, 22, 25, 30
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>n = 7 (odd)</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Median position:</strong> (n+1)/2 = (7+1)/2 = 4th item
+    </div>
+    <div class="step">
+        <span class="step-number">4</span>
+        <strong>4th item:</strong> 8, 12, 15, <u><strong>18</strong></u>, 22, 25, 30
+    </div>
+    <div class="answer">∴ Median = 18</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find median of: 45, 32, 58, 27, 65, 48, 52, 38</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Arrange:</strong> 27, 32, 38, 45, 48, 52, 58, 65
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>n = 8 (even)</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Median position:</strong> Average of 4th and 5th items<br>
+        4th item = 45, 5th item = 48
+    </div>
+    <div class="step">
+        <span class="step-number">4</span>
+        <strong>Median:</strong> (45 + 48) / 2 = <strong>46.5</strong>
+    </div>
+    <div class="answer">∴ Median = 46.5</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find median of monthly income (₹000): 35, 42, 28, 55, 38, 62, 45, 50, 33</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Arrange:</strong> 28, 33, 35, 38, 42, 45, 50, 55, 62
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>n = 9 (odd)</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Median position:</strong> (9+1)/2 = 5th item
+    </div>
+    <div class="step">
+        <span class="step-number">4</span>
+        <strong>5th item = 42</strong>
+    </div>
+    <div class="answer">∴ Median Income = ₹42,000</div>
+</div>
+
+<h3>2.2 Discrete Series</h3>
+
+<div class="formula-box">
+    <strong>Steps:</strong><br>
+    1. Calculate cumulative frequency (cf)<br>
+    2. Find median position = (N+1)/2<br>
+    3. Locate the cf just greater than or equal to median position<br>
+    4. The corresponding X value is the median
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find median:</strong>
+    <table>
+        <tr><th>X</th><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td></tr>
+        <tr><th>f</th><td>4</td><td>8</td><td>12</td><td>6</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>cf</th></tr>
+        <tr><td>10</td><td>4</td><td>4</td></tr>
+        <tr><td>15</td><td>8</td><td>12</td></tr>
+        <tr><td>20</td><td>12</td><td>24</td></tr>
+        <tr><td>25</td><td>6</td><td>30</td></tr>
+        <tr><td>30</td><td>5</td><td>35</td></tr>
+    </table>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>N = 35</strong>, Median position = (35+1)/2 = <strong>18th item</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>cf ≥ 18 is 24</strong> (corresponding to X = 20)
+    </div>
+    <div class="answer">∴ Median = 20</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find median number of children:</strong>
+    <table>
+        <tr><th>Children (X)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+        <tr><th>Families (f)</th><td>10</td><td>18</td><td>25</td><td>12</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>cf</th></tr>
+        <tr><td>0</td><td>10</td><td>10</td></tr>
+        <tr><td>1</td><td>18</td><td>28</td></tr>
+        <tr><td>2</td><td>25</td><td>53</td></tr>
+        <tr><td>3</td><td>12</td><td>65</td></tr>
+        <tr><td>4</td><td>5</td><td>70</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 70</strong>, Median position = (70+1)/2 = <strong>35.5th item</strong>
+    </div>
+    <div class="step">
+        <strong>cf ≥ 35.5 is 53</strong> (corresponding to X = 2)
+    </div>
+    <div class="answer">∴ Median = 2 children</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find median score:</strong>
+    <table>
+        <tr><th>Score (X)</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td></tr>
+        <tr><th>Frequency (f)</th><td>7</td><td>15</td><td>20</td><td>10</td><td>8</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>cf</th></tr>
+        <tr><td>5</td><td>7</td><td>7</td></tr>
+        <tr><td>10</td><td>15</td><td>22</td></tr>
+        <tr><td>15</td><td>20</td><td>42</td></tr>
+        <tr><td>20</td><td>10</td><td>52</td></tr>
+        <tr><td>25</td><td>8</td><td>60</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 60</strong>, Median position = (60+1)/2 = <strong>30.5th item</strong>
+    </div>
+    <div class="step">
+        <strong>cf ≥ 30.5 is 42</strong> (corresponding to X = 15)
+    </div>
+    <div class="answer">∴ Median Score = 15</div>
+</div>
+
+<h3>2.3 Continuous Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Median = L + [(N/2 - cf) / f] × h<br>
+    Where:<br>
+    L = Lower limit of median class<br>
+    N = Total frequency (Σf)<br>
+    cf = Cumulative frequency of class <strong>preceding</strong> median class<br>
+    f = Frequency of median class<br>
+    h = Class width
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate median:</strong>
+    <table>
+        <tr><th>Class</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+        <tr><th>Frequency</th><td>8</td><td>15</td><td>22</td><td>10</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>f</th><th>cf</th></tr>
+        <tr><td>0-10</td><td>8</td><td>8</td></tr>
+        <tr><td>10-20</td><td>15</td><td>23</td></tr>
+        <tr><td>20-30</td><td>22</td><td>45</td></tr>
+        <tr><td>30-40</td><td>10</td><td>55</td></tr>
+        <tr><td>40-50</td><td>5</td><td>60</td></tr>
+    </table>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>N = 60</strong>, N/2 = 30
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>Median class:</strong> cf just > 30 is 45 → <strong>20-30</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Values:</strong> L = 20, cf = 23, f = 22, h = 10
+    </div>
+    <div class="step">
+        <span class="step-number">4</span>
+        <strong>Median</strong> = 20 + [(30 - 23) / 22] × 10 = 20 + [7/22] × 10 = 20 + 3.18 = <strong>23.18</strong>
+    </div>
+    <div class="answer">∴ Median = 23.18</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find median weight (kg):</strong>
+    <table>
+        <tr><th>Weight</th><td>40-50</td><td>50-60</td><td>60-70</td><td>70-80</td><td>80-90</td></tr>
+        <tr><th>Persons</th><td>12</td><td>18</td><td>25</td><td>15</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>f</th><th>cf</th></tr>
+        <tr><td>40-50</td><td>12</td><td>12</td></tr>
+        <tr><td>50-60</td><td>18</td><td>30</td></tr>
+        <tr><td>60-70</td><td>25</td><td>55</td></tr>
+        <tr><td>70-80</td><td>15</td><td>70</td></tr>
+        <tr><td>80-90</td><td>10</td><td>80</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 80</strong>, N/2 = 40, Median class = <strong>60-70</strong>
+    </div>
+    <div class="step">
+        <strong>L = 60, cf = 30, f = 25, h = 10</strong>
+    </div>
+    <div class="step">
+        <strong>Median</strong> = 60 + [(40 - 30) / 25] × 10 = 60 + 4 = <strong>64</strong>
+    </div>
+    <div class="answer">∴ Median Weight = 64 kg</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate median profit (₹000):</strong>
+    <table>
+        <tr><th>Profit</th><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td><td>50-60</td></tr>
+        <tr><th>Companies</th><td>5</td><td>12</td><td>20</td><td>8</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>f</th><th>cf</th></tr>
+        <tr><td>10-20</td><td>5</td><td>5</td></tr>
+        <tr><td>20-30</td><td>12</td><td>17</td></tr>
+        <tr><td>30-40</td><td>20</td><td>37</td></tr>
+        <tr><td>40-50</td><td>8</td><td>45</td></tr>
+        <tr><td>50-60</td><td>5</td><td>50</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 50</strong>, N/2 = 25, Median class = <strong>30-40</strong>
+    </div>
+    <div class="step">
+        <strong>L = 30, cf = 17, f = 20, h = 10</strong>
+    </div>
+    <div class="step">
+        <strong>Median</strong> = 30 + [(25 - 17) / 20] × 10 = 30 + 4 = <strong>34</strong>
+    </div>
+    <div class="answer">∴ Median Profit = ₹34,000</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="mode">3. MODE</h2>
+<!-- ================================================================== -->
+
+<h3>3.1 Simple Series</h3>
+
+<div class="formula-box">
+    <strong>Mode:</strong> The value that occurs <strong>most frequently</strong> in the dataset.
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find mode: 5, 8, 6, 9, 8, 7, 8, 6, 8</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Frequency count:</strong><br>
+        5 → 1 time | 6 → 2 times | 7 → 1 time | 8 → <strong>4 times</strong> | 9 → 1 time
+    </div>
+    <div class="step">
+        <strong>Highest frequency = 4</strong> (value 8)
+    </div>
+    <div class="answer">∴ Mode = 8</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find mode: 12, 15, 18, 15, 20, 18, 15, 22, 18, 15</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Frequency count:</strong><br>
+        12 → 1 | 15 → <strong>4 times</strong> | 18 → 3 times | 20 → 1 | 22 → 1
+    </div>
+    <div class="answer">∴ Mode = 15</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find mode: 25, 30, 35, 25, 40, 30, 25, 30</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Frequency count:</strong><br>
+        25 → <strong>3 times</strong> | 30 → <strong>3 times</strong> | 35 → 1 | 40 → 1
+    </div>
+    <div class="note">This is a <strong>bimodal</strong> distribution (two modes)</div>
+    <div class="answer">∴ Modes = 25 and 30 (Bimodal)</div>
+</div>
+
+<h3>3.2 Discrete Series</h3>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find mode:</strong>
+    <table>
+        <tr><th>X</th><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td></tr>
+        <tr><th>f</th><td>5</td><td>12</td><td>18</td><td>10</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Maximum frequency = 18</strong> (corresponding to X = 30)
+    </div>
+    <div class="answer">∴ Mode = 30</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find modal shoe size:</strong>
+    <table>
+        <tr><th>Size (X)</th><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+        <tr><th>Frequency (f)</th><td>8</td><td>15</td><td>22</td><td>18</td><td>7</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Maximum frequency = 22</strong> (corresponding to size 8)
+    </div>
+    <div class="answer">∴ Modal Shoe Size = 8</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find modal number of orders per day:</strong>
+    <table>
+        <tr><th>Orders (X)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        <tr><th>Days (f)</th><td>3</td><td>8</td><td>12</td><td>20</td><td>15</td><td>2</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Maximum frequency = 20</strong> (corresponding to X = 3)
+    </div>
+    <div class="answer">∴ Modal Orders = 3 per day</div>
+</div>
+
+<h3>3.3 Continuous Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> Mode = L + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h<br>
+    Where:<br>
+    L = Lower limit of modal class<br>
+    f₁ = Frequency of modal class<br>
+    f₀ = Frequency of class <strong>preceding</strong> modal class<br>
+    f₂ = Frequency of class <strong>succeeding</strong> modal class<br>
+    h = Class width
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate mode:</strong>
+    <table>
+        <tr><th>Class</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+        <tr><th>Frequency</th><td>5</td><td>12</td><td>25</td><td>15</td><td>8</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Modal class:</strong> Highest frequency = 25 → <strong>20-30</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>Values:</strong> L = 20, f₁ = 25, f₀ = 12, f₂ = 15, h = 10
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Mode</strong> = 20 + [(25-12) / (2×25 - 12 - 15)] × 10<br>
+        = 20 + [13 / (50 - 27)] × 10<br>
+        = 20 + [13/23] × 10 = 20 + 5.65 = <strong>25.65</strong>
+    </div>
+    <div class="answer">∴ Mode = 25.65</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find modal income (₹000):</strong>
+    <table>
+        <tr><th>Income</th><td>20-30</td><td>30-40</td><td>40-50</td><td>50-60</td><td>60-70</td></tr>
+        <tr><th>Employees</th><td>10</td><td>18</td><td>30</td><td>22</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Modal class:</strong> 40-50 (f = 30)
+    </div>
+    <div class="step">
+        <strong>L = 40, f₁ = 30, f₀ = 18, f₂ = 22, h = 10</strong>
+    </div>
+    <div class="step">
+        <strong>Mode</strong> = 40 + [(30-18) / (60 - 18 - 22)] × 10<br>
+        = 40 + [12/20] × 10 = 40 + 6 = <strong>46</strong>
+    </div>
+    <div class="answer">∴ Modal Income = ₹46,000</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate modal marks:</strong>
+    <table>
+        <tr><th>Marks</th><td>0-20</td><td>20-40</td><td>40-60</td><td>60-80</td><td>80-100</td></tr>
+        <tr><th>Students</th><td>8</td><td>15</td><td>28</td><td>20</td><td>9</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Modal class:</strong> 40-60 (f = 28)
+    </div>
+    <div class="step">
+        <strong>L = 40, f₁ = 28, f₀ = 15, f₂ = 20, h = 20</strong>
+    </div>
+    <div class="step">
+        <strong>Mode</strong> = 40 + [(28-15) / (56 - 15 - 20)] × 20<br>
+        = 40 + [13/21] × 20 = 40 + 12.38 = <strong>52.38</strong>
+    </div>
+    <div class="answer">∴ Modal Marks = 52.38</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="sd">4. STANDARD DEVIATION & VARIANCE</h2>
+<!-- ================================================================== -->
+
+<h3>4.1 Individual Series</h3>
+
+<div class="formula-box">
+    <strong>Variance (σ²):</strong> σ² = Σ(X - X̄)² / n<br>
+    <strong>Standard Deviation (σ):</strong> σ = √Variance<br><br>
+    <strong>Alternative formula:</strong> σ = √[(ΣX²/n) - (ΣX/n)²]
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate SD and Variance: 8, 10, 12, 14, 16</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Mean:</strong> X̄ = (8+10+12+14+16)/5 = 60/5 = <strong>12</strong>
+    </div>
+    <table>
+        <tr><th>X</th><th>X - X̄</th><th>(X - X̄)²</th></tr>
+        <tr><td>8</td><td>-4</td><td>16</td></tr>
+        <tr><td>10</td><td>-2</td><td>4</td></tr>
+        <tr><td>12</td><td>0</td><td>0</td></tr>
+        <tr><td>14</td><td>2</td><td>4</td></tr>
+        <tr><td>16</td><td>4</td><td>16</td></tr>
+        <tr><th colspan="2">Total</th><th>Σ(X-X̄)² = 40</th></tr>
+    </table>
+    <div class="step">
+        <strong>Variance:</strong> σ² = 40/5 = <strong>8</strong>
+    </div>
+    <div class="step">
+        <strong>SD:</strong> σ = √8 = <strong>2.83</strong>
+    </div>
+    <div class="answer">∴ Variance = 8, Standard Deviation = 2.83</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find SD: 25, 30, 35, 40, 45, 50</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = (25+30+35+40+45+50)/6 = 225/6 = <strong>37.5</strong>
+    </div>
+    <table>
+        <tr><th>X</th><th>X - X̄</th><th>(X - X̄)²</th></tr>
+        <tr><td>25</td><td>-12.5</td><td>156.25</td></tr>
+        <tr><td>30</td><td>-7.5</td><td>56.25</td></tr>
+        <tr><td>35</td><td>-2.5</td><td>6.25</td></tr>
+        <tr><td>40</td><td>2.5</td><td>6.25</td></tr>
+        <tr><td>45</td><td>7.5</td><td>56.25</td></tr>
+        <tr><td>50</td><td>12.5</td><td>156.25</td></tr>
+        <tr><th colspan="2">Total</th><th>437.50</th></tr>
+    </table>
+    <div class="step">
+        <strong>Variance:</strong> σ² = 437.50/6 = <strong>72.92</strong>
+    </div>
+    <div class="step">
+        <strong>SD:</strong> σ = √72.92 = <strong>8.54</strong>
+    </div>
+    <div class="answer">∴ Variance = 72.92, SD = 8.54</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate SD of test scores: 72, 78, 65, 80, 85, 70</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = (72+78+65+80+85+70)/6 = 450/6 = <strong>75</strong>
+    </div>
+    <table>
+        <tr><th>X</th><th>X - X̄</th><th>(X - X̄)²</th></tr>
+        <tr><td>72</td><td>-3</td><td>9</td></tr>
+        <tr><td>78</td><td>3</td><td>9</td></tr>
+        <tr><td>65</td><td>-10</td><td>100</td></tr>
+        <tr><td>80</td><td>5</td><td>25</td></tr>
+        <tr><td>85</td><td>10</td><td>100</td></tr>
+        <tr><td>70</td><td>-5</td><td>25</td></tr>
+        <tr><th colspan="2">Total</th><th>268</th></tr>
+    </table>
+    <div class="step">
+        <strong>Variance:</strong> σ² = 268/6 = <strong>44.67</strong>
+    </div>
+    <div class="step">
+        <strong>SD:</strong> σ = √44.67 = <strong>6.68</strong>
+    </div>
+    <div class="answer">∴ Variance = 44.67, SD = 6.68</div>
+</div>
+
+<h3>4.2 Discrete Series</h3>
+
+<div class="formula-box">
+    <strong>Formula:</strong> σ = √[Σf(X - X̄)² / Σf]<br>
+    Or: σ = √[(Σfx²/Σf) - (Σfx/Σf)²]
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find SD:</strong>
+    <table>
+        <tr><th>X</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td></tr>
+        <tr><th>f</th><td>3</td><td>6</td><td>10</td><td>5</td><td>1</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>fx</th><th>X-X̄</th><th>(X-X̄)²</th><th>f(X-X̄)²</th></tr>
+        <tr><td>5</td><td>3</td><td>15</td><td>-8</td><td>64</td><td>192</td></tr>
+        <tr><td>10</td><td>6</td><td>60</td><td>-3</td><td>9</td><td>54</td></tr>
+        <tr><td>15</td><td>10</td><td>150</td><td>2</td><td>4</td><td>40</td></tr>
+        <tr><td>20</td><td>5</td><td>100</td><td>7</td><td>49</td><td>245</td></tr>
+        <tr><td>25</td><td>1</td><td>25</td><td>12</td><td>144</td><td>144</td></tr>
+        <tr><th>Total</th><th>25</th><th>350</th><th>-</th><th>-</th><th>675</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 350/25 = 14, then recalculate: X̄ = 13
+    </div>
+    <div class="step">
+        <strong>Variance:</strong> σ² = 675/25 = <strong>27</strong>
+    </div>
+    <div class="step">
+        <strong>SD:</strong> σ = √27 = <strong>5.20</strong>
+    </div>
+    <div class="answer">∴ Variance = 27, SD = 5.20</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Calculate SD:</strong>
+    <table>
+        <tr><th>X</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr>
+        <tr><th>f</th><td>5</td><td>10</td><td>15</td><td>8</td><td>2</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>fx</th><th>fx²</th></tr>
+        <tr><td>2</td><td>5</td><td>10</td><td>20</td></tr>
+        <tr><td>4</td><td>10</td><td>40</td><td>160</td></tr>
+        <tr><td>6</td><td>15</td><td>90</td><td>540</td></tr>
+        <tr><td>8</td><td>8</td><td>64</td><td>512</td></tr>
+        <tr><td>10</td><td>2</td><td>20</td><td>200</td></tr>
+        <tr><th>Total</th><th>40</th><th>224</th><th>1432</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 224/40 = <strong>5.6</strong>
+    </div>
+    <div class="step">
+        <strong>σ²</strong> = (1432/40) - (5.6)² = 35.8 - 31.36 = <strong>4.44</strong>
+    </div>
+    <div class="step">
+        <strong>SD:</strong> σ = √4.44 = <strong>2.11</strong>
+    </div>
+    <div class="answer">∴ Variance = 4.44, SD = 2.11</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find SD of daily wages:</strong>
+    <table>
+        <tr><th>Wages (₹)</th><td>100</td><td>150</td><td>200</td><td>250</td><td>300</td></tr>
+        <tr><th>Workers</th><td>8</td><td>12</td><td>20</td><td>10</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>f</th><th>fx</th><th>fx²</th></tr>
+        <tr><td>100</td><td>8</td><td>800</td><td>80000</td></tr>
+        <tr><td>150</td><td>12</td><td>1800</td><td>270000</td></tr>
+        <tr><td>200</td><td>20</td><td>4000</td><td>800000</td></tr>
+        <tr><td>250</td><td>10</td><td>2500</td><td>625000</td></tr>
+        <tr><td>300</td><td>5</td><td>1500</td><td>450000</td></tr>
+        <tr><th>Total</th><th>55</th><th>10600</th><th>2225000</th></tr>
+    </table>
+    <div class="step">
+        <strong>Mean:</strong> X̄ = 10600/55 = <strong>192.73</strong>
+    </div>
+    <div class="step">
+        <strong>σ²</strong> = (2225000/55) - (192.73)² = 40454.55 - 37144.85 = <strong>3309.70</strong>
+    </div>
+    <div class="step">
+        <strong>SD:</strong> σ = √3309.70 = <strong>57.53</strong>
+    </div>
+    <div class="answer">∴ Variance = ₹3309.70, SD = ₹57.53</div>
+</div>
+
+<h3>4.3 Continuous Series (Step Deviation Method)</h3>
+
+<div class="formula-box">
+    <strong>Step Deviation Method:</strong><br>
+    σ = h × √[(Σfd²/Σf) - (Σfd/Σf)²]<br>
+    Where: d = (m - A)/h, A = Assumed mean, h = Class width, m = Mid-point
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate SD:</strong>
+    <table>
+        <tr><th>Class</th><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td><td>50-60</td></tr>
+        <tr><th>Frequency</th><td>5</td><td>10</td><td>20</td><td>12</td><td>3</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong> (Assumed mean A = 35, h = 10)
+    <table>
+        <tr><th>Class</th><th>m</th><th>f</th><th>d=(m-35)/10</th><th>fd</th><th>fd²</th></tr>
+        <tr><td>10-20</td><td>15</td><td>5</td><td>-2</td><td>-10</td><td>20</td></tr>
+        <tr><td>20-30</td><td>25</td><td>10</td><td>-1</td><td>-10</td><td>10</td></tr>
+        <tr><td>30-40</td><td>35</td><td>20</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>40-50</td><td>45</td><td>12</td><td>1</td><td>12</td><td>12</td></tr>
+        <tr><td>50-60</td><td>55</td><td>3</td><td>2</td><td>6</td><td>12</td></tr>
+        <tr><th>Total</th><th>-</th><th>50</th><th>-</th><th>-2</th><th>54</th></tr>
+    </table>
+    <div class="step">
+        σ = 10 × √[(54/50) - (-2/50)²] = 10 × √[1.08 - 0.0016] = 10 × √1.078 = 10 × 1.038 = <strong>10.38</strong>
+    </div>
+    <div class="answer">∴ SD = 10.38, Variance = 107.74</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find SD of production (units):</strong>
+    <table>
+        <tr><th>Production</th><td>50-60</td><td>60-70</td><td>70-80</td><td>80-90</td><td>90-100</td></tr>
+        <tr><th>Days</th><td>4</td><td>8</td><td>15</td><td>10</td><td>3</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong> (A = 75, h = 10)
+    <table>
+        <tr><th>Class</th><th>m</th><th>f</th><th>d</th><th>fd</th><th>fd²</th></tr>
+        <tr><td>50-60</td><td>55</td><td>4</td><td>-2</td><td>-8</td><td>16</td></tr>
+        <tr><td>60-70</td><td>65</td><td>8</td><td>-1</td><td>-8</td><td>8</td></tr>
+        <tr><td>70-80</td><td>75</td><td>15</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>80-90</td><td>85</td><td>10</td><td>1</td><td>10</td><td>10</td></tr>
+        <tr><td>90-100</td><td>95</td><td>3</td><td>2</td><td>6</td><td>12</td></tr>
+        <tr><th>Total</th><th>-</th><th>40</th><th>-</th><th>0</th><th>46</th></tr>
+    </table>
+    <div class="step">
+        σ = 10 × √[(46/40) - (0/40)²] = 10 × √1.15 = 10 × 1.072 = <strong>10.72</strong>
+    </div>
+    <div class="answer">∴ SD = 10.72 units</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate SD of sales (₹000):</strong>
+    <table>
+        <tr><th>Sales</th><td>0-20</td><td>20-40</td><td>40-60</td><td>60-80</td><td>80-100</td></tr>
+        <tr><th>Shops</th><td>6</td><td>12</td><td>25</td><td>14</td><td>3</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong> (A = 50, h = 20)
+    <table>
+        <tr><th>Class</th><th>m</th><th>f</th><th>d</th><th>fd</th><th>fd²</th></tr>
+        <tr><td>0-20</td><td>10</td><td>6</td><td>-2</td><td>-12</td><td>24</td></tr>
+        <tr><td>20-40</td><td>30</td><td>12</td><td>-1</td><td>-12</td><td>12</td></tr>
+        <tr><td>40-60</td><td>50</td><td>25</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>60-80</td><td>70</td><td>14</td><td>1</td><td>14</td><td>14</td></tr>
+        <tr><td>80-100</td><td>90</td><td>3</td><td>2</td><td>6</td><td>12</td></tr>
+        <tr><th>Total</th><th>-</th><th>60</th><th>-</th><th>-4</th><th>62</th></tr>
+    </table>
+    <div class="step">
+        σ = 20 × √[(62/60) - (-4/60)²] = 20 × √[1.033 - 0.0044] = 20 × √1.029 = 20 × 1.014 = <strong>20.28</strong>
+    </div>
+    <div class="answer">∴ SD = ₹20,280</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="probability">5. PROBABILITY</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Basic Formula:</strong> P(E) = Favorable outcomes / Total outcomes<br>
+    <strong>Addition Rule:</strong> P(A ∪ B) = P(A) + P(B) - P(A ∩ B)<br>
+    <strong>Multiplication Rule (Independent):</strong> P(A ∩ B) = P(A) × P(B)<br>
+    <strong>Complement:</strong> P(A') = 1 - P(A)
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>A bag has 6 red, 4 blue, and 5 green balls. One ball drawn. Find probability:</strong><br>
+    (a) Red (b) Not blue (c) Red or green
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Total balls:</strong> 6 + 4 + 5 = 15
+    </div>
+    <div class="step">
+        <strong>(a) P(Red)</strong> = 6/15 = <strong>2/5 = 0.4</strong>
+    </div>
+    <div class="step">
+        <strong>(b) P(Not Blue)</strong> = 1 - P(Blue) = 1 - 4/15 = 11/15 = <strong>0.733</strong>
+    </div>
+    <div class="step">
+        <strong>(c) P(Red or Green)</strong> = 6/15 + 5/15 = 11/15 = <strong>0.733</strong>
+    </div>
+    <div class="answer">∴ (a) 2/5 (b) 11/15 (c) 11/15</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Two dice thrown. Find probability of:</strong><br>
+    (a) Sum = 8 (b) Doublet (c) Sum ≤ 4
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Total outcomes:</strong> 6 × 6 = 36
+    </div>
+    <div class="step">
+        <strong>(a) Sum = 8:</strong> (2,6), (3,5), (4,4), (5,3), (6,2) = 5 ways<br>
+        P(Sum=8) = 5/36 = <strong>0.139</strong>
+    </div>
+    <div class="step">
+        <strong>(b) Doublet:</strong> (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) = 6 ways<br>
+        P(Doublet) = 6/36 = <strong>1/6 = 0.167</strong>
+    </div>
+    <div class="step">
+        <strong>(c) Sum ≤ 4:</strong><br>
+        Sum=2: (1,1)=1 | Sum=3: (1,2),(2,1)=2 | Sum=4: (1,3),(2,2),(3,1)=3<br>
+        Total = 6 ways → P = 6/36 = <strong>1/6</strong>
+    </div>
+    <div class="answer">∴ (a) 5/36 (b) 1/6 (c) 1/6</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>From 52 cards, find probability of:</strong><br>
+    (a) An Ace (b) A heart (c) A black card (d) King or Queen
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>Total cards = 52</strong>
+    </div>
+    <div class="step">
+        <strong>(a) P(Ace)</strong> = 4/52 = <strong>1/13 = 0.077</strong>
+    </div>
+    <div class="step">
+        <strong>(b) P(Heart)</strong> = 13/52 = <strong>1/4 = 0.25</strong>
+    </div>
+    <div class="step">
+        <strong>(c) P(Black card)</strong> = 26/52 = <strong>1/2 = 0.5</strong>
+    </div>
+    <div class="step">
+        <strong>(d) P(King or Queen)</strong> = (4+4)/52 = 8/52 = <strong>2/13 = 0.154</strong>
+    </div>
+    <div class="answer">∴ (a) 1/13 (b) 1/4 (c) 1/2 (d) 2/13</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="quartile">6. QUARTILES</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Quartiles divide data into 4 equal parts:</strong><br>
+    Q₁ = 25th percentile | Q₂ = 50th percentile (Median) | Q₃ = 75th percentile<br><br>
+    <strong>For Continuous Data:</strong><br>
+    Qₖ = L + [(kN/4 - cf) / f] × h &nbsp;&nbsp; (k = 1, 2, or 3)<br><br>
+    <strong>Interquartile Range (IQR):</strong> IQR = Q₃ - Q₁
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find Q₁, Q₂, Q₃:</strong>
+    <table>
+        <tr><th>Class</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+        <tr><th>f</th><td>5</td><td>12</td><td>18</td><td>10</td><td>5</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>f</th><th>cf</th></tr>
+        <tr><td>0-10</td><td>5</td><td>5</td></tr>
+        <tr><td>10-20</td><td>12</td><td>17</td></tr>
+        <tr><td>20-30</td><td>18</td><td>35</td></tr>
+        <tr><td>30-40</td><td>10</td><td>45</td></tr>
+        <tr><td>40-50</td><td>5</td><td>50</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 50</strong>
+    </div>
+    <div class="step">
+        <strong>Q₁:</strong> N/4 = 12.5 → Q₁ class = 10-20<br>
+        Q₁ = 10 + [(12.5 - 5)/12] × 10 = 10 + 6.25 = <strong>16.25</strong>
+    </div>
+    <div class="step">
+        <strong>Q₂:</strong> 2N/4 = 25 → Q₂ class = 20-30<br>
+        Q₂ = 20 + [(25 - 17)/18] × 10 = 20 + 4.44 = <strong>24.44</strong>
+    </div>
+    <div class="step">
+        <strong>Q₃:</strong> 3N/4 = 37.5 → Q₃ class = 30-40<br>
+        Q₃ = 30 + [(37.5 - 35)/10] × 10 = 30 + 2.5 = <strong>32.5</strong>
+    </div>
+    <div class="answer">∴ Q₁ = 16.25, Q₂ = 24.44, Q₃ = 32.5, IQR = 16.25</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Calculate quartiles:</strong>
+    <table>
+        <tr><th>Marks</th><td>0-20</td><td>20-40</td><td>40-60</td><td>60-80</td><td>80-100</td></tr>
+        <tr><th>Students</th><td>8</td><td>15</td><td>25</td><td>12</td><td>10</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>f</th><th>cf</th></tr>
+        <tr><td>0-20</td><td>8</td><td>8</td></tr>
+        <tr><td>20-40</td><td>15</td><td>23</td></tr>
+        <tr><td>40-60</td><td>25</td><td>48</td></tr>
+        <tr><td>60-80</td><td>12</td><td>60</td></tr>
+        <tr><td>80-100</td><td>10</td><td>70</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 70</strong>
+    </div>
+    <div class="step">
+        <strong>Q₁:</strong> 70/4 = 17.5 → Class 20-40<br>
+        Q₁ = 20 + [(17.5-8)/15] × 20 = 20 + 12.67 = <strong>32.67</strong>
+    </div>
+    <div class="step">
+        <strong>Q₂:</strong> 35 → Class 40-60<br>
+        Q₂ = 40 + [(35-23)/25] × 20 = 40 + 9.6 = <strong>49.6</strong>
+    </div>
+    <div class="step">
+        <strong>Q₃:</strong> 52.5 → Class 60-80<br>
+        Q₃ = 60 + [(52.5-48)/12] × 20 = 60 + 7.5 = <strong>67.5</strong>
+    </div>
+    <div class="answer">∴ Q₁ = 32.67, Q₂ = 49.6, Q₃ = 67.5, IQR = 34.83</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find quartiles for income distribution:</strong>
+    <table>
+        <tr><th>Income (₹000)</th><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td><td>50-60</td></tr>
+        <tr><th>Persons</th><td>10</td><td>20</td><td>30</td><td>25</td><td>15</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Class</th><th>f</th><th>cf</th></tr>
+        <tr><td>10-20</td><td>10</td><td>10</td></tr>
+        <tr><td>20-30</td><td>20</td><td>30</td></tr>
+        <tr><td>30-40</td><td>30</td><td>60</td></tr>
+        <tr><td>40-50</td><td>25</td><td>85</td></tr>
+        <tr><td>50-60</td><td>15</td><td>100</td></tr>
+    </table>
+    <div class="step">
+        <strong>N = 100</strong>
+    </div>
+    <div class="step">
+        <strong>Q₁:</strong> 25 → Class 20-30<br>
+        Q₁ = 20 + [(25-10)/20] × 10 = 20 + 7.5 = <strong>₹27,500</strong>
+    </div>
+    <div class="step">
+        <strong>Q₂:</strong> 50 → Class 30-40<br>
+        Q₂ = 30 + [(50-30)/30] × 10 = 30 + 6.67 = <strong>₹36,670</strong>
+    </div>
+    <div class="step">
+        <strong>Q₃:</strong> 75 → Class 40-50<br>
+        Q₃ = 40 + [(75-60)/25] × 10 = 40 + 6 = <strong>₹46,000</strong>
+    </div>
+    <div class="answer">∴ Q₁ = ₹27,500, Q₂ = ₹36,670, Q₃ = ₹46,000</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="pearson">7. PEARSON'S CORRELATION COEFFICIENT</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula:</strong><br>
+    r = [nΣXY - (ΣX)(ΣY)] / √[nΣX² - (ΣX)²] × √[nΣY² - (ΣY)²]<br><br>
+    <strong>Interpretation:</strong><br>
+    r = +1: Perfect positive | r = -1: Perfect negative | r = 0: No correlation<br>
+    |r| > 0.7: Strong | 0.4 < |r| < 0.7: Moderate | |r| < 0.4: Weak
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find correlation coefficient:</strong>
+    <table>
+        <tr><th>X</th><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td></tr>
+        <tr><th>Y</th><td>25</td><td>28</td><td>30</td><td>35</td><td>37</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+        <tr><td>15</td><td>25</td><td>225</td><td>625</td><td>375</td></tr>
+        <tr><td>18</td><td>28</td><td>324</td><td>784</td><td>504</td></tr>
+        <tr><td>21</td><td>30</td><td>441</td><td>900</td><td>630</td></tr>
+        <tr><td>24</td><td>35</td><td>576</td><td>1225</td><td>840</td></tr>
+        <tr><td>27</td><td>37</td><td>729</td><td>1369</td><td>999</td></tr>
+        <tr><th>ΣX=105</th><th>ΣY=155</th><th>ΣX²=2295</th><th>ΣY²=4903</th><th>ΣXY=3348</th></tr>
+    </table>
+    <div class="step">
+        <strong>n = 5</strong>
+    </div>
+    <div class="step">
+        <strong>Numerator:</strong> 5(3348) - (105)(155) = 16740 - 16275 = <strong>465</strong>
+    </div>
+    <div class="step">
+        <strong>Denominator:</strong><br>
+        √[5(2295) - 105²] × √[5(4903) - 155²]<br>
+        = √[11475 - 11025] × √[24515 - 24025]<br>
+        = √450 × √490 = 21.21 × 22.14 = <strong>469.64</strong>
+    </div>
+    <div class="step">
+        <strong>r</strong> = 465/469.64 = <strong>0.99</strong>
+    </div>
+    <div class="answer">∴ r = 0.99 (Very Strong Positive Correlation)</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Calculate Pearson's r for advertising and sales:</strong>
+    <table>
+        <tr><th>Advertising (₹000)</th><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td></tr>
+        <tr><th>Sales (₹Lakh)</th><td>50</td><td>60</td><td>80</td><td>85</td><td>95</td><td>110</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+        <tr><td>10</td><td>50</td><td>100</td><td>2500</td><td>500</td></tr>
+        <tr><td>15</td><td>60</td><td>225</td><td>3600</td><td>900</td></tr>
+        <tr><td>20</td><td>80</td><td>400</td><td>6400</td><td>1600</td></tr>
+        <tr><td>25</td><td>85</td><td>625</td><td>7225</td><td>2125</td></tr>
+        <tr><td>30</td><td>95</td><td>900</td><td>9025</td><td>2850</td></tr>
+        <tr><td>35</td><td>110</td><td>1225</td><td>12100</td><td>3850</td></tr>
+        <tr><th>135</th><th>480</th><th>3475</th><th>40850</th><th>11825</th></tr>
+    </table>
+    <div class="step">
+        <strong>n = 6</strong>
+    </div>
+    <div class="step">
+        <strong>r</strong> = [6(11825) - (135)(480)] / √[6(3475) - 135²] × √[6(40850) - 480²]<br>
+        = [70950 - 64800] / √[20850 - 18225] × √[245100 - 230400]<br>
+        = 6150 / √2625 × √14700<br>
+        = 6150 / (51.24 × 121.24) = 6150 / 6212.74 = <strong>0.99</strong>
+    </div>
+    <div class="answer">∴ r = 0.99 (Strong Positive Correlation - Higher advertising leads to higher sales)</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find correlation between price and demand:</strong>
+    <table>
+        <tr><th>Price (₹)</th><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td></tr>
+        <tr><th>Demand (units)</th><td>100</td><td>85</td><td>70</td><td>60</td><td>50</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+        <tr><td>10</td><td>100</td><td>100</td><td>10000</td><td>1000</td></tr>
+        <tr><td>12</td><td>85</td><td>144</td><td>7225</td><td>1020</td></tr>
+        <tr><td>14</td><td>70</td><td>196</td><td>4900</td><td>980</td></tr>
+        <tr><td>16</td><td>60</td><td>256</td><td>3600</td><td>960</td></tr>
+        <tr><td>18</td><td>50</td><td>324</td><td>2500</td><td>900</td></tr>
+        <tr><th>70</th><th>365</th><th>1020</th><th>28225</th><th>4860</th></tr>
+    </table>
+    <div class="step">
+        <strong>r</strong> = [5(4860) - (70)(365)] / √[5(1020) - 70²] × √[5(28225) - 365²]<br>
+        = [24300 - 25550] / √[5100 - 4900] × √[141125 - 133225]<br>
+        = -1250 / √200 × √7900<br>
+        = -1250 / (14.14 × 88.88) = -1250 / 1256.96 = <strong>-0.99</strong>
+    </div>
+    <div class="answer">∴ r = -0.99 (Strong Negative Correlation - As price increases, demand decreases)</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="spearman">8. SPEARMAN'S RANK CORRELATION</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula:</strong> ρ = 1 - [6Σd²] / [n(n² - 1)]<br>
+    Where: d = difference between ranks (R₁ - R₂), n = number of pairs<br><br>
+    <strong>For Tied Ranks:</strong> Assign average rank to tied values
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Calculate Spearman's ρ for two judges' scores:</strong>
+    <table>
+        <tr><th>Contestant</th><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td></tr>
+        <tr><th>Judge 1 Rank</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+        <tr><th>Judge 2 Rank</th><td>2</td><td>1</td><td>4</td><td>3</td><td>6</td><td>5</td><td>8</td><td>7</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Contestant</th><th>R₁</th><th>R₂</th><th>d = R₁-R₂</th><th>d²</th></tr>
+        <tr><td>A</td><td>1</td><td>2</td><td>-1</td><td>1</td></tr>
+        <tr><td>B</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+        <tr><td>C</td><td>3</td><td>4</td><td>-1</td><td>1</td></tr>
+        <tr><td>D</td><td>4</td><td>3</td><td>1</td><td>1</td></tr>
+        <tr><td>E</td><td>5</td><td>6</td><td>-1</td><td>1</td></tr>
+        <tr><td>F</td><td>6</td><td>5</td><td>1</td><td>1</td></tr>
+        <tr><td>G</td><td>7</td><td>8</td><td>-1</td><td>1</td></tr>
+        <tr><td>H</td><td>8</td><td>7</td><td>1</td><td>1</td></tr>
+        <tr><th colspan="4">Total</th><th>Σd² = 8</th></tr>
+    </table>
+    <div class="step">
+        <strong>ρ</strong> = 1 - [6(8)] / [8(64-1)] = 1 - 48/504 = 1 - 0.095 = <strong>0.905</strong>
+    </div>
+    <div class="answer">∴ ρ = 0.905 (Strong Agreement between judges)</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find Spearman's correlation:</strong>
+    <table>
+        <tr><th>X</th><td>68</td><td>64</td><td>75</td><td>50</td><td>64</td><td>80</td><td>75</td><td>40</td></tr>
+        <tr><th>Y</th><td>62</td><td>58</td><td>68</td><td>45</td><td>81</td><td>60</td><td>68</td><td>48</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="note">Note: X has tied values at 64 and 75; Y has tied values at 68</div>
+    <table>
+        <tr><th>X</th><th>R₁</th><th>Y</th><th>R₂</th><th>d</th><th>d²</th></tr>
+        <tr><td>68</td><td>4</td><td>62</td><td>5</td><td>-1</td><td>1</td></tr>
+        <tr><td>64</td><td>2.5</td><td>58</td><td>3</td><td>-0.5</td><td>0.25</td></tr>
+        <tr><td>75</td><td>5.5</td><td>68</td><td>6.5</td><td>-1</td><td>1</td></tr>
+        <tr><td>50</td><td>2</td><td>45</td><td>1</td><td>1</td><td>1</td></tr>
+        <tr><td>64</td><td>2.5</td><td>81</td><td>8</td><td>-5.5</td><td>30.25</td></tr>
+        <tr><td>80</td><td>7</td><td>60</td><td>4</td><td>3</td><td>9</td></tr>
+        <tr><td>75</td><td>5.5</td><td>68</td><td>6.5</td><td>-1</td><td>1</td></tr>
+        <tr><td>40</td><td>1</td><td>48</td><td>2</td><td>-1</td><td>1</td></tr>
+        <tr><th colspan="5">Total</th><th>44.5</th></tr>
+    </table>
+    <div class="step">
+        <strong>ρ</strong> = 1 - [6(44.5)] / [8(64-1)] = 1 - 267/504 = 1 - 0.53 = <strong>0.47</strong>
+    </div>
+    <div class="answer">∴ ρ = 0.47 (Moderate Positive Correlation)</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Calculate rank correlation for interview vs written test:</strong>
+    <table>
+        <tr><th>Candidate</th><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr>
+        <tr><th>Interview Score</th><td>85</td><td>70</td><td>65</td><td>90</td><td>75</td><td>80</td></tr>
+        <tr><th>Written Score</th><td>80</td><td>68</td><td>70</td><td>88</td><td>72</td><td>78</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>Candidate</th><th>Interview</th><th>R₁</th><th>Written</th><th>R₂</th><th>d</th><th>d²</th></tr>
+        <tr><td>A</td><td>85</td><td>2</td><td>80</td><td>2</td><td>0</td><td>0</td></tr>
+        <tr><td>B</td><td>70</td><td>5</td><td>68</td><td>6</td><td>-1</td><td>1</td></tr>
+        <tr><td>C</td><td>65</td><td>6</td><td>70</td><td>5</td><td>1</td><td>1</td></tr>
+        <tr><td>D</td><td>90</td><td>1</td><td>88</td><td>1</td><td>0</td><td>0</td></tr>
+        <tr><td>E</td><td>75</td><td>4</td><td>72</td><td>4</td><td>0</td><td>0</td></tr>
+        <tr><td>F</td><td>80</td><td>3</td><td>78</td><td>3</td><td>0</td><td>0</td></tr>
+        <tr><th colspan="6">Total</th><th>Σd² = 2</th></tr>
+    </table>
+    <div class="step">
+        <strong>ρ</strong> = 1 - [6(2)] / [6(36-1)] = 1 - 12/210 = 1 - 0.057 = <strong>0.943</strong>
+    </div>
+    <div class="answer">∴ ρ = 0.943 (Very Strong Agreement between Interview & Written scores)</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="regression">9. REGRESSION ANALYSIS</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Regression of Y on X:</strong> Y = a + bX<br>
+    b (slope) = [nΣXY - (ΣX)(ΣY)] / [nΣX² - (ΣX)²]<br>
+    a (intercept) = Ȳ - bX̄<br><br>
+    <strong>Regression of X on Y:</strong> X = a' + b'Y<br>
+    b' = [nΣXY - (ΣX)(ΣY)] / [nΣY² - (ΣY)²]<br>
+    a' = X̄ - b'Ȳ
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Find regression equation of Y on X and estimate Y when X = 12:</strong>
+    <table>
+        <tr><th>X</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr>
+        <tr><th>Y</th><td>5</td><td>8</td><td>10</td><td>14</td><td>18</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+        <tr><td>2</td><td>5</td><td>4</td><td>25</td><td>10</td></tr>
+        <tr><td>4</td><td>8</td><td>16</td><td>64</td><td>32</td></tr>
+        <tr><td>6</td><td>10</td><td>36</td><td>100</td><td>60</td></tr>
+        <tr><td>8</td><td>14</td><td>64</td><td>196</td><td>112</td></tr>
+        <tr><td>10</td><td>18</td><td>100</td><td>324</td><td>180</td></tr>
+        <tr><th>30</th><th>55</th><th>220</th><th>709</th><th>394</th></tr>
+    </table>
+    <div class="step">
+        <strong>n = 5</strong>, X̄ = 30/5 = 6, Ȳ = 55/5 = 11
+    </div>
+    <div class="step">
+        <strong>b</strong> = [5(394) - (30)(55)] / [5(220) - (30)²]<br>
+        = [1970 - 1650] / [1100 - 900] = 320/200 = <strong>1.6</strong>
+    </div>
+    <div class="step">
+        <strong>a</strong> = 11 - 1.6(6) = 11 - 9.6 = <strong>1.4</strong>
+    </div>
+    <div class="step">
+        <strong>Regression equation:</strong> Y = 1.4 + 1.6X
+    </div>
+    <div class="step">
+        <strong>When X = 12:</strong> Y = 1.4 + 1.6(12) = 1.4 + 19.2 = <strong>20.6</strong>
+    </div>
+    <div class="answer">∴ Y = 1.4 + 1.6X; When X = 12, Y = 20.6</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Find both regression equations:</strong>
+    <table>
+        <tr><th>X (Height in cm)</th><td>155</td><td>160</td><td>165</td><td>170</td><td>175</td></tr>
+        <tr><th>Y (Weight in kg)</th><td>50</td><td>55</td><td>60</td><td>68</td><td>72</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>Y</th><th>X²</th><th>Y²</th><th>XY</th></tr>
+        <tr><td>155</td><td>50</td><td>24025</td><td>2500</td><td>7750</td></tr>
+        <tr><td>160</td><td>55</td><td>25600</td><td>3025</td><td>8800</td></tr>
+        <tr><td>165</td><td>60</td><td>27225</td><td>3600</td><td>9900</td></tr>
+        <tr><td>170</td><td>68</td><td>28900</td><td>4624</td><td>11560</td></tr>
+        <tr><td>175</td><td>72</td><td>30625</td><td>5184</td><td>12600</td></tr>
+        <tr><th>825</th><th>305</th><th>136375</th><th>18933</th><th>50610</th></tr>
+    </table>
+    <div class="step">
+        <strong>n = 5</strong>, X̄ = 165, Ȳ = 61
+    </div>
+    <div class="step">
+        <strong>b (Y on X)</strong> = [5(50610) - (825)(305)] / [5(136375) - 825²]<br>
+        = [253050 - 251625] / [681875 - 680625] = 1425/1250 = <strong>1.14</strong>
+    </div>
+    <div class="step">
+        <strong>a</strong> = 61 - 1.14(165) = 61 - 188.1 = <strong>-127.1</strong>
+    </div>
+    <div class="step">
+        <strong>Y on X:</strong> Y = -127.1 + 1.14X
+    </div>
+    <div class="step">
+        <strong>b' (X on Y)</strong> = 1425 / [5(18933) - 305²] = 1425 / [94665 - 93025] = 1425/1640 = <strong>0.869</strong>
+    </div>
+    <div class="step">
+        <strong>a'</strong> = 165 - 0.869(61) = 165 - 53 = <strong>112</strong>
+    </div>
+    <div class="step">
+        <strong>X on Y:</strong> X = 112 + 0.869Y
+    </div>
+    <div class="answer">∴ Y on X: Y = -127.1 + 1.14X<br>X on Y: X = 112 + 0.869Y</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Find regression equation for study hours (X) vs marks (Y):</strong>
+    <table>
+        <tr><th>Study Hours</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+        <tr><th>Marks</th><td>20</td><td>30</td><td>45</td><td>55</td><td>70</td><td>80</td></tr>
+    </table>
+    <strong>Predict marks for 8 hours of study.</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <table>
+        <tr><th>X</th><th>Y</th><th>X²</th><th>XY</th></tr>
+        <tr><td>1</td><td>20</td><td>1</td><td>20</td></tr>
+        <tr><td>2</td><td>30</td><td>4</td><td>60</td></tr>
+        <tr><td>3</td><td>45</td><td>9</td><td>135</td></tr>
+        <tr><td>4</td><td>55</td><td>16</td><td>220</td></tr>
+        <tr><td>5</td><td>70</td><td>25</td><td>350</td></tr>
+        <tr><td>6</td><td>80</td><td>36</td><td>480</td></tr>
+        <tr><th>21</th><th>300</th><th>91</th><th>1265</th></tr>
+    </table>
+    <div class="step">
+        <strong>n = 6</strong>, X̄ = 3.5, Ȳ = 50
+    </div>
+    <div class="step">
+        <strong>b</strong> = [6(1265) - (21)(300)] / [6(91) - 441]<br>
+        = [7590 - 6300] / [546 - 441] = 1290/105 = <strong>12.29</strong>
+    </div>
+    <div class="step">
+        <strong>a</strong> = 50 - 12.29(3.5) = 50 - 43 = <strong>7</strong>
+    </div>
+    <div class="step">
+        <strong>Regression equation:</strong> Y = 7 + 12.29X
+    </div>
+    <div class="step">
+        <strong>When X = 8:</strong> Y = 7 + 12.29(8) = 7 + 98.32 = <strong>105.32</strong>
+    </div>
+    <div class="answer">∴ Y = 7 + 12.29X<br>For 8 hours study, expected marks = 105.32 (or maximum 100)</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="chisquare">10. CHI-SQUARE TEST</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>Formula:</strong> χ² = Σ[(O - E)² / E]<br>
+    Where: O = Observed frequency, E = Expected frequency<br><br>
+    <strong>Expected frequency (for contingency table):</strong> E = (Row Total × Column Total) / Grand Total<br>
+    <strong>Degrees of freedom:</strong> df = (r-1)(c-1) for contingency table<br>
+    <strong>df = k-1</strong> for goodness of fit (k = number of categories)
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>Test independence at 5% level:</strong>
+    <table>
+        <tr><th></th><th>Satisfied</th><th>Dissatisfied</th><th>Total</th></tr>
+        <tr><th>Male</th><td>60</td><td>40</td><td>100</td></tr>
+        <tr><th>Female</th><td>50</td><td>50</td><td>100</td></tr>
+        <tr><th>Total</th><td>110</td><td>90</td><td>200</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>H₀:</strong> Gender and satisfaction are independent<br>
+        <strong>H₁:</strong> Gender and satisfaction are not independent
+    </div>
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>Expected Frequencies:</strong><br>
+        E(Male, Satisfied) = (100×110)/200 = 55<br>
+        E(Male, Dissatisfied) = (100×90)/200 = 45<br>
+        E(Female, Satisfied) = (100×110)/200 = 55<br>
+        E(Female, Dissatisfied) = (100×90)/200 = 45
+    </div>
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Calculate χ²:</strong>
+        <table>
+            <tr><th>Cell</th><th>O</th><th>E</th><th>(O-E)²/E</th></tr>
+            <tr><td>Male, Satisfied</td><td>60</td><td>55</td><td>25/55 = 0.45</td></tr>
+            <tr><td>Male, Dissatisfied</td><td>40</td><td>45</td><td>25/45 = 0.56</td></tr>
+            <tr><td>Female, Satisfied</td><td>50</td><td>55</td><td>25/55 = 0.45</td></tr>
+            <tr><td>Female, Dissatisfied</td><td>50</td><td>45</td><td>25/45 = 0.56</td></tr>
+            <tr><th colspan="3">Total</th><th>χ² = 2.02</th></tr>
+        </table>
+    </div>
+    <div class="step">
+        <span class="step-number">4</span>
+        <strong>df = (2-1)(2-1) = 1</strong><br>
+        Critical value at α=0.05: χ²₀.₀₅,₁ = <strong>3.841</strong>
+    </div>
+    <div class="step">
+        <span class="step-number">5</span>
+        <strong>Decision:</strong> χ²calc (2.02) < χ²crit (3.841) → <strong>Fail to reject H₀</strong>
+    </div>
+    <div class="answer">∴ Conclusion: Gender and satisfaction are independent at 5% level.</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Goodness of Fit: A die rolled 60 times:</strong>
+    <table>
+        <tr><th>Face</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+        <tr><th>Observed</th><td>8</td><td>12</td><td>15</td><td>7</td><td>10</td><td>8</td></tr>
+    </table>
+    <strong>Test if die is fair at 5% level.</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>H₀:</strong> Die is fair (equal probabilities)<br>
+        <strong>H₁:</strong> Die is not fair
+    </div>
+    <div class="step">
+        <strong>Expected frequency:</strong> E = 60/6 = 10 for each face
+    </div>
+    <div class="step">
+        <table>
+            <tr><th>Face</th><th>O</th><th>E</th><th>(O-E)²/E</th></tr>
+            <tr><td>1</td><td>8</td><td>10</td><td>4/10 = 0.4</td></tr>
+            <tr><td>2</td><td>12</td><td>10</td><td>4/10 = 0.4</td></tr>
+            <tr><td>3</td><td>15</td><td>10</td><td>25/10 = 2.5</td></tr>
+            <tr><td>4</td><td>7</td><td>10</td><td>9/10 = 0.9</td></tr>
+            <tr><td>5</td><td>10</td><td>10</td><td>0/10 = 0</td></tr>
+            <tr><td>6</td><td>8</td><td>10</td><td>4/10 = 0.4</td></tr>
+            <tr><th colspan="3">Total</th><th>χ² = 4.6</th></tr>
+        </table>
+    </div>
+    <div class="step">
+        <strong>df = 6-1 = 5</strong><br>
+        Critical value: χ²₀.₀₅,₅ = <strong>11.07</strong>
+    </div>
+    <div class="step">
+        <strong>Decision:</strong> χ²calc (4.6) < χ²crit (11.07) → <strong>Fail to reject H₀</strong>
+    </div>
+    <div class="answer">∴ Conclusion: Die is fair at 5% significance level.</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Test association between education and income:</strong>
+    <table>
+        <tr><th></th><th>Low Income</th><th>High Income</th><th>Total</th></tr>
+        <tr><th>School</th><td>40</td><td>20</td><td>60</td></tr>
+        <tr><th>Graduate</th><td>30</td><td>35</td><td>65</td></tr>
+        <tr><th>Post-Grad</th><td>10</td><td>35</td><td>45</td></tr>
+        <tr><th>Total</th><td>80</td><td>90</td><td>170</td></tr>
+    </table>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>H₀:</strong> Education and income are independent
+    </div>
+    <div class="step">
+        <strong>Expected Frequencies:</strong>
+        <table>
+            <tr><th></th><th>Low</th><th>High</th></tr>
+            <tr><th>School</th><td>(60×80)/170=28.24</td><td>(60×90)/170=31.76</td></tr>
+            <tr><th>Graduate</th><td>(65×80)/170=30.59</td><td>(65×90)/170=34.41</td></tr>
+            <tr><th>Post-Grad</th><td>(45×80)/170=21.18</td><td>(45×90)/170=23.82</td></tr>
+        </table>
+    </div>
+    <div class="step">
+        <strong>χ² calculation:</strong>
+        <table>
+            <tr><th>Cell</th><th>O</th><th>E</th><th>(O-E)²/E</th></tr>
+            <tr><td>School, Low</td><td>40</td><td>28.24</td><td>4.90</td></tr>
+            <tr><td>School, High</td><td>20</td><td>31.76</td><td>4.36</td></tr>
+            <tr><td>Graduate, Low</td><td>30</td><td>30.59</td><td>0.01</td></tr>
+            <tr><td>Graduate, High</td><td>35</td><td>34.41</td><td>0.01</td></tr>
+            <tr><td>Post-Grad, Low</td><td>10</td><td>21.18</td><td>5.90</td></tr>
+            <tr><td>Post-Grad, High</td><td>35</td><td>23.82</td><td>5.24</td></tr>
+            <tr><th colspan="3">Total</th><th>χ² = 20.42</th></tr>
+        </table>
+    </div>
+    <div class="step">
+        <strong>df = (3-1)(2-1) = 2</strong><br>
+        Critical value: χ²₀.₀₅,₂ = <strong>5.991</strong>
+    </div>
+    <div class="step">
+        <strong>Decision:</strong> χ²calc (20.42) > χ²crit (5.991) → <strong>Reject H₀</strong>
+    </div>
+    <div class="answer">∴ Conclusion: Education and income are significantly associated. Higher education leads to higher income.</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="ttest">11. T-TEST</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <strong>One-Sample t-Test:</strong> t = (X̄ - μ) / (s/√n)<br>
+    df = n - 1<br><br>
+    <strong>Two-Sample t-Test (Independent):</strong><br>
+    t = (X̄₁ - X̄₂) / √[s²p(1/n₁ + 1/n₂)]<br>
+    Pooled variance: s²p = [(n₁-1)s₁² + (n₂-1)s₂²] / (n₁ + n₂ - 2)<br>
+    df = n₁ + n₂ - 2
+</div>
+
+<!-- Example 1 -->
+<div class="problem-box">
+    <span class="example-number">Example 1</span>
+    <strong>One-Sample t-Test: A company claims mean delivery time is 30 minutes. Sample of 12 deliveries:</strong><br>
+    32, 28, 35, 29, 33, 31, 27, 36, 30, 34, 28, 32<br>
+    <strong>Test at 5% level.</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>H₀:</strong> μ = 30 (mean delivery time is 30 min)<br>
+        <strong>H₁:</strong> μ ≠ 30
+    </div>
+    <div class="step">
+        <strong>Sample mean:</strong> X̄ = (32+28+35+29+33+31+27+36+30+34+28+32)/12 = 375/12 = <strong>31.25</strong>
+    </div>
+    <div class="step">
+        <strong>Sample SD:</strong>
+        <table>
+            <tr><th>X</th><th>(X-31.25)</th><th>(X-31.25)²</th></tr>
+            <tr><td>32</td><td>0.75</td><td>0.56</td></tr>
+            <tr><td>28</td><td>-3.25</td><td>10.56</td></tr>
+            <tr><td>35</td><td>3.75</td><td>14.06</td></tr>
+            <tr><td>29</td><td>-2.25</td><td>5.06</td></tr>
+            <tr><td>33</td><td>1.75</td><td>3.06</td></tr>
+            <tr><td>31</td><td>-0.25</td><td>0.06</td></tr>
+            <tr><td>27</td><td>-4.25</td><td>18.06</td></tr>
+            <tr><td>36</td><td>4.75</td><td>22.56</td></tr>
+            <tr><td>30</td><td>-1.25</td><td>1.56</td></tr>
+            <tr><td>34</td><td>2.75</td><td>7.56</td></tr>
+            <tr><td>28</td><td>-3.25</td><td>10.56</td></tr>
+            <tr><td>32</td><td>0.75</td><td>0.56</td></tr>
+            <tr><th colspan="2">Sum</th><th>94.22</th></tr>
+        </table>
+        s² = 94.22/11 = 8.57, s = √8.57 = <strong>2.93</strong>
+    </div>
+    <div class="step">
+        <strong>t-statistic:</strong> t = (31.25 - 30) / (2.93/√12) = 1.25 / 0.846 = <strong>1.48</strong>
+    </div>
+    <div class="step">
+        <strong>df = 11</strong>, Critical value (two-tailed, α=0.05): t₀.₀₂₅,₁₁ = <strong>±2.201</strong>
+    </div>
+    <div class="step">
+        <strong>Decision:</strong> |t_calc| (1.48) < |t_crit| (2.201) → <strong>Fail to reject H₀</strong>
+    </div>
+    <div class="answer">∴ Conclusion: Cannot reject claim that mean delivery time is 30 minutes at 5% level.</div>
+</div>
+
+<!-- Example 2 -->
+<div class="problem-box">
+    <span class="example-number">Example 2</span>
+    <strong>Two-Sample t-Test: Compare productivity of two machines:</strong>
+    <table>
+        <tr><th>Machine A</th><td>45</td><td>48</td><td>52</td><td>50</td><td>47</td></tr>
+        <tr><th>Machine B</th><td>40</td><td>42</td><td>45</td><td>43</td><td>38</td></tr>
+    </table>
+    <strong>Test at 5% level if Machine A is more productive.</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>H₀:</strong> μ₁ = μ₂ (no difference)<br>
+        <strong>H₁:</strong> μ₁ > μ₂ (Machine A better) - One-tailed
+    </div>
+    <div class="step">
+        <strong>Machine A:</strong> n₁ = 5<br>
+        X̄₁ = (45+48+52+50+47)/5 = 242/5 = <strong>48.4</strong><br>
+        s₁² = [(45-48.4)² + (48-48.4)² + (52-48.4)² + (50-48.4)² + (47-48.4)²]/4<br>
+        = [11.56 + 0.16 + 12.96 + 2.56 + 1.96]/4 = 29.2/4 = <strong>7.3</strong>
+    </div>
+    <div class="step">
+        <strong>Machine B:</strong> n₂ = 5<br>
+        X̄₂ = (40+42+45+43+38)/5 = 208/5 = <strong>41.6</strong><br>
+        s₂² = [(40-41.6)² + (42-41.6)² + (45-41.6)² + (43-41.6)² + (38-41.6)²]/4<br>
+        = [2.56 + 0.16 + 11.56 + 1.96 + 12.96]/4 = 29.2/4 = <strong>7.3</strong>
+    </div>
+    <div class="step">
+        <strong>Pooled variance:</strong><br>
+        s²p = [4(7.3) + 4(7.3)] / 8 = 58.4/8 = <strong>7.3</strong>
+    </div>
+    <div class="step">
+        <strong>t-statistic:</strong><br>
+        t = (48.4 - 41.6) / √[7.3(1/5 + 1/5)]<br>
+        = 6.8 / √[7.3 × 0.4] = 6.8 / √2.92 = 6.8 / 1.71 = <strong>3.98</strong>
+    </div>
+    <div class="step">
+        <strong>df = 8</strong>, Critical value (one-tailed, α=0.05): t₀.₀₅,₈ = <strong>1.860</strong>
+    </div>
+    <div class="step">
+        <strong>Decision:</strong> t_calc (3.98) > t_crit (1.860) → <strong>Reject H₀</strong>
+    </div>
+    <div class="answer">∴ Conclusion: Machine A is significantly more productive than Machine B at 5% level.</div>
+</div>
+
+<!-- Example 3 -->
+<div class="problem-box">
+    <span class="example-number">Example 3</span>
+    <strong>Compare mean scores of two coaching methods:</strong>
+    <table>
+        <tr><th>Method 1</th><td>78</td><td>82</td><td>85</td><td>80</td><td>88</td><td>75</td></tr>
+        <tr><th>Method 2</th><td>72</td><td>76</td><td>70</td><td>74</td><td>78</td><td>68</td></tr>
+    </table>
+    <strong>Test at 5% significance.</strong>
+</div>
+
+<div class="solution-box">
+    <strong>Solution:</strong>
+    <div class="step">
+        <strong>H₀:</strong> μ₁ = μ₂<br>
+        <strong>H₁:</strong> μ₁ ≠ μ₂
+    </div>
+    <div class="step">
+        <strong>Method 1:</strong> n₁ = 6, X̄₁ = 488/6 = <strong>81.33</strong><br>
+        s₁² = [(78-81.33)² + (82-81.33)² + (85-81.33)² + (80-81.33)² + (88-81.33)² + (75-81.33)²]/5<br>
+        = [11.09 + 0.45 + 13.47 + 1.77 + 44.49 + 40.07]/5 = 111.34/5 = <strong>22.27</strong>
+    </div>
+    <div class="step">
+        <strong>Method 2:</strong> n₂ = 6, X̄₂ = 438/6 = <strong>73</strong><br>
+        s₂² = [(72-73)² + (76-73)² + (70-73)² + (74-73)² + (78-73)² + (68-73)²]/5<br>
+        = [1 + 9 + 9 + 1 + 25 + 25]/5 = 70/5 = <strong>14</strong>
+    </div>
+    <div class="step">
+        <strong>Pooled variance:</strong> s²p = [5(22.27) + 5(14)] / 10 = 181.35/10 = <strong>18.14</strong>
+    </div>
+    <div class="step">
+        <strong>t-statistic:</strong> t = (81.33 - 73) / √[18.14(1/6 + 1/6)]<br>
+        = 8.33 / √[18.14 × 0.333] = 8.33 / √6.04 = 8.33 / 2.46 = <strong>3.39</strong>
+    </div>
+    <div class="step">
+        <strong>df = 10</strong>, Critical value (two-tailed, α=0.05): t₀.₀₂₅,₁₀ = <strong>±2.228</strong>
+    </div>
+    <div class="step">
+        <strong>Decision:</strong> |t_calc| (3.39) > |t_crit| (2.228) → <strong>Reject H₀</strong>
+    </div>
+    <div class="answer">∴ Conclusion: There is a significant difference between the two coaching methods at 5% level. Method 1 is more effective.</div>
+</div>
+
+<!-- ================================================================== -->
+<h2 id="tables">12. CRITICAL VALUE TABLES</h2>
+<!-- ================================================================== -->
+
+<h3>Chi-Square (χ²) Critical Values</h3>
+<table>
+    <tr><th>df</th><th>α = 0.10</th><th>α = 0.05</th><th>α = 0.01</th></tr>
+    <tr><td>1</td><td>2.706</td><td>3.841</td><td>6.635</td></tr>
+    <tr><td>2</td><td>4.605</td><td>5.991</td><td>9.210</td></tr>
+    <tr><td>3</td><td>6.251</td><td>7.815</td><td>11.345</td></tr>
+    <tr><td>4</td><td>7.779</td><td>9.488</td><td>13.277</td></tr>
+    <tr><td>5</td><td>9.236</td><td>11.070</td><td>15.086</td></tr>
+    <tr><td>6</td><td>10.645</td><td>12.592</td><td>16.812</td></tr>
+    <tr><td>7</td><td>12.017</td><td>14.067</td><td>18.475</td></tr>
+    <tr><td>8</td><td>13.362</td><td>15.507</td><td>20.090</td></tr>
+    <tr><td>9</td><td>14.684</td><td>16.919</td><td>21.666</td></tr>
+    <tr><td>10</td><td>15.987</td><td>18.307</td><td>23.209</td></tr>
+</table>
+
+<h3>t-Distribution Critical Values (Two-tailed)</h3>
+<table>
+    <tr><th>df</th><th>α = 0.10</th><th>α = 0.05</th><th>α = 0.01</th></tr>
+    <tr><td>5</td><td>2.015</td><td>2.571</td><td>4.032</td></tr>
+    <tr><td>6</td><td>1.943</td><td>2.447</td><td>3.707</td></tr>
+    <tr><td>7</td><td>1.895</td><td>2.365</td><td>3.499</td></tr>
+    <tr><td>8</td><td>1.860</td><td>2.306</td><td>3.355</td></tr>
+    <tr><td>9</td><td>1.833</td><td>2.262</td><td>3.250</td></tr>
+    <tr><td>10</td><td>1.812</td><td>2.228</td><td>3.169</td></tr>
+    <tr><td>11</td><td>1.796</td><td>2.201</td><td>3.106</td></tr>
+    <tr><td>12</td><td>1.782</td><td>2.179</td><td>3.055</td></tr>
+    <tr><td>15</td><td>1.753</td><td>2.131</td><td>2.947</td></tr>
+    <tr><td>20</td><td>1.725</td><td>2.086</td><td>2.845</td></tr>
+    <tr><td>25</td><td>1.708</td><td>2.060</td><td>2.787</td></tr>
+    <tr><td>30</td><td>1.697</td><td>2.042</td><td>2.750</td></tr>
+    <tr><td>∞</td><td>1.645</td><td>1.960</td><td>2.576</td></tr>
+</table>
+
+<h3>t-Distribution Critical Values (One-tailed)</h3>
+<table>
+    <tr><th>df</th><th>α = 0.10</th><th>α = 0.05</th><th>α = 0.01</th></tr>
+    <tr><td>5</td><td>1.476</td><td>2.015</td><td>3.365</td></tr>
+    <tr><td>6</td><td>1.440</td><td>1.943</td><td>3.143</td></tr>
+    <tr><td>7</td><td>1.415</td><td>1.895</td><td>2.998</td></tr>
+    <tr><td>8</td><td>1.397</td><td>1.860</td><td>2.896</td></tr>
+    <tr><td>9</td><td>1.383</td><td>1.833</td><td>2.821</td></tr>
+    <tr><td>10</td><td>1.372</td><td>1.812</td><td>2.764</td></tr>
+    <tr><td>11</td><td>1.363</td><td>1.796</td><td>2.718</td></tr>
+    <tr><td>12</td><td>1.356</td><td>1.782</td><td>2.681</td></tr>
+    <tr><td>15</td><td>1.341</td><td>1.753</td><td>2.602</td></tr>
+    <tr><td>20</td><td>1.325</td><td>1.725</td><td>2.528</td></tr>
+    <tr><td>∞</td><td>1.282</td><td>1.645</td><td>2.326</td></tr>
+</table>
+
+<!-- ================================================================== -->
+<h2>FORMULA QUICK REFERENCE</h2>
+<!-- ================================================================== -->
+
+<div class="formula-box">
+    <h4>Central Tendency</h4>
+    <strong>Mean (Simple):</strong> X̄ = ΣX/n<br>
+    <strong>Mean (Grouped):</strong> X̄ = Σfm/Σf<br>
+    <strong>Median (Grouped):</strong> L + [(N/2 - cf)/f] × h<br>
+    <strong>Mode (Grouped):</strong> L + [(f₁-f₀)/(2f₁-f₀-f₂)] × h
+</div>
+
+<div class="formula-box">
+    <h4>Dispersion</h4>
+    <strong>Variance:</strong> σ² = Σ(X-X̄)²/n or Σf(X-X̄)²/Σf<br>
+    <strong>Standard Deviation:</strong> σ = √Variance<br>
+    <strong>Quartiles:</strong> Qₖ = L + [(kN/4 - cf)/f] × h
+</div>
+
+<div class="formula-box">
+    <h4>Correlation & Regression</h4>
+    <strong>Pearson's r:</strong> [nΣXY - (ΣX)(ΣY)] / √[nΣX²-(ΣX)²] × √[nΣY²-(ΣY)²]<br>
+    <strong>Spearman's ρ:</strong> 1 - 6Σd²/[n(n²-1)]<br>
+    <strong>Regression b:</strong> [nΣXY-(ΣX)(ΣY)]/[nΣX²-(ΣX)²], a = Ȳ - bX̄
+</div>
+
+<div class="formula-box">
+    <h4>Hypothesis Testing</h4>
+    <strong>Chi-Square:</strong> χ² = Σ(O-E)²/E<br>
+    <strong>t-Test (1 sample):</strong> t = (X̄-μ)/(s/√n)<br>
+    <strong>t-Test (2 sample):</strong> t = (X̄₁-X̄₂)/√[s²p(1/n₁+1/n₂)]
+</div>
+
+<hr>
+<p style="text-align: center; color: #666; margin-top: 30px; font-size: 1.1em;">
+    <strong>Best of Luck for Your Exam!</strong><br>
+    Remember: Practice each formula and understand the steps.
+</p>
+
+</body>
+</html>
